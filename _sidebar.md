@@ -1,0 +1,21 @@
+
+  * [首页](/home)
+    * [枫炎Github介绍页](/home/github-page)
+  * [DL社区版交流基地](dlce-group)
+    * [群规](dlce-group/rules.md)
+  * [跳舞的线社区版（DLCE）](dlce)
+    * [最终用户许可协议（EULA）](dlce/eula.md)
+    * [隐私政策](dlce/privacy.md)
+    * [装饰系统](dlce/character.md)
+    * [多语言系统](dlce/localization.md)
+    * [游戏设置](dlce/game-settings.md)
+    * [Game Center](dlce/game-center.md)
+    * [关卡信息](dlce/level_information.md)
+    * [自定义后期处理效果](dlce/custom_post_processing.md)
+    * [键位映射](dlce/key_mapping.md)
+    * [启动参数](dlce/commands.md)
+    * [启动器](dlce/game_launcher.md)
+
+--------------
+[![GitHub](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fgithub%2FAaron8052&query=count&color=181717&label=GitHub&labelColor=282c34&logo=github&suffix=+follows&cacheSeconds=3600)](https://github.com/Aaron8052)
+[![爱发电](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fafdian%2FfengyanDL&query=count&color=282c34&label=%E7%88%B1%E5%8F%91%E7%94%B5&labelColor=946ce6&suffix=+%E5%8F%91%E7%94%B5%E4%BA%BA%E6%AC%A1+%2F+%E6%9C%88&cacheSeconds=3600)](https://afdian.net/@fengyanDL)
