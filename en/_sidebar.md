@@ -1,6 +1,4 @@
-* [Home](/en/home)
-* [DL Community Discord](/en/dl-community-discord/about.md)
-* [Dancing Line Community Edition](/en/dlce)
+  * [Information](/en/dlce)
   * [End-User License Agreement](/en/dlce/eula.md)
   * [Privacy Policy](/en/dlce/privacy.md)
   * [Localization](/en/dlce/localization.md)
