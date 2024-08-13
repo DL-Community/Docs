@@ -1,4 +1,4 @@
-* [简介](dlce)
+* [简介](/)
 * [皮肤与装饰](dlce/character.md)
 * [多语言系统](dlce/localization.md)
 * [游戏设置](dlce/game-settings.md)
