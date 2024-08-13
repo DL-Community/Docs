@@ -14,17 +14,3 @@
 | **引擎**        | [Unity 引擎](https://unity.com/)                                                                                                                                                                                                                                                                                                                                 |
 | **开发者**       | 枫炎（YINSU Studio）                                                                                                                                                                                                                                                                                                                                               |
 | **下载渠道**      | [DLRS同人群官网](https://chinadlrs.com/app/?id=25)                                                                                                                                                                                                                                                                                                                  |
-
-## 相关链接
-
-- [DLCE WIKI](https://dlfm-wiki.top/wiki/%E8%B7%B3%E8%88%9E%E7%9A%84%E7%BA%BF%E7%A4%BE%E5%8C%BA%E7%89%88)
-- [DLRS同人群官网](https://chinadlrs.com/app/?id=25)
-
-## 制作人员
-
-### 关卡设计
-
-详见 [关卡信息](/dlce/level_information.md)
-
-### 本地化
-详见 [多语言系统](/dlce/localization.md)
