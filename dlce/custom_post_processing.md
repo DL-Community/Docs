@@ -15,28 +15,24 @@
 ## 导入至游戏
 ### Windows
 
-- 后期处理配置文件将会保存在 `Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡名称.bytes` 中。
-- 其中 `关卡名称` 用于指定该配置将会用于哪一个关卡，比如，将 `关卡名称`替换为 `Taurus` ,则游戏会将你的配置文件应用在**金牛座**关卡中
-- 更多关卡名见[关卡信息](/dlce/level_information.md)。
-
-> `关卡名称` 必须使用指定的名称，否则不会正常读取。
-
-> 游戏支持同时导入多个配置文件，并自动应用到对应的关卡上。
+- 后期处理配置文件将会保存在 `Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes` 中。
+- 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号`替换为 `Taurus` ,则游戏会将你的配置文件应用在**金牛座**关卡中
+- 更多关卡代号见[关卡信息](/dlce/level_information.md)。
 
 ?> 最终路径样例：`Dancing Line/Dancing Line_Data/Custom/PostProcessing/Taurus.bytes`
 
 
 ### iOS
 - 打开“文件”app，找到“我的iPhone（iPad）”
-- 后期处理配置文件将会保存在 `跳舞的线/Custom/PostProcessing/关卡名称.txt` 中。
-- 其中 `关卡名称` 用于指定该配置将会用于哪一个关卡，比如，将 `关卡名称`替换为 `Taurus` ,则游戏会将你的配置文件应用在**金牛座**关卡中
-- 更多关卡名见[关卡信息](/dlce/level_information.md)。
+- 后期处理配置文件将会保存在 `跳舞的线/Custom/PostProcessing/关卡代号.txt` 中。
+- 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus` ,则游戏会将你的配置文件应用在**金牛座**关卡中
+- 更多 `关卡代号` 见[关卡信息](/dlce/level_information.md)。
 
-> `关卡名称` 必须使用指定的名称，否则不会正常读取。
+### 注意事项
 
-> 第一次使用此功能请手动创建所需的文件夹。
+> `关卡代号` 必须使用指定的名称，否则不会正常读取。
 
-> 游戏支持同时导入多个配置文件，并自动应用到文件夹名称对应的关卡上。
+> 游戏允许同时导入多个配置文件，并自动应用到 `关卡代号` 对应的关卡上。
 
 ## 配置文件介绍
 
