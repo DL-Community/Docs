@@ -9,7 +9,7 @@
 | **中文（香港）**     | 中國香港繁體，使用香港白話詞彙、字形                      | GP0108           |
 | **English**    | 英语                                      | 枫炎               |
 | **Français**   | 法语                                      | Nouche           |
-| **Deutsch**    | 英语                                      | X_39             |
+| **Deutsch**    | 德语                                      | X_39             |
 | **Indonesian** | 印尼语                                     | Quardian         |
 | **日本語**        | 日语                                      | 枫炎               |
 | **Polski**     | 波兰语                                     | 匿名               |
