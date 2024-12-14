@@ -1,5 +1,4 @@
 - [简介](/)
-- [皮肤与装饰](dlce/character.md)
 - [多语言](dlce/localization.md)
 - [游戏设置](dlce/game-settings.md)
 - [关卡信息](dlce/level_information.md)
