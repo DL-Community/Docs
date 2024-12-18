@@ -13,10 +13,10 @@
 - 配置完毕后，继续阅读下文将文件重命名并导入至游戏。
 
 ## 导入配置文件
-### Windows路径
+### Windows 路径
 - 后期处理配置文件保存在 `Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes` 中。
 
-### iOS路径
+### iOS 路径
 - 打开“文件”app，找到“我的iPhone（iPad）”
 - 后期处理配置文件保存在 `跳舞的线/Custom/PostProcessing/关卡代号.txt` 中。
 
