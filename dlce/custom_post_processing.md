@@ -26,7 +26,7 @@
 ````
 ~/Library/Containers
 ````
-- 找到游戏文件夹，进入 `Data` 文件夹。
+- 找到游戏文件夹，进入 `Data/Documents` 文件夹。
 - 后期处理配置文件保存在 `Custom/PostProcessing/关卡代号.txt` 中。
 
 ### 注意事项
