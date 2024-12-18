@@ -25,6 +25,9 @@
 ### iOS
 - 打开“文件”app，找到“我的iPhone（iPad）”
 - 后期处理配置文件将会保存在 `跳舞的线/Custom/PostProcessing/关卡代号.txt` 中。
+
+?> 对于M芯片Mac玩家，路径为 </br>`Macintosh HD/Users/"你的系统用户名"/Library/Containers/跳舞的线/Data/Custom/PostProcessing/关卡代号.bytes` </br> Library文件夹默认隐藏，可以按下`Command + Shift + .`显示隐藏文件夹。
+
 - 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus` ,则游戏会将你的配置文件应用在**金牛座**关卡中
 - 更多 `关卡代号` 见[关卡信息](/dlce/level_information.md)。
 
