@@ -12,35 +12,35 @@
 - [配置文件内的各项配置描述在这里](#配置文件介绍)；
 - 配置完毕后，继续阅读下文将文件重命名并导入至游戏。
 
-## 导入至游戏
-### Windows
+## 导入配置文件
+### Windows路径
+- 后期处理配置文件保存在 `Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes` 中。
 
-- 后期处理配置文件将会保存在 `Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes` 中。
-- 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号`替换为 `Taurus` ,则游戏会将你的配置文件应用在**金牛座**关卡中
-- 更多关卡代号见[关卡信息](/dlce/level_information.md)。
-
-?> 最终路径样例：`Dancing Line/Dancing Line_Data/Custom/PostProcessing/Taurus.bytes`
-
-
-### iOS
+### iOS路径
 - 打开“文件”app，找到“我的iPhone（iPad）”
-- 后期处理配置文件将会保存在 `跳舞的线/Custom/PostProcessing/关卡代号.txt` 中。
+- 后期处理配置文件保存在 `跳舞的线/Custom/PostProcessing/关卡代号.txt` 中。
 
-?> 对于M芯片Mac玩家，路径为 </br>`Macintosh HD/Users/"你的系统用户名"/Library/Containers/跳舞的线/Data/Custom/PostProcessing/关卡代号.bytes` </br> Library文件夹默认隐藏，可以按下`Command + Shift + .`显示隐藏文件夹。
+### M 芯片 Mac 路径（iOS 版本）
+- 打开 Finder 访达，按下 `Command + Shift + G`，输入下列路径并回车：
 
-- 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus` ,则游戏会将你的配置文件应用在**金牛座**关卡中
-- 更多 `关卡代号` 见[关卡信息](/dlce/level_information.md)。
+````
+~/Library/Containers/Dancing Line/Data/
+````
+
+- 将配置文件放入 `Custom/PostProcessing/关卡代号.txt` 中。
 
 ### 注意事项
 
-> `关卡代号` 必须使用指定的名称，否则不会正常读取。
-
-> 游戏允许同时导入多个配置文件，并自动应用到 `关卡代号` 对应的关卡上。
+- 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus`，则游戏会将你的配置文件应用在**金牛座**关卡中。
+- 更多 `关卡代号` 见[关卡信息](/dlce/level_information.md)。
+- `关卡代号` 必须使用指定的名称，否则不会正常读取。
+- 游戏允许同时导入多个配置文件，并自动应用到 `关卡代号` 对应的关卡上。
 
 ## 配置文件介绍
 
 - Profile中每一个不同的特效的配置都会使用 {} 进行包括，例如下文中被{}包括的内容则是与antialiasing有关的配置参数
 
+````
       "antialiasing": {
         "m_Enabled": false,
         "m_Settings": {
@@ -56,6 +56,7 @@
           }
         }
       },
+````
 
 ### 通用配置项
 
