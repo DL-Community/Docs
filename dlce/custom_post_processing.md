@@ -1,6 +1,6 @@
 # 自定义后期处理效果
 
-> 适用于：Windows、iOS
+> 适用于：Windows、iOS、Android（教程暂缺）
 
 ## 作用
 
