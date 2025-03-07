@@ -1,12 +1,43 @@
 # 启动参数
-
-
-## 游戏内置参数
-
 > 适用于：Windows
+## 配置文件
+
+### 从游戏外打开配置文件
+- 文件资源管理器中输入并进入 `%APPDATA%/../LocalLow/YINSU Studio/Dancing Line` 路径。
+- 双击打开 `Launch Options.ini`。
+### 从游戏内打开配置文件
+- 进入游戏设置，点击 `高级设置`
+
+### 配置文件格式
+```
+[Command Line Args]
+-example_argument
+
+[Audio]
+IOBufferSize=512
+MasterVolume=100
+
+[Video]
+FrameRate=60
+```
+
+
+
+| 名称                  | 描述                                                             |
+|---------------------|----------------------------------------------------------------|
+| [Command Line Args] | 在此标签下方放置你要使用的 [启动命令](#启动命令)，每行放置一个                             |
+| -example_argument   | 示例命令，无实际作用                                                     |
+| [Audio]             | 音频配置区                                                          |
+| IOBufferSize        | 音频I/O缓冲区大小（DSP缓冲区大小），推荐512。<br/>与 `-audio_dsp_buffer_#` 命令作用一致 |
+| MasterVolume        | 游戏音量大小，0 - 100。<br/>与 `-master_volume_#` 命令作用一致                |
+| [Video]             | 显示配置区                                                          |
+| FrameRate           | 游戏帧率限制，-1代表无限帧率，默认60。<br/>与 `-frame_rate_#` 命令作用一致             |
+
+> 某些配置与 [启动命令](#启动命令) 中的命令作用一致，游戏会优先使用启动命令中的设置。
+
+## 启动命令
 
 ?> 被划线的命令表明已不在最新版本中受支持
-
 
 | 命令                         | 描述                                                            | 备注                                             |
 |:---------------------------|---------------------------------------------------------------|------------------------------------------------|
@@ -26,39 +57,3 @@
 | ~~`-shadow_distance_#`~~   | 锁定阴影距离为 “#”（整数）                                               | “#” 需为不小于0的整数                                  |
 | ~~`-disable_sound`~~       | 在游戏全局范围内禁用声音（即使设置中已经打开）                                       | **❗在2.0.2版本中移除**                               |
 | ~~`-graphics_tier_#`~~     | 更改图像层为"#"（0-2的整数）<br />0：低<br />1：中<br />2：高                  | 图像层越高，渲染消耗越高，不建议手动设置<br />游戏引擎默认会根据设备性能自动调节此设定 |
-
-## Unity引擎提供的参数
-
-[查看Unity官方文档](https://docs.unity3d.com/2019.4/Documentation/Manual/PlayerCommandLineArguments.html)
-
-| 命令                            | 描述                                                                                                                                                                                                                                                                                                                      | 备注                            |
-|:------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| `-force-d3d11-singlethreaded` | Force DirectX 11.0 to be created with a `D3D11_CREATE_DEVICE_SINGLETHREADED flag`.                                                                                                                                                                                                                                      |
-| `-force-device-index`         | Make the Standalone Player use a specific GPU device by passing it the index of that GPU. This option is supported for D3D11, D3D12, Metal, and Vulkan graphics APIs, but isn’t supported for OpenGL.                                                                                                                   | 指定游戏使用某个显卡（OpenGL API 下不可用）运行 |
-| `-force-glcore`               | Force the application to use the OpenGL core profile for rendering. The Editor tries to use the most recent OpenGL version available, and all OpenGL extensions exposed by the OpenGL drivers. Unity uses Direct3D if the platform doesn’t support OpenGL.                                                              | 强制游戏使用 OpenGL Core 渲染         |
-| `-force-glcoreXY`             | Similar to `-force-glcore`, but requests a specific OpenGL context version. Accepted values for XY: 32, 33, 40, 41, 42, 43, 44, or 45.                                                                                                                                                                                  |
-| `-force-vulkan`               | Force the application to use Vulkan for rendering.                                                                                                                                                                                                                                                                      | 强制游戏使用 Vulkan  渲染             |
-| `-force-metal` (macOS only)   | Make the Standalone Player use Metal as the default graphics API.                                                                                                                                                                                                                                                       | 使游戏默认使用 Metal 渲染（仅限macOS）     |
-| `-force-d3d11` (Windows only) | Force the application to use Direct3D 11 for rendering.                                                                                                                                                                                                                                                                 | 强制游戏使用 Direct3D 11 渲染         |
-| `-force-d3d12` (Windows only) | Force the application to use Direct3D 12 for rendering.                                                                                                                                                                                                                                                                 | 强制游戏使用  Direct3D 12 渲染        |
-| `-monitor N`                  | Run Standalone Player on the specified monitor, indicated by a 1-based index number.                                                                                                                                                                                                                                    | 在指定的 N 号显示器上运行游戏              |
-| `-nolog`                      | Do not produce an output log. When you don’t use this argument, Unity writes the `output_log.txt` in the [Log Files](https://docs.unity3d.com/2020.3/Documentation/Manual/LogFiles.html) folder, where the [Debug.Log](https://docs.unity3d.com/2020.3/Documentation/ScriptReference/Debug.Log.html) output is printed. | 禁止游戏在后台输出日志，可在一定程度上提高游戏流畅度    |
-| `-no-stereo-rendering`        | Turn off stereo rendering.                                                                                                                                                                                                                                                                                              |
-| `-popupwindow`                | Create the window as a pop-up window, without a frame. This command isn’t supported on macOS.                                                                                                                                                                                                                           | 使用 `无边框窗口模式` 运行游戏（不支持 macOS）  |
-| `-screen-fullscreen`          | Override the default full-screen state. This must be 0 or 1.                                                                                                                                                                                                                                                            |
-| `-screen-height`              | Override the default screen height. This must be an integer from a supported resolution.                                                                                                                                                                                                                                |
-| `-screen-width`               | Override the default screen width. This width value must be an integer from a supported resolution.                                                                                                                                                                                                                     |
-| `-screen-quality`             | Override the default screen quality. Example usage would be: `/path/to/myGame -screen-quality Beautiful`. The supported options match the [Quality Settings](https://docs.unity3d.com/2020.3/Documentation/Manual/class-QualitySettings.html) names.                                                                    |
-| `-window-mode` (Windows only) | Override fullscreen windowed mode. Accepted values are `exclusive` or `borderless`. For more information, see [Standalone Player settings](https://docs.unity3d.com/2020.3/Documentation/Manual/class-PlayerSettingsStandalone.html).                                                                                   |
-
-## 命令使用方法
-
-为游戏主程序“DancingLine.exe”创建快捷方式，右键 快捷方式-属性 在 _**目标 / Target**_ 栏结尾中添加命令。
-
-### 示例
-
-`目标："C:\DancingLine\Dancing Line.exe" -always_show_cursor -disable_discord_rpc`
-
-**格式：**`"游戏exe路径" -命令1 -命令2 -命令3...`
-
-?> 游戏exe路径后方**应有一个空格**，否则命令无法生效。可以同时添加多个命令，需要注意**每个命令之间同样要有一个空格**
