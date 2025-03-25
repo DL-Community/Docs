@@ -6,9 +6,11 @@ Welcome to the DLCE Database, where the latest content of this game will be peri
 
 ## Game Information
 
-| Term             | Information                                                |
-|------------------|------------------------------------------------------------|
-| **Name**         | Dancing Line Community Edition<br/>Dancing Line Port (Old) |
-| **Name (Short)** | DLCE<br/>DLP (Old)                                         |
-| **Developer**    | FengYan                                                    |
-| **Download**     | [Discord](https://discord.gg/dancing-line)                 |
+| Term              | Information                                                    |
+|-------------------|----------------------------------------------------------------|
+| **Name**          | Dancing Line Community Edition<br/>Dancing Line Port (Old)     |
+| **Name (Short)**  | DLCE<br/>DLP (Old)                                             |
+| **Developer**     | FengYan                                                        |
+| **Download**      | [Discord](https://discord.gg/dancing-line)                     |
+| **Discord**       | https://discord.gg/Hax8CwXYvX                                  |
+| **QQ Group Chat** | https://aaron8052.github.io/FengYan-Documentation/#/dlce-group |
