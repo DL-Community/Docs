@@ -17,9 +17,11 @@
 | **Deutsch**    | 德语                                      | X_39             |
 | **Indonesian** | 印尼语                                     | Quardian         |
 | **日本語**        | 日语                                      | 枫炎               |
+| **한국어**        | 韩语                                      | HweetGD          |
 | **Polski**     | 波兰语                                     | 匿名               |
 | **Português**  | 葡萄牙语                                    | MateusSequoia    |
 | **Русский**    | 俄罗斯语                                    | ghost            |
+| **Español**    | 西班牙语                                    | jason 🇸🇻       |
 | **Українська** | 乌克兰语                                    | FANGO            |
 | **Tiếng Việt** | 越南语                                     | Bell             |
 | **文言（華夏）**     | 文言文，大量使用文言词汇。</br>整活性质，非正式游戏语言          | 枫炎、LiGaYB、HatCat |
