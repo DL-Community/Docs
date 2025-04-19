@@ -50,6 +50,8 @@
 | `Boolean`           | 布尔值，只有 `true`（开） 和 `false`（关）两种状态，通常用于只有两种状态的配置项，例如开关。                                                                     | `Fast Mode=false` 表示关闭 Fast Mode                                           |
 | `x,y`               | 二维向量，使用英文逗号 `,` 间隔每一个维度，用于定义位置或方向。                                                                                         | `Center=0.5,0.5` 表示 Center 位置为 (0.5, 0.5)                                  |
 | `x,y,z`             | 三维向量，使用英文逗号 `,` 间隔每一个维度，用于定义位置、方向或 RGB 颜色（对应XYZ）。                                                                          | `Red Channel Mixer=100,0,0` 表示 Red Channel Mixer 颜色的 R 值为 100， G 值为0， B值为0 |
+| `Float`             | 浮点数（小数）                                                                                                                    | `11.00`                                                                    |
+| `Integer`           | 整数                                                                                                                         | `11`                                                                       |
 
 ### 备注
 - 下列每一个 Section 或配置项都不是必需品，如果删除整个 Section 或某个配置项，游戏会自动应用默认值
@@ -211,7 +213,7 @@ Roundness=1
 Rounded=false
 ```
 
-### 完整配置文件及其默认值
+## 完整配置文件及其默认值
 ```ini
 ; DLCE 自定义 Post Processing 配置文件
 ; 每行以分号 “;” 开始的为备注，不会影响实际配置
