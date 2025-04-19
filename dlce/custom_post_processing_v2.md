@@ -1,10 +1,10 @@
+**[返回上一页](/dlce/custom_post_processing.md)**
+
 # 自定义后期处理效果（V2）
 
+?> 游戏版本：v3.5.0 以上
+
 > 适用于：Windows、iOS、Android（教程暂缺）
-
-## 作用
-
-- 用于在对应游戏关卡中使用自定义的**屏幕后期处理效果**。
 
 ## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
@@ -49,13 +49,12 @@
 | `#RRGGBB:Intensity` | 16进制 HDR 颜色（RGB），在配置项的右侧，以井号 `#` 开头，用于需要设置 HDR 颜色的配置项。<br/>`Intensity` 为 RGB 通道的颜色强度，允许负数，使用冒号 `:` 与16进制 RGB 间隔。强度越高，颜色越亮。 | `#FFFFFF:0.0` 表示 R 通道为 255，G 通道为 255，B 通道为 255，Intensity为 0 的正常白色。         |
 | `Boolean`           | 布尔值，只有 `true`（开） 和 `false`（关）两种状态，通常用于只有两种状态的配置项，例如开关。                                                                     | `Fast Mode=false` 表示关闭 Fast Mode                                           |
 | `x,y`               | 二维向量，使用英文逗号 `,` 间隔每一个维度，用于定义位置或方向。                                                                                         | `Center=0.5,0.5` 表示 Center 位置为 (0.5, 0.5)                                  |
-| `x,y,z`             | 三维向量，使用英文逗号 `,` 间隔每一个维度，用于定义位置、方向或 RGB 颜色（对应XYZ）。                                                                          | `Red Channel Mixer=100,0,0` 表示 Red Channel Mixer 颜色的 R 值为 100， G 值为0， B值为0 |
+| `x,y,z` `r,g,b`     | 三维向量，使用英文逗号 `,` 间隔每一个维度，用于定义位置、方向或 RGB 颜色（对应XYZ）。                                                                          | `Red Channel Mixer=100,0,0` 表示 Red Channel Mixer 颜色的 R 值为 100， G 值为0， B值为0 |
 | `Float`             | 浮点数（小数）                                                                                                                    | `11.00`                                                                    |
 | `Integer`           | 整数                                                                                                                         | `11`                                                                       |
 
-### 备注
-- 下列每一个 Section 或配置项都不是必需品，如果删除整个 Section 或某个配置项，游戏会自动应用默认值
-- 如果不需要修改某个配置项，请将其从配置文件中移除以提升游戏读取速度。
+
+?> 下列每一个 Section 或配置项都不是必需品。如果删除整个 Section，游戏会彻底关闭此特效。删除某个配置项，游戏会自动应用其默认值。 如果不需要修改某个配置项，请将其从配置文件中移除以提升配置文件读取速度。
 
 ### Ambient Occlusion
 
@@ -135,6 +134,21 @@ Green Channel Mixer=0,100,0
 Blue Channel Mixer=0,0,100
 ```
 
+| 配置项                   | 介绍                                                                                                                                                                                                                                                                                                 | 取值范围                                                                                                       |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| `Mode`                | Select a color grading mode that fits your dynamic range and workflow. Use HDR if your camera is set to render in HDR and your target platform supports it. Use LDR for low-end mobiles or devices that don't support HDR. Use External if you prefer authoring a Log LUT in an external software. | `0`: Low Definition Range<br/>`1`: High Definition Range<br/>`2`: External (Not Support)                   |
+| `Tonemapping Mode`    | Select a tonemapping algorithm to use at the end of the color grading process.                                                                                                                                                                                                                     | `0`: None<br/>`1`: Neutral<br/>`2`: ACES                                                                   |
+| `Temperature`         | Sets the white balance to a custom color temperature.                                                                                                                                                                                                                                              | `Float -100.00 ~ 100.00`                                                                                   |
+| `Tint`                | Sets the white balance to compensate for a green or magenta tint.                                                                                                                                                                                                                                  | `Float -100.00 ~ 100.00`                                                                                   |
+| `Post-exposure (EV)`  | Adjusts the overall exposure of the scene in EV units. This is applied after the HDR effect and right before tonemapping so it won't affect previous effects in the chain.                                                                                                                         | `Float  -∞ ~ ∞`                                                                                            |
+| `Color Filter`        | Tint the render by multiplying a color.                                                                                                                                                                                                                                                            | `#RRGGBB:Intensity`                                                                                        |
+| `Hue Shift`           | Shift the hue of all colors.                                                                                                                                                                                                                                                                       | `Float -180.00 ~ 180.00`                                                                                   |
+| `Saturation`          | Pushes the intensity of all colors.                                                                                                                                                                                                                                                                | `Float -100.00 ~ 100.00`                                                                                   |
+| `Contrast`            | Expands or shrinks the overall range of tonal values.                                                                                                                                                                                                                                              | `Float -100.00 ~ 100.00`                                                                                   |
+| `Red Channel Mixer`   | Modifies the influence of the RGB channel within the Red Channel Mixer.                                                                                                                                                                                                                            | `r,g,b`<br/>`r`:`Float -200.00 ~ 200.00`<br/>`g`:`Float -200.00 ~ 200.00`<br/>`b`:`Float -200.00 ~ 200.00` |
+| `Green Channel Mixer` | Modifies the influence of the RGB channel within the Green Channel Mixer.                                                                                                                                                                                                                          | `r,g,b`<br/>`r`:`Float -200.00 ~ 200.00`<br/>`g`:`Float -200.00 ~ 200.00`<br/>`b`:`Float -200.00 ~ 200.00` |
+| `Blue Channel Mixer`  | Modifies the influence of the RGB channel within the Blue Channel Mixer.                                                                                                                                                                                                                           | `r,g,b`<br/>`r`:`Float -200.00 ~ 200.00`<br/>`g`:`Float -200.00 ~ 200.00`<br/>`b`:`Float -200.00 ~ 200.00` |
+
 ### Chromatic Aberration
 
 > 色差，用于模拟相机镜头散射现象，使得物体边缘产生类似彩虹的颜色
@@ -146,6 +160,11 @@ Blue Channel Mixer=0,0,100
 Intensity=0
 Fast Mode=false
 ```
+
+| 配置项         | 介绍                                                                                                                                                                                                | 取值范围                |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| `Intensity` | Amount of tangential distortion.                                                                                                                                                                  | `Float 0.00 ~ 1.00` |
+| `Fast Mode` | Boost performance by lowering the effect quality. This settings is meant to be used on mobile and other low-end platforms but can also provide a nice performance boost on desktops and consoles. | `true` `false`      |
 
 ### Depth of Field
 
@@ -181,6 +200,13 @@ Size=1
 Luminance Contribution=0.8
 ```
 
+| 配置项                      | 介绍                                                                                                      | 取值范围                |
+|--------------------------|---------------------------------------------------------------------------------------------------------|---------------------|
+| `Colored`                | Enable the use of colored grain.                                                                        | `true` `false`      |
+| `Intensity`              | Grain strength. Higher values mean more visible grain.                                                  | `Float 0.00 ~ 1.00` |
+| `Size`                   | Grain particle size.                                                                                    | `Float 0.30 ~ 3.00` |
+| `Luminance Contribution` | Controls the noise response curve based on scene luminance. Lower values mean less noise in dark areas. | `Float 0.00 ~ 1.00` |
+
 ### Motion Blur
 
 > **运动模糊**，用于模拟物体在运动过程中产生的模糊效果。
@@ -212,6 +238,15 @@ Smoothness=0.20
 Roundness=1
 Rounded=false
 ```
+
+| 配置项          | 介绍                                                                                                                       | 取值范围                                                                            |
+|--------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| `Color`      | Vignette color.                                                                                                          | `#RRGGBBAA`                                                                     |
+| `Center`     | Sets the vignette center point (screen center is [0.5, 0.5]).                                                            | `x,y,z`<br/>`x`:`Float  -∞ ~ ∞`<br/>`y`:`Float  -∞ ~ ∞`<br/>`z`:`Float  -∞ ~ ∞` |
+| `Intensity`  | Amount of vignetting on screen.                                                                                          | `Float 0.00 ~ 1.00`                                                             |
+| `Smoothness` | Smoothness of the vignette borders.                                                                                      | `Float 0.01 ~ 1.00`                                                             |
+| `Roundness`  | Lower values will make a square-ish vignette.                                                                            | `Float 0.00 ~ 1.00`                                                             |
+| `Rounded`    | Set to true to mark the vignette to be perfectly round. False will make its shape dependent on the current aspect ratio. | `true` `false`                                                                  |
 
 ## 完整配置文件及其默认值
 ```ini
