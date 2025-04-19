@@ -100,16 +100,16 @@ Anamorphic Ratio=0
 Color=#FFFFFF:0.0
 Fast Mode=false
 ```
-| 配置项                | 介绍                                                                                                                                                                            | 取值范围                 |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| `Intensity`        | The degree of darkness added by ambient occlusion. Higher values produce darker areas.                                                                                        | `Float 0.00 ~ ∞`     |
-| `Threshold`        | The ambient occlusion method to use.<br/>"Multi Scale Volumetric Obscurance" is higher quality and faster on desktop & console platforms but requires compute shader support. | `Float 0.00 ~ ∞`     |
-| `Soft Knee`        | The radius of sample points. This affects the size of darkened areas.                                                                                                         | `Float 0.00 ~ 1.00`  |
-| `Clamp`            | The number of sample points, which affects quality and performance. Lowest, Low and Medium passes are downsampled. High and Ultra are not and should only be used on high-end | `Float  -∞ ~ ∞`      |
-| `Diffusion`        | This modifies the thickness of occluders. It increases the size of dark areas and also introduces a dark halo around objects.                                                 | `Float 1.00 ~ 10.00` |
-| `Anamorphic Ratio` | This modifies the thickness of occluders. It increases the size of dark areas and also introduces a dark halo around objects.                                                 | `Float -1.00 ~ 1.00` |
-| `Color`            | The custom color to use for the ambient occlusion. The default is black.                                                                                                      | `#RRGGBB:Intensity`  |
-| `Fast Mode`        | The custom color to use for the ambient occlusion. The default is black.                                                                                                      | `true` `false`       |
+| 配置项                | 介绍                                                                                                                                                                                                                         | 取值范围                 |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| `Intensity`        | Strength of the bloom filter. Values higher than 1 will make bloom contribute more energy to the final render.                                                                                                             | `Float 0.00 ~ ∞`     |
+| `Threshold`        | Filters out pixels under this level of brightness. Value is in gamma-space.                                                                                                                                                | `Float 0.00 ~ ∞`     |
+| `Soft Knee`        | Makes transitions between under/over-threshold gradual. 0 for a hard threshold, 1 for a soft threshold).                                                                                                                   | `Float 0.00 ~ 1.00`  |
+| `Clamp`            | Clamps pixels to control the bloom amount. Value is in gamma-space.                                                                                                                                                        | `Float  -∞ ~ ∞`      |
+| `Diffusion`        | Changes the extent of veiling effects. For maximum quality, use integer values. Because this value changes the internal iteration count, You should not animating it as it may introduce issues with the perceived radius. | `Float 1.00 ~ 10.00` |
+| `Anamorphic Ratio` | Distorts the bloom to give an anamorphic look. Negative values distort vertically, positive values distort horizontally.                                                                                                   | `Float -1.00 ~ 1.00` |
+| `Color`            | Global tint of the bloom filter.                                                                                                                                                                                           | `#RRGGBB:Intensity`  |
+| `Fast Mode`        | Boost performance by lowering the effect quality. This settings is meant to be used on mobile and other low-end platforms but can also provide a nice performance boost on desktops and consoles.                          | `true` `false`       |
 
 ### Color Grading
 
@@ -218,7 +218,6 @@ Rounded=false
 ; 每个配置项使用等号 “=” 分割名称与数值
 ; 配置项下方通常包含对应的备注，注明其作用或取值范围等
 ; 将配置项删除后游戏会使用默认值（或不使用此项）。也可以在配置项前面加上分号，将其变为备注，同样可以达到删除的效果
-; Enabled 项为“true”时表示启用此效果，“false”表示关闭
     
 [Ambient Occlusion]
 Mode=0
