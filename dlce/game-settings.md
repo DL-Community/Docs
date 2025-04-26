@@ -35,6 +35,10 @@
 
 ?> 分辨率越低，游戏越流畅。
 
+## 渲染精度（基于动态分辨率）
+> 适用于：Windows（DX12）、macOS（Metal）、iOS（Metal）、Android（Vulkan）
+- 与[分辨率](#分辨率)类似，但仅用于调整游戏 3D 场景渲染分辨率，不影响 UI 清晰度。
+
 ## 画面模式
 
 > 适用于：Windows、macOS。
