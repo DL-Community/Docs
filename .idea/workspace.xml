@@ -19,12 +19,12 @@
     &quot;assignee&quot;: &quot;Aaron8052&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:DL-Community/Docs.git",
-    "accountId": "ce8c0946-1f81-4ede-a76c-f14d3f2af77a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:DL-Community/Docs.git&quot;,
+    &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -66,6 +66,7 @@
       <updated>1709592659593</updated>
       <workItem from="1709592661865" duration="185000" />
       <workItem from="1745030391084" duration="13918000" />
+      <workItem from="1745698347208" duration="1777000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -107,7 +108,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745089271812</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新游戏设置文档">
+      <option name="closed" value="true" />
+      <created>1745698676285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745698676285</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新游戏设置文档">
+      <option name="closed" value="true" />
+      <created>1745699919586</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745699919586</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +149,8 @@
     <MESSAGE value="更新3.5版本相关文档" />
     <MESSAGE value="完善文档" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="更新游戏设置文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新游戏设置文档" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
