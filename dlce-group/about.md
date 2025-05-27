@@ -16,4 +16,3 @@
 
 ### 群文档
 * [群规](/dlce-group/rules.md)
-* [常见问题解答](/dlce-group/faq.md)
