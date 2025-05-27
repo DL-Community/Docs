@@ -8,4 +8,5 @@
 - [最终用户许可协议（EULA）](dlce/eula.md)
 - [隐私政策](dlce/privacy.md)
 --------------
-- [枫炎文档站](https://aaron8052.github.io/FengYan-Documentation)
+- [DL社区版交流基地](/dlce-group/about.md)
+- [群规](dlce-group/rules.md)
