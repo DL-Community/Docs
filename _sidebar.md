@@ -10,3 +10,5 @@
 --------------
 - [DL社区版交流基地](/dlce-group/about.md)
 - [群规](dlce-group/rules.md)
+--------------
+<a href="https://afdian.com/a/fengyanDL"><img width="150" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a>

@@ -3,5 +3,3 @@
 --------------
 - [End-User License Agreement](/en/dlce/eula.md)
 - [Privacy Policy](/en/dlce/privacy.md)
---------------
-- [FengYan Docs](https://aaron8052.github.io/FengYan-Documentation)
