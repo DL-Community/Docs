@@ -12,3 +12,5 @@
 - [群规](dlce-group/rules.md)
 --------------
 <a href="https://afdian.com/a/fengyanDL"><img width="150" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a>
+
+<a href="https://icp.gov.moe/?keyword=20258052" target="_blank">萌ICP备20258052号</a>

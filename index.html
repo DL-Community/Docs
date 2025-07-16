@@ -157,7 +157,20 @@
                 hideOtherSidebarContent: true,
                 pathNamespaces: ['/', '/en'],
                 namespace: '/Docs',
-            }
+            },
+            plugins: [
+                function(hook) {
+                  var footer = [
+                    '<hr/>',
+                    '<a href="https://icp.gov.moe/?keyword=20258052" target="_blank">萌ICP备20258052号</a>',
+                    '</br><span> &copy;2025 FengYanDL</span>',
+                  ].join('');
+
+                  hook.afterEach(function(html) {
+                    return html + footer;
+                  });
+                }
+              ]
         }
     </script>
     
