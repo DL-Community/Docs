@@ -1,5 +1,9 @@
-- 🌟 相关链接
-  - [官方哔哩哔哩](https://space.bilibili.com/187016314)
+- [首页](/home)
+- 社交媒体
+  - [哔哩哔哩](https://space.bilibili.com/187016314)
+  - [QQ群](/dlce-group/about.md)
+  - [腾讯频道](https://pd.qq.com/s/2njtk4vj2)
+- 相关链接
   - [爱发电赞助](https://afdian.com/a/fengyanDL)
 - :cn: 简体中文
     - [:cn: 简体中文](/)

@@ -1,4 +1,4 @@
-- [简介](/)
+- [简介](/home)
 - [多语言](dlce/localization.md)
 - [游戏设置](dlce/game-settings.md)
 - [关卡信息](dlce/level_information.md)
@@ -12,8 +12,6 @@
 - [群规](dlce-group/rules.md)
 ***
 <a href="https://afdian.com/a/fengyanDL"><img width="150" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a>
-
-<a href="https://icp.gov.moe/?keyword=20258052" target="_blank">萌ICP备20258052号</a>
 
 <span><b>跳舞的线：社区版 Wiki</b></span>
 

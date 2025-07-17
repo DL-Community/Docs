@@ -1,4 +1,4 @@
-- [Information](/en/)
+- [Information](/en/home)
 - [Localizations](/en/dlce/localization.md)
 ***
 - [End-User License Agreement](/en/dlce/eula.md)

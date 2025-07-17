@@ -8,11 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce-group/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce-group/about.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_navbar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/light.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,8 @@
       <workItem from="1745030391084" duration="13918000" />
       <workItem from="1745698347208" duration="1777000" />
       <workItem from="1751593099896" duration="3715000" />
-      <workItem from="1752677264150" duration="8240000" />
+      <workItem from="1752677264150" duration="9968000" />
+      <workItem from="1752740311940" duration="1813000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -175,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752681364246</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="更新">
+      <option name="closed" value="true" />
+      <created>1752737862949</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1752737862949</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +213,8 @@
     <MESSAGE value="更新群规" />
     <MESSAGE value="增加备案号" />
     <MESSAGE value="加宽页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="加宽页面" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

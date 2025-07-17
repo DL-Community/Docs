@@ -1,5 +1,4 @@
-- 🌟 Quick Links
-  - [FengYan Docs](https://aaron8052.github.io/FengYan-Documentation)
+- [Home](/en/home)
 - :uk: English
   - [:cn: 简体中文](/)
   - [:uk: English](/en/)
