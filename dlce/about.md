@@ -16,6 +16,6 @@
 | **下载渠道**      | [DLRS同人群官网](https://chinadlrs.com/app/?id=25)                  |
 
 ## 社交媒体
-[<img src="/lib/img/bili.webp" height="50" alt="哔哩哔哩">](https://space.bilibili.com/187016314 "哔哩哔哩")
-[<img src="/lib/img/qq.png" height="50" alt="QQ群">](/dlce-group/about.md "QQ群")&nbsp;&nbsp;
-[<img src="/lib/img/qq-channel.png" height="50" alt="腾讯频道">](https://pd.qq.com/s/2njtk4vj2 "腾讯频道")
+[<img src="/lib/img/bili.png" height="32" alt="哔哩哔哩">](https://space.bilibili.com/187016314 "哔哩哔哩")&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="/lib/img/qq.png" height="32" alt="QQ群">](/dlce-group/about.md "QQ群")&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="/lib/img/qq-channel.png" height="32" alt="腾讯频道">](https://pd.qq.com/s/2njtk4vj2 "腾讯频道")
