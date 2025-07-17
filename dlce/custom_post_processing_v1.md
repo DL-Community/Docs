@@ -44,7 +44,7 @@
 
 - Profile中每一个不同的特效的配置都会使用 {} 进行包括，例如下文中被{}包括的内容则是与antialiasing有关的配置参数
 
-````
+````json
       "antialiasing": {
         "m_Enabled": false,
         "m_Settings": {
@@ -113,7 +113,7 @@
 
 ?> 请勿在游戏内置MSAA（仅PC可用）开启的情况下启用此抗锯齿功能
 
-````
+````json
 "antialiasing": {
     "m_Enabled": false,
         "m_Settings": {
@@ -160,7 +160,7 @@
 
 ?> 环境光遮蔽不应过强，否则会导致画面变黑变脏，影响视觉效果。
 
-````
+````json
 "ambientOcclusion": {
     "m_Enabled": false,
     "m_Settings": {
@@ -193,7 +193,7 @@
 
 - `kernelSize`：参数范围 `整数 0 - 3`，`0-小` `1-中` `2-大` `3-最大`。
 
-````
+````json
 "depthOfField": {
     "m_Enabled": false,
     "m_Settings": {
@@ -210,7 +210,7 @@
 
 > **运动模糊**，用于模拟物体在运动过程中产生的模糊效果。
 
-````
+````json
 "motionBlur": {
     "m_Enabled": false,
     "m_Settings": {
@@ -225,7 +225,7 @@
 
 > **物体外发光效果**，也叫**光溢出**，用于模拟物体在高亮度情况下的发光效果。
 
-````
+````json
 "bloom": {
     "m_Enabled": false,
     "m_Settings": {
