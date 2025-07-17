@@ -4,66 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <title>跳舞的线：社区版 Wiki</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
     <meta name="description" content="跳舞的线：社区版 官方Wiki">
-    
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
-    <link rel="icon" href="https://github.com/DL-Community.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="https://github.com/DL-Community.png" type="image/x-icon" />
-    
-    
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="icon" href="https://github.com/DL-Community.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://github.com/DL-Community.png" type="image/x-icon"/>
+
+
     <!-- https://jhildenbiddle.github.io/docsify-themeable/#/themes -->
     <!-- Theme: Simple (light + dark) -->
     <link rel="stylesheet" href="lib/css/light.css">
-    
+
     <link rel="stylesheet" media="(prefers-color-scheme: light)" href="lib/css/theme-simple.css">
-    
+
     <!-- https://jhildenbiddle.github.io/docsify-themeable/#/customization -->
-    <style media = "(prefers-color-scheme: light)">
+    <style media="(prefers-color-scheme: light)">
 
         :root {
-            
+
         }
     </style>
-    
+
     <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="lib/css/theme-simple-dark.css">
 
-    <style media = "(prefers-color-scheme: dark)">
+    <style media="(prefers-color-scheme: dark)">
         :root {
-            --base-background-color     : rgba(22, 22, 22, 1);
-            
-            --hr-border                 : 1px solid var(--heading-h1-border-color);
-            
-            --theme-color               : rgba(44, 156, 255, 1);
-            --theme-hue                 : 325;
-            --theme-lightness           : 45%;
+            --base-background-color: rgba(22, 22, 22, 1);
 
-            --link-color                : var(--theme-color);
+            --hr-border: 1px solid var(--heading-h1-border-color);
 
-            --table-row-odd-background  : var(--sidebar-background);
-
-            --code-inline-background    : var(--sidebar-border-color);
-            
-            --heading-h1-border-color   : rgba(77, 77, 77, 1);
-            --heading-h2-border-color   : var(--heading-h1-border-color);
-            --heading-h3-border-color   : var(--heading-h1-border-color);
-            --heading-h4-border-color   : var(--heading-h1-border-color);
-            --heading-h5-border-color   : var(--heading-h1-border-color);
-            --heading-h6-border-color   : var(--heading-h1-border-color);
-            
-            --blockquote-background     : var(--sidebar-background);
-
-            --navbar-menu-background    : var(--sidebar-border-color);
-            
-            --sidebar-background        : rgba(33, 33, 33, 1);
-            --sidebar-toggle-background : var(--sidebar-background);
-            --sidebar-border-color      : rgba(55, 55, 55, 1);
-
-            --search-input-background-color         : var(--sidebar-border-color);
-            --search-input-background-color--focus  : var(--sidebar-border-color);
-            --search-input-border-color             : rgba(55, 55, 55, 1);
+            --theme-color: rgba(44, 156, 255, 1);
+            --theme-hue: 325;
+            --theme-lightness: 45%;
+            --link-color: var(--theme-color);
+            --table-row-odd-background: var(--sidebar-background);
+            --code-inline-background: var(--sidebar-border-color);
+            --heading-h1-border-color: rgba(77, 77, 77, 1);
+            --heading-h2-border-color: var(--heading-h1-border-color);
+            --heading-h3-border-color: var(--heading-h1-border-color);
+            --heading-h4-border-color: var(--heading-h1-border-color);
+            --heading-h5-border-color: var(--heading-h1-border-color);
+            --heading-h6-border-color: var(--heading-h1-border-color);
+            --blockquote-background: var(--sidebar-background);
+            --navbar-menu-background: var(--sidebar-border-color);
+            --sidebar-background: rgba(33, 33, 33, 1);
+            --sidebar-toggle-background: var(--sidebar-background);
+            --sidebar-border-color: rgba(55, 55, 55, 1);
+            --search-input-background-color: var(--sidebar-border-color);
+            --search-input-background-color--focus: var(--sidebar-border-color);
+            --search-input-border-color: rgba(55, 55, 55, 1);
         }
     </style>
 
@@ -71,115 +64,128 @@
         nav.app-nav li ul {
             min-width: 150px;
         }
+
         :root {
-            --base-font-size            : 16px;
-
-            --link-color                : var(--theme-color);
-
-            --sidebar-width             : 20rem;
-            
-            --table-body-border-color   : rgba(126, 126, 126, 0.22);
-            --table-head-border-color   : var(--table-body-border-color);
-            --table-head-border-width   : 0.1rem;
-            --table-body-border-width   : var(--table-head-border-width);
-            --table-cell-border-color   : var(--table-body-border-color);
-
-            --navbar-menu-link-color--hover    : var(--theme-color);
-            --navbar-menu-link-color--active : var(--theme-color);
+            --base-font-size: 16px;
+            --link-color: var(--theme-color);
+            --sidebar-width: 20rem;
+            --table-body-border-color: rgba(126, 126, 126, 0.22);
+            --table-head-border-color: var(--table-body-border-color);
+            --table-head-border-width: 0.1rem;
+            --table-body-border-width: var(--table-head-border-width);
+            --table-cell-border-color: var(--table-body-border-color);
+            --navbar-menu-link-color--hover: var(--theme-color);
+            --navbar-menu-link-color--active: var(--theme-color);
 
         }
     </style>
-    
-    
+
+
 </head>
 
 <body>
-    <div class="center" id="app">Loading...</div>
-    <script>
-        window.$docsify = {
-            toc: {
-                tocMaxLevel: 5,
-                target: 'h1, h2, h3, h4, h5, h6',
-                ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
-            },
-            alias :{
-               "/" : "dlce/about.md",
-               "/en/" : "en/dlce/about.md",
-                
-               "/home" : "dlce/about.md",
-               "/en/home" : "en/dlce/about.md",
-                
-               "/dlce" : "/dlce/about.md",
-               "/en/dlce" : "/en/dlce/about.md",
-                "/en/dlce/level_information" : "/dlce/level_information.md",
-                "/en/dlce/eula" : "/dlce/eula.md",
-               "/404" : "/_404.md",
-               "/en/404" : "/en/_404.md",
-                
-               "/en" : "/en/",
-            },
-            name:'跳舞的线：社区版 Wiki',
-            nameLink: {
-                '/en': '#/en/',
-                '/': '#/',
-            },
-            //repo: 'https://github.com/Aaron8052',
-            homepage: 'home.md',
-            loadSidebar: true,
-            loadNavbar: true,
-            maxLevel: 1,
-            subMaxLevel: 3,
-            sidebarDisplayLevel: 2,
-            topMargin: 50,
-            notFoundPage:
-            {
-                "/": "/404",
-                "/en/": "/en/404",
-            },
-            //basePath: "/docs/",
-            //relativePath: true,
-            //mergeNavbar: true,
-            auto2top: true,
-            fallbackLanguages: ['/',"/en"],
-            search: {
-                maxAge: 86400000,
-                paths: 'auto',
-                placeholder: 
-                    {
-                        '/en' : 'Search Documentation',
-                        '/' : '搜索文档',
-                    },
-                noData:{
-                    '/en' : 'No Results',
-                    '/' : '找不到结果',
+<div class="center" id="app">Loading...</div>
+<script>
+    window.$docsify = {
+        toc: {
+            tocMaxLevel: 5,
+            target: 'h1, h2, h3, h4, h5, h6',
+            ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+        },
+        alias :{
+           "/" : "dlce/about.md",
+           "/en/" : "en/dlce/about.md",
+
+           "/home" : "dlce/about.md",
+           "/en/home" : "en/dlce/about.md",
+
+           "/dlce" : "/dlce/about.md",
+           "/en/dlce" : "/en/dlce/about.md",
+            "/en/dlce/level_information" : "/dlce/level_information.md",
+            "/en/dlce/eula" : "/dlce/eula.md",
+           "/404" : "/_404.md",
+           "/en/404" : "/en/_404.md",
+
+           "/en" : "/en/",
+        },
+        name:'跳舞的线：社区版 Wiki',
+        nameLink: {
+            '/en': '#/en/',
+            '/': '#/',
+        },
+        //repo: 'https://github.com/Aaron8052',
+        homepage: 'home.md',
+        loadSidebar: true,
+        loadNavbar: true,
+        maxLevel: 1,
+        subMaxLevel: 3,
+        sidebarDisplayLevel: 2,
+        topMargin: 50,
+        notFoundPage:
+        {
+            "/": "/404",
+            "/en/": "/en/404",
+        },
+        //basePath: "/docs/",
+        //relativePath: true,
+        //mergeNavbar: true,
+        auto2top: true,
+        fallbackLanguages: ['/',"/en"],
+        search: {
+            maxAge: 86400000,
+            paths: 'auto',
+            placeholder:
+                {
+                    '/en' : 'Search Documentation',
+                    '/' : '搜索文档',
                 },
-                depth: 4,
-                hideOtherSidebarContent: true,
-                pathNamespaces: ['/', '/en'],
-                namespace: '/Docs',
+            noData:{
+                '/en' : 'No Results',
+                '/' : '找不到结果',
             },
-            plugins: [
-                function(hook) {
-                  var footer = [
-                    '<hr>',
-                    '<span><b>跳舞的线：社区版 Wiki</b></span>&nbsp;&nbsp;&nbsp;<span>&copy;2025 FengYanDL</span>',
-                    '<a href="https://icp.gov.moe/?keyword=20258052" target="_blank">萌ICP备20258052号</a>',
-                  ].join('</br>');
+            depth: 4,
+            hideOtherSidebarContent: true,
+            pathNamespaces: ['/', '/en'],
+            namespace: '/Docs',
+        },
+        plugins: [
+            function(hook)
+            {
+                // 判断当前语言
+                const match = location.hash.match(/^#\/([^\/?#]+)/);
+                const lang = match ? match[1] : '';
+
+                // 根据语言设置footer
+                switch (lang) {
+                     case 'en':
+                        var footer = [
+                            '<hr>',
+                            '<a href="https://github.com/DL-Community/Docs" target="_blank">Edit Wiki</a>',
+                            '<span><b>DLCE Wiki</b></span>&nbsp;&nbsp;&nbsp;<span>&copy;2025 FengYanDL</span>',
+                        ].join('</br>');
+                        break;
+                     default:
+                        var footer = [
+                            '<hr>',
+                            '<span><b>跳舞的线：社区版 Wiki</b></span>&nbsp;&nbsp;&nbsp;<span>&copy;2025 FengYanDL</span>',
+                            '<a href="https://icp.gov.moe/?keyword=20258052" target="_blank">萌ICP备20258052号</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/DL-Community/Docs" target="_blank">编辑 Wiki</a>',
+                        ].join('</br>');
+                    }
 
                   hook.afterEach(function(html) {
                     return html + footer;
                   });
-                }
-              ]
-        }
-    </script>
-    
-    <script src="lib/docsify.min.js"></script>
-    <script src="lib/plugins/search.min.js"></script>
-    <script src="lib/plugins/docsify-themeable.min.js"></script>
-    <script src="lib/plugins/emoji.min.js"></script>
-    <script src="lib/plugins/zoom-image.min.js"></script>
-    <script src="lib/plugins/docsify-copy-code.min.js"></script>
+            }
+        ]
+    }
+</script>
+
+<script src="lib/docsify.min.js"></script>
+<script src="lib/plugins/search.min.js"></script>
+<script src="lib/plugins/docsify-themeable.min.js"></script>
+<script src="lib/plugins/emoji.min.js"></script>
+<script src="lib/plugins/zoom-image.min.js"></script>
+<script src="lib/plugins/docsify-copy-code.min.js"></script>
 </body>
 
 </html>

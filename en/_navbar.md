@@ -1,4 +1,4 @@
 - [Home](/en/home)
 - :uk: English
-  - [:cn: 简体中文](/)
+  - <a href="#/" target="_blank">:cn: 简体中文</a>
   - [:uk: English](/en/)

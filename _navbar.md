@@ -6,5 +6,5 @@
 - 相关链接
   - [爱发电赞助](https://afdian.com/a/fengyanDL)
 - :cn: 简体中文
-    - [:cn: 简体中文](/)
-    - [:uk: English](en/)
+  - [:cn: 简体中文](/)
+  - <a href="#/en/" target="_blank">:uk: English</a>
