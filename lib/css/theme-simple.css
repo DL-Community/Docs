@@ -1825,7 +1825,7 @@ body .sidebar {
 }
 
 :root {
-    --content-max-width: 80em;
+    --content-max-width: 70em;
     --blockquote-background: var(--mono-tint3);
     --blockquote-border-style: solid;
     --blockquote-border-radius: var(--border-radius-m);
