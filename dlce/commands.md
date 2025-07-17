@@ -10,7 +10,7 @@
 - 进入游戏设置，点击 `高级设置`
 
 ### 配置文件格式示例
-```
+```ini
 [Command Line Args]
 -example_argument
 
