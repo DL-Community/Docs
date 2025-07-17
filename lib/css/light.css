@@ -12,6 +12,19 @@
   }
 }
 
+div.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+Usage <span class="bold"></span>
+*/
+span.bold {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 1300px) {
   section.content {
     padding-right: 1px;

@@ -1,5 +1,5 @@
 - 🌟 相关链接
-  - [枫炎文档站](https://aaron8052.github.io/FengYan-Documentation)
+  - [官方哔哩哔哩](https://space.bilibili.com/187016314)
   - [爱发电赞助](https://afdian.com/a/fengyanDL)
 - :cn: 简体中文
     - [:cn: 简体中文](/)

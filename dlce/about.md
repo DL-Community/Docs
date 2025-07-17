@@ -4,7 +4,7 @@
 
 ?> 本资料库中的内容在未标明所对应游戏版本的情况下，将默认以最新版本为准。
 
-## 游戏资料
+## 游戏信息
 
 | 名称            | 信息                                                             |
 |---------------|----------------------------------------------------------------|
@@ -14,5 +14,8 @@
 | **引擎**        | [Unity 引擎](https://unity.com/)                                 |
 | **开发者**       | 枫炎（YINSU Studio）                                               |
 | **下载渠道**      | [DLRS同人群官网](https://chinadlrs.com/app/?id=25)                  |
-| **Discord**   | https://discord.gg/Hax8CwXYvX                                  |
-| **QQ 群**      | https://aaron8052.github.io/FengYan-Documentation/#/dlce-group |
+
+## 社交媒体
+- [哔哩哔哩](https://space.bilibili.com/187016314)
+- [QQ群](/dlce-group/about.md)
+- [腾讯频道](https://pd.qq.com/s/2njtk4vj2)
