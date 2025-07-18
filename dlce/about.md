@@ -2,7 +2,30 @@
 
 欢迎来到DLCE游戏资料库，这里将会不定期更新本游戏中的最新内容
 
-?> 本资料库中的内容在未标明所对应游戏版本的情况下，将默认以最新版本为准。
+## 社交媒体
+
+<div class="icon-grid">
+  <a class="icon-grid-group" href="https://space.bilibili.com/187016314" target="_blank">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="/lib/img/bili.png" alt="哔哩哔哩">
+      <div class="icon-grid-label">哔哩哔哩</div>
+    </div>
+  </a>
+
+  <a class="icon-grid-group" href="#/dlce-group/about">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="/lib/img/qq.png" alt="QQ群">
+      <div class="icon-grid-label">QQ群</div>
+    </div>
+  </a>
+
+  <a class="icon-grid-group" href="https://pd.qq.com/s/2njtk4vj2" target="_blank">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="/lib/img/qq-channel.png" alt="腾讯频道">
+      <div class="icon-grid-label">腾讯频道</div>
+    </div>
+  </a>
+</div>
 
 ## 游戏信息
 
@@ -15,7 +38,3 @@
 | **开发者**       | 枫炎DL（YINSU Studio）                                      |
 | **APP页**      | [DL RS 同人群官方网站](https://chinadlrs.com/app/?id=25)       |
 
-## 社交媒体
-[<img src="/lib/img/bili.png" height="32" alt="哔哩哔哩">](https://space.bilibili.com/187016314 "哔哩哔哩")&nbsp;&nbsp;&nbsp;&nbsp;
-[<img src="/lib/img/qq.png" height="32" alt="QQ群">](/dlce-group/about.md "QQ群")&nbsp;&nbsp;&nbsp;&nbsp;
-[<img src="/lib/img/qq-channel.png" height="32" alt="腾讯频道">](https://pd.qq.com/s/2njtk4vj2 "腾讯频道")

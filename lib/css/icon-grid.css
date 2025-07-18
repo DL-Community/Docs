@@ -1,0 +1,76 @@
+/*
+实现Home页面风格的图标+文本上下或左右组合排列效果
+*/
+
+.icon-grid-horizontal,
+.icon-grid-vertical,
+.icon-grid {
+    --icon-size: 40px;
+}
+
+
+.icon-grid-vertical,
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px 0;
+    gap: 30px;
+    justify-content: flex-start;
+}
+.icon-grid-vertical .icon-grid-group,
+.icon-grid .icon-grid-group {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-grid-vertical .icon-grid-item,
+.icon-grid .icon-grid-item {
+    width: 80px;
+}
+
+.icon-grid-vertical .icon-grid-img,
+.icon-grid .icon-grid-img {
+    height: var(--icon-size);
+    border-radius: 15px;
+}
+
+.icon-grid-vertical .icon-grid-label,
+.icon-grid .icon-grid-label {
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+/* 水平布局 */
+.icon-grid-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.icon-grid-horizontal .icon-grid-group {
+    color: inherit;
+    text-decoration: none;
+}
+
+.icon-grid-horizontal .icon-grid-item {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.icon-grid-horizontal .icon-grid-img {
+    float: left;
+    margin-right: 10px;
+    height: var(--icon-size);
+
+}
+
+.icon-grid-horizontal .icon-grid-label {
+    font-size: 14px;
+    vertical-align: center;
+}
