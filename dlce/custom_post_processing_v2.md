@@ -13,25 +13,55 @@
 - 配置完毕后，继续阅读下文将文件重命名并导入至游戏。
 
 ## 导入配置文件
-### Windows 路径
+### 路径
+<!-- tabs:start -->
+
+<!-- tab:Windows -->
 - 前往游戏安装目录（安装时指定的路径）。
-- 后期处理配置文件保存在 `Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.postprocessing` 中。
+- 后期处理配置文件保存路径为 
 
-### iOS 路径
-- 打开“文件”app，找到“我的iPhone（iPad）”
-- 后期处理配置文件保存在 `跳舞的线/Custom/PostProcessing/关卡代号.postprocessing` 中。
+````
+游戏安装目录/Dancing Line_Data/Custom/PostProcessing/关卡代号.postprocessing
+````
 
-### M 芯片 Mac 路径（iOS 版本）
+<!-- tab:iPhone -->
+- 打开“文件”app，找到“我的 iPhone”
+- 后期处理配置文件保存路径为
+
+````
+跳舞的线/Custom/PostProcessing/关卡代号.postprocessing
+````
+
+<!-- tab:iPad -->
+- 打开“文件”app，找到“我的 iPad”
+- 后期处理配置文件保存路径为
+
+````
+跳舞的线/Custom/PostProcessing/关卡代号.postprocessing
+````
+
+<!-- tab:M 芯片 Mac -->
 - 打开 Finder 访达，按下 `Command + Shift + G`，输入下列路径并回车：
+
 ````
 ~/Library/Containers
 ````
+
 - 找到游戏文件夹，进入 `Data/Documents` 文件夹。
-- 后期处理配置文件保存在 `Custom/PostProcessing/关卡代号.postprocessing` 中。
+- 后期处理配置文件保存路径为
+
+````
+Custom/PostProcessing/关卡代号.postprocessing
+````
+
+<!-- tab:Android -->
+- 资料暂缺
+
+<!-- tabs:end -->
 
 ### 注意事项
 
-- 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus`，则游戏会将你的配置文件应用在**金牛座**关卡中。
+- `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus`，则游戏会将你的配置文件应用在**金牛座**关卡中。
 - 更多 `关卡代号` 见[关卡信息](/dlce/level_information.md)。
 - `关卡代号` 必须使用指定的名称，否则不会正常读取。
 - 游戏允许同时导入多个配置文件，并自动应用到 `关卡代号` 对应的关卡上。
