@@ -41,7 +41,7 @@
 ````
 
 <!-- tab:M 芯片 Mac -->
-- 打开 Finder 访达，按下 `Command + Shift + G`，输入下列路径并回车：
+- 打开 Finder 访达，按下 ` ⌘ ⇧ G`，输入下列路径并回车：
 
 ````
 ~/Library/Containers
