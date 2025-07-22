@@ -29,23 +29,23 @@
 <!-- tabs:start -->
 
 <!-- tab:Windows -->
-### Windows
+#### Windows
 - 点击可进入分辨率选择面板，此面板提供了横屏/竖屏多种分辨率比例。
 
 <!-- tab:macOS -->
-### macOS
+#### macOS
 - 点击可进入分辨率选择面板，此面板提供了横屏/竖屏多种分辨率比例。
 
 <!-- tab:iOS -->
-### iOS
+#### iOS
 - 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
 
 <!-- tab:M 芯片 Mac -->
-### iOS - M 芯片 Mac
+#### iOS - M 芯片 Mac
 - 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
 
 <!-- tab:Android -->
-### Android
+#### Android
 - 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
 
 <!-- tabs:end -->
