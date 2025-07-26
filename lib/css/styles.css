@@ -1,0 +1,10 @@
+/* 鼠标放置后展示为蓝色，否则不显示颜色 */
+.link-on-hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-on-hover:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
