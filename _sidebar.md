@@ -5,12 +5,13 @@
   - [关卡信息](dlce/level_information.md)
   - [自定义后期处理效果](dlce/custom_post_processing.md)
   - [启动参数](dlce/commands.md)
-- **DLCE交流基地**
-  - [官方QQ群](/dlce-group/about.md)
+- **社区**
+  - [QQ群](/dlce-group/about.md)
   - [群规](dlce-group/rules.md)
-- **用户协议**
+- **法律信息**
   - [最终用户许可协议（EULA）](dlce/eula.md)
   - [隐私政策](dlce/privacy.md)
+  - [开源代码库](dlce/open-source.md)
 ***
 <a href="https://afdian.com/a/fengyanDL"><img width="150" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a>
 
