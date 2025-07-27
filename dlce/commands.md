@@ -3,7 +3,10 @@
 ## 配置文件
 
 ### 从游戏外打开配置文件
-- 文件资源管理器中输入并进入 `%APPDATA%/../LocalLow/YINSU Studio/Dancing Line` 路径。
+- 文件资源管理器中输入并进入如下路径
+```directory
+%APPDATA%/../LocalLow/YINSU Studio/Dancing Line
+```
 - 双击打开 `Launch Options.ini`。
 
 ### 从游戏内打开配置文件
