@@ -19,7 +19,11 @@
 ## 导入配置文件
 ### Windows 路径
 - 前往游戏安装目录。
-- 后期处理配置文件保存在 `Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/PostProfile.bytes` 中。
+- 后期处理配置文件保存在
+
+```
+Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/PostProfile.bytes
+```
 
 ### 注意事项
 
