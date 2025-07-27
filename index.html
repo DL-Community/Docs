@@ -143,41 +143,11 @@
             theme: 'classic',
             tabComments: true,
         },
-        plugins: [
-            function(hook)
-            {
-                // 判断当前语言
-                const match = location.hash.match(/^#\/([^\/?#]+)/);
-                const lang = match ? match[1] : '';
-
-                // 根据语言设置footer
-                switch (lang) {
-                     case 'en':
-                        var footer = [
-                            '<hr>',
-                            '<span><b>DLCE Wiki</b></span>&nbsp;&nbsp;&nbsp;<span>&copy;2025 FengYanDL</span>',
-                            '<a href="https://github.com/DL-Community/Docs" target="_blank">Edit Wiki</a>',
-                            '<a href="https://dl-community.github.io/Docs/#/en" target="_blank">dl-community.github.io/Docs/#/en</a>',
-                        ].join('</br>');
-                        break;
-                     default:
-                        var footer = [
-                            '<hr>',
-                            '<span><b>跳舞的线：社区版 Wiki</b></span>&nbsp;&nbsp;&nbsp;<span>&copy;2025 FengYanDL</span>',
-                            '<a href="https://icp.gov.moe/?keyword=20258052" target="_blank">萌ICP备20258052号</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/DL-Community/Docs" target="_blank">编辑 Wiki</a>',
-                            '<a href="https://dl-community.github.io/Docs" target="_blank">dl-community.github.io/Docs</span>',
-                        ].join('</br>');
-                    }
-
-                  hook.afterEach(function(html) {
-                    return html + footer;
-                  });
-            }
-        ]
     }
 </script>
 
 <script src="lib/docsify.min.js"></script>
+<script src="lib/footer-hook.js"></script>
 <script src="lib/plugins/search.min.js"></script>
 <script src="lib/plugins/docsify-themeable.min.js"></script>
 <script src="lib/plugins/emoji.min.js"></script>

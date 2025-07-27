@@ -13,4 +13,4 @@ Welcome to the DLCE Database, where the latest content of this game will be peri
 | **Developer**     | FengYan                                                        |
 | **Download**      | [Discord](https://discord.gg/dancing-line)                     |
 | **Discord**       | https://discord.gg/Hax8CwXYvX                                  |
-| **QQ Group Chat** | https://aaron8052.github.io/FengYan-Documentation/#/dlce-group |
+| **QQ Group Chat** | https://aaron8052.github.io/FengYan-Documentation/#/dlce-group | 
