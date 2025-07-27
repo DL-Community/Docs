@@ -8,5 +8,6 @@
 
 ?> Post-Processing V1 将在未来移除支持，请尽可能使用 V2 版本。
 
-### [V2 版本使用教程（推荐）](/dlce/custom_post_processing_v2.md)
-### [V1 版本使用教程](/dlce/custom_post_processing_v1.md)
+### [V2 使用教程（推荐）](/dlce/custom_post_processing_v2.md)
+### [V1 使用教程](/dlce/custom_post_processing_v1.md)
+### [V1 使用教程（怀旧版）](/dlce/custom_post_processing_legacy.md)
