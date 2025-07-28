@@ -17,7 +17,7 @@
 - 前往游戏安装目录。
 - 后期处理配置文件保存在
 
-```
+```directory
 Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/PostProfile.bytes
 ```
 

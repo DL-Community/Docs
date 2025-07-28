@@ -8,7 +8,8 @@
 
 ## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
-- 在其基础上修改数值后并**导入对应的路径中**即可；
+或从[这里](#完整配置文件及其默认值)复制完整的配置文件并创建文件。
+- 在其基础上修改数值后并**导入对应的路径中**；
 - [配置文件内的各项配置描述在这里](#配置文件介绍)；
 - 配置完毕后，继续阅读下文将文件重命名并导入至游戏。
 
@@ -21,7 +22,7 @@
 - 前往游戏安装目录（安装时指定的路径）。
 - 后期处理配置文件保存路径为 
 
-```
+```directory
 游戏安装目录/Dancing Line_Data/Custom/PostProcessing/关卡代号.postprocessing
 ```
 
@@ -99,7 +100,7 @@ Custom/PostProcessing/关卡代号.postprocessing
 ?> 环境光遮蔽不应过强，否则会导致画面变黑变脏，影响视觉效果。
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Ambient Occlusion]
 Mode=ScalableAmbientObscurance
@@ -125,7 +126,7 @@ Color=#000000
 ?> bloom过强会导致画面过亮变糊，不推荐过度使用。
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Bloom]
 Intensity=0
@@ -150,10 +151,10 @@ Fast Mode=false
 
 ### Color Grading
 
-> **色彩分级**，用于逐像素调节颜色。
+> **色彩分级**，用于调节画面颜色。
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Color Grading]
 Mode=HighDefinitionRange
@@ -187,27 +188,27 @@ Blue Channel Mixer=0,0,100
 
 ### Chromatic Aberration
 
-> 色差，用于模拟相机镜头散射现象，使得物体边缘产生类似彩虹的颜色
+> 色差，模拟相机镜头散射现象，使得物体边缘产生类似彩虹的颜色
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Chromatic Aberration]
 Intensity=0
 Fast Mode=false
 ```
 
-| 配置项         | 介绍                                                                                                                                                                                                | 取值范围                    |
-|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| `Intensity` | Amount of tangential distortion.                                                                                                                                                                  | Float<br/>`0.00 ~ 1.00` |
-| `Fast Mode` | Boost performance by lowering the effect quality. This settings is meant to be used on mobile and other low-end platforms but can also provide a nice performance boost on desktops and consoles. | Boolean<br/>`true` `false`   |
+| 配置项         | 介绍                                                                                                                                                                                                | 取值范围                       |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| `Intensity` | Amount of tangential distortion.                                                                                                                                                                  | Float<br/>`0.00 ~ 1.00`    |
+| `Fast Mode` | Boost performance by lowering the effect quality. This settings is meant to be used on mobile and other low-end platforms but can also provide a nice performance boost on desktops and consoles. | Boolean<br/>`true` `false` |
 
 ### Depth of Field
 
-> **景深**，用于模拟人眼以及相机的背景模糊效果。
+> **景深**，模拟人眼以及相机的背景模糊效果。
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Depth of Field]
 Focus Distance=10
@@ -227,7 +228,7 @@ Max Blur Size=Medium
 > 模拟屏幕信号干扰时的雪花颗粒效果。
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Grain]
 Colored=true
@@ -248,7 +249,7 @@ Luminance Contribution=0.8
 > **运动模糊**，用于模拟物体在运动过程中产生的模糊效果。
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Motion Blur]
 Shutter Angle=270
@@ -264,7 +265,7 @@ Sample Count=10
 > Vignette 效果可以造成被渲染场景的亮度随距视角中心位置的距离增加而逐渐降低，使屏幕四个角落的亮度变暗。
 
 ```ini
-; 这些是每一个配置项的默认值
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Vignette]
 Color=#000000FF
@@ -285,12 +286,10 @@ Rounded=false
 | `Rounded`    | Set to true to mark the vignette to be perfectly round. False will make its shape dependent on the current aspect ratio. | Boolean<br/>`true` `false`                                                                 |
 
 ## 完整配置文件及其默认值
+
 ```ini
 ; DLCE 自定义 Post Processing 配置文件
-; 每行以分号 “;” 开始的为备注，不会影响实际配置
-; 每个配置项使用等号 “=” 分割名称与数值
-; 配置项下方通常包含对应的备注，注明其作用或取值范围等
-; 将配置项删除后游戏会使用默认值（或不使用此项）。也可以在配置项前面加上分号，将其变为备注，同样可以达到删除的效果
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Ambient Occlusion]
 Mode=ScalableAmbientObscurance

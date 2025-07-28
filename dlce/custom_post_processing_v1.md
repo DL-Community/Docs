@@ -16,25 +16,30 @@
 ### Windows 路径
 - 前往游戏安装目录（安装时指定的路径）。
 - 后期处理配置文件保存在
-```
+
+```directory
 Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes
 ```
 
 ### iOS 路径
 - 打开“文件”app，找到“我的iPhone（iPad）”
 - 后期处理配置文件保存在
-```
+
+```directory
 跳舞的线/Custom/PostProcessing/关卡代号.txt
 ```
 
 ### M 芯片 Mac 路径（iOS 版本）
 - 打开 Finder 访达，按下 `Command + Shift + G`，输入下列路径并回车：
-````
+
+````directory
 ~/Library/Containers
 ````
+
 - 找到游戏文件夹，进入 `Data/Documents` 文件夹。
 - 后期处理配置文件保存在
-```
+
+```directory
 Custom/PostProcessing/关卡代号.txt
 ```
 

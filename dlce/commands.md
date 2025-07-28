@@ -4,6 +4,7 @@
 
 ### 从游戏外打开配置文件
 - 文件资源管理器中输入并进入如下路径
+
 ```directory
 %APPDATA%/../LocalLow/YINSU Studio/Dancing Line
 ```
@@ -13,6 +14,7 @@
 - 进入游戏设置，点击 `高级设置`
 
 ### 配置文件格式示例
+
 ```ini
 [Command Line Args]
 -example_argument
