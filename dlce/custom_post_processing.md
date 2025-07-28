@@ -2,10 +2,8 @@
 
 用于在对应游戏关卡中使用自定义的**屏幕后期处理效果**。
 
-## 使用方法
+## 使用文档
 
-?> Post-Processing V1 将在未来移除支持，请尽可能使用 V2 版本。
-
-### [V2 使用教程（推荐）](/dlce/custom_post_processing_v2.md)
-### [V1 使用教程](/dlce/custom_post_processing_v1.md)
-### [V1 使用教程（怀旧版）](/dlce/custom_post_processing_legacy.md)
+### [V2 文档（推荐）](/dlce/custom_post_processing_v2.md)
+### [V1 文档](/dlce/custom_post_processing_v1.md)
+### [V1 文档（怀旧版）](/dlce/custom_post_processing_legacy.md)
