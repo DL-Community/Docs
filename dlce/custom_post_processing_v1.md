@@ -6,6 +6,8 @@
 
 ?> Post-Processing V1 将在未来移除支持，请尽可能使用 V2 版本。
 
+?> DLCE v3.0.1 以下版本和 DLCE 怀旧版不兼容此版本。文档请参考 [V1（旧版）](/dlce/custom_post_processing_legacy.md)
+
 ## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
 - 在其基础上修改数值后并**导入对应的路径中**即可；
