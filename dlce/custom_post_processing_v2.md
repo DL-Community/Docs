@@ -1,19 +1,19 @@
 **[返回上一页](/dlce/custom_post_processing.md)**
 
-# 自定义后期处理效果（V2）
+# 自定义后期处理 V2
 
 ?> 游戏版本：v3.5.0 以上
 
 > 适用于：Windows、iOS、Android（教程暂缺）
 
-## 制作配置文件
-- 从[这里](#完整配置文件及其默认值)复制完整的配置文件并创建文本文件；
+## 创建
+- 从[这里](#配置文件模板)复制完整的配置文件并创建文本文件；
 - 在其基础上修改数值后并**导入对应的路径中**；
-- [配置文件内的各项配置描述在这里](#配置文件介绍)；
-- 配置完毕后，继续[阅读下文](#导入配置文件)将文件重命名并导入至游戏。
+- 根据[配置文件描述](#配置文件)来修改配置文件；
+- 配置完毕后，继续[阅读下文](#导入)将文件重命名并导入至游戏。
 
-## 导入配置文件
-### 路径
+## 导入
+### 路径与文件名
 <!-- tabs:start -->
 
 <!-- tab:Windows -->
@@ -71,7 +71,7 @@ Custom/PostProcessing/关卡代号.postprocessing
 - `关卡代号` 必须使用指定的名称，否则不会正常读取。
 - 游戏允许同时导入多个配置文件，并自动应用到 `关卡代号` 对应的关卡上。
 
-## 配置文件介绍
+## 配置文件
 
 ### 语法
 | 语法 / 类型                       | 介绍                                                                                                               | 示例                                                                                                |
@@ -284,69 +284,8 @@ Rounded=false
 | `Roundness`  | Lower values will make a square-ish vignette.                                                                            | Float<br/>`0.00 ~ 1.00`                                                                    |
 | `Rounded`    | Set to true to mark the vignette to be perfectly round. False will make its shape dependent on the current aspect ratio. | Boolean<br/>`true` `false`                                                                 |
 
-## 完整配置文件及其默认值
+## 配置文件模板
 
-```ini
-; DLCE 自定义 Post Processing 配置文件
-; 下方参数均为默认值，直接套用将不会有任何效果
+[Template.postprocessing](../lib/txt/PostProcessingV2Template.md ':include')
 
-[Ambient Occlusion]
-Mode=ScalableAmbientObscurance
-Intensity=0.00
-Radius=0.00
-Quality=Medium
-Thickness Modifier=1
-Color=#000000
-
-[Bloom]
-Intensity=0
-Threshold=1
-Soft Knee=0.50
-Clamp=65472
-Diffusion=7
-Anamorphic Ratio=0
-Color=#FFFFFF:0.0
-Fast Mode=false
-
-[Color Grading]
-Mode=HighDefinitionRange
-Tonemapping Mode=None
-Temperature=0
-Tint=0
-Post-exposure (EV)=0
-Color Filter=#FFFFFF:0.0
-Hue Shift=0
-Saturation=0
-Contrast=0
-Red Channel Mixer=100,0,0
-Green Channel Mixer=0,100,0
-Blue Channel Mixer=0,0,100
-
-[Chromatic Aberration]
-Intensity=0
-Fast Mode=false
-
-[Depth of Field]
-Focus Distance=10
-Aperture=5.6
-Focal Length=50
-Max Blur Size=Medium
-
-[Grain]
-Colored=true
-Intensity=0
-Size=1
-Luminance Contribution=0.8
-
-[Motion Blur]
-Shutter Angle=270
-Sample Count=10
-
-[Vignette]
-Color=#000000FF
-Center=0.5,0.5
-Intensity=0
-Smoothness=0.20
-Roundness=1
-Rounded=false
 ```
