@@ -287,5 +287,3 @@ Rounded=false
 ## 配置文件模板
 
 [Template.postprocessing](../lib/txt/PostProcessingV2Template.md ':include')
-
-```
