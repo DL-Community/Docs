@@ -1,12 +1,10 @@
 **[返回上一页](/dlce/custom_post_processing.md)**
 
-# 自定义后期处理 V1
+# 自定义后期处理 V1（新版）
 
-?> 支持：DLCE v3.0.1 及以上
+> 支持：DLCE v3.0.1 及以上
 
 ?> Post-Processing V1 将在未来移除支持，请尽可能使用 V2 版本。
-
-> 适用于：Windows、iOS、Android（教程暂缺）
 
 ## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
