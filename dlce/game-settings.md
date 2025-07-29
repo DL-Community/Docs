@@ -78,34 +78,24 @@
 |--------|----|
 | DX12   | ✅  |
 | DX11   | ❌  |
-| Metal  | -  |
 | Vulkan | ✅  |
 | OpenGL | ❌  |
 
 #### **macOS**
 | 渲染 API | 支持 |
 |--------|----|
-| DX12   | -  |
-| DX11   | -  |
 | Metal  | ✅  |
-| Vulkan | -  |
 | OpenGL | ❌  |
 
 #### **iOS**
 | 渲染 API | 支持 |
 |--------|----|
-| DX12   | -  |
-| DX11   | -  |
 | Metal  | ✅  |
-| Vulkan | -  |
 | OpenGL | ❌  |
 
 #### **Android**
 | 渲染 API | 支持 |
 |--------|----|
-| DX12   | -  |
-| DX11   | -  |
-| Metal  | -  |
 | Vulkan | ✅  |
 | OpenGL | ❌  |
 <!-- tabs:end -->
