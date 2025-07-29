@@ -1,10 +1,15 @@
-/* 鼠标放置后展示为蓝色，否则不显示颜色 */
-.link-on-hover {
-    text-decoration: none;
-    color: inherit;
+.text-small{
+    font-size: 15px;
 }
 
-.link-on-hover:hover {
-    color: var(--link-color);
-    text-decoration: underline;
+.text-large{
+    font-size: larger;
+}
+
+.text-regular{
+    font-size: var(--base-font-size);
+}
+
+.text-center{
+    text-align: center;
 }
