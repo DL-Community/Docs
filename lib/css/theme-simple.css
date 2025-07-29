@@ -393,8 +393,8 @@ pre[data-lang]::selection, pre[data-lang] ::selection, code[class*=lang-]::selec
 .markdown-section a:hover {
     border-bottom: var(--link-border-bottom--hover, var(--link-border-bottom, 0));
     color: var(--link-color--hover, var(--link-color));
-    -webkit-text-decoration: var(--link-text-decoration--hover, var(--link-text-decoration));
-    text-decoration: var(--link-text-decoration--hover, var(--link-text-decoration));
+    /*-webkit-text-decoration: var(--link-text-decoration--hover, var(--link-text-decoration-hover));*/
+    text-decoration: var(--link-text-decoration-hover);
     -webkit-text-decoration-color: var(--link-text-decoration-color--hover, var(--link-text-decoration-color));
     text-decoration-color: var(--link-text-decoration-color--hover, var(--link-text-decoration-color))
 }
@@ -1865,7 +1865,9 @@ body .sidebar {
     --kbd-margin: 0 0.3em;
     --kbd-min-width: 2.5em;
     --kbd-padding: 0.65em 0.5em;
-    --link-text-decoration: underline;
+    /*链接下划线*/
+    --link-text-decoration: none;
+    --link-text-decoration-hover: underline;
     --notice-background: var(--mono-tint3);
     --notice-border-radius: var(--border-radius-m);
     --notice-border-style: solid;
