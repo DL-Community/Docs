@@ -4,7 +4,7 @@
 
 > 支持：DLCE v3.0.1 及以上
 
-?> **【过时的文档】**Post-Processing V1 将在未来的版本移除支持，此文档现不再维护。推荐使用 [V2 版本](/dlce/custom_post_processing_v2.md)。
+?> **过时的文档**<br>Post-Processing V1 将在未来的版本移除支持，此文档现不再维护。推荐使用 [V2 版本](/dlce/custom_post_processing_v2.md)。
 
 ?> DLCE v3.0.1 以下版本和 DLCE 怀旧版不兼容此版本。文档请参考 [V1（旧版）](/dlce/custom_post_processing_legacy.md)
 
