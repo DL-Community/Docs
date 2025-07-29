@@ -18,11 +18,10 @@
 - 游戏允许同时导入多个配置文件，并自动应用到 `关卡代号` 对应的关卡上。
 
 ## 导入
-### 路径与文件名
 <!-- tabs:start -->
 
 <!-- tab:Windows -->
-#### Windows
+### Windows
 - 前往游戏安装目录（安装时指定的路径）。
 - 后期处理配置文件保存路径为 
 
@@ -31,7 +30,7 @@
 ```
 
 <!-- tab:iPhone -->
-#### iOS - iPhone
+### iOS - iPhone
 - 打开“文件”app，找到“我的 iPhone”
 - 后期处理配置文件保存路径为
 
@@ -40,7 +39,7 @@
 ```
 
 <!-- tab:iPad -->
-#### iOS - iPad
+### iOS - iPad
 - 打开“文件”app，找到“我的 iPad”
 - 后期处理配置文件保存路径为
 
@@ -49,7 +48,7 @@
 ```
 
 <!-- tab:M 芯片 Mac -->
-#### iOS - M 芯片 Mac
+### iOS - M 芯片 Mac
 - 打开 Finder 访达，按下 ` ⌘ ⇧ G`，输入下列路径并回车：
 
 ```directory
@@ -64,13 +63,14 @@ Custom/PostProcessing/关卡代号.postprocessing
 ```
 
 <!-- tab:Android -->
-#### Android
+### Android
 - 资料暂缺
 
 <!-- tabs:end -->
 
 ## 配置文件语法
-| 类型                       | 介绍                                                                                                               | 示例                                                                                                |
+
+| 类型                            | 介绍                                                                                                               | 示例                                                                                                |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | `; 文本`                        | 所有以英文分号开头的文本均为注释，仅作为备注用途，存在与否不会影响配置文件。                                                                           | -                                                                                                 |
 | `[Section]`                   | 带有方括号的为 分区 标记，用于区分下列配置项归属于哪个特效。对顺序不敏感，打乱每个 Section 的顺序不会影响配置文件。                                                  | `[Ambient Occlusion]`                                                                             |
@@ -85,13 +85,16 @@ Custom/PostProcessing/关卡代号.postprocessing
 | Integer                       | 整数。                                                                                                              | `11`                                                                                              |
 | Enumeration                   | “枚举值”，通常用于定义某个属性的模式，可以是数字或对应的英文名称。                                                                               | 以下文 Ambient Occlusion 的 Mode 属性为例，`Mode=0` 或 `Mode=ScalableAmbientObscurance`，这两种写法都表示将 Mode 设为0。 |
 
+
 ## 后处理特效
 
-?> ⚠️注意：大多数情况下，你并不需要开启全部特效，下列每一个特效或配置项都不是必需品。
+?> **注意**<br>大多数情况下，你并不需要开启全部特效，下列每一个特效或配置项都不是必需品。
 如果删除整个特效，游戏会彻底关闭此特效。如果删除某个配置项，游戏会自动应用其默认值。
 如果不需要修改某个配置项，请将其从配置文件中移除以提升配置文件读取速度。
 
+<!-- tabs:start -->
 
+<!-- tab:环境光遮蔽 -->
 ### Ambient Occlusion
 
 > **环境光遮蔽（AO）**，开启该特效可在物体边缘绘制阴影，增加画面层次感。
@@ -118,6 +121,7 @@ Color=#000000
 | `Thickness Modifier` | This modifies the thickness of occluders. It increases the size of dark areas and also introduces a dark halo around objects.                                                 | Float<br/>`1.00 ~ 10.00`<br/>*仅在 `Mode` 为 `1` 或 `MultiScaleVolumetricObscurance` 时有效                                                                   |
 | `Color`              | The custom color to use for the ambient occlusion. The default is black.                                                                                                      | Color<br/>`#RRGGBB`                                                                                                                                    |
 
+<!-- tab:外发光 -->
 ### Bloom
 
 > **物体外发光效果**，也叫**光溢出**，用于模拟物体在高亮度情况下的发光效果。
@@ -148,6 +152,7 @@ Fast Mode=false
 | `Color`            | Global tint of the bloom filter.                                                                                                                                                                                           | Color<br/>`#RRGGBB:Intensity` |
 | `Fast Mode`        | Boost performance by lowering the effect quality. This settings is meant to be used on mobile and other low-end platforms but can also provide a nice performance boost on desktops and consoles.                          | Boolean<br/>`true` `false`    |
 
+<!-- tab:色彩分级 -->
 ### Color Grading
 
 > **色彩分级**，用于调节画面颜色。
@@ -185,6 +190,7 @@ Blue Channel Mixer=0,0,100
 | `Green Channel Mixer` | Modifies the influence of the RGB channel within the Green Channel Mixer.                                                                                                                                                                                                                          | Vector<br/>`r,g,b`<br/>`r`:`Float -200.00 ~ 200.00`<br/>`g`:`Float -200.00 ~ 200.00`<br/>`b`:`Float -200.00 ~ 200.00` |
 | `Blue Channel Mixer`  | Modifies the influence of the RGB channel within the Blue Channel Mixer.                                                                                                                                                                                                                           | Vector<br/>`r,g,b`<br/>`r`:`Float -200.00 ~ 200.00`<br/>`g`:`Float -200.00 ~ 200.00`<br/>`b`:`Float -200.00 ~ 200.00` |
 
+<!-- tab:色差 -->
 ### Chromatic Aberration
 
 > 色差，模拟相机镜头散射现象，使得物体边缘产生类似彩虹的颜色
@@ -202,6 +208,7 @@ Fast Mode=false
 | `Intensity` | Amount of tangential distortion.                                                                                                                                                                  | Float<br/>`0.00 ~ 1.00`    |
 | `Fast Mode` | Boost performance by lowering the effect quality. This settings is meant to be used on mobile and other low-end platforms but can also provide a nice performance boost on desktops and consoles. | Boolean<br/>`true` `false` |
 
+<!-- tab:景深 -->
 ### Depth of Field
 
 > **景深**，模拟人眼的聚焦与模糊效果。
@@ -222,6 +229,7 @@ Max Blur Size=Medium
 | `Focal Length`   | Distance between the lens and the film. The larger the value is, the shallower the depth of field is.                                                                                    | Float<br/>`1.00 ~ 300.00`                                                            |
 | `Max Blur Size`  | Convolution kernel size of the bokeh filter, which determines the maximum radius of bokeh. It also affects performances (the larger the kernel is, the longer the GPU time is required). | Enumeration<br/>`0`: `Small`<br/>`1`: `Medium`<br/>`2`: `Large`<br/>`3`: `VeryLarge` |
 
+<!-- tab:Grain 信号干扰 -->
 ### Grain
 
 > 模拟屏幕信号干扰时的雪花颗粒效果。
@@ -243,6 +251,7 @@ Luminance Contribution=0.8
 | `Size`                   | Grain particle size.                                                                                    | Float<br/>`0.30 ~ 3.00`    |
 | `Luminance Contribution` | Controls the noise response curve based on scene luminance. Lower values mean less noise in dark areas. | Float<br/>`0.00 ~ 1.00`    |
 
+<!-- tab:运动模糊 -->
 ### Motion Blur
 
 > **运动模糊**，用于模拟物体在运动过程中产生的模糊效果。
@@ -259,6 +268,7 @@ Sample Count=10
 | `Shutter Angle` | The angle of rotary shutter. Larger values give longer exposure.   | Float<br/>`0.00 ~ 360.00` |
 | `Sample Count`  | The amount of sample points. This affects quality and performance. | Integer<br/>`4 ~ 32`      |
 
+<!-- tab:Vignette -->
 ### Vignette
 
 > Vignette 效果可以造成被渲染场景的亮度随距视角中心位置的距离增加而逐渐降低，使屏幕四个角落的亮度变暗。
@@ -284,8 +294,11 @@ Rounded=false
 | `Roundness`  | Lower values will make a square-ish vignette.                                                                            | Float<br/>`0.00 ~ 1.00`                                                                    |
 | `Rounded`    | Set to true to mark the vignette to be perfectly round. False will make its shape dependent on the current aspect ratio. | Boolean<br/>`true` `false`                                                                 |
 
-## 完整配置文件
+<!-- tab:完整配置文件 -->
+### 完整配置文件
 
-?> 如果你开启了全部特效，那么你的配置文件看起来是这样。但大多数情况下，你并不需要这么多特效。
+?> 如果你开启了全部特效，那么你的配置文件看起来类似这样。但大多数情况下，你并不需要这么多特效。
 
 [Template.postprocessing](../lib/txt/PostProcessingV2Template.md ':include')
+
+<!-- tabs:end -->
