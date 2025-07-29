@@ -2,7 +2,7 @@
 
 # 自定义后期处理 V1（旧版）
 
-> 支持：DLCE v3.0.1 以下、DLCE 怀旧版
+> **兼容性**<br>DLCE v3.0.1 以下、DLCE 怀旧版
 
 ?> 该版本的自定义后期处理与 [V1 新版](/dlce/custom_post_processing_v1.md)无实际差异，仅文件路径、文件名有区别。
 
