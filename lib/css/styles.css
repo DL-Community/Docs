@@ -13,3 +13,23 @@
 .text-center{
     text-align: center;
 }
+
+/* 隐藏默认三角 */
+details summary {
+    list-style: none;
+}
+/* 清除Firefox的默认样式 */
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* 自定义三角样式 */
+details summary::before {
+    content: "▶";
+    font-size: 0.9em; /* 控制大小 */
+    margin-right: 8px;
+    transition: transform 0.2s;
+}
+details[open] summary::before {
+    content: "▼";
+}

@@ -3,70 +3,121 @@
 > - 下列选项并非在所有平台上都可用，具体以游戏实际版本为准。
 > - 点击游戏主界面右下角的齿轮图标进入游戏设置。
 
-?> 注意：下文“适用于”中，macOS 和 Mac Silicon 分别代表不同平台。 </br>前者为 macOS 版本（尚未发布），后者为 iOS 版本运行于 M 芯片的 Mac 的版本。
+?> 注意：下文中 macOS 和 Mac Silicon 分别代表不同平台。
+</br>前者为 macOS 版本（尚未发布），后者为 iOS 版本运行于 M 芯片 Mac 的版本。
+</br>大多数情况下，iOS 版本和 Mac Silicon 版本一致，除非单独列出。
 
 ## 音画同步
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 ?> 下列自动调节**不建议**同时开启多个，否则可能会导致**音画同步修正过度**。
 
-### 自动调节
+<!-- tabs:start -->
+
+### **自动调节**
 - 开启此开关后游戏会**根据游戏当前整体运行状况调整动态调整音画同步**。
 - 关闭自动调节功能后，玩家可以**手动调节游戏的音乐延迟**，**数值越大，音乐播放越晚**。
 
-### 音频输出延迟自动修正
+### **音频输出延迟**
 - 开启后游戏会自动检测音频输出延迟并进行修正，玩家连接蓝牙耳机或汽车音响时建议开启。
 
-### 触控响应延迟自动修正
+### **触控响应延迟**
 > 适用于：iOS、Android。
 - 开启后游戏会自动检测触控响应延迟并进行修正，可选择关闭以减少游戏的 CPU 占用。
 
+<!-- tabs:end -->
+
 ### 关卡音画同步
 - 进入关卡后，可在屏幕左下方进入，该设置仅对当前关卡生效。
+</details>
 
 ## 声音
 - 游戏全局声音开关。
 
 ## 分辨率
+<details>
+<summary>
+   <b>详情</b>
+</summary>
 <!-- tabs:start -->
 
-<!-- tab:Windows -->
-#### Windows
+### **Windows**
 - 点击可进入分辨率选择面板，此面板提供了横屏/竖屏多种分辨率比例。
 
-<!-- tab:macOS -->
-#### macOS
+### **macOS**
 - 点击可进入分辨率选择面板，此面板提供了横屏/竖屏多种分辨率比例。
 
-<!-- tab:iOS -->
-#### iOS
+### **iOS**
 - 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
 
-<!-- tab:M 芯片 Mac -->
-#### iOS - M 芯片 Mac
-- 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
-
-<!-- tab:Android -->
-#### Android
+### **Android**
 - 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
 
 <!-- tabs:end -->
 
 ?> 分辨率越低，游戏越流畅。
 
+</details>
+
 ## 渲染精度（动态分辨率）
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 > 适用于：见下方“兼容性”
 - 与[分辨率](#分辨率)类似，但仅用于调整游戏 3D 场景渲染分辨率，不影响 UI 清晰度。
 
 ### 兼容性
-|        | Windows | macOS | iOS | Android |
-|--------|---------|-------|-----|---------|
-| DX12   | ✅       | -     | -   | -       |
-| DX11   | ❌       | -     | -   | -       |
-| Metal  | -       | ✅     | ✅   | -       |
-| Vulkan | ✅       | -     | -   | ✅       |
-| OpenGL | ❌       | ❌     | ❌   | ❌       |
+<!-- tabs:start -->
+#### **Windows**
+| 渲染 API | 支持 |
+|--------|----|
+| DX12   | ✅  |
+| DX11   | ❌  |
+| Metal  | -  |
+| Vulkan | ✅  |
+| OpenGL | ❌  |
 
+#### **macOS**
+| 渲染 API | 支持 |
+|--------|----|
+| DX12   | -  |
+| DX11   | -  |
+| Metal  | ✅  |
+| Vulkan | -  |
+| OpenGL | ❌  |
+
+#### **iOS**
+| 渲染 API | 支持 |
+|--------|----|
+| DX12   | -  |
+| DX11   | -  |
+| Metal  | ✅  |
+| Vulkan | -  |
+| OpenGL | ❌  |
+
+#### **Android**
+| 渲染 API | 支持 |
+|--------|----|
+| DX12   | -  |
+| DX11   | -  |
+| Metal  | -  |
+| Vulkan | ✅  |
+| OpenGL | ❌  |
+<!-- tabs:end -->
+
+</details>
 
 ## 画面模式
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
 
 > 适用于：Windows、macOS。
 
@@ -76,7 +127,15 @@
 | 无边框窗口全屏（仅Windows） | **隐藏窗口边框并等比例拉伸至全屏**，窗口切换速度快，GPU 资源与桌面共享。          |
 | 窗口化               | 窗口模式，**不隐藏窗口边框且不会等比例拉伸至全屏**，窗口切换速度最快，GPU 资源与桌面共享。 |
 
+</details>
+
 ## 画质
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 - 调整游戏**场景 / 画面复杂度及其质量**。
 
 | 模式       | 光影 | 反射效果   | 粒子效果   | 后期处理效果（如果有） |
@@ -90,7 +149,15 @@
 
 ?> 对于玩家[自定义后期处理效果](/dlce/custom_post_processing.md)，不论哪种画质模式，都会始终应用到关卡中。
 
+</details>
+
 ## 抗锯齿
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 > 适用于：Windows、macOS、Mac Silicon、Android。
 - 选择抗锯齿模式。
 
@@ -100,22 +167,54 @@
 | MSAA | 多重采样抗锯齿。 |
 | FXAA | 快速近似抗锯齿。 |
 
+</details>
+
 ## 垂直同步
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 > 适用于：Windows、macOS、Mac Silicon、Android。
 - 开启或关闭垂直同步。
 
+</details>
+
 ## 语言
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 - 更改游戏显示语言。
 - 详见 [多语言](/dlce/localization.md)。
 
+</details>
+
 ## 键位映射
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 > 适用于：Windows、macOS。
 - 调整键位绑定。
+
 
 ### 键位指示器
 - 在底部显示 HUD 界面，显示当前键盘键位的功能。
 
+</details>
+
 ## 辅助功能
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
 
 ### 触控反馈
 > 适用于：iOS、Android。
@@ -132,7 +231,15 @@
 
 - 开启/关闭顶部系统状态栏。
 
+</details>
+
 ## 高级设置
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 > 适用于：iOS、Mac Silicon，设置更改后重启游戏生效。
 
 ?> PC端详见 [启动参数](/dlce/commands.md)。
@@ -166,14 +273,30 @@
 - 选择关卡下载服务器的地区。
 
 ### 调试
-#### 调试日志记录
+#### 输出日志
 - 开启后可前往“文件“app下查看游戏的调试日志。
 
+</details>
+
 ## 查看日志
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 > 适用于：Windows、iOS 和 Mac Silicon，仅在开启[输出日志](#输出日志)后可用。
 - 使用文本编辑器查看游戏的调试日志。
 
+</details>
+
 ## 数据删除
+
+<details>
+<summary>
+   <b>详情</b>
+</summary>
+
 > 适用于：Windows、iOS、Android。
 
 ### 删除游戏进度
@@ -181,3 +304,5 @@
 
 ### 清除缓存
 - 清空游戏本地生成的数据（分享图、广告缓存、配置文件等）以及本地游戏存档（不会清除 iCloud 的云端进度）。
+
+</details>
