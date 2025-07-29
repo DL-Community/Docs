@@ -3,6 +3,7 @@
   - [多语言](dlce/localization.md)
   - [游戏设置](dlce/game-settings.md)
   - [关卡信息](dlce/level_information.md)
+  - [角色外观](/dlce/character.md)
   - [自定义后期处理效果](dlce/custom_post_processing.md)
   - [启动参数](dlce/commands.md)
 - **社区**
