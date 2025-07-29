@@ -4,7 +4,7 @@
 
 > **兼容性**<br>DLCE v3.0.1 以下、DLCE 怀旧版
 
-?> 该版本的自定义后期处理与 [V1 新版](/dlce/custom_post_processing_v1.md)无实际差异，仅文件路径、文件名有区别。
+?> 该版本的自定义后期处理与[ V1 新版](/dlce/custom_post_processing_v1.md)无实际差异，仅文件路径、文件名有区别。
 
 ## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
