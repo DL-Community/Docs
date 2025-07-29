@@ -25,7 +25,7 @@
 - 开启后游戏会自动检测音频输出延迟并进行修正，玩家连接蓝牙耳机或汽车音响时建议开启。
 
 ### **触控响应延迟**
-> 适用于：iOS、Android。
+> **适用于**<br>iOS、Android。
 - 开启后游戏会自动检测触控响应延迟并进行修正，可选择关闭以减少游戏的 CPU 占用。
 
 <!-- tabs:end -->
@@ -68,7 +68,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：见下方“兼容性”
+> **适用于**<br>见下方[兼容性](#兼容性)
 - 与[分辨率](#分辨率)类似，但仅用于调整游戏 3D 场景渲染分辨率，不影响 UI 清晰度。
 
 ### 兼容性
@@ -109,7 +109,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：Windows、macOS。
+> **适用于**<br>Windows、macOS。
 
 | 模式                | 介绍                                                |
 |-------------------|---------------------------------------------------|
@@ -148,7 +148,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：Windows、macOS、Mac Silicon、Android。
+> **适用于**<br>Windows、macOS、Mac Silicon、Android。
 - 选择抗锯齿模式。
 
 | 模式   | 介绍       |
@@ -166,7 +166,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：Windows、macOS、Mac Silicon、Android。
+> **适用于**<br>Windows、macOS、Mac Silicon、Android。
 - 开启或关闭垂直同步。
 
 </details>
@@ -190,7 +190,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：Windows、macOS。
+> **适用于**<br>Windows、macOS。
 - 调整键位绑定。
 
 
@@ -207,11 +207,11 @@
 </summary>
 
 ### 触控反馈
-> 适用于：iOS、Android。
+> **适用于**<br>iOS、Android。
 - 开启后玩家点击屏幕时会在点击的位置显示特效。
 
 ### 陀螺仪效果
-> 适用于：Windows、macOS、iOS、Android。
+> **适用于**<br>Windows、macOS、iOS、Android。
 - 开启/关闭主界面关卡预览的陀螺仪视差效果。
 
 ?> 在没有陀螺仪的设备上，使用鼠标位置模拟陀螺仪效果。
@@ -230,7 +230,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：iOS、Mac Silicon，设置更改后重启游戏生效。
+> **适用于**<br>iOS、Mac Silicon，设置更改后重启游戏生效。
 
 ?> PC端详见 [启动参数](/dlce/commands.md)。
 
@@ -256,7 +256,7 @@
 - 允许同时使用多个手指控制角色。
 
 #### 使用系统字体设置
-> 适用于：iOS
+> **适用于**<br>iOS
 - UI 文本大小、粗细跟随系统设置。
 
 ### 服务器
@@ -275,7 +275,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：Windows、iOS 和 Mac Silicon，仅在开启[输出日志](#输出日志)后可用。
+> **适用于**<br>Windows、iOS 和 Mac Silicon，仅在开启[输出日志](#输出日志)后可用。
 - 使用文本编辑器查看游戏的调试日志。
 
 </details>
@@ -287,7 +287,7 @@
    <b>详情</b>
 </summary>
 
-> 适用于：Windows、iOS、Android。
+> **适用于**<br>Windows、iOS、Android。
 
 ### 删除游戏进度
 - 永久清除游戏存档，包括 iCloud 云端存档。
