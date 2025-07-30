@@ -4,6 +4,7 @@
 - **Agreements**
   - [End-User License Agreement](/en/dlce/eula.md)
   - [Privacy Policy](/en/dlce/privacy.md)
+  - [Open Source Libraries](/en/dlce/open-source.md)
 ***
 <span><b>DLCE Wiki</b></span>
 
