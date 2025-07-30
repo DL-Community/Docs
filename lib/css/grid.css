@@ -1,0 +1,16 @@
+.grid-center,
+.grid {
+    --gap: 15px;
+}
+
+.grid {
+    display: flex;
+    gap: var(--gap);
+    justify-content: inherit;
+}
+
+.grid-center {
+    display: flex;
+    gap: var(--gap);
+    justify-content: center; /* 左对齐（默认值，可不写） */
+}
