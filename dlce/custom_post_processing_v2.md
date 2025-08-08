@@ -99,6 +99,8 @@ Custom/PostProcessing/关卡代号.postprocessing
 
 > **环境光遮蔽（AO）**，开启该特效可在物体边缘绘制阴影，增加画面层次感。
 
+<img height="300" src="/lib/img/PostProcessing/AmbientOcclusion.png" alt="Ambient Occlusion Sample">
+
 ?> 环境光遮蔽不应过强，否则会导致画面变黑变脏，影响视觉效果。
 
 ```ini
@@ -125,6 +127,8 @@ Color=#000000
 ### Bloom
 
 > **物体外发光效果**，也叫**光溢出**，用于模拟物体在高亮度情况下的发光效果。
+
+<img height="300" src="/lib/img/PostProcessing/Bloom.png" alt="Bloom Sample">
 
 ?> bloom过强会导致画面过亮变糊，不推荐过度使用。
 
@@ -195,8 +199,10 @@ Blue Channel Mixer=0,0,100
 
 > 色差，模拟相机镜头散射现象，使得物体边缘产生类似彩虹的颜色
 
+<img height="300" src="/lib/img/PostProcessing/ChromaticAberration.png" alt="Chromatic Aberration Sample">
+
 ```ini
-; 下方参数均为默认值，直接套用将会使用默认效果
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Chromatic Aberration]
 Intensity=0
@@ -212,6 +218,8 @@ Fast Mode=false
 ### Depth of Field
 
 > **景深**，模拟人眼的聚焦与模糊效果。
+
+<img height="300" src="/lib/img/PostProcessing/DepthOfField.png" alt="Depth of Field Sample">
 
 ```ini
 ; 下方参数均为默认值，直接套用将会使用默认效果
@@ -234,8 +242,10 @@ Max Blur Size=Medium
 
 > 模拟屏幕信号干扰时的雪花颗粒效果。
 
+<img height="300" src="/lib/img/PostProcessing/Grain.png" alt="Grain Sample">
+
 ```ini
-; 下方参数均为默认值，直接套用将会使用默认效果
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Grain]
 Colored=true
@@ -273,8 +283,10 @@ Sample Count=10
 
 > Vignette 效果可以造成被渲染场景的亮度随距视角中心位置的距离增加而逐渐降低，使屏幕四个角落的亮度变暗。
 
+<img height="300" src="/lib/img/PostProcessing/Vignette.png" alt="Vignette Sample">
+
 ```ini
-; 下方参数均为默认值，直接套用将会使用默认效果
+; 下方参数均为默认值，直接套用将不会有任何效果
 
 [Vignette]
 Color=#000000FF
