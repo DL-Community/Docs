@@ -15,7 +15,3 @@
   - [开源代码库](dlce/open-source.md)
 ***
 <a href="https://afdian.com/a/fengyanDL"><img width="150" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a>
-
-<span><b>跳舞的线：社区版 Wiki</b></span>
-
-<span>&copy;2025 FengYanDL</span>
