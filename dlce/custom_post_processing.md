@@ -12,3 +12,11 @@
 
 ### [V1 后处理（旧版）](/dlce/custom_post_processing_legacy.md)
 适用于 <b>DLCE 怀旧版</b> 和 <b>DLCE v3.0.1</b> 之前的版本。
+
+<blockquote>
+
+## 相关文档
+- [游戏设置 > 画质](/dlce/game-settings#画质)
+- [关卡信息](/dlce/level_information)
+
+</blockquote>

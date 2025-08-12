@@ -271,3 +271,13 @@ Custom/PostProcessing/关卡代号.txt
 #### Vignette
 
 > Vignette 效果可以造成被渲染场景的亮度随距视角中心位置的距离增加而逐渐降低，使屏幕四个角落的亮度变暗。
+
+<blockquote>
+
+## 相关文档
+- [自定义后期处理 > V2](/dlce/custom_post_processing_v2.md)
+- [自定义后期处理 > V1（旧版）](/dlce/custom_post_processing_legacy.md)
+- [游戏设置 > 画质](/dlce/game-settings.md#画质)
+- [关卡信息](/dlce/level_information.md)
+
+</blockquote>

@@ -8,10 +8,10 @@
 </br>大多数情况下，iOS 版本和 Mac Silicon 版本一致，除非单独列出。
 
 ## 音画同步
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 ?> 下列自动调节**不建议**同时开启多个，否则可能会导致**音画同步修正过度**。
 
@@ -32,16 +32,16 @@
 
 ### 关卡音画同步
 - 进入关卡后，可在屏幕左下方进入，该设置仅对当前关卡生效。
-</details>
+<!--/details-->
 
 ## 声音
 - 游戏全局声音开关。
 
 ## 分辨率
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 <!-- tabs:start -->
 
 ### **Windows**
@@ -60,13 +60,13 @@
 
 ?> 分辨率越低，游戏越流畅。
 
-</details>
+<!--/details-->
 
 ## 渲染精度（动态分辨率）
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>见下方[兼容性](#兼容性)
 - 与[分辨率](#分辨率)类似，但仅用于调整游戏 3D 场景渲染分辨率，不影响 UI 清晰度。
@@ -100,14 +100,14 @@
 | OpenGL | ❌  |
 <!-- tabs:end -->
 
-</details>
+<!--/details-->
 
 ## 画面模式
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>Windows、macOS。
 
@@ -117,14 +117,14 @@
 | 无边框窗口全屏（仅Windows） | **隐藏窗口边框并等比例拉伸至全屏**，窗口切换速度快，GPU 资源与桌面共享。          |
 | 窗口化               | 窗口模式，**不隐藏窗口边框且不会等比例拉伸至全屏**，窗口切换速度最快，GPU 资源与桌面共享。 |
 
-</details>
+<!--/details-->
 
 ## 画质
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 - 调整游戏**场景 / 画面复杂度及其质量**。
 
@@ -139,14 +139,14 @@
 
 ?> 对于玩家[自定义后期处理效果](/dlce/custom_post_processing.md)，不论哪种画质模式，都会始终应用到关卡中。
 
-</details>
+<!--/details-->
 
 ## 抗锯齿
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>Windows、macOS、Mac Silicon、Android。
 - 选择抗锯齿模式。
@@ -157,38 +157,38 @@
 | MSAA | 多重采样抗锯齿。 |
 | FXAA | 快速近似抗锯齿。 |
 
-</details>
+<!--/details-->
 
 ## 垂直同步
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>Windows、macOS、Mac Silicon、Android。
 - 开启或关闭垂直同步。
 
-</details>
+<!--/details-->
 
 ## 语言
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 - 更改游戏显示语言。
 - 详见 [多语言](/dlce/localization.md)。
 
-</details>
+<!--/details-->
 
 ## 键位映射
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>Windows、macOS。
 - 调整键位绑定。
@@ -197,14 +197,14 @@
 ### 键位指示器
 - 在底部显示 HUD 界面，显示当前键盘键位的功能。
 
-</details>
+<!--/details-->
 
 ## 辅助功能
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 ### 触控反馈
 > **适用于**<br>iOS、Android。
@@ -221,14 +221,14 @@
 
 - 开启/关闭顶部系统状态栏。
 
-</details>
+<!--/details-->
 
 ## 高级设置
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>iOS、Mac Silicon，设置更改后重启游戏生效。
 
@@ -271,26 +271,26 @@
 #### 输出日志
 - 开启后可前往“文件“app下查看游戏的调试日志。
 
-</details>
+<!--/details-->
 
 ## 查看日志
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>Windows、iOS 和 Mac Silicon，仅在开启[输出日志](#输出日志)后可用。
 - 使用文本编辑器查看游戏的调试日志。
 
-</details>
+<!--/details-->
 
 ## 数据删除
 
-<details>
-<summary>
-   <b>详情</b>
-</summary>
+<!--details-->
+<!--summary-->
+   <!--b>详情</b-->
+<!--/summary-->
 
 > **适用于**<br>Windows、iOS、Android。
 
@@ -300,4 +300,12 @@
 ### 清除缓存
 - 清空游戏本地生成的数据（分享图、广告缓存、配置文件等）以及本地游戏存档（不会清除 iCloud 的云端进度）。
 
-</details>
+<!--/details-->
+
+<blockquote>
+
+## 相关文档
+- [自定义后期处理效果](/dlce/custom_post_processing.md)
+- [启动参数](/dlce/commands.md)
+
+</blockquote>
