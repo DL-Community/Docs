@@ -232,7 +232,7 @@
 
 > **适用于**<br>iOS、Mac Silicon，设置更改后重启游戏生效。
 
-?> PC端详见 [启动参数](/dlce/commands.md)。
+?> PC端详见 [启动选项](/dlce/commands.md)。
 
 ### 音频
 #### I/O 缓冲区大小
