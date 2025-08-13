@@ -2,6 +2,6 @@
   - [Information](/en/home)
   - [Localizations](/en/dlce/localization.md)
 - **Agreements**
-  - [End-User License Agreement](/en/dlce/eula.md)
-  - [Privacy Policy](/en/dlce/privacy.md)
-  - [Open Source Libraries](/en/dlce/open-source.md)
+  - [End-User License Agreement](/en/legal/eula.md)
+  - [Privacy Policy](/en/legal/privacy.md)
+  - [Open Source Libraries](/en/legal/open-source.md)
