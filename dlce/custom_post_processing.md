@@ -16,7 +16,7 @@
 <blockquote>
 
 ## 相关文档
-- [游戏设置 > 画质](/dlce/game-settings#画质)
-- [关卡信息](/dlce/level_information)
+- [游戏设置 > 画质](/dlce/game-settings.md#画质)
+- [关卡信息](/dlce/level_information.md)
 
 </blockquote>

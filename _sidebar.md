@@ -1,10 +1,12 @@
 - **游戏**
   - [简介](/home)
+  - [货币](dlce/coins.md)
+  - [音符挑战](dlce/notes-challenge.md)
+  - [角色外观](/dlce/character.md)
+  - [关卡信息](dlce/level_information.md)
+  - [自定义后期处理效果](dlce/custom_post_processing.md)
   - [多语言](dlce/localization.md)
   - [游戏设置](dlce/game-settings.md)
-  - [关卡信息](dlce/level_information.md)
-  - [角色外观](/dlce/character.md)
-  - [自定义后期处理效果](dlce/custom_post_processing.md)
   - [启动参数](dlce/commands.md)
 - **社区**
   - [QQ群](/dlce-group/about.md)
