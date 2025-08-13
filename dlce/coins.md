@@ -27,7 +27,7 @@
 - 兑换[体力](#cube)、[星星](#star)
 
 ### 获取
-- 音符挑战通关
+- [音符挑战](/dlce/notes-challenge.md)通关
 
 <blockquote>
 
