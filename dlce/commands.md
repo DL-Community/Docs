@@ -4,12 +4,27 @@
 ## 配置文件 :id=configs
 
 ### 从游戏外打开配置文件
+
+<!-- tabs:start -->
+<!-- tab:Windows -->
+#### Windows
 - 文件资源管理器中输入并进入如下路径
 
 ```directory
 %APPDATA%/../LocalLow/YINSU Studio/Dancing Line
 ```
 - 双击打开 `Launch Options.ini`。
+
+<!-- tab:macOS -->
+#### macOS
+- 打开访达 Finder，按下 ` ⌘ ⇧ G` 输入如下路径后回车
+
+```directory
+~/Library/Application Support/YINSU Studio/Dancing Line/Launch Options.ini
+```
+- 双击打开 `Launch Options.ini`。
+
+<!-- tabs:end -->
 
 ### 从游戏内打开配置文件
 - 进入游戏设置，点击 `高级设置`
