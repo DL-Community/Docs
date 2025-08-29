@@ -32,9 +32,12 @@
 <!-- tab:PC - macOS -->
 ### macOS
 
-- 打开 Finder 访达，找到游戏本体（以 `.app` 结尾的的项目）。
-- 选中后鼠标右键菜单选择`Show Package Contents` 或 `显示包内容`。
-- 进入 `Contents` 文件夹。
+- 打开访达 Finder，按下 ` ⌘ ⇧ G` 输入如下路径后回车
+
+```directory
+~/Library/Application Support/YINSU Studio/Dancing Line/
+```
+
 - 后期处理配置文件保存在如下路径中
 
 ```directory
