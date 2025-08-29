@@ -78,7 +78,12 @@ Custom/PostProcessing/关卡代号.postprocessing
 ```
 <!-- tab:Android -->
 ### Android
-- 资料暂缺
+
+- 后期处理配置文件保存在如下路径中
+
+```directory
+/storage/emulated/0/Android/data/com.AaronJ.DancingLine/files/Custom/PostProcessing/
+```
 
 <!-- tabs:end -->
 
