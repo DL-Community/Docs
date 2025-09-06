@@ -8,7 +8,7 @@
 ## **新版**
 > **兼容性**<br>DLCE v3.0.1 及以上
 
-?> DLCE v3.0.1 以下版本和 DLCE 怀旧版不兼容此版本。文档请参考 [V1（旧版）](/dlce/custom_post_processing_legacy.md)
+?> DLCE v3.0.1 以下版本和 DLCE 怀旧版不兼容此版本。文档请参考 [V1（旧版）](#旧版)
 
 ## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
