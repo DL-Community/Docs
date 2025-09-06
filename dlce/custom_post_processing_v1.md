@@ -17,7 +17,8 @@
 - 配置完毕后，继续阅读下文将文件重命名并导入至游戏。
 
 ## 导入配置文件
-
+<!-- tabs:start -->
+<!-- tab:Windows -->
 ### Windows 路径
 - 前往游戏安装目录（安装时指定的路径）。
 - 后期处理配置文件保存在
@@ -26,14 +27,25 @@
 Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes
 ```
 
+<!-- tab:iOS -->
 ### iOS 路径
-- 打开“文件”app，找到“我的iPhone（iPad）”
+- 打开“文件”app，找到“我的iPhone”
 - 后期处理配置文件保存在
 
 ```directory
 跳舞的线/Custom/PostProcessing/关卡代号.txt
 ```
 
+<!-- tab:iPad -->
+### iPad 路径
+- 打开“文件”app，找到“我的iPad”
+- 后期处理配置文件保存在
+
+```directory
+跳舞的线/Custom/PostProcessing/关卡代号.txt
+```
+
+<!-- tab:iOS on Mac -->
 ### iOS on Mac 路径
 - 打开 Finder 访达，按下 `Command + Shift + G`，输入下列路径并回车：
 
@@ -47,6 +59,8 @@ Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes
 ```directory
 Custom/PostProcessing/关卡代号.txt
 ```
+
+<!-- tabs:end -->
 
 # **旧版**
 
