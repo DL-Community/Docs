@@ -20,8 +20,7 @@
 ## 导入
 <!-- tabs:start -->
 
-<!-- tab:PC - Windows -->
-### Windows
+### **Windows**
 - 前往游戏安装目录（安装时指定的路径）。
 - 后期处理配置文件保存在如下路径中
 
@@ -29,8 +28,7 @@
 游戏安装目录/Dancing Line_Data/Custom/PostProcessing/关卡代号.postprocessing
 ```
 
-<!-- tab:PC - macOS -->
-### macOS
+### **macOS**
 
 - 打开访达 Finder，按下 ` ⌘ ⇧ G` 输入如下路径后回车
 
@@ -44,8 +42,7 @@
 Custom/PostProcessing/关卡代号.postprocessing
 ```
 
-<!-- tab:iOS - iPhone -->
-### iPhone
+### **iOS**
 - 打开“文件”app，找到“我的 iPhone”
 - 后期处理配置文件保存在如下路径中
 
@@ -53,8 +50,7 @@ Custom/PostProcessing/关卡代号.postprocessing
 跳舞的线/Custom/PostProcessing/关卡代号.postprocessing
 ```
 
-<!-- tab:iOS - iPad -->
-### iPad
+### **iPadOS**
 - 打开“文件”app，找到“我的 iPad”
 - 后期处理配置文件保存在如下路径中
 
@@ -62,8 +58,7 @@ Custom/PostProcessing/关卡代号.postprocessing
 跳舞的线/Custom/PostProcessing/关卡代号.postprocessing
 ```
 
-<!-- tab:iOS - M 芯片 Mac -->
-### iOS - M 芯片 Mac
+### **iOS on Mac**
 - 打开 Finder 访达，按下 ` ⌘ ⇧ G`，输入下列路径并回车：
 
 ```directory
@@ -76,8 +71,8 @@ Custom/PostProcessing/关卡代号.postprocessing
 ```directory
 Custom/PostProcessing/关卡代号.postprocessing
 ```
-<!-- tab:Android -->
-### Android
+
+### **Android**
 
 - 后期处理配置文件保存在如下路径中
 

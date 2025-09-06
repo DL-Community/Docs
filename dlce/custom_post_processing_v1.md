@@ -31,7 +31,7 @@ Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes
 跳舞的线/Custom/PostProcessing/关卡代号.txt
 ```
 
-### M 芯片 Mac 路径（iOS 版本）
+### iOS on Mac 路径
 - 打开 Finder 访达，按下 `Command + Shift + G`，输入下列路径并回车：
 
 ````directory

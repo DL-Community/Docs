@@ -6,8 +6,8 @@
 ### 从游戏外打开配置文件
 
 <!-- tabs:start -->
-<!-- tab:Windows -->
-#### Windows
+
+#### **Windows**
 - 文件资源管理器中输入并进入如下路径
 
 ```directory
@@ -15,8 +15,7 @@
 ```
 - 双击打开 `Launch Options.ini`。
 
-<!-- tab:macOS -->
-#### macOS
+#### **macOS**
 - 打开访达 Finder，按下 ` ⌘ ⇧ G` 输入如下路径后回车
 
 ```directory

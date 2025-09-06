@@ -3,7 +3,7 @@
     /*--docsifytabs-border-color: #ededed;*/
     --docsifytabs-border-px: 1.5px 0px;
     --docsifytabs-border-radius-px: 0px;
-    --docsifytabs-margin: 1.5em 0;
+    --docsifytabs-margin: 1em 0em;
 
     /* Tabs */
     /* --docsifytabs-tab-background: #f8f8f8; */
@@ -12,9 +12,9 @@
     /* --docsifytabs-tab-color--active: inherit;*/
     --docsifytabs-tab-highlight-px: 3px;
     /* --docsifytabs-tab-highlight-color: var(--theme-color, currentColor); */
-    --docsifytabs-tab-padding: 0.6em 1em;
+    --docsifytabs-tab-padding: 0.5em 1em;
 
     /* Tab content */
     /*--docsifytabs-content-background: inherit;*/
-    --docsifytabs-content-padding:1rem 0rem;
+    --docsifytabs-content-padding:1.5rem 0rem;
 }

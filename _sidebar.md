@@ -7,7 +7,7 @@
   - [自定义后期处理效果](dlce/custom_post_processing.md)
   - [多语言](dlce/localization.md)
   - [游戏设置](dlce/game-settings.md)
-  - [启动参数](dlce/commands.md)
+  - [启动选项](dlce/commands.md)
 - **社区**
   - [QQ群](/dlce-group/about.md)
   - [群规](dlce-group/rules.md)
