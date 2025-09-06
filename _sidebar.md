@@ -1,5 +1,6 @@
 - **游戏**
   - [简介](/home)
+  - [版本历史](/dlce/versions.md)
   - [货币](dlce/coins.md)
   - [音符挑战](dlce/notes-challenge.md)
   - [角色外观](/dlce/character.md)
