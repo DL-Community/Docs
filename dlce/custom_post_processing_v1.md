@@ -4,10 +4,12 @@
 
 ?> **过时的文档**<br>Post-Processing V1 将在未来的版本移除支持，此文档现不再维护。推荐使用 [V2 版本](/dlce/custom_post_processing_v2.md)。
 
+<!-- tabs:start -->
+
 ## **新版**
 > **兼容性**<br>DLCE v3.0.1 及以上
 
-?> DLCE v3.0.1 以下版本和 DLCE 怀旧版不兼容此版本。文档请参考 [V1（旧版）](#旧版)
+?> DLCE v3.0.1 以下版本和 DLCE 怀旧版不兼容此版本。文档请参考 [旧版](#旧版)
 
 ## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
@@ -47,14 +49,6 @@ Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes
 Custom/PostProcessing/关卡代号.txt
 ```
 
-### 注意事项
-
-- 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus`，则游戏会将你的配置文件应用在**金牛座**关卡中。
-- 更多 `关卡代号` 见[关卡信息](/dlce/level_information.md)。
-- `关卡代号` 必须使用指定的名称，否则不会正常读取。
-- 游戏允许同时导入多个配置文件，并自动应用到 `关卡代号` 对应的关卡上。
-
-
 ## **旧版**
 
 > **兼容性**<br>DLCE v3.0.0 ～ v1.2.9、DLCE 怀旧版
@@ -75,6 +69,8 @@ Custom/PostProcessing/关卡代号.txt
 ```directory
 Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/postprofile.bytes
 ```
+
+<!-- tabs:end -->
 
 ### 注意事项
 
