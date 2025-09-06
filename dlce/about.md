@@ -41,7 +41,9 @@
 ## 配置要求
 
 <!-- tabs:start -->
+
 <!-- tab:Windows -->
+
 > 需要 64 位处理器和操作系统
 ### 推荐配置
 - **操作系统**：Windows 10 64bit / Windows 11 64bit
@@ -65,12 +67,14 @@
 - 建议画质调节至“高”或更低以保证流畅度
 
 <!-- tab:macOS -->
+
 > 需要 64 位处理器和操作系统
 ### 推荐配置
 - **操作系统**： macOS 15 或更高版本
 - **处理器**： Apple M3 或更高配置
 - **图形 API**：Metal 3 或更高版本
-- **存储空间**: 需要 4 GB 可用空间
+- **内存**: 8 GB RAM
+- **存储空间**: 需要 5 GB 可用空间
 - 建议画质调节至“极高”或“极限”以获得最佳游戏体验
 
 ### 最低配置
@@ -78,12 +82,14 @@
 - **操作系统**： High Sierra 10.13+
 - **处理器**： x64 architecture with SSE2.
 - **图形 API**：Metal 兼容型 Intel 和 AMD GPU
+- **内存**: 4 GB RAM
 - **其他要求**: Apple officially supported drivers.
   For development: IL2CPP scripting back-end requires Xcode. Targeting Apple Silicon with IL2CPP scripting back-end requires macOS Catalina 10.15.4 and Xcode 12.2 or newer.
 - **存储空间**: 需要 4 GB 可用空间
 - 建议画质调节至“高”或更低以保证流畅度
 
 <!-- tab:iOS -->
+
 > 需要 64 位处理器和操作系统
 ### 推荐配置
 - **操作系统**： iOS 18 或更高
@@ -100,6 +106,7 @@
 - 建议画质调节至“高”或更低以保证流畅度
 
 <!-- tab:Android -->
+
 ### 推荐配置
 - **操作系统**： Android 12 或更高
 - **处理器**： ARM64
