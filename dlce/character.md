@@ -67,7 +67,7 @@
 
 <blockquote>
 
-## 相关文档
+**相关文档**
 - [货币 > 星星](/dlce/coins.md#star)
 - [音符挑战](/dlce/notes-challenge.md)
 

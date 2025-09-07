@@ -27,7 +27,7 @@
 
 <blockquote>
 
-## 相关文档
+**相关文档**
 - [货币](/dlce/coins.md)
 - [角色外观](/dlce/character.md)
 

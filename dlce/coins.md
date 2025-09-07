@@ -31,7 +31,7 @@
 
 <blockquote>
 
-## 相关文档
+**相关文档**
 - [音符挑战](/dlce/notes-challenge.md)
 - [角色外观](/dlce/character.md)
 

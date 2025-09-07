@@ -1,0 +1,19 @@
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 1.7em;
+    padding: 0px;
+    margin: 0px;
+}
+.breadcrumb li::before {
+    content: "";
+    margin-right: -1.3em;
+}
+.breadcrumb li::after {
+    content: ">";
+    margin-left: 0.5em;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";          /* 最后一个不显示分隔符 */
+}
