@@ -87,7 +87,7 @@
 #### **macOS**
 | 渲染 API | 支持 |
 |--------|----|
-| Metal  | ✅  |
+| Metal  | ❌  |
 | OpenGL | ❌  |
 
 #### **iOS on Mac**
