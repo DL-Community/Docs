@@ -5,7 +5,7 @@
 ### [V2 后处理（推荐）](/dlce/custom-post-processing/v2)
 支持 <b>DLCE v3.5 及以上版本</b>。推荐使用此版本。
 
-### [V1 后处理（新版）](/dlce/custom-post-processing/v1.md)
+### [V1 后处理（新版）](/dlce/custom-post-processing/v1.md#New)
 支持 <b>DLCE v1.2.9 及以上版本和怀旧版</b>。DLCE 最新版本仍支持 V1，但不推荐使用。
 
 ### [V1 后处理（旧版）](/dlce/custom-post-processing/v1.md#Legacy)
