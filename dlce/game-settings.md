@@ -89,10 +89,10 @@
    <!--b>详情</b-->
 <!--/summary-->
 
-> **适用于**<br>见下方[兼容性](#兼容性)
+> **适用于**<br>见下方[兼容性](#Render-Resolution-Cap)
 - 与[分辨率](#分辨率)类似，但仅用于调整游戏 3D 场景渲染分辨率，不影响 UI 清晰度。
 
-### 兼容性
+### 兼容性 :id=Render-Resolution-Cap
 <!-- tabs:start -->
 #### **Windows**
 | 渲染 API | 支持 |
