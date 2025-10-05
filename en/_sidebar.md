@@ -5,7 +5,7 @@
   - [Localizations](/en/dlce/localization.md)
   - [Settings](/en/dlce/game-settings.md)
   - [Launch Options](/en/dlce/commands.md)
-- **Agreements**
+- **Legal**
   - [End-User License Agreement](/en/legal/eula.md)
   - [Privacy Policy](/en/legal/privacy.md)
   - [Open Source Libraries](/en/legal/open-source.md)
