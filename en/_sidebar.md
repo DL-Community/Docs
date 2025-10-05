@@ -1,5 +1,5 @@
 - **GAME**
-  - [Information](/en/home)
+  - [Home](/en/home)
   - [Localizations](/en/dlce/localization.md)
 - **Agreements**
   - [End-User License Agreement](/en/legal/eula.md)

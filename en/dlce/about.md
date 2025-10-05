@@ -2,7 +2,7 @@
 
 Welcome to the DLCE Database, where the latest content of this game will be periodically updated.
 
-## Downloads
+## Downloads :id=downloads
 
 <div class="icon-grid">
   <a class="icon-grid-group" href="https://github.com/DL-Community/DancingLine-CommunityEdition" target="_blank">
@@ -13,7 +13,7 @@ Welcome to the DLCE Database, where the latest content of this game will be peri
   </a>
 </div>
 
-## Communities
+## Communities :id=communities
 
 <div class="icon-grid">
   <a class="icon-grid-group" href="https://chinadlrs.com/app/?id=25" target="_blank">

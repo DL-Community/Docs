@@ -2,7 +2,7 @@
 
 欢迎来到DLCE游戏资料库，这里将会不定期更新本游戏中的最新内容
 
-## 游戏下载
+## 游戏下载 :id=downloads
 
 <div class="icon-grid">
   <a class="icon-grid-group" href="https://github.com/DL-Community/DancingLine-CommunityEdition" target="_blank">
@@ -20,7 +20,7 @@
   </a>
 </div>
 
-## 社区
+## 社区 :id=communities
 
 <div class="icon-grid">
   <a class="icon-grid-group" href="https://chinadlrs.com/app/?id=25" target="_blank">
