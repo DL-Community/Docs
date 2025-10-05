@@ -66,121 +66,102 @@
 <!-- tab:Windows -->
 
 ?> 需要 64 位处理器和操作系统
-
-### Recommended
-
-- **Operating System**: Windows 10 64bit / Windows 11 64bit
-- **Processor**: Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz or higher
-- **Graphics API**: Direct3D12
-- **Graphics Card (GPU)**: NVIDIA GTX 1060／AMD Radeon RX 480 or higher
-- **RAM**: 8 GB RAM or higher
-- **Storage**: 需要 5 GB 可用空间
+### 推荐配置
+- **操作系统**：Windows 10 64bit / Windows 11 64bit
+- **处理器**：Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz 或更高配置
+- **图形 API**：Direct3D12
+- **显卡**：NVIDIA GTX 1060／AMD Radeon RX 480 或更高配置
+- **内存**：8 GB RAM 或更高配置
+- **存储空间**：需要 5 GB 可用空间
 - 建议将画质调节至“极高”或“极限”以获得最佳游戏体验
 - 显示器刷新率在 120 hz 和以上时推荐开启垂直同步
 - 为使用 DirectX 12 API，必须使用 Windows 10（Version 1809以上）以及 VRAM 容量在 4 GB 以上的 GPU（图形处理器）
 
-### Minimum
-
+### 最低配置
 > 最低配置无法保证完整游戏体验
-
-- **Operating System**: Windows 7 SP1
-- **Processor**: Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz
-- **Graphics API**: Direct3D11 或 OpenGLCore
-- **Graphics Card (GPU)**: NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 6950
-- **RAM**: 4 GB RAM
-- **Storage**: 需要 4 GB 可用空间
+- **操作系统**：Windows 7 SP1
+- **处理器**：Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz
+- **图形 API**：Direct3D11 或 OpenGLCore
+- **显卡**：NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 6950
+- **内存**：4 GB RAM
+- **存储空间**：需要 4 GB 可用空间
 - 建议将画质调节至“高”或更低以保证流畅度
 
 <!-- tab:macOS -->
 
 ?> 需要 64 位处理器和操作系统
-
-### Recommended
-
-- **Operating System**: macOS 15 or newer
-- **Processor**: Apple M3 or higher
-- **Graphics API**: Metal 3 or newer
-- **RAM**: 8 GB RAM
-- **Storage**: 需要 5 GB 可用空间
+### 推荐配置
+- **操作系统**：macOS 15 或更高版本
+- **处理器**：Apple M3 或更高配置
+- **图形 API**：Metal 3 或更高版本
+- **内存**：8 GB RAM
+- **存储空间**：需要 5 GB 可用空间
 - 建议将画质调节至“极高”或“极限”以获得最佳游戏体验
 
-### Minimum
-
+### 最低配置
 > 最低配置无法保证完整游戏体验
-
-- **Operating System**: High Sierra 10.13+
-- **Processor**: x64 architecture with SSE2
-- **Graphics API**: Metal 兼容型 Intel 和 AMD GPU
-- **RAM**: 4 GB RAM
-- **Storage**: 需要 4 GB 可用空间
+- **操作系统**：High Sierra 10.13+
+- **处理器**：x64 architecture with SSE2
+- **图形 API**：Metal 兼容型 Intel 和 AMD GPU
+- **内存**：4 GB RAM
+- **存储空间**：需要 4 GB 可用空间
 - 建议将画质调节至“高”或更低以保证流畅度
 
 <!-- tab:iOS on Mac -->
 
 ?> 需要 64 位处理器和操作系统
-
-### Recommended
-
-- **Operating System**: macOS 15 or newer
-- **Processor**: Apple M3 or higher
-- **Graphics API**: Metal 3 or newer
-- **RAM**: 8 GB RAM
-- **Storage**: 需要 5 GB 可用空间
+### 推荐配置
+- **操作系统**：macOS 15 或更高版本
+- **处理器**：Apple M3 或更高配置
+- **图形 API**：Metal 3 或更高版本
+- **内存**：8 GB RAM
+- **存储空间**：需要 5 GB 可用空间
 - 建议将画质调节至“极高”或“极限”以获得最佳游戏体验
 
-### Minimum
-
+### 最低配置
 > 最低配置无法保证完整游戏体验
-
-- **Operating System**: macOS 11 or newer
-- **Processor**: Apple M1
-- **Graphics API**: Metal
-- **RAM**: 4 GB RAM
-- **Storage**: 需要 4 GB 可用空间
+- **操作系统**：macOS 11 或更高版本
+- **处理器**：Apple M1
+- **图形 API**：Metal
+- **内存**：4 GB RAM
+- **存储空间**：需要 4 GB 可用空间
 - 建议将画质调节至“高”或更低以保证流畅度
 
 <!-- tab:iOS -->
 
 ?> 需要 64 位处理器和操作系统
-
-### Recommended
-
-- **Operating System**: iOS 18 或更高
-- **RAM**: 8 GB RAM
-- **Storage**: 需要 4 GB 可用空间
+### 推荐配置
+- **操作系统**：iOS 18 或更高
+- **内存**：8 GB RAM
+- **存储空间**：需要 4 GB 可用空间
 - 建议将画质调节至“极高”以获得最佳游戏体验
 - 推荐使用 80 hz 或更高屏幕刷新率游玩
 
-### Minimum
-
+### 最低配置
 > 最低配置无法保证完整游戏体验
-
-- **Operating System**: iOS 12
-- **RAM**: 2 GB RAM
-- **Storage**: 需要 2 GB 可用空间
+- **操作系统**：iOS 12
+- **内存**：2 GB RAM
+- **存储空间**：需要 2 GB 可用空间
 - 建议将画质调节至“高”或更低以保证流畅度
 
 <!-- tab:Android -->
 
-### Recommended
-
-- **Operating System**: Android 12 或更高
-- **Processor**: ARM64
-- **Graphics API**: OpenGL ES 3.0+、Vulkan
-- **RAM**: 8 GB RAM
-- **Storage**: 需要 4 GB 可用空间
+### 推荐配置
+- **操作系统**：Android 12 或更高
+- **处理器**：ARM64
+- **图形 API**：OpenGL ES 3.0+、Vulkan
+- **内存**：8 GB RAM
+- **存储空间**：需要 4 GB 可用空间
 - 建议将画质调节至“极高”以获得最佳游戏体验
 - 推荐使用 80 hz 或更高屏幕刷新率游玩
 
-### Minimum
-
+### 最低配置
 > 最低配置无法保证完整游戏体验
-
-- **Operating System**: Android 5.1
-- **Processor**: ARMv7
-- **Graphics API**: OpenGL ES 2.0+
-- **RAM**: 2 GB RAM
-- **Storage**: 需要 2 GB 可用空间
+- **操作系统**：Android 5.1
+- **处理器**：ARMv7
+- **图形 API**：OpenGL ES 2.0+
+- **内存**：2 GB RAM
+- **存储空间**：需要 2 GB 可用空间
 - 建议将画质调节至“高”或更低以保证流畅度
 
 <!-- tabs:end -->
