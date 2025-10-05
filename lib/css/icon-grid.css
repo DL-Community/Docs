@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     text-align: center;
     margin: 20px 0;
-    gap: 7px;
+    gap: 50px 7px;
     justify-content: flex-start;
 }
 .icon-grid-vertical .icon-grid-group,
@@ -26,7 +26,7 @@
 
 .icon-grid-vertical .icon-grid-item,
 .icon-grid .icon-grid-item {
-    width: 120px;
+    width: 100px;
 }
 
 .icon-grid-vertical .icon-grid-img,
