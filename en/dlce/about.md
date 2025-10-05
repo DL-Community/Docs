@@ -77,7 +77,7 @@ Welcome to the DLCE Database, where the latest content of this game will be peri
 - **Graphics Card (GPU)**: NVIDIA GTX 1060／AMD Radeon RX 480 or higher
 - **RAM**: 8 GB RAM or more
 - **Storage**: 5 GB available space
-- Setting the quality to "Ultra" or "Maximum" for the best gaming experience.
+- Setting the quality to "Ultra" or "Maximum" for the best experience.
 - Enabling vertical sync for monitors with a refresh rate of 120 Hz or higher.
 - To use the DirectX 12 API, you must be using Windows 10 (Version 1809 or higher) and a GPU with at least 4 GB of VRAM.
 
