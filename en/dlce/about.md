@@ -2,6 +2,9 @@
 
 Welcome to the DLCE Database, where the latest content of this game will be periodically updated.
 
+?> The English translations is still WIP, some content may only available in Chinese.
+You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the page.
+
 ## Downloads :id=downloads
 
 <div class="icon-grid">
