@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     text-align: center;
     margin: 20px 0;
-    gap: 30px;
+    gap: 7px;
     justify-content: flex-start;
 }
 .icon-grid-vertical .icon-grid-group,
@@ -26,13 +26,13 @@
 
 .icon-grid-vertical .icon-grid-item,
 .icon-grid .icon-grid-item {
-    width: 80px;
+    width: 120px;
 }
 
 .icon-grid-vertical .icon-grid-img,
 .icon-grid .icon-grid-img {
     height: var(--icon-size);
-    border-radius: 15px;
+    border-radius: 0;
 }
 
 .icon-grid-vertical .icon-grid-label,
@@ -47,7 +47,7 @@
     flex-wrap: wrap;
     text-align: left;
     align-items: flex-start;
-    gap: 30px;
+    gap: 50px;
     margin: 20px 0;
 }
 
