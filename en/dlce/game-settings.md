@@ -1,4 +1,4 @@
-# 游戏设置
+# Settings
 
 > - 下列选项并非在所有平台上都可用，具体以游戏实际版本为准。
 > - 点击游戏主界面右下角的齿轮图标进入游戏设置。
@@ -52,7 +52,7 @@
 | **极高**       | 支持 | 支持     | 多      | 支持          |
 | **极限（仅电脑端）** | 支持 | 高质量    | 最多     | 支持          |
 
-?> 对于玩家[自定义后期处理效果](/dlce/custom_post_processing.md)，不论哪种画质模式，都会始终应用到关卡中。
+?> 对于玩家[自定义后期处理效果](/en/dlce/custom_post_processing.md)，不论哪种画质模式，都会始终应用到关卡中。
 
 ## 分辨率
 <!--details-->
@@ -200,18 +200,18 @@
 <!--/details-->
 
 ## 辅助功能
-?> 见 [辅助功能](/dlce/game-settings-accessibility.md)。
+?> 见 [Accessibility](/en/dlce/game-settings-accessibility.md)。
 
 
-## 高级设置 :id=advanced-settings
+## Advanced Settings :id=advanced-settings
 
 <!-- tabs:start -->
 ### **Windows**
 
-?> 见 [启动选项](/dlce/commands.md)。
+?> 见 [Launch Options](/en/dlce/commands.md)。
 
 ### **macOS**
-?> 见 [启动选项](/dlce/commands.md)。
+?> 见 [Launch Options](/en/dlce/commands.md)。
 
 ### **iOS on Mac**
 
@@ -336,8 +336,7 @@
 
 <blockquote>
 
-**相关文档**
-- [自定义后期处理效果](/dlce/custom_post_processing.md)
-- [启动参数](/dlce/commands.md)
+**Related Topics**
+- [Launch Options](/en/dlce/commands.md)
 
 </blockquote>

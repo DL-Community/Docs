@@ -91,6 +91,6 @@ Timeout=10
 <blockquote>
 
 **相关文档**
-- [游戏设置 > 高级设置](/dlce/game-settings.md#高级设置)
+- [游戏设置 > 高级设置](/dlce/game-settings.md#advanced-settings)
 
 </blockquote>

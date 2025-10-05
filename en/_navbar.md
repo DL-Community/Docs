@@ -1,5 +1,4 @@
 - [Home](/en/home)
 - [Downloads](/en/home#downloads)
-- [Communities](/en/home#communities)
 - :uk: English
   - <a href="#/home" target="_blank">:cn: 简体中文</a>

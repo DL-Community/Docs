@@ -1,64 +1,96 @@
-# Command Arguments
+# Launch Options
+> **适用于**<br>Windows、macOS
 
-> Some commands should be used with caution, and not all the commands are available for every game versions.
+## Config File :id=configs
 
-## Game Built-in Arguments
+### 从游戏外打开配置文件
 
-?> The crossed out arguments are no longer supported in the latest version
+<!-- tabs:start -->
 
-> Some commands are supported on iOS versions
+#### **Windows**
+- 文件资源管理器中输入并进入如下路径
 
-| Command                    | Description                                                                                                                                                                                       | Notes                                                                                                                        |
-|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| `-master_volume_#`         | Adjust the game volume, `#` must be integer between 0 - 100                                                                                                                                       |
-| `-debug_logging`           | Enables runtime logging. In Standalone Platforms (Windows, macOS, etc.), the "VIEW DEBUG LOGS" option is also available in game settings.                                                         | Available in v3.1.3.1031 and above                                                                                           |
-| `-server_#`                | Change game server to another # (Integer)<br/>0: Default (Has no effect)<br/>1: Global Server<br/>2: China Mainland Server                                                                        | -                                                                                                                            |
-| `-disable_discord_rpc`     | Disable Discord RPC                                                                                                                                                                               | -                                                                                                                            |
-| `-always_show_cursor`      | Do not hide cursor automatically during game play                                                                                                                                                 | -                                                                                                                            |
-| `-show_fps`                | Display the current FPS at bottom-right corner                                                                                                                                                    | -                                                                                                                            |
-| `-frame_rate_#`            | Set FPS to "#", and disable v-sync                                                                                                                                                                | "#" must be integers and larger than -1, -1 means unlimited FPS;<br />The FPS will be 60 by default when v-sync was disabled |
-| `-graphics_tier_#`         | Set graphics tier to "#" (integers between 0-2)<br />0: Low<br />1: Medium<br />2: High                                                                                                           | The higher the graphics tier, the higher the rendering cost, it is not recommended to set it manually                        |
-| `-low_quality_mode`        | Force the use of the lowest quality, which is suitable for situations where the game crashes (can no longer enter the game) after some devices are adjusted to high quality.                      | Available in v2.6.0.12 and above                                                                                             |
-| `-audio_dsp_buffer_#`      | Set game audio DSP buffer size to "#" (must be integer), the smaller the buffer is, the smaller the audio latency, it also makes the audio become unstable if it's too small (Default Value: 512) | Available in v2.6.2.0 and above                                                                                              |
-| ~~`-force_windowed_mode`~~ | Force the game to run in windowed mode                                                                                                                                                            | **❗Deprecated in v2.0.2 and above**                                                                                          |
-| ~~`-low_resolution_mode`~~ | Force the game to run in 800 X 600 resolution                                                                                                                                                     | **❗Deprecated in v2.0.2 and above**                                                                                          |
-| ~~`-disable_shadow`~~      | Disable shadows                                                                                                                                                                                   | **❗Deprecated in v2.0.2 and above**                                                                                          |
-| ~~`-shadow_distance_#`~~   | Set gameplay shadows render distance to "#"                                                                                                                                                       | "#" must be integers and larger than 0                                                                                       |
-| ~~`-disable_sound`~~       | Disable sounds (even enabled in game settings)                                                                                                                                                    | **❗Deprecated in v2.0.2 and above**                                                                                          |
-| ~~`-use_soft_shadows`~~    | Use soft shadows                                                                                                                                                                                  | **❗Deprecated in v2.0.2 and above**                                                                                          |
+```directory
+%APPDATA%/../LocalLow/YINSU Studio/Dancing Line
+```
+- 双击打开 `Launch Options.ini`。
 
-## Unity Engine Arguments
+#### **macOS**
+- 打开访达 Finder，按下 ` ⌘ ⇧ G` 输入如下路径后回车
 
-[Unity Official Documentation](https://docs.unity3d.com/2019.4/Documentation/Manual/PlayerCommandLineArguments.html)
+```directory
+~/Library/Application Support/YINSU Studio/Dancing Line/Launch Options.ini
+```
+- 双击打开 `Launch Options.ini`。
 
-| Command                       | Description                                                                                                                                                                                                                                                                                                             |
-|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `-force-d3d11-singlethreaded` | Force DirectX 11.0 to be created with a `D3D11_CREATE_DEVICE_SINGLETHREADED flag`.                                                                                                                                                                                                                                      |
-| `-force-device-index`         | Make the Standalone Player use a specific GPU device by passing it the index of that GPU. This option is supported for D3D11, D3D12, Metal, and Vulkan graphics APIs, but isn’t supported for OpenGL.                                                                                                                   |
-| `-force-glcore`               | Force the application to use the OpenGL core profile for rendering. The Editor tries to use the most recent OpenGL version available, and all OpenGL extensions exposed by the OpenGL drivers. Unity uses Direct3D if the platform doesn’t support OpenGL.                                                              |
-| `-force-glcoreXY`             | Similar to `-force-glcore`, but requests a specific OpenGL context version. Accepted values for XY: 32, 33, 40, 41, 42, 43, 44, or 45.                                                                                                                                                                                  |
-| `-force-vulkan`               | Force the application to use Vulkan for rendering.                                                                                                                                                                                                                                                                      |
-| `-force-metal` (macOS only)   | Make the Standalone Player use Metal as the default graphics API.                                                                                                                                                                                                                                                       |
-| `-force-d3d11` (Windows only) | Force the application to use Direct3D 11 for rendering.                                                                                                                                                                                                                                                                 |
-| `-force-d3d12` (Windows only) | Force the application to use Direct3D 12 for rendering.                                                                                                                                                                                                                                                                 |
-| `-monitor N`                  | Run Standalone Player on the specified monitor, indicated by a 1-based index number.                                                                                                                                                                                                                                    |
-| `-nolog`                      | Do not produce an output log. When you don’t use this argument, Unity writes the `output_log.txt` in the [Log Files](https://docs.unity3d.com/2020.3/Documentation/Manual/LogFiles.html) folder, where the [Debug.Log](https://docs.unity3d.com/2020.3/Documentation/ScriptReference/Debug.Log.html) output is printed. |
-| `-no-stereo-rendering`        | Turn off stereo rendering.                                                                                                                                                                                                                                                                                              |
-| `-popupwindow`                | Create the window as a pop-up window, without a frame. This command isn’t supported on macOS.                                                                                                                                                                                                                           |
-| `-screen-fullscreen`          | Override the default full-screen state. This must be 0 or 1.                                                                                                                                                                                                                                                            |
-| `-screen-height`              | Override the default screen height. This must be an integer from a supported resolution.                                                                                                                                                                                                                                |
-| `-screen-width`               | Override the default screen width. This width value must be an integer from a supported resolution.                                                                                                                                                                                                                     |
-| `-screen-quality`             | Override the default screen quality. Example usage would be: `/path/to/myGame -screen-quality Beautiful`. The supported options match the [Quality Settings](https://docs.unity3d.com/2020.3/Documentation/Manual/class-QualitySettings.html) names.                                                                    |
-| `-window-mode` (Windows only) | Override fullscreen windowed mode. Accepted values are `exclusive` or `borderless`. For more information, see [Standalone Player settings](https://docs.unity3d.com/2020.3/Documentation/Manual/class-PlayerSettingsStandalone.html).                                                                                   |
+<!-- tabs:end -->
 
-## Arguments usage method
+### 从游戏内打开配置文件
+- 进入游戏设置，点击 `高级设置`
 
-Create a shortcut for "DancingLine.exe", right click the shortcut and choose `Properties`, and your command arguments at the end of `Target`
+### 配置文件格式示例
 
-### Example
+```ini
+[Command Line Args]
+-example_argument ; 此条为示例命令，可以删除
 
-`Target: "C:\DancingLine\Dancing Line.exe" -always_show_cursor -disable_discord_rpc`
+[Audio]
+IOBufferSize=512
+MasterVolume=100
 
-**Format: **`"game exe file path" -argument1 -argument2 -argument3...`
+[Video]
+FrameRate=60
 
-?> There should be a space after the game exe file path, otherwise the command will not take effect. You can add multiple arguments at the same time, note that there **must also be a space between each argument**.
+[Network]
+Server=0
+Timeout=10
+```
+?> 某些配置与[启动参数](#args)中的命令重合，游戏会优先使用[启动参数](#args)中的设置。
+
+| 名称                  | 描述                                                                                                                          |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| [Command Line Args] | 在此标签下方放置你要使用的 [启动参数](#args)，每行放置一个。                                                                                         |
+| -example_argument   | 示例命令，无实际作用。                                                                                                                 |
+| [Audio]             | 音频配置区。                                                                                                                      |
+| IOBufferSize        | 音频I/O缓冲区大小（DSP缓冲区大小），推荐512。<br/>与 `-audio_dsp_buffer_#` 命令作用一致。                                                             |
+| MasterVolume        | 游戏音量大小，0 - 100。<br/>与 `-master_volume_#` 命令作用一致。                                                                            |
+| [Video]             | 显示配置区。                                                                                                                      |
+| FrameRate           | 游戏帧率限制，-1代表无限帧率，默认60。<br/>与 `-frame_rate_#` 命令作用一致。                                                                         |
+| [Network]           | 网络配置区。                                                                                                                      |
+| Server              | 更换游戏服务器，<br/>0：默认（相当于不使用命令）<br/>1：Unity Online Services。<br/>2：GitHub<br/>3：Unity Gaming Services<br/>与 `-server_#` 命令作用一致。 |
+| Timeout             | 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。此设置会影响所有下载行为（例如游戏初始化、关卡下载和广告等）。0 代表不设置超时。                                                |
+
+
+## Launch Arguments :id=args
+
+?> 被划线的命令表明已不在最新版本中受支持
+
+> **提示**<br>
+> 要应用这些命令，你可以通过命令行启动参数的方式来应用这些命令，也可以将这些命令放置在上面配置文件的`[Command Line Args]`分区下方。**注意，DLCE 怀旧版只支持通过命令行方式应用这些命令，且部分命令在怀旧版中不可用**
+
+| 命令                         | 描述                                                                                                       | 备注                                             |
+|:---------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| `-multi_touch`             | 允许[多点触控](/en/dlce/game-settings.md#MultiTouch)                                                           |
+| `-master_volume_#`         | 调节游戏音量，`#` 数值为整数 0 - 100                                                                                 |
+| `-debug_logging`           | 开启日志写入功能，单机平台（Windows、macOS等）可在游戏设置中找到“查看日志”选项，点击后会显示游戏的运行时日志                                            | v3.1.3.1031及以上版本提供                             |
+| `-server_#`                | 更换游戏服务器为 #（数字）<br/>为了确保获取最新关卡资源，请尽可能使用默认服务器，除非关卡速度慢。<br/>0：默认（相当于不使用命令）<br/>1：Unity Online Services (国服) | -                                              |
+| `-disable_discord_rpc`     | 禁用Discord RPC                                                                                            | -                                              |
+| `-always_show_cursor`      | 关卡游玩过程中不再自动隐藏鼠标光标                                                                                        | -                                              |
+| `-show_fps`                | 在屏幕右下角显示FPS                                                                                              |                                                |
+| `-frame_rate_#`            | 设置帧率上限为“#”，并禁用垂直同步<br />“#”需为不小于-1的整数，-1表示无限                                                             | 在垂直同步关闭的情况下，游戏默认帧率上限为60                        |
+| `-low_quality_mode`        | 强制使用最低画质，适用于部分设备调整到高画质后导致游戏闪退的情况（无法再进入游戏）                                                                | v2.6.0.12及以上版本提供                               |
+| `-audio_dsp_buffer_#`      | 设置游戏音频的DSP缓冲区大小为“#”（整数），缓冲区越小，音乐延迟越小，但同时也会导致音频输出不稳定（推荐值：512）                                             | v2.6.2.0及以上版本提供                                |
+| ~~`-use_soft_shadows`~~    | 使用柔和阴影模式（物体阴影边缘虚化）                                                                                       | **❗在2.0.2版本中移除**                               |
+| ~~`-force_windowed_mode`~~ | 强制游戏以窗口模式运行                                                                                              | **❗在2.0.2版本中移除**                               |
+| ~~`-low_resolution_mode`~~ | 强制游戏以800x600分辨率模式运行                                                                                      | **❗在2.0.2版本中移除**                               |
+| ~~`-disable_shadow`~~      | 在游戏全局范围内禁用阴影效果                                                                                           | **❗在2.0.2版本中移除**                               |
+| ~~`-shadow_distance_#`~~   | 锁定阴影距离为 “#”（整数）                                                                                          | “#” 需为不小于0的整数                                  |
+| ~~`-disable_sound`~~       | 在游戏全局范围内禁用声音（即使设置中已经打开）                                                                                  | **❗在2.0.2版本中移除**                               |
+| ~~`-graphics_tier_#`~~     | 更改图像层为"#"（0-2的整数）<br />0：低<br />1：中<br />2：高                                                             | 图像层越高，渲染消耗越高，不建议手动设置<br />游戏引擎默认会根据设备性能自动调节此设定 |
+
+<blockquote>
+
+**Related Topics**
+- [Settings > Advanced Settings](/en/dlce/game-settings.md#advanced-settings)
+
+</blockquote>
