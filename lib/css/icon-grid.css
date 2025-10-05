@@ -13,7 +13,8 @@
     --box-outline-hover-col: rgba(0, 120, 215, 0.4);
     --box-outline-radius: 6px;
     --fade-duration: 0.1s;
-    --item-padding: 15px 15px;
+    --item-padding-vertical: 15px 10px;
+    --item-padding-horizontal: 10px 10px;
     --icon-label-gap: 10px;
     --item-gap: 25px 14px;
 }
@@ -34,7 +35,7 @@
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    padding: var(--item-padding);
+    padding: var(--item-padding-vertical);
     border-radius: var(--box-outline-radius);
     outline: var(--box-outline-width) var(--box-outline-initial-col);
     transition: background-color var(--fade-duration), outline-color var(--fade-duration);
@@ -52,7 +53,9 @@
 .icon-grid-vertical .icon-grid-item,
 .icon-grid .icon-grid-item {
     width: 100px;
-
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon-grid-vertical .icon-grid-img,
@@ -80,7 +83,7 @@
 .icon-grid-horizontal .icon-grid-group {
     color: inherit;
     text-decoration: none;
-    padding: var(--item-padding);
+    padding: var(--item-padding-horizontal);
     border-radius: var(--box-outline-radius);
     outline: var(--box-outline-width) var(--box-outline-initial-col);
     transition: background-color var(--fade-duration), outline-color var(--fade-duration);
@@ -90,7 +93,7 @@
     width: auto;
     display: flex;
     align-items: center;
-    gap: 4px; /* 横向布局增加额外的Gap*/
+    gap: 3px; /* 横向布局增加额外的Gap*/
     flex-direction: row;
 }
 
