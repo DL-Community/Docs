@@ -2,8 +2,6 @@
 
 Welcome to the DLCE Database, where the latest content of this game will be periodically updated.
 
-?> The contents in this documentation will be assumed to be based on the latest version if not otherwise specified for corresponding game versions.
-
 ## Downloads
 
 <div class="icon-grid">
