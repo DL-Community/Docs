@@ -11,13 +11,6 @@ Welcome to the DLCE Database, where the latest content of this game will be peri
       <div class="icon-grid-label">GitHub</div>
     </div>
   </a>
-
-  <a class="icon-grid-group" href="#/dlce-group/about">
-    <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/qq.png" alt="QQ">
-      <div class="icon-grid-label">QQ</div>
-    </div>
-  </a>
 </div>
 
 ## Communities
@@ -37,10 +30,10 @@ Welcome to the DLCE Database, where the latest content of this game will be peri
     </div>
   </a>
 
-  <a class="icon-grid-group" href="#/dlce-group/about">
+  <a class="icon-grid-group" href="https://www.youtube.com/@DLCommunityEdition" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/qq.png" alt="QQ">
-      <div class="icon-grid-label">QQ Group</div>
+      <img class="icon-grid-img" src="/lib/img/yt_icon_red_digital.png" alt="YouTube">
+      <div class="icon-grid-label">YouTube</div>
     </div>
   </a>
 
