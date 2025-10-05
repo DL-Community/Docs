@@ -10,14 +10,14 @@ Welcome to the DLCE Database, where the latest content of this game will be peri
   <a class="icon-grid-group" href="https://github.com/DL-Community/DancingLine-CommunityEdition" target="_blank">
     <div class="icon-grid-item">
       <img class="icon-grid-img" src="/lib/img/github-mark.png" alt="GitHub">
-      <div class="icon-grid-label">GitHub Download</div>
+      <div class="icon-grid-label">GitHub</div>
     </div>
   </a>
 
   <a class="icon-grid-group" href="#/dlce-group/about">
     <div class="icon-grid-item">
       <img class="icon-grid-img" src="/lib/img/qq.png" alt="QQ">
-      <div class="icon-grid-label">QQ Download</div>
+      <div class="icon-grid-label">QQ</div>
     </div>
   </a>
 </div>
