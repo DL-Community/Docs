@@ -1,3 +1,8 @@
 - [Home](/en/home)
+- Communities
+  - [<img src="/lib/img/bili-s.png" width="24" alt="Bilibili"> Bilibili](https://space.bilibili.com/187016314)
+  - [<img src="/lib/img/qq-channel.png" width="24" alt="Tencent Channel"> QQ Channel](https://pd.qq.com/s/2njtk4vj2)
+  - [<img src="/lib/img/yt_icon_red_digital.png" width="24" alt="YouTube"> YouTube](https://www.youtube.com/@DLCommunityEdition)
+  - [<img src="/lib/img/discord.png" width="24" alt="Discord"> Discord](https://discord.gg/8Ew5n3XadT)
 - :uk: English
   - <a href="#/home" target="_blank">:cn: 简体中文</a>

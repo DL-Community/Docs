@@ -51,10 +51,10 @@
     </div>
   </a>
 
-  <a class="icon-grid-group" href="https://discord.gg/8Ew5n3XadT" target="_blank">
+  <a class="icon-grid-group" href="https://afdian.com/a/fengyanDL" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/discord.png" alt="Discord">
-      <div class="icon-grid-label">Discord</div>
+      <img class="icon-grid-img" src="/lib/img/afdian.png" alt="爱发电">
+      <div class="icon-grid-label">爱发电赞助</div>
     </div>
   </a>
 </div>
