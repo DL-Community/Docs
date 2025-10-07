@@ -9,6 +9,8 @@
 ### Obtain
 - Redeem using [stars](#star)
 - Redeem using [notes](#note)
+- Watching ads
+- 10 cubes will automatically refill after 300 seconds when you use last Energy Cube.
 
 ## Star ✨ :id=star
 
