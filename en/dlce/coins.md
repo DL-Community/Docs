@@ -4,7 +4,7 @@
 
 ## Energy Cube :id=cube
 ### Usages
-- Each time you start the game, you will consume one block.
+- Each time you start the game, you will consume one  Energy Cube.
 
 ### Obtain
 - Redeem using [stars](#star)
