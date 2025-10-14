@@ -1,8 +1,8 @@
 - [首页](/home)
 - [下载](/home#downloads)
 - [社区](/home#communities)
-- :cn: 简体中文
-  - <a href="#/en/home" target="_blank">:uk: English</a>
+- ![zh-cn](https://img.shields.io/badge/语言-简体中文-red.svg)
+  - <a href="#/en/home" target="_blank">![en](https://img.shields.io/badge/lang-English-blue.svg)</a>
 
 <!-- 
 - 社交媒体
