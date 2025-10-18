@@ -1,21 +1,7 @@
-- **游戏**
-  - [简介](/home)
-  - [版本历史](/dlce/versions.md)
-  - [货币](dlce/coins.md)
-  - [音符挑战](dlce/notes-challenge.md)
-  - [角色外观](/dlce/character.md)
-  - [关卡信息](dlce/level_information.md)
-  - [自定义后期处理效果](dlce/custom-post-processing/home)
-  - [多语言](dlce/localization.md)
-  - [游戏设置](dlce/game-settings.md)
-  - [启动选项](dlce/commands.md)
+- **主页**
 
-- **社区**
-  - [官方社区](/social/home.md)
-  - [QQ群](/social/qq.md)
-  - [QQ群规](/social/rules.md)
+- [游戏文档](/dlce/about)
 
-- **法律信息**
-  - [最终用户许可协议（EULA）](legal/eula.md)
-  - [隐私政策](legal/privacy.md)
-  - [开源代码库](legal/open-source.md)
+- [官方社区](/social/home)
+
+- [法律信息](/legal/eula)

@@ -1,5 +1,7 @@
-- **游戏**
-  - [简介](/home)
+- [主页](/home)
+
+- **游戏文档**
+  - [简介](/dlce/about)
   - [版本历史](/dlce/versions.md)
   - [货币](dlce/coins.md)
   - [音符挑战](dlce/notes-challenge.md)
@@ -9,3 +11,7 @@
   - [多语言](dlce/localization.md)
   - [游戏设置](dlce/game-settings.md)
   - [启动选项](dlce/commands.md)
+
+- [官方社区](/social/home)
+- [法律信息](/legal/eula)
+

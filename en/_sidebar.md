@@ -1,12 +1,5 @@
-- **GAME**
-  - [Home](/en/home)
-  - [Coins](/en/dlce/coins.md)
-  - [Characters](/en/dlce/character.md)
-  - [Localizations](/en/dlce/localization.md)
-  - [Settings](/en/dlce/game-settings.md)
-  - [Launch Options](/en/dlce/commands.md)
+- **Home**
 
-- **Legal**
-  - [End-User License Agreement](/en/legal/eula.md)
-  - [Privacy Policy](/en/legal/privacy.md)
-  - [Open Source Libraries](/en/legal/open-source.md)
+- [Documentations](/en/dlce/about)
+
+- [Legal](/en/legal/eula.md)

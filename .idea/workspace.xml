@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +91,8 @@
       <workItem from="1759701562498" duration="8156000" />
       <workItem from="1760468346815" duration="1163000" />
       <workItem from="1760807053338" duration="162000" />
+      <workItem from="1760807220433" duration="2989000" />
+      <workItem from="1760810435280" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -302,7 +302,55 @@
       <option name="project" value="LOCAL" />
       <updated>1760468899975</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="navigation">
+      <option name="closed" value="true" />
+      <created>1760808340241</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1760808340241</updated>
+    </task>
+    <task id="LOCAL-00028" summary="navigation">
+      <option name="closed" value="true" />
+      <created>1760808420843</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1760808420843</updated>
+    </task>
+    <task id="LOCAL-00029" summary="qq">
+      <option name="closed" value="true" />
+      <created>1760808662287</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1760808662287</updated>
+    </task>
+    <task id="LOCAL-00030" summary="header">
+      <option name="closed" value="true" />
+      <created>1760809803319</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1760809803319</updated>
+    </task>
+    <task id="LOCAL-00031" summary="-">
+      <option name="closed" value="true" />
+      <created>1760810060493</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1760810060493</updated>
+    </task>
+    <task id="LOCAL-00032" summary="basePath">
+      <option name="closed" value="true" />
+      <created>1760810458276</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1760810458276</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,14 +383,18 @@
     <MESSAGE value="footer" />
     <MESSAGE value="增加开源库公示" />
     <MESSAGE value="English translations WIP" />
-    <MESSAGE value="-" />
     <MESSAGE value="优化icon grid样式，增加item选中边框效果" />
     <MESSAGE value="css" />
     <MESSAGE value="gap" />
     <MESSAGE value="EN sidebar" />
     <MESSAGE value="Language Badge" />
     <MESSAGE value="体力方块获取方式。" />
-    <option name="LAST_COMMIT_MESSAGE" value="体力方块获取方式。" />
+    <MESSAGE value="navigation" />
+    <MESSAGE value="qq" />
+    <MESSAGE value="header" />
+    <MESSAGE value="basePath" />
+    <MESSAGE value="basePath" />
+    <option name="LAST_COMMIT_MESSAGE" value="basePath" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

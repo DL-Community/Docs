@@ -1,5 +1,5 @@
 - [主页](/home)
-- [下载](/home#downloads)
+- [文档](/dlce/about)
 - [社区](/social/home)
 - [法律](/legal/eula)
 - ![zh-cn](https://img.shields.io/badge/语言-简体中文-red.svg)
