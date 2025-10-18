@@ -1,4 +1,3 @@
-# Launch Options
 > **适用于**<br>Windows、macOS
 
 ## Config File :id=configs

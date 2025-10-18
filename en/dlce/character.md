@@ -1,5 +1,3 @@
-# Characters
-
 > **When in the level selection**<br>Click the cube icon at the bottom to change or purchase character.
 
 > **While in the level**<br>During the game preparation stage, you can click on the floating cube to change the character.

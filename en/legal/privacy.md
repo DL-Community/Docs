@@ -1,5 +1,3 @@
-# Privacy Policy
-
 Thank you for choosing our game! We respect and protect the privacy of our players, and are committed to handling your personal information in a responsible and transparent manner.
 
 This privacy policy applies to the collection, use, and sharing of personal information in connection with our game. By playing our game, you consent to the collection and use of your personal information as described in this privacy policy. If you do not agree to this privacy policy, please do not play our game.

@@ -1,5 +1,3 @@
-# 多语言
-
 ## 贡献翻译
 ### [> 在这里贡献翻译 <](https://github.com/DL-Community/DLCE-Translations)
 - 必须登录GitHub账户才可编辑翻译。

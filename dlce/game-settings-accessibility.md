@@ -1,5 +1,3 @@
-# 辅助功能
-
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li><a href="#/dlce/game-settings">游戏设置</a></li>
