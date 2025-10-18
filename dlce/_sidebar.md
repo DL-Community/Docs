@@ -1,7 +1,6 @@
 - [主页](/home)
 
-- **游戏文档**
-  - [简介](/dlce/about)
+- [**游戏文档**](/dlce/contents.md)
   - [版本历史](/dlce/versions.md)
   - [货币](dlce/coins.md)
   - [音符挑战](dlce/notes-challenge.md)

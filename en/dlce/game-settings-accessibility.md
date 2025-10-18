@@ -1,3 +1,5 @@
+# Settings
+
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li><a href="#/en/dlce/game-settings">Settings</a></li>

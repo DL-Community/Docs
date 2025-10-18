@@ -1,5 +1,5 @@
-- **Home**
+- [**Home**](/en/home)
 
-- [Documentations](/en/dlce/about)
+- [Documentations](/en/dlce/contents.md)
 
 - [Legal](/en/legal/eula.md)

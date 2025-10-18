@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dlce/contents.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/en/dlce/contents.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/notes-challenge.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/eula.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/eula.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/open-source.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/privacy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/_sidebar.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +117,10 @@
       <workItem from="1760807053338" duration="162000" />
       <workItem from="1760807220433" duration="2989000" />
       <workItem from="1760810435280" duration="631000" />
+      <workItem from="1760815059910" duration="2985000" />
+      <workItem from="1760820822621" duration="18000" />
+      <workItem from="1760820844194" duration="10000" />
+      <workItem from="1760820871178" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -350,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760810458276</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="nav">
+      <option name="closed" value="true" />
+      <created>1760816850498</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1760816850498</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +430,8 @@
     <MESSAGE value="header" />
     <MESSAGE value="basePath" />
     <MESSAGE value="basePath" />
-    <option name="LAST_COMMIT_MESSAGE" value="basePath" />
+    <MESSAGE value="nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="nav" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

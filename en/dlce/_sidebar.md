@@ -1,7 +1,6 @@
 - [Home](/en/home)
 
-- **Documentations**
-  - [About](/en/dlce/about)
+- [**Documentations**](/en/dlce/contents.md)
   - [Coins](/en/dlce/coins.md)
   - [Characters](/en/dlce/character.md)
   - [Localizations](/en/dlce/localization.md)

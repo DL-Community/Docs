@@ -89,14 +89,11 @@
             ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
         },
         alias :{
-           "/" : "dlce/about",
-           "/en/" : "en/dlce/about",
+           "/" : "home",
+           "/dlce/about" : "home",
+           "/en/" : "en/home",
+           "/en/dlce/about" : "en/home",
 
-           "/home" : "dlce/about",
-           "/en/home" : "en/dlce/about",
-
-           "/dlce" : "/dlce/about",
-           "/en/dlce" : "/en/dlce/about",
            "/404" : "/_404.md",
            "/en/404" : "/en/_404.md",
 
@@ -124,12 +121,12 @@
         basePath: '/',
         homepage: 'home.md',
         loadSidebar: true,
-        autoHeader: true,
+        //autoHeader: true,
         //mergeNavbar: true,
         loadNavbar: true,
         maxLevel: 0,
         subMaxLevel: 2,
-        sidebarDisplayLevel: 1,
+        sidebarDisplayLevel: 0,
         topMargin: 50,
         notFoundPage:
         {

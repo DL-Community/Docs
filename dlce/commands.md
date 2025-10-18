@@ -1,3 +1,5 @@
+# 启动选项
+
 > **适用于**<br>Windows、macOS
 
 ## 配置文件 :id=configs

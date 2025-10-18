@@ -1,6 +1,6 @@
 - [Home](/en/home)
 
-- [Documentations](/en/dlce/about)
+- [Documentations](/en/dlce/contents.md)
 
 - **Legal**
   - [End-User License Agreement](/en/legal/eula.md)
