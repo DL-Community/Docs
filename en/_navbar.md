@@ -1,4 +1,5 @@
 - [Home](/en/home)
 - [Downloads](/en/home#downloads)
+- [Communities](/en/home#communities)
 - ![en](https://img.shields.io/badge/lang-English-blue.svg)
   - <a href="#/home" target="_blank">![zh-cn](https://img.shields.io/badge/语言-简体中文-red.svg)</a>

@@ -123,6 +123,8 @@
         //repo: 'https://github.com/Aaron8052',
         homepage: 'home.md',
         loadSidebar: true,
+        //autoHeader: true,
+        mergeNavbar: true,
         loadNavbar: true,
         maxLevel: 1,
         subMaxLevel: 2,
@@ -160,6 +162,19 @@
             theme: 'material',
             tabComments: true,
         },
+        pagination: {
+            previousText: {
+              '/en/': 'PREVIOUS',
+              '/': '上一文档'
+            },
+            // or
+            nextText: {
+              '/en/': 'NEXT',
+              '/': '下一文档'
+            },
+            crossChapter: true,
+            crossChapterText: true,
+       },
     }
 </script>
 
@@ -174,6 +189,7 @@
 <!--https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-ini.min.js-->
 <script src="lib/plugins/prism-ini.min.js"></script>
 <script src="lib/plugins/prism-json.min.js"></script>
+<script src="lib/plugins/docsify-pagination.min.js"></script>
 <!--script src="lib/plugins/prism-uri.min.js"></script-->
 </body>
 
