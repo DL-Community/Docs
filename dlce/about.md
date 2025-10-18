@@ -12,7 +12,7 @@
     </div>
   </a>
 
-  <a class="icon-grid-group" href="#/dlce-group/about">
+  <a class="icon-grid-group" href="#/social/qq">
     <div class="icon-grid-item">
       <img class="icon-grid-img" src="/lib/img/qq.png" alt="QQ">
       <div class="icon-grid-label">QQ群下载</div>
