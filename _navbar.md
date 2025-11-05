@@ -1,7 +1,9 @@
 - [主页](/home)
 - [文档](/dlce/contents.md)
 - [社区](/social/home)
-- [法律](/legal/eula)
+- 更多
+  - [法律](/legal/eula)
+  - [赞助](https://afdian.com/a/fengyanDL)
 - ![zh-cn](https://img.shields.io/badge/语言-简体中文-red.svg)
   - <a href="#/en/home" target="_blank">![en](https://img.shields.io/badge/lang-English-blue.svg)</a>
 

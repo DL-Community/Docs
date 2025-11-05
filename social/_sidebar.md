@@ -6,4 +6,4 @@
   - [QQ群规](/social/rules.md)
 
 - [法律信息](/legal/eula)
-
+- [赞助](https://afdian.com/a/fengyanDL)

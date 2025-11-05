@@ -13,4 +13,4 @@
 
 - [官方社区](/social/home)
 - [法律信息](/legal/eula)
-
+- [赞助](https://afdian.com/a/fengyanDL)

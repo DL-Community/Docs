@@ -8,3 +8,4 @@
   - [Launch Options](/en/dlce/commands.md)
 
 - [Legal](/en/legal/eula.md)
+- [Sponsor](https://github.com/sponsors/Aaron8052)
