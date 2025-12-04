@@ -1,4 +1,4 @@
-- [主页](/home)
+- [主页](/about/home)
 - [文档](/dlce/contents.md)
 - [社区](/social/home)
 - 更多

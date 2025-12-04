@@ -1,4 +1,4 @@
-- [Home](/en/home)
+- [About](/en/about/home)
 - [Documentations](/en/dlce/contents.md)
 
 - **Legal**

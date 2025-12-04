@@ -89,10 +89,14 @@
             ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
         },
         alias :{
-           "/" : "home",
-           "/dlce/about" : "home",
-           "/en/" : "en/home",
-           "/en/dlce/about" : "en/home",
+           "/" : "/about/home",
+           "/dlce/about" : "/about/home",
+           "/en/" : "en/about/home",
+           "/en/dlce/about" : "en/about/home",
+
+           "/dlce/versions" : "/about/versions",
+           "/dlce/localization" : "/about/localization",
+           "/en/dlce/localization" : "/en/about/localization",
 
            "/404" : "/_404.md",
            "/en/404" : "/en/_404.md",
@@ -114,8 +118,8 @@
         },
         name: '跳舞的线：社区版 Wiki',
         nameLink: {
-            '/en': '#/en/home',
-            '/': '#/home',
+            '/en': '#/en/about/home',
+            '/': '#/about/home',
         },
         //repo: 'https://github.com/Aaron8052',
         basePath: '/',

@@ -1,4 +1,4 @@
-- [Home](/en/home)
+- [Home](/en/about/home)
 - [Docs](/en/dlce/contents.md)
 - More
   - [Legal](/en/legal/eula.md)

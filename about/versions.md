@@ -5,18 +5,27 @@
 ## **3.0**
 
 <!-- 3.0版本内容加在这个下面 -->
-### 3.6.13
+### 3.6.13 
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 - 重做【海洋】关卡。
 - 修复大部分关卡的问题（百分比、视角、路线等）。
 - 支持GAS开放授权登录。
 
 ### 3.6.12
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 - 「极限」画质支持HDR渲染、完整光照支持。在该画质下部分场景与其他画质的效果有出入属正常现象。
 - 移除TAA抗锯齿支持。
 - 优化「赛车」、「足球」关卡的画中画大屏幕在不同画质下的清晰度。
 - 修复「电玩」关卡的渲染错误。
 
 ### 3.6.11
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 - 修复Unity高危漏洞 https://unity.com/security/sept-2025-01
 - 优化关卡内的皮肤选择界面。
 - 优化部分关卡内皮肤选择按钮方块的位置和角度。
@@ -26,6 +35,9 @@
 
 
 ### 3.6.10
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 月度维护更新：
 - 重新设计游戏画面设置的图标，部分图标现在会根据当前的选项来改变图形。
 - 触控反馈现在会在玩家开启多点触控功能后同时显示所有手指触点的位置。
@@ -35,17 +47,27 @@
 - PC端陀螺仪效果现在仅支持在带有陀螺仪的设备上开启。鼠标将不再支持触发陀螺仪效果。
 
 ### 3.6.8
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![内容](https://img.shields.io/badge/内容-yellow.svg)
+
 - 新增皮肤：“星星”和“星球”，可在音符商店获取。
 - 修复游戏内造成存档损坏导致无法上传云端的严重问题，目前已经过服务器维护修复。受影响玩家的游戏内统计数据已被清零。
 
 ### 3.6.7
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 - Mac & Windows 抗锯齿新增FSR支持。
 
 ### 3.6.6
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 此版本包含了如下优化：
 - 新增数据统计。
 
 ### 3.6.5
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 此版本包含了如下优化：
 - GAS登录界面语言设置与游戏内语言合并。
 - 游戏内账户菜单新增“登出”按钮，允许玩家在不关闭游戏的情况下切换账号。
@@ -55,6 +77,9 @@
 ***
 
 ### 3.6.3
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 本次更新优化了关卡准备界面，同时为新手教程界面增加了左右和返回按钮。
 
 此版本开放了macOS电脑版的下载方式，前往下方链接查看详情：
@@ -64,6 +89,9 @@
 ***
 
 ### 3.6.2
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 本次更新修复如下严重问题：
 * 修复无限体力生效时，从音符商店购买体力会导致原有体力数量丢失的问题。
 
@@ -78,6 +106,10 @@
 ***
 
 ### 3.6.0
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+![内容](https://img.shields.io/badge/内容-yellow.svg)
+
 **新关卡：Storm of Anger**
 * 重写存档导入导出功能，旧版本导出的存档将无法在该版本中导入。
 * 更新法语翻译。
@@ -96,6 +128,9 @@
 ***
 
 ### 3.5.7
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
 * 修复玩家键盘按下其中一个角色控制键位时，另一个键位失灵导致无法实现快速交互点击的问题。
 * 优化 风暴 2016 检查点复活后的视角动画。
 * 提高 情愫 Lo-fi Remix 透明路的不透明度。
