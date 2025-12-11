@@ -16,6 +16,8 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
   </a>
 </div>
 
+<iframe frameborder="0" src="https://itch.io/embed/3021536?link_color=2c9cff" width="552" height="167"><a href="https://fengyandl.itch.io/dlce">Dancing Line Community Edition by fengyandl</a></iframe>
+
 ## Communities :id=communities
 
 <div class="icon-grid">
