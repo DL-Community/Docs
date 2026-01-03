@@ -1,39 +1,39 @@
 # Launch Options
 
-> **适用于**<br>Windows、macOS
+> **Available for**<br>Windows, macOS
 
 ## Config File :id=configs
 
-### 从游戏外打开配置文件
+### Open the configuration file from outside of the game
 
 <!-- tabs:start -->
 
 #### **Windows**
-- 文件资源管理器中输入并进入如下路径
+- In File Explorer, head to the following path
 
 ```directory
 %APPDATA%/../LocalLow/YINSU Studio/Dancing Line
 ```
-- 双击打开 `Launch Options.ini`。
+- Then, open `Launch Options.ini`.
 
 #### **macOS**
-- 打开访达 Finder，按下 ` ⌘ ⇧ G` 输入如下路径后回车
+-Open Finder, press ` ⌘ ⇧ G`, enter the following path and press Enter:
 
 ```directory
 ~/Library/Application Support/YINSU Studio/Dancing Line/Launch Options.ini
 ```
-- 双击打开 `Launch Options.ini`。
+- Then, open `Launch Options.ini`
 
 <!-- tabs:end -->
 
-### 从游戏内打开配置文件
-- 进入游戏设置，点击 `高级设置`
+### Open the configuration file from inside the game
+- Go to game settings and click `Advanced Settings`
 
-### 配置文件格式示例
+### Configuration File Format Template
 
 ```ini
 [Command Line Args]
--example_argument ; 此条为示例命令，可以删除
+-example_argument ; This is an example commandand and is safe to be removed.
 
 [Audio]
 IOBufferSize=512
@@ -46,48 +46,48 @@ FrameRate=60
 Server=0
 Timeout=10
 ```
-?> 某些配置与[启动参数](#args)中的命令重合，游戏会优先使用[启动参数](#args)中的设置。
+?> If some configurations overlap with commands in [Launch Arguments](#args), the game will prioritize the settings from [Launch Arguments](#args).
 
-| 名称                  | 描述                                                                                                                          |
+| Name                 | Description                                                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Command Line Args] | 在此标签下方放置你要使用的 [启动参数](#args)，每行放置一个。                                                                                         |
-| -example_argument   | 示例命令，无实际作用。                                                                                                                 |
-| [Audio]             | 音频配置区。                                                                                                                      |
-| IOBufferSize        | 音频I/O缓冲区大小（DSP缓冲区大小），推荐512。<br/>与 `-audio_dsp_buffer_#` 命令作用一致。                                                             |
-| MasterVolume        | 游戏音量大小，0 - 100。<br/>与 `-master_volume_#` 命令作用一致。                                                                            |
-| [Video]             | 显示配置区。                                                                                                                      |
-| FrameRate           | 游戏帧率限制，-1代表无限帧率，默认60。<br/>与 `-frame_rate_#` 命令作用一致。                                                                         |
-| [Network]           | 网络配置区。                                                                                                                      |
-| Server              | 更换游戏服务器，<br/>0：默认（相当于不使用命令）<br/>1：Unity Online Services。<br/>2：GitHub<br/>3：Unity Gaming Services<br/>与 `-server_#` 命令作用一致。 |
-| Timeout             | 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。此设置会影响所有下载行为（例如游戏初始化、关卡下载和广告等）。0 代表不设置超时。                                                |
+| [Command Line Args] |Below this label, place the [Launch Arguments](#args) you want to use, one per line.                                                                                         |
+| -example_argument   | The example command has no practical effect.                                                                                                                 |
+| [Audio]             | Audio configuration                                                                                                                      |
+| IOBufferSize        | Audio I/O buffer size (DSP buffer size), recommended value: 512 <br/>This has the same effect as the `-audio_dsp_buffer_#` command.                                                             |
+| MasterVolume        | Master volume level, value: 0 - 100. <br/> Same function as the `-master_volume_#` command.                                                                            |
+| [Video]             | Video configuration                                                                                                                      |
+| FrameRate           | Game frame rate limit; -1 for unlimited frame rate, default: 60 <br/>This has the same effect as the `-frame_rate_#` command.                                                                         |
+| [Network]           | Network configuration                                                                                                                    |
+| Server              | Change the game server: <br/>0: Default (equivalent to not using the command)<br/>1: Unity Online Services.<br/>2: GitHub<br/>3: Unity Gaming Services<br/>This has the same effect as the `-server_#` command. |
+| Timeout             | Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads, and advertisements). 0 for no timeout.                                                |
 
 
 ## Launch Arguments :id=args
 
-?> 被划线的命令表明已不在最新版本中受支持
+?> The command with strikethrough format indicates that it is deprecated and no longer available in the latest version
 
-> **提示**<br>
-> 要应用这些命令，你可以通过命令行启动参数的方式来应用这些命令，也可以将这些命令放置在上面配置文件的`[Command Line Args]`分区下方。**注意，DLCE 怀旧版只支持通过命令行方式应用这些命令，且部分命令在怀旧版中不可用**
+> **Tips**<br>
+> To apply these commands, you can either apply them by launching the parameters from the command line or by placing them under the `[Command Line Args]` of the configuration file above. **Do note that，DLCE Classic only supports these commands via command line, and some commands are unavailable in Classic.**
 
-| 命令                         | 描述                                                                                                       | 备注                                             |
+| Commands                        | Description                                                                                                       | Notes                                             |
 |:---------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| `-multi_touch`             | 允许[多点触控](/en/dlce/game-settings.md#MultiTouch)                                                           |
-| `-master_volume_#`         | 调节游戏音量，`#` 数值为整数 0 - 100                                                                                 |
-| `-debug_logging`           | 开启日志写入功能，单机平台（Windows、macOS等）可在游戏设置中找到“查看日志”选项，点击后会显示游戏的运行时日志                                            | v3.1.3.1031及以上版本提供                             |
-| `-server_#`                | 更换游戏服务器为 #（数字）<br/>为了确保获取最新关卡资源，请尽可能使用默认服务器，除非关卡速度慢。<br/>0：默认（相当于不使用命令）<br/>1：Unity Online Services (国服) | -                                              |
-| `-disable_discord_rpc`     | 禁用Discord RPC                                                                                            | -                                              |
-| `-always_show_cursor`      | 关卡游玩过程中不再自动隐藏鼠标光标                                                                                        | -                                              |
-| `-show_fps`                | 在屏幕右下角显示FPS                                                                                              |                                                |
-| `-frame_rate_#`            | 设置帧率上限为“#”，并禁用垂直同步<br />“#”需为不小于-1的整数，-1表示无限                                                             | 在垂直同步关闭的情况下，游戏默认帧率上限为60                        |
-| `-low_quality_mode`        | 强制使用最低画质，适用于部分设备调整到高画质后导致游戏闪退的情况（无法再进入游戏）                                                                | v2.6.0.12及以上版本提供                               |
-| `-audio_dsp_buffer_#`      | 设置游戏音频的DSP缓冲区大小为“#”（整数），缓冲区越小，音乐延迟越小，但同时也会导致音频输出不稳定（推荐值：512）                                             | v2.6.2.0及以上版本提供                                |
-| ~~`-use_soft_shadows`~~    | 使用柔和阴影模式（物体阴影边缘虚化）                                                                                       | **❗在2.0.2版本中移除**                               |
-| ~~`-force_windowed_mode`~~ | 强制游戏以窗口模式运行                                                                                              | **❗在2.0.2版本中移除**                               |
-| ~~`-low_resolution_mode`~~ | 强制游戏以800x600分辨率模式运行                                                                                      | **❗在2.0.2版本中移除**                               |
-| ~~`-disable_shadow`~~      | 在游戏全局范围内禁用阴影效果                                                                                           | **❗在2.0.2版本中移除**                               |
-| ~~`-shadow_distance_#`~~   | 锁定阴影距离为 “#”（整数）                                                                                          | “#” 需为不小于0的整数                                  |
-| ~~`-disable_sound`~~       | 在游戏全局范围内禁用声音（即使设置中已经打开）                                                                                  | **❗在2.0.2版本中移除**                               |
-| ~~`-graphics_tier_#`~~     | 更改图像层为"#"（0-2的整数）<br />0：低<br />1：中<br />2：高                                                             | 图像层越高，渲染消耗越高，不建议手动设置<br />游戏引擎默认会根据设备性能自动调节此设定 |
+| `-multi_touch`             | Enable/Disable [multi-touch](/en/dlce/game-settings.md#MultiTouch)                                                           |
+| `-master_volume_#`         | Adjusts game volume，`#` is an integer, accepted value: 0 - 100                                                                                 |
+| `-debug_logging`           | Enables log writing. For certain platforms like Windows, macOS, you can find the "View Logs" option in the game settings. Clicking it will display the game's runtime log.                                            | Available from v3.1.3.1031                             |
+| `-server_#`                | Changes the game server to # (number) <br/>To ensure you get the latest level resources, please use the default server whenever possible, unless the level downloading is slow.<br/>0: Default (equivalent to not using the command)<br/>1: Unity Online Services (Chinese Server) | -                                              |
+| `-disable_discord_rpc`     | Disable Discord RPC                                                                                            | -                                              |
+| `-always_show_cursor`      | Always show the mouse cursor during gameplay                                                                                        | -                                              |
+| `-show_fps`                | Display FPS in the lower right corner of the screen                                                                                              |                                                |
+| `-frame_rate_#`            | Set the frame limiter to "#" and disable V-Sync<br />"#" must be an integer not less than -1, -1 for unlimited                                                             | With V-Sync off, the game's default frame rate limit is set to 60                        |
+| `-low_quality_mode`        | Forces the game to use the lowest graphics settings, applicable to situations where the game crashes (cannot be entered) after adjusting to high graphics settings on some devices                                                                | Available from v2.6.0.12                              |
+| `-audio_dsp_buffer_#`      | Sets the DSP buffer size for game audio to "#" (integer). A smaller buffer results in less music latency, but also leads to unstable audio output (recommended value: 512)                                             | Available from v2.6.2.0                                |
+| ~~`-use_soft_shadows`~~    | Uses soft shadow mode (blurs object shadow edges)                                                                                       | **❗No longer available from version 2.0.2**                               |
+| ~~`-force_windowed_mode`~~ | Forces the game to run in Windowed mode                                                                                             | **❗No longer available from version 2.0.2**                                |
+| ~~`-low_resolution_mode`~~ | Forces the game to run at 800x600 resolution                                                                                      | **❗No longer available from version 2.0.2**                                |
+| ~~`-disable_shadow`~~      | Disables shadow effects globally in the game                                                                                           | **❗No longer available from version 2.0.2**                                |
+| ~~`-shadow_distance_#`~~   | Locks shadow distance to "#" (integer)                                                                                          | “#” must be an integer not less than 0                                  |
+| ~~`-disable_sound`~~       | Disables sound globally in the game (even if Enabled in Settings)                                                                                  | **❗No longer available from version 2.0.2**                               |
+| ~~`-graphics_tier_#`~~     | Changes the graphics tier to "#" (Accpeted value: 0, 1, 2)<br />0: Low<br />1: Medium<br />2: High                                                             | The higher the graphics tier, the higher the rendering time is. Manual setting is not recommended.<br />The game engine will automatically adjust this setting based on device performance by default. |
 
 <blockquote>
 
