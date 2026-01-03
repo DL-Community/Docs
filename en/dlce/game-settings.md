@@ -90,7 +90,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
 
 <!--details-->
 <!--summary-->
-   <!--b>详情</b-->
+   <!--b>Details</b-->
 <!--/summary-->
 
 > **Available for**<br>Windows, macOS,  iOS on Mac.
@@ -123,7 +123,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
 
 <!--details-->
 <!--summary-->
-   <!--b>详情</b-->
+   <!--b>Details</b-->
 <!--/summary-->
 
 > **Available for**<br>Windows, macOS.
