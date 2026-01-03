@@ -38,7 +38,7 @@
 | Whale    | ✨ 750                      |
 | Snow Fog     | ✨ 750                      |
 | Chinese Brush     | ✨ 750                      |
-| Silther    | ✨ 750                      |
+| Slither    | ✨ 750                      |
 | Magic Cloak   | Obtain from the Note Store |
 | Bomb Skeleton | Obtain from the Note Store |
 | Robot | Obtain from the Note Store |
