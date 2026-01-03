@@ -258,6 +258,7 @@ Settings not listed below are not supported on Mac.
 - Once enabled, you can view the game's debug log in the "File" app.
 
 <!-- tabs:end -->
+<!-- tabs:end -->
 
 
 <blockquote>
