@@ -41,7 +41,7 @@
 | Silther    | ✨ 750                      |
 | Magic Cloak   | Obtain from the Note Store |
 | Bomb Skeleton | Obtain from the Note Store |
-| Robot | Obtain from the Note Store Store |
+| Robot | Obtain from the Note Store |
 | Star | Obtain from the Note Store |
 | Black Ball | Obtain from the Note Store |
 | Cyan Ball | Obtain from the Note Store |
