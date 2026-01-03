@@ -24,7 +24,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
 - When enabled, the game will automatically detect and correct audio output latency. It is recommended to enable this when using Bluetooth headphones or car audio systems.
 
 ### **Touch Input Latency**
-> **Applies to**<br>iOS, Android.
+> **Applies to**<br>iOS.
 - When enabled, the game will automatically detect and correct touch response latency. This option can be disabled to reduce CPU usage by the game.
 
 <!-- tabs:end -->
