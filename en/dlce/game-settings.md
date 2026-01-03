@@ -1,152 +1,91 @@
 # Settings
 
-> - 下列选项并非在所有平台上都可用，具体以游戏实际版本为准。
-> - 点击游戏主界面右下角的齿轮图标进入游戏设置。
+> - The following options are not available on all platforms. Please refer to the actual in-game version for specifics.
+> - Click the menu icon in the lower right corner of the game's main interface to access the settings.
 
-!> **注意**<br>
-下文中 macOS 和 iOS on Mac 分别代表不同平台。
-</br>前者为 macOS 电脑版本，后者为 iOS 版本运行于 M 芯片 Mac 电脑的版本。
+!> **Note**<br>
+In the following text, macOS and iOS on Mac refer to different platforms respectively.<br>
+The former is the macOS desktop version, while the latter is the iOS version running on Mac computers with M-series chips.
 
-## 语言
-- 更改游戏显示语言。
-- 详见 [多语言](/dlce/localization.md)。
+## Language
+- Change the display language of the game.
+- For details, please refer to [Localizations](/en/about/localization.md).
 
-## 音画同步
-<!--details-->
-<!--summary-->
-   <!--b>详情</b-->
-<!--/summary-->
-
-!> 下列自动调节**不建议**同时开启多个，否则可能会导致**音画同步修正过度**。
+## Synchronization
+!> It is **not recommended** to enable multiple automatic adjustments below simultaneously, as doing so may lead to **excessive synchronization correction**.
 
 <!-- tabs:start -->
 
-### **自动调节**
-- 开启此开关后游戏会**根据游戏当前整体运行状况调整动态调整音画同步**。
-- 关闭自动调节功能后，玩家可以**手动调节游戏的音乐延迟**，**数值越大，音乐播放越晚**。
+### **Auto Adjustment**
+- When this option is enabled, the game will **dynamically adjust synchronization based on the overall performance during gameplay**.
+- When the automatic adjustment feature is disabled, players can **manually adjust the audio delay in the game**. **A larger value results in later audio playback**.
 
-### **音频输出延迟**
-- 开启后游戏会自动检测音频输出延迟并进行修正，玩家连接蓝牙耳机或汽车音响时建议开启。
+### **Audio Output Latency**
+- When enabled, the game will automatically detect and correct audio output latency. It is recommended to enable this when using Bluetooth headphones or car audio systems.
 
-### **触控响应延迟**
-> **适用于**<br>iOS、Android。
-- 开启后游戏会自动检测触控响应延迟并进行修正，可选择关闭以减少游戏的 CPU 占用。
+### **Touch Input Latency**
+> **Applies to**<br>iOS, Android.
+- When enabled, the game will automatically detect and correct touch response latency. This option can be disabled to reduce CPU usage by the game.
 
 <!-- tabs:end -->
 
-### 关卡音画同步
-- 进入关卡后，可在屏幕左下方进入，该设置仅对当前关卡生效。
-<!--/details-->
+### In-Level Synchronization
+- After loading into any level, enter the synchronization settings. This configuration only applies to the current level.
 
-## 声音
-- 游戏全局声音开关。
+## Sound
+- Global sound switch for the game.
 
-## 画质
-- 调整游戏**场景 / 画面复杂度及其质量**。
+## Quality
+- Adjusts the **scene/visual complexity and quality** in the game.
 
-| 画质           | 光影 | 反射效果   | 粒子效果   | 后期处理效果（如果有） |
-|--------------|----|--------|--------|-------------|
-| **非常低**      | 无  | 无      | 最少（或无） | 无           |
-| **低**        | 无  | 无      | 少      | 无           |
-| **中**        | 无  | 部分（或无） | 中      | 无           |
-| **高**        | 无  | 支持     | 多      | 支持          |
-| **极高**       | 支持 | 支持     | 多      | 支持          |
-| **极限（仅电脑端）** | 支持 | 高质量    | 最多     | 支持          |
+| Quality               | Shadows   | Reflections     | Particle Effects | Post-Processing Effects (if applicable) |  
+|-----------------------|-----------|-----------------|------------------|-----------------------------------------|  
+| **Very Low**          | None      | None            | Minimal or None  | None                                    |  
+| **Low**               | None      | None            | Low              | None                                    |  
+| **Medium**            | None      | Partial or None | Medium           | None                                    |  
+| **High**              | None      | Supported       | High             | Supported                               |  
+| **Very High**         | Supported | Supported       | High             | Supported                               |  
+| **Extreme (PC Only)** | Supported | High Quality    | Maximum          | Supported                               |
 
-?> 对于玩家[自定义后期处理效果](/en/dlce/custom_post_processing.md)，不论哪种画质模式，都会始终应用到关卡中。
-
-## 分辨率
-<!--details-->
-<!--summary-->
-   <!--b>详情</b-->
-<!--/summary-->
-
+## Resolution
 <!-- tabs:start -->
 
 ### **Windows**
-- 点击可进入分辨率选择面板，此面板提供了横屏/竖屏多种分辨率比例。
+- Click to open the resolution selection panel, which offers multiple aspect ratios for both landscape and portrait orientations.
 
 ### **macOS**
-- 点击可进入分辨率选择面板，此面板提供了横屏/竖屏多种分辨率比例。
+- Click to open the resolution selection panel, which offers multiple aspect ratios for both landscape and portrait orientations.
 
 ### **iOS on Mac**
-- 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
+- Click to switch between resolution modes: Very Low / Low / Medium / High / Ultra.
 
 ### **iOS**
-- 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
+- Click to switch between resolution modes: Very Low / Low / Medium / High / Ultra.
 
 ### **Android**
-- 点击可切换分辨率模式：非常低 / 低 / 中 / 高 / 极高。
+- Click to switch between resolution modes: Very Low / Low / Medium / High / Ultra.
 
 <!-- tabs:end -->
 
-?> 分辨率越低，游戏越流畅。
+?> Lower resolutions provide smoother gameplay performance.
 
-<!--/details-->
-
-## 渲染精度（动态分辨率）
-<!--details-->
-<!--summary-->
-   <!--b>详情</b-->
-<!--/summary-->
-
-> **适用于**<br>见下方[兼容性](#Render-Resolution-Cap)
-- 与[分辨率](#分辨率)类似，但仅用于调整游戏 3D 场景渲染分辨率，不影响 UI 清晰度。
-
-### 兼容性 :id=Render-Resolution-Cap
-<!-- tabs:start -->
-#### **Windows**
-| 渲染 API | 支持 |
-|--------|----|
-| DX12   | ✅  |
-| DX11   | ❌  |
-| Vulkan | ✅  |
-| OpenGL | ❌  |
-
-#### **macOS**
-| 渲染 API | 支持 |
-|--------|----|
-| Metal  | ❌  |
-| OpenGL | ❌  |
-
-#### **iOS on Mac**
-| 渲染 API | 支持 |
-|--------|----|
-| Metal  | ❌  |
-| OpenGL | ❌  |
-
-#### **iOS**
-| 渲染 API | 支持 |
-|--------|----|
-| Metal  | ✅  |
-| OpenGL | ❌  |
-
-#### **Android**
-| 渲染 API | 支持 |
-|--------|----|
-| Vulkan | ✅  |
-| OpenGL | ❌  |
-<!-- tabs:end -->
-
-<!--/details-->
-
-## 画面模式
+## Display Mode
 
 <!-- tabs:start -->
 ### **Windows**
 
-| 模式       | 介绍                                                |
-|----------|---------------------------------------------------|
-| 独占全屏     | 游戏**独占 GPU 资源**，桌面处于挂起状态，性能最佳，但游戏与桌面切换速度较慢。       |
-| 无边框窗口全屏  | **隐藏窗口边框并等比例拉伸至全屏**，窗口切换速度快，GPU 资源与桌面共享。          |
-| 窗口化      | 窗口模式，**不隐藏窗口边框且不会等比例拉伸至全屏**，窗口切换速度最快，GPU 资源与桌面共享。 |
+| Mode                 | Description                                                                                                                                                                                |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Exclusive Fullscreen | The game **exclusively occupies GPU resources**. The desktop is suspended, providing optimal performance, but switching between the game and the desktop is slower.                        |
+| Borderless Window    | **Hides window borders and stretches the game to full screen proportionally**. Fast window switching speed, with GPU resources shared with the desktop.                                    |
+| Windowed             | Windowed mode. **Window borders are not hidden, and the game is not stretched proportionally to full screen**. Fastest window switching speed, with GPU resources shared with the desktop. |
 
 ### **macOS**
 
-| 模式       | 介绍                                                |
-|----------|---------------------------------------------------|
-| 无边框窗口全屏  | 游戏进入 macOS 全屏模式                                   |
-| 窗口化      | 窗口模式，**不隐藏窗口边框且不会等比例拉伸至全屏**，窗口切换速度最快，GPU 资源与桌面共享。 |
+| Mode              | Description                                                                                                                                                                                |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Borderless Window | The game enters macOS full-screen mode.                                                                                                                                                    |
+| Windowed          | Windowed mode. **Window borders are not hidden, and the game is not stretched proportionally to full screen**. Fastest window switching speed, with GPU resources shared with the desktop. |
 
 <!-- tabs:end -->
 
@@ -244,6 +183,10 @@
 - 开启后，游戏会强制以最低画质运行。
 
 <!-- tab:网络 -->
+### Login Method
+- Choose to login the game using DLRS GAS or Game Center.
+
+!> Game progress does not share between login methods.
 
 ### 服务器
 - 选择关卡下载服务器的地区。
@@ -291,6 +234,11 @@
 - 开启后，游戏会强制以最低画质运行。
 
 <!-- tab:网络 -->
+### Login Method
+- Choose to login the game using DLRS GAS or Game Center.
+
+!> Game progress does not share between login methods.
+
 ### 服务器
 - 选择关卡下载服务器的地区。
 
