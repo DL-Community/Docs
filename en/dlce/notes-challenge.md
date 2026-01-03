@@ -20,15 +20,15 @@
 - Total: 10 Notes
 
 ## Notes Store
-- Special [Skins](/dlce/character.md#skins)
-- Special [Decorations](/dlce/character.md#dec)
-- [Energy Cube](/dlce/coins.md#cube)
-- [Stars](/dlce/coins.md#coins)
+- Special [Skins](/en/dlce/character.md#skins)
+- Special [Decorations](/en/dlce/character.md#dec)
+- [Energy Cube](/en/dlce/coins.md#cube)
+- [Stars](/en/dlce/coins.md#coins)
 
 <blockquote>
 
 **Related Topics**
-- [Currency](/dlce/coins.md)
-- [Characters](/dlce/character.md)
+- [Currency](/en/dlce/coins.md)
+- [Characters](/en/dlce/character.md)
 
 </blockquote>
