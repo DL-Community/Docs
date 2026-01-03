@@ -8,7 +8,7 @@
 </nav>
 
 ## Touch Feedback
-> **Available for*<br>iOS
+> **Available for**<br>iOS
 - When enabled, a special effect will appear at the tap location when the player taps the screen.
   
 ## Gyroscope Effect
