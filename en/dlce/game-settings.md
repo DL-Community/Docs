@@ -62,9 +62,6 @@ The former is the macOS desktop version, while the latter is the iOS version run
 ### **iOS**
 - Click to switch between resolution modes: Very Low / Low / Medium / High / Ultra.
 
-### **Android**
-- Click to switch between resolution modes: Very Low / Low / Medium / High / Ultra.
-
 <!-- tabs:end -->
 
 ?> Lower resolutions provide smoother gameplay performance.
@@ -89,58 +86,57 @@ The former is the macOS desktop version, while the latter is the iOS version run
 
 <!-- tabs:end -->
 
-## 抗锯齿
+## Anti-Aliasing
 
 <!--details-->
 <!--summary-->
    <!--b>详情</b-->
 <!--/summary-->
 
-> **适用于**<br>Windows、macOS、iOS on Mac、Android。
-- 选择抗锯齿模式。
+> **Available for**<br>Windows, macOS,  iOS on Mac.
+- Choose the Anti-Aliasing (AA) mode
 
-| 模式                   | 介绍                                                                                                                                                                    |
+| Mode                  | Description                                                                                                                                                                   |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 关闭                   | 不使用抗锯齿。                                                                                                                                                               |
-| 多重采样抗锯齿（MSAA）        | 一种硬件级抗锯齿。效果佳但效率较低。在部分使用了延迟渲染技术的关卡中不可用（例如：武士 HD、启示录、冒险、回忆、花火之都等）。                                                                                                      |
-| 快速近似抗锯齿（FXAA）        | 一种基于屏幕后期处理的抗锯齿，基于相邻像素计算出平均值。效果略差，会导致图像模糊                                                                                                                              |
-| 时域抗锯齿（TAA）           | 一种基于屏幕后期处理的抗锯齿，在时间上进行多采样，用帧与帧之间的差异来计算抗锯齿。效果优于FXAA。                                                                                                                    |
-| 子像素抗锯齿（SMAA）         | 一种基于屏幕后期处理的抗锯齿，通过分析图像中的边缘和颜色信息来识别并消除锯齿。在效率和效果上较为平均。                                                                                                                   |
-| AMD 超级分辨率锐画技术（FSR 3） | [AMD FidelityFX™ Super Resolution (FSR)](https://www.amd.com/zh-cn/products/graphics/technologies/fidelityfx/super-resolution.html)。目前仅对 Windows 和 macOS 版本开放，不支持移动端。 |
+| Off                   | No Anti-aliasing                                                                                                                                                               |
+| Multisample AA（MSAA）        | Hardware-level anti-aliasing method. Best results but low efficiency. Unavailable in some levels using deferred rendering (e.g., The Samurai (HD), The Apocalypse, The Adventure, The Memories, The Firework Paradise, etc.)                                                                                                      |
+| Fast Approximate AA（FXAA）        | An anti-aliasing method based on post-processing of the screen, calculating the average value based on adjacent pixels. The effect is slightly inferior, resulting in a blurry image.                                                                                                                             |
+| Subpixel Morphological AA（SMAA）         | An anti-aliasing based on screen post-processing that identifies and eliminates aliasing by analyzing edge and color information in an image. It offers a relatively balanced performance in terms of efficiency and effectiveness.                                                                                                                   |
+| AMD FidelityFX™ Super Resolution（FSR 3） | [AMD FidelityFX™ Super Resolution (FSR)](https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html). Currently only available for Windows and macOS. |
 
 <!--/details-->
 
-## 垂直同步
+## Vertical Sync
 
 <!--details-->
 <!--summary-->
    <!--b>详情</b-->
 <!--/summary-->
 
-> **适用于**<br>Windows、macOS、iOS on Mac、Android。
-- 开启或关闭垂直同步。
+> **Available for**<br>Windows, macOS,  iOS on Mac.
+- Enable/Disable V-Sync
 
 <!--/details-->
 
 
-## 键位映射
+## Key Bindings
 
 <!--details-->
 <!--summary-->
    <!--b>详情</b-->
 <!--/summary-->
 
-> **适用于**<br>Windows、macOS。
-- 调整键位绑定。
+> **Available for**<br>Windows, macOS.
+- Adjust the key bindings.
 
 
-### 键位指示器
-- 在底部显示 HUD 界面，显示当前键盘键位的功能。
+### Key Instruction
+- The HUD interface is displayed at the bottom, showing the keys with corresponding function.
 
 <!--/details-->
 
-## 辅助功能
-?> 见 [Accessibility](/en/dlce/game-settings-accessibility.md)。
+## Accessibility
+?> See [Accessibility](/en/dlce/game-settings-accessibility.md)。
 
 
 ## Advanced Settings :id=advanced-settings
@@ -148,140 +144,121 @@ The former is the macOS desktop version, while the latter is the iOS version run
 <!-- tabs:start -->
 ### **Windows**
 
-?> 见 [Launch Options](/en/dlce/commands.md)。
+?> See [Launch Options](/en/dlce/commands.md)。
 
 ### **macOS**
-?> 见 [Launch Options](/en/dlce/commands.md)。
+?> See [Launch Options](/en/dlce/commands.md)。
 
 ### **iOS on Mac**
 
-!> **注意**<br>
-受 Mac 系统限制，部分在 Mac 上不可用的设置依然会显示出来。
-未在下方列出的设置表明不在 Mac 上受支持。
+!> **Note**<br>
+Due to Mac system limitations, some settings that are not available on Mac will still be displayed.
+Settings not listed below are not supported on Mac.
 
 <!-- tabs:start -->
-<!-- tab:音频 -->
+<!-- tab:Audio -->
 
-### 音量
-- 调整游戏总音量
+### Volume
+- Adjusts the overall game volume.
 
-### I/O 缓冲区大小
-- 调整音频DSP缓冲区大小，如果音频播放出现卡顿，或播放广告后游戏音乐消失，可以尝试增大此数值。
-- 默认值：512。
+### I/O Buffer Size
+- Adjusts the audio DSP buffer size. If audio playback is choppy, or the game music disappears after playing ads, try increasing this value.
+- Default Value：512。
 
-<!-- tab:视频 -->
+<!-- tab:Video -->
 
-### 帧率
-- 调整游戏帧率上限，最高可设置为120FPS。
+### Frame Rate
+- Adjust the maximum frame rate of the game, up to 120 FPS.
 
-?> 只有在支持ProMotion的Mac内置屏幕或高刷新率的外置显示器上才能启用120FPS。
+?> 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
 
-### 显示帧率
-- 在游戏右下角显示当前帧率。
+### Display Frame Rate
 
-### 强制低画质模式
-- 开启后，游戏会强制以最低画质运行。
+- Displays the current frame rate in the lower right corner of the game.
 
-<!-- tab:网络 -->
+### Force Low Quality Mode
+
+- When enabled, force the game to run at the lowest graphics settings.
+
+<!-- tab:Network -->
 ### Login Method
-- Choose to login the game using DLRS GAS or Game Center.
+- Choose a method to login the game, either using DLRS GAS or Game Center.
 
 !> Game progress does not share between login methods.
 
-### 服务器
-- 选择关卡下载服务器的地区。
+### Server
+- Select the region for the level-downloading server.
 
-### 超时（秒）
-- 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。
-  此设置会影响所有下载行为（例如游戏初始化、关卡下载和广告等）。
+### Timeout (seconds)
+- Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads, and advertisements).
 
-<!-- tab:调试 -->
-### 输出日志
-- 开启后可前往“Finder”下查看游戏的调试日志。
-  - 打开 Finder 访达，按下 ` ⌘ ⇧ G`，输入下列路径并回车：
+<!-- tab:Debug -->
+### Output Log
+
+- When enabled, you can view the game's debug log in "Finder".
+  - Open Finder，press ` ⌘ ⇧ G`，enter the following path and press Enter：
 
   ```directory
   ~/Library/Containers
   ```
 
-  - 找到游戏文件夹，进入 `Data/Documents/Logs` 文件夹。
-  - 该文件夹内包含本次游戏运行日志和上一次运行的日志。
+  - Locate the game folder and head to `Data/Documents/Logs` .
+  - This folder contains all the logs for the game's current run and the logs from the previous run.
 
 <!-- tabs:end -->
 
 ### **iOS**
 
 <!-- tabs:start -->
-<!-- tab:音频 -->
+<!-- tab:Audio -->
 
-### 音量
-- 调整游戏总音量
+### Volume
+- Adjusts the overall game volume.
 
-### I/O 缓冲区大小
-- 调整音频DSP缓冲区大小，如果音频播放出现卡顿，或播放广告后游戏音乐消失，可以尝试增大此数值。
-- 默认值：512。
+### I/O Buffer Size
+- Adjusts the audio DSP buffer size. If audio playback is choppy, or the game music disappears after playing ads, try increasing this value.
+- Default Value：512。
 
-<!-- tab:视频 -->
-### 帧率
-- 调整游戏帧率上限，最高可设置为120FPS。
+<!-- tab:Video -->
 
-?> 只有在支持ProMotion的设备上才能启用120FPS。
+### Frame Rate
+- Adjust the maximum frame rate of the game, up to 120 FPS.
 
-### 显示帧率
-- 在游戏右下角显示当前帧率。
+?> 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
 
-### 强制低画质模式
-- 开启后，游戏会强制以最低画质运行。
+### Display Frame Rate
 
-<!-- tab:网络 -->
+- Displays the current frame rate in the lower right corner of the game.
+
+### Force Low Quality Mode
+
+- When enabled, force the game to run at the lowest graphics settings.
+
+<!-- tab:Network -->
 ### Login Method
-- Choose to login the game using DLRS GAS or Game Center.
+- Choose a method to login the game, either using DLRS GAS or Game Center.
 
 !> Game progress does not share between login methods.
 
-### 服务器
-- 选择关卡下载服务器的地区。
+### Server
+- Select the region for the level-downloading server.
 
-### 超时（秒）
-- 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。
-此设置会影响所有下载行为（例如游戏初始化、关卡下载和广告等）。
+### Timeout (seconds)
+- Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads, and advertisements).
 
-<!-- tab:其他 -->
-### 多点触控支持 :id=MultiTouch
-- 允许同时使用多个手指控制角色。
+<!-- tab:Others -->
+### Multi-touch Support :id=MultiTouch
+- Allows simultaneous control of the character with multiple fingers.
 
-### 使用系统字体设置
-- UI 文本大小、粗细跟随系统设置。
+### Use System Font Settings
+- UI text size and weight follow system settings.
 
-<!-- tab:调试 -->
-### 输出日志
-- 开启后可前往“文件”app下查看游戏的调试日志。
-
-<!-- tabs:end -->
-
-### **Android**
-
-### I/O 缓冲区大小
-- 调整音频DSP缓冲区大小，如果音频播放出现卡顿，或播放广告后游戏音乐消失，可以尝试增大此数值。
-- 默认值：512。
-
-### 帧率
-- 调整游戏帧率上限，最高可设置为120FPS。
-
-### 显示帧率
-- 在游戏右下角显示当前帧率。
-
-### 服务器
-- 选择关卡下载服务器的地区。
-
-### 超时（秒）
-- 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。
-  此设置会影响所有下载行为（例如游戏初始化、关卡下载和广告等）。
-
-### 多点触控支持 :id=MultiTouch-Android
-- 允许同时使用多个手指控制角色。
+<!-- tab:Debug -->
+### Output Log
+- Once enabled, you can view the game's debug log in the "File" app.
 
 <!-- tabs:end -->
+
 
 <blockquote>
 
