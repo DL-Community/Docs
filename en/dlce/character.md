@@ -15,41 +15,42 @@
 | Skin   | Price                      |
 |--------|----------------------------|
 | Normal | Free                       |
-| 耳机     | ✨ 450                      |
-| 金字塔    | ✨ 450                      |
-| 混沌     | ✨ 450                      |
-| 山脉     | ✨ 450                      |
-| 纸片     | ✨ 450                      |
-| 多米诺骨牌  | ✨ 450                      |
-| 太空舱    | ✨ 450                      |
-| 石笋     | ✨ 450                      |
-| 宙斯     | ✨ 750                      |
-| 蛇      | ✨ 600                      |
-| 箭头     | ✨ 600                      |
-| 果冻     | ✨ 600                      |
-| 气球     | ✨ 600                      |
-| 火焰之球   | ✨ 600                      |
-| 筋斗云    | ✨ 600                      |
-| 小丑     | ✨ 750                      |
-| 光      | ✨ 600                      |
-| 雪球     | ✨ 600                      |
-| 魔力女巫   | ✨ 750                      |
-| 小鲸鱼    | ✨ 750                      |
-| 冰雾     | ✨ 750                      |
-| 毛笔     | ✨ 750                      |
-| 小虫虫    | ✨ 750                      |
-| 魔法披风   | Obtain from the Note Store |
-| 炸弹骷髅   | Obtain from the Note Store |
-| 机器人    | Obtain from the Note Store |
-| 星星     | Obtain from the Note Store |
-| 黑球     | Obtain from the Note Store |
-| 青色球    | Obtain from the Note Store |
-| 星光闪耀   | Obtain from the Note Store |
-| 篮球     | Obtain from the Note Store |
-| 紫色心情   | Obtain from the Note Store |
-| 保龄球    | Obtain from the Note Store |
-| 网球     | Obtain from the Note Store |
-| 星球     | Obtain from the Note Store |
+| Headphones     | ✨ 450            |
+| Pyramid   | ✨ 450                 |
+| Ball   | ✨ 450                    |
+| Chaos     | ✨ 450                 |
+| Mountain     | ✨ 450              |
+| Paper     | ✨ 450                 |
+| Dominoes     | ✨ 450              |
+| Module     | ✨ 450                |
+| Stalagmite     | ✨ 450            |
+| Zeus     | ✨ 750                     |
+| Snake      | ✨ 600                      |
+| Arrow     | ✨ 600                      |
+| Jelly     | ✨ 600                      |
+| Balloon     | ✨ 600                      |
+| Fireball  | ✨ 600                      |
+| Flying Nimbus    | ✨ 600                      |
+| Clown     | ✨ 750                      |
+| Light      | ✨ 600                      |
+| Snowball     | ✨ 600                      |
+| Magic Witch   | ✨ 750                      |
+| Whale    | ✨ 750                      |
+| Snow Fog     | ✨ 750                      |
+| Chinese Brush     | ✨ 750                      |
+| Silther    | ✨ 750                      |
+| Magic Cloak   | Obtain from the Note Store |
+| Bomb Skeleton | Obtain from the Note Store |
+| Robot | Obtain from the Note Store Store |
+| Star | Obtain from the Note Store |
+| Black Ball | Obtain from the Note Store |
+| Cyan Ball | Obtain from the Note Store |
+| Star Power | Obtain from the Note Store |
+| Basketball | Obtain from the Note Store |
+| Plain Ball | Obtain from the Note Store |
+| Bowling Ball | Obtain from the Note Store |
+| Tennis Ball | Obtain from the Note Store |
+| Planet | Obtain from the Note Store |
 
 <!-- tab:Decorations -->
 ### **Decorations** :id=dec
@@ -71,6 +72,6 @@
 
 **Related Topics**
 - [Coins > Star](/en/dlce/coins.md#star)
-- [音符挑战](/en/dlce/notes-challenge.md)
+- [Notes Challenge](/en/dlce/notes-challenge.md)
 
 </blockquote>

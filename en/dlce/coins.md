@@ -1,4 +1,4 @@
-# Coins :id=coins
+# Currencies :id=coins
 
 > In-game currency
 
@@ -34,7 +34,7 @@
 <blockquote>
 
 **Related Topics**
-- [音符挑战](/en/dlce/notes-challenge.md)
+- [Notes Challenge](/en/dlce/notes-challenge.md)
 - [Characters](/en/dlce/character.md)
 
 </blockquote>
