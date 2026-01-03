@@ -5,6 +5,15 @@
 ## **3.0**
 
 <!-- 3.0版本内容加在这个下面 -->
+### 3.7.0
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+![内容](https://img.shields.io/badge/内容-yellow.svg)
+
+**新增关卡：Head in the Clouds、迷度（Max Studio）**
+- 【iOS】高级设置可选游戏登录方式：GAS或 Game Center，两者游戏进度不互通；
+- 新增“兑换码”功能。
+
 ### 3.6.13 
 ![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
 ![功能](https://img.shields.io/badge/功能-blue.svg)
