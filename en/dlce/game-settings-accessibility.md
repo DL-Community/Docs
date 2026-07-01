@@ -10,7 +10,7 @@
 ## Touch Feedback
 > **Available for**<br>iOS
 - When enabled, a special effect will appear at the tap location when the player taps the screen.
-  
+
 ## Gyroscope Effect
 > **Available for**<br>Windows, macOS, iOS.
 - Enable/disable the gyroscope parallax effect in the main screen level preview.
