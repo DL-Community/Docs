@@ -18,6 +18,13 @@
       <div class="icon-grid-label">QQ群下载</div>
     </div>
   </a>
+
+  <a class="icon-grid-group" href="https://fengyandl.itch.io/dlce" target="_blank">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="/Docs/lib/img/itch.svg" alt="itch">
+      <div class="icon-grid-label">itch.io</div>
+    </div>
+  </a>
 </div>
 
 ## 配置要求

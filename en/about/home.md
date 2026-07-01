@@ -14,6 +14,13 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
       <div class="icon-grid-label">GitHub</div>
     </div>
   </a>
+
+  <a class="icon-grid-group" href="https://fengyandl.itch.io/dlce" target="_blank">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="/Docs/lib/img/itch.svg" alt="itch">
+      <div class="icon-grid-label">itch.io</div>
+    </div>
+  </a>
 </div>
 
 <iframe frameborder="0" src="https://itch.io/embed/3021536?link_color=2c9cff" width="552" height="167"><a href="https://fengyandl.itch.io/dlce">Dancing Line Community Edition by fengyandl</a></iframe>
@@ -24,7 +31,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
   <a class="icon-grid-group" href="https://chinadlrs.com/app/?id=25" target="_blank">
     <div class="icon-grid-item">
           <img class="icon-grid-img" src="/Docs/lib/img/dlrs.png" alt="DLRS">
-          <div class="icon-grid-label">DLRS Joint Production Official Site</div>
+          <div class="icon-grid-label">China DLRS</div>
     </div>
   </a>
 
