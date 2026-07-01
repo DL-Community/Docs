@@ -7,14 +7,14 @@
 <div class="icon-grid">
   <a class="icon-grid-group" href="https://github.com/DL-Community/DancingLine-CommunityEdition" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/github-mark.png" alt="GitHub">
+      <img class="icon-grid-img" src="/Docs/lib/img/github-mark.png" alt="GitHub">
       <div class="icon-grid-label">GitHub下载</div>
     </div>
   </a>
 
   <a class="icon-grid-group" href="#/social/qq">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/qq.png" alt="QQ">
+      <img class="icon-grid-img" src="/Docs/lib/img/qq.png" alt="QQ">
       <div class="icon-grid-label">QQ群下载</div>
     </div>
   </a>

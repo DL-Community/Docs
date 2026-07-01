@@ -10,7 +10,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 <div class="icon-grid">
   <a class="icon-grid-group" href="https://github.com/DL-Community/DancingLine-CommunityEdition" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/github-mark.png" alt="GitHub">
+      <img class="icon-grid-img" src="/Docs/lib/img/github-mark.png" alt="GitHub">
       <div class="icon-grid-label">GitHub</div>
     </div>
   </a>
@@ -23,35 +23,35 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 <div class="icon-grid">
   <a class="icon-grid-group" href="https://chinadlrs.com/app/?id=25" target="_blank">
     <div class="icon-grid-item">
-          <img class="icon-grid-img" src="/lib/img/dlrs.png" alt="DLRS">
+          <img class="icon-grid-img" src="/Docs/lib/img/dlrs.png" alt="DLRS">
           <div class="icon-grid-label">DLRS Joint Production Official Site</div>
     </div>
   </a>
 
   <a class="icon-grid-group" href="https://space.bilibili.com/187016314" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/bili.png" alt="Bilibili">
+      <img class="icon-grid-img" src="/Docs/lib/img/bili.png" alt="Bilibili">
       <div class="icon-grid-label">Bilibili</div>
     </div>
   </a>
 
   <a class="icon-grid-group" href="https://www.youtube.com/@DLCommunityEdition" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/yt_icon_red_digital.png" alt="YouTube">
+      <img class="icon-grid-img" src="/Docs/lib/img/yt_icon_red_digital.png" alt="YouTube">
       <div class="icon-grid-label">YouTube</div>
     </div>
   </a>
 
   <a class="icon-grid-group" href="https://pd.qq.com/s/2njtk4vj2" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/qq-channel.png" alt="Tencent Channel">
+      <img class="icon-grid-img" src="/Docs/lib/img/qq-channel.png" alt="Tencent Channel">
       <div class="icon-grid-label">Tencent Channel</div>
     </div>
   </a>
 
   <a class="icon-grid-group" href="https://discord.gg/8Ew5n3XadT" target="_blank">
     <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/lib/img/discord.png" alt="Discord">
+      <img class="icon-grid-img" src="/Docs/lib/img/discord.png" alt="Discord">
       <div class="icon-grid-label">Discord</div>
     </div>
   </a>
