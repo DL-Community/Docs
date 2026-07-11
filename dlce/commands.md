@@ -37,7 +37,6 @@
 
 [Audio]
 IOBufferSize=512
-MasterVolume=100
 
 [Video]
 FrameRate=60
@@ -54,7 +53,6 @@ Timeout=10
 | -example_argument   | 示例命令，无实际作用。                                                                                                                 |
 | [Audio]             | 音频配置区。                                                                                                                      |
 | IOBufferSize        | 音频I/O缓冲区大小（DSP缓冲区大小），推荐512。<br/>与 `-audio_dsp_buffer_#` 命令作用一致。                                                             |
-| MasterVolume        | 游戏音量大小，0 - 100。<br/>与 `-master_volume_#` 命令作用一致。                                                                            |
 | [Video]             | 显示配置区。                                                                                                                      |
 | FrameRate           | 游戏帧率限制，-1代表无限帧率，默认60。<br/>与 `-frame_rate_#` 命令作用一致。                                                                         |
 | [Network]           | 网络配置区。                                                                                                                      |
@@ -71,8 +69,8 @@ Timeout=10
 
 | 命令                         | 描述                                                                                                       | 备注                                             |
 |:---------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| `-multi_touch`             | 允许[多点触控](/dlce/game-settings.md#MultiTouch)                                                              |
-| `-master_volume_#`         | 调节游戏音量，`#` 数值为整数 0 - 100                                                                                 |
+| `-multi_touch`             | 允许[多点触控](/dlce/game-settings.md#MultiTouch)                                                              |                                                |
+| ~~`-master_volume_#`~~     | 调节游戏音量，`#` 数值为整数 0 - 100                                                                                 | **❗在 v3.8.2 中移除**                              |
 | `-debug_logging`           | 开启日志写入功能，单机平台（Windows、macOS等）可在游戏设置中找到“查看日志”选项，点击后会显示游戏的运行时日志                                            | v3.1.3.1031及以上版本提供                             |
 | `-server_#`                | 更换游戏服务器为 #（数字）<br/>为了确保获取最新关卡资源，请尽可能使用默认服务器，除非关卡速度慢。<br/>0：默认（相当于不使用命令）<br/>1：Unity Online Services (国服) | -                                              |
 | `-disable_discord_rpc`     | 禁用Discord RPC                                                                                            | -                                              |

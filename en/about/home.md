@@ -100,12 +100,14 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 ?> Requires a 64-bit processor and operating system.
 
+!> Intel-based Mac is not supported by this game.
+
 ### Recommended
 
 - **Operating System**: macOS 15 or newer
 - **Processor**: Apple M3 or higher
 - **Graphics API**: Metal 3 or newer
-- **RAM**: 8 GB RAM
+- **RAM**: 16 GB RAM
 - **Storage**: 5 GB available space
 - Setting the quality to "Ultra" or "Maximum" for the best experience.
 
@@ -113,10 +115,10 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 > The minimum configuration cannot guarantee a complete game experience.
 
-- **Operating System**: High Sierra 10.13+
-- **Processor**: x64 architecture with SSE2
-- **Graphics API**: Metal-compatible Intel and AMD GPUs
-- **RAM**: 4 GB RAM
+- **Operating System**: macOS 11
+- **Processor**: Apple M1
+- **Graphics API**: Metal
+- **RAM**: 8 GB RAM
 - **Storage**: 4 GB available space
 - Setting the quality to "High" or lower to ensure FPS.
 

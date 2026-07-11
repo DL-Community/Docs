@@ -47,7 +47,7 @@
 
 ### 最低配置
 > 最低配置无法保证完整游戏体验
-- **操作系统**：Windows 7 SP1
+- **操作系统**：Windows 7 SP1 64bit
 - **处理器**：Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz
 - **图形 API**：Direct3D11 或 OpenGLCore
 - **显卡**：NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 6950
@@ -58,20 +58,23 @@
 <!-- tab:macOS -->
 
 ?> 需要 64 位处理器和操作系统
+
+!> 游戏不兼容基于 Intel 处理器的 Mac
+
 ### 推荐配置
 - **操作系统**：macOS 15 或更高版本
 - **处理器**：Apple M3 或更高配置
 - **图形 API**：Metal 3 或更高版本
-- **内存**：8 GB RAM
+- **内存**：16 GB RAM
 - **存储空间**：需要 5 GB 可用空间
 - 建议将画质调节至“极高”或“极限”以获得最佳游戏体验
 
 ### 最低配置
 > 最低配置无法保证完整游戏体验
-- **操作系统**：High Sierra 10.13+
-- **处理器**：x64 architecture with SSE2
-- **图形 API**：Metal 兼容型 Intel 和 AMD GPU
-- **内存**：4 GB RAM
+- **操作系统**：macOS 11
+- **处理器**：Apple M1
+- **图形 API**：Metal
+- **内存**：8 GB RAM
 - **存储空间**：需要 4 GB 可用空间
 - 建议将画质调节至“高”或更低以保证流畅度
 
