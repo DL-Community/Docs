@@ -16,6 +16,7 @@
 |--------|----------------------------|
 | Normal | Free                       |
 | Headphones     | ✨ 450            |
+| Legacy | ✨ 450                    |
 | Pyramid   | ✨ 450                 |
 | Ball   | ✨ 450                    |
 | Chaos     | ✨ 450                 |
@@ -41,6 +42,7 @@
 | Slither    | ✨ 750                      |
 | Magic Cloak   | Obtain from the Note Store |
 | Bomb Skeleton | Obtain from the Note Store |
+| cheetah Teddy | Obtain from the Note Store |
 | Robot | Obtain from the Note Store |
 | Star | Obtain from the Note Store |
 | Black Ball | Obtain from the Note Store |
@@ -65,6 +67,7 @@
 | SweetDog Hat     | Obtain from the Note Store |
 | Sprite           | Obtain from the Note Store |
 | Rat              | Obtain from the Note Store |
+| Headphones       | Obtain from the Note Store |
 
 <!-- tabs:end -->
 
