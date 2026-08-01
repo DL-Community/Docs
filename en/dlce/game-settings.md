@@ -114,7 +114,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
 <!--/summary-->
 
 > **Available for**<br>Windows, macOS,  iOS on Mac.
-- Enable/Disable V-Sync
+- Enable/Disable V-Sync，now joined“Frame Rate”
 
 <!--/details-->
 
