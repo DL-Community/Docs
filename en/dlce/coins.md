@@ -9,7 +9,7 @@
 ### Obtain
 - Redeem using [stars](#star)
 - Redeem using [notes](#note)
-- Watching ads
+- Complete Missions
 - 10 cubes will automatically refill after 300 seconds when you use last Energy Cube.
 
 ## Star ✨ :id=star
@@ -20,8 +20,9 @@
 - In-level revivals
 
 ### Obtain
-- Watching ads
-- Daily Sign-in
+- Complete Missions
+- Complete levels
+- Redeem using [notes](#note)
 
 ## Note 🎶 :id=note
 ### Usages
