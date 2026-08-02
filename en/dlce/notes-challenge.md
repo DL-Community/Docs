@@ -25,6 +25,10 @@
 - [Energy Cube](/en/dlce/coins.md#cube)
 - [Stars](/en/dlce/coins.md#coins)
 
+## Additional information
+- Added a refresh countdown display to the Note Shop.
+- Players can now spend corresponding notes to skip a challenge level once.
+
 <blockquote>
 
 **Related Topics**
