@@ -5,6 +5,53 @@
 ## **3.0**
 
 <!-- 3.0版本内容加在这个下面 -->
+### 3.8.2
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+![内容](https://img.shields.io/badge/内容-yellow.svg)
+
+- 在游戏开始的加载画面添加了“光敏性癫痫”的警告提示；
+- 删除“广告系统”和“每日免费星星”；
+- 方块补充由10个提升为15个；
+- 添加“日常任务”功能，每天可以通过完成指定任务获得指定数量的星星或者方块；
+- 主菜单删除跳转至成就的按钮，同时更改为“日常任务”的按钮（但仍可从菜单界面查看）；
+- 添加关卡战殇、电玩、足球、篮球、三周年、武士（关卡合集）、印度情缘（关卡合集）的选关场景；
+- 完善键位指示器；
+- 将辅助功能的“帧率”选项移动至设置内，同时将垂直同步放入“帧率”选项当中；
+- 移除 Intel Mac 的支持
+- BUG修复。
+
+### 3.8.1
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
+- 修复了部分影响游戏体验的问题
+### 3.8.0
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+![内容](https://img.shields.io/badge/内容-yellow.svg)
+
+**新联动关卡：隐世古埠（SKB's Dream制作团队）**
+- 新增皮肤：怀旧（经典TTF风格普通皮肤）
+- 新增装饰：耳机（与耳机皮肤独立，可供其他皮肤穿戴）
+- 新增关卡合集功能，将不同版本的相同关卡收纳至一处
+- 音符挑战关卡允许花费音符跳过一次挑战关卡；
+- 音符商店新增显示刷新倒计时；
+- 优化游戏启动速度；
+- 辅助功能新增“帧率”选项，旧版本中调整帧率的方法在此版本失效。
+
+### 3.7.1
+![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
+
+- 修复部分关卡百分比；
+- 调整关卡排序；
+- 辅助功能新增多音频声道输出设置；
+- BUG修复。
+
+**仅MacOS**
+- 辅助功能新增应用图标更换
+
 ### 3.7.0
 ![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
 ![功能](https://img.shields.io/badge/功能-blue.svg)
