@@ -36,6 +36,23 @@
             if (legacyLanguage) {
                 location.replace('#' + (legacyLanguage[1] || '/'));
             }
+
+            function normalizeSectionRootHash() {
+                var sectionRoot = location.hash.match(
+                    /^#(\/(?:[^/?#]+\/)?(?:about|dlce|social|legal))(\?.*)?$/
+                );
+                if (!sectionRoot) return;
+
+                var normalizedHash = '#' + sectionRoot[1] + '/' + (sectionRoot[2] || '');
+                history.replaceState(
+                    history.state,
+                    '',
+                    location.pathname + location.search + normalizedHash
+                );
+            }
+
+            normalizeSectionRootHash();
+            window.addEventListener('hashchange', normalizeSectionRootHash);
         })();
     </script>
 
@@ -48,7 +65,7 @@
     <link id="prism-light-theme" rel="stylesheet" href="lib/css/prism-light.css">
     <link id="prism-dark-theme" rel="stylesheet" href="lib/css/prism-dark.css">
     <link rel="stylesheet" href="lib/css/docsify-tabs.css">
-    <link rel="stylesheet" href="lib/css/docs-app.css?v=46">
+    <link rel="stylesheet" href="lib/css/docs-app.css?v=47">
 
     <script>
         (function () {
@@ -104,6 +121,26 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     var enUI = window.DLCE_I18N.en;
     window.$docsify = {
         basePath: '/Docs/',
+        routes: {
+            '/(?:[^/]+/)?[^/]+/__overview/[^/]+/?': function (categoryPath, matched, next) {
+                next('<span data-category-landing-placeholder hidden></span>');
+            },
+            '/(?:[^/]+/)?(?:about|dlce|social|legal)/?': function (sectionPath, matched, next) {
+                var normalizedPath = /\/$/.test(sectionPath) ? sectionPath : sectionPath + '/';
+                var readmePath = window.$docsify.basePath.replace(/\/$/, '') + normalizedPath + 'README.md';
+
+                fetch(readmePath).then(function (response) {
+                    if (response.ok) return response.text().then(next);
+                    if (response.status === 404) {
+                        next('<span data-section-landing-placeholder hidden></span>');
+                        return;
+                    }
+                    next(false);
+                }).catch(function () {
+                    next(false);
+                });
+            }
+        },
         toc: {
             tocMaxLevel: 5,
             target: 'h1, h2, h3, h4, h5, h6',
@@ -111,16 +148,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         },
         alias: {
             '/': '/about/home',
-            '/about/': '/about/home',
-            '/dlce/': '/dlce/contents',
-            '/social/': '/social/home',
-            '/legal/': '/legal/eula',
             '/dlce/about': '/about/home',
             '/en/': 'en/about/home',
-            '/en/about/': '/en/about/home',
-            '/en/dlce/': '/en/dlce/contents',
-            '/en/social/': '/en/social/home',
-            '/en/legal/': '/en/legal/eula',
             '/en/dlce/about': 'en/about/home',
 
             '/404': '/_404.md',
@@ -187,7 +216,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </script>
 
 <script src="lib/docsify.min.js"></script>
-<script src="lib/navigation.js?v=41"></script>
+<script src="lib/navigation.js?v=46"></script>
 <script src="lib/footer-hook.js"></script>
 <script src="lib/plugins/search.min.js"></script>
 <script src="lib/plugins/docsify-themeable.min.js"></script>

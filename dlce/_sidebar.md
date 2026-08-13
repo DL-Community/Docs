@@ -4,7 +4,7 @@
 - [音符挑战](/dlce/notes-challenge)
 - [角色外观](/dlce/character)
 - [关卡信息](/dlce/level_information)
-- [自定义后期处理效果](/dlce/custom-post-processing/home)
+- 自定义后期处理效果
   - [V2](/dlce/custom-post-processing/v2)
   - [V1](/dlce/custom-post-processing/v1)
 - [游戏设置](/dlce/game-settings)

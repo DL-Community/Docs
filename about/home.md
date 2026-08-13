@@ -32,8 +32,10 @@
 <!-- tabs:start -->
 
 <!-- tab:Windows -->
-
 ?> 需要 64 位处理器和操作系统
+
+!> 游戏不兼容 Windows 7 及以下的操作系统
+
 ### 推荐配置
 - **操作系统**：Windows 10 64bit / Windows 11 64bit
 - **处理器**：Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz 或更高配置
@@ -47,7 +49,7 @@
 
 ### 最低配置
 > 最低配置无法保证完整游戏体验
-- **操作系统**：Windows 7 SP1 64bit
+- **操作系统**：Windows 8
 - **处理器**：Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz
 - **图形 API**：Direct3D11 或 OpenGLCore
 - **显卡**：NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 6950

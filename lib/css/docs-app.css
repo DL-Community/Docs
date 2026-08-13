@@ -1294,6 +1294,10 @@ body.docs-route-pending .markdown-section {
     gap: 1rem;
 }
 
+.docsify-pagination-container:empty {
+    display: none;
+}
+
 .pagination-item {
     min-width: min(19rem, 100%);
     padding: 1rem 1.15rem;
