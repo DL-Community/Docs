@@ -9,7 +9,7 @@
 
 ## 语言
 - 更改游戏显示语言。
-- 详见 [多语言](/about/localization.md)。
+- 详见 [多语言](/dlce/localization.md)。
 
 ## 音画同步
 <!--details-->

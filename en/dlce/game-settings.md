@@ -9,7 +9,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
 
 ## Language
 - Change the display language of the game.
-- For details, please refer to [Localizations](/en/about/localization.md).
+- For details, please refer to [Localizations](/en/dlce/localization.md).
 
 ## Synchronization
 !> It is **not recommended** to enable multiple automatic adjustments below simultaneously, as doing so may lead to **excessive synchronization correction**.
