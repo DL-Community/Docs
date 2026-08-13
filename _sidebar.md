@@ -1,4 +1,1 @@
-- 关于
-  - [关于](/about/home)
-- [版本历史](/about/versions)
-- [多语言](/about/localization)
+- [首页](/about/home)

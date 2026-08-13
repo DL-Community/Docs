@@ -11,17 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DESIGN.md" beforeDir="false" afterPath="$PROJECT_DIR$/DESIGN.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_navbar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/about/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/about/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/about/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/localization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/en/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/i18n.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/css/docs-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/docs-app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
       <workItem from="1760820822621" duration="18000" />
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
-      <workItem from="1786602620015" duration="11214000" />
+      <workItem from="1786602620015" duration="16400000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -408,7 +407,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786613346423</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="redesign website">
+      <option name="closed" value="true" />
+      <created>1786615641399</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1786615641399</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix formating">
+      <option name="closed" value="true" />
+      <created>1786615882893</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1786615882893</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="更新3.5版本相关文档" />
     <MESSAGE value="完善文档" />
     <MESSAGE value="更新游戏设置文档" />
     <MESSAGE value="增加自定义后处理枚举值相关的文档" />
@@ -454,7 +468,8 @@
     <MESSAGE value="nav" />
     <MESSAGE value="redesigned website" />
     <MESSAGE value="redesign website" />
-    <option name="LAST_COMMIT_MESSAGE" value="redesign website" />
+    <MESSAGE value="fix formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix formating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

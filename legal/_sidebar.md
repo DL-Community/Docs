@@ -1,3 +1,3 @@
-- [法律信息](/legal/eula)
+- [最终用户许可协议（EULA）](/legal/eula)
 - [隐私政策](/legal/privacy)
 - [开源代码库](/legal/open-source)
