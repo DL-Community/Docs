@@ -65,7 +65,7 @@
     <link id="prism-light-theme" rel="stylesheet" href="lib/css/prism-light.css">
     <link id="prism-dark-theme" rel="stylesheet" href="lib/css/prism-dark.css">
     <link rel="stylesheet" href="lib/css/docsify-tabs.css">
-    <link rel="stylesheet" href="lib/css/docs-app.css?v=47">
+    <link rel="stylesheet" href="lib/css/docs-app.css?v=49">
 
     <script>
         (function () {
@@ -126,19 +126,31 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
                 next('<span data-category-landing-placeholder hidden></span>');
             },
             '/(?:[^/]+/)?(?:about|dlce|social|legal)/?': function (sectionPath, matched, next) {
+                var landingPlaceholder = '<span data-section-landing-placeholder hidden></span>';
                 var normalizedPath = /\/$/.test(sectionPath) ? sectionPath : sectionPath + '/';
                 var readmePath = window.$docsify.basePath.replace(/\/$/, '') + normalizedPath + 'README.md';
+                var showGeneratedLanding = function () {
+                    next(landingPlaceholder);
+                };
+
+                if (typeof window.fetch !== 'function') {
+                    showGeneratedLanding();
+                    return;
+                }
 
                 fetch(readmePath).then(function (response) {
-                    if (response.ok) return response.text().then(next);
-                    if (response.status === 404) {
-                        next('<span data-section-landing-placeholder hidden></span>');
+                    if (!response.ok) {
+                        showGeneratedLanding();
                         return;
                     }
-                    next(false);
-                }).catch(function () {
-                    next(false);
-                });
+
+                    return response.text().then(function (markdown) {
+                        var isEmpty = !markdown.trim();
+                        var isHtmlFallback = /^\s*(?:<!doctype\s+html|<html(?:\s|>))/i.test(markdown);
+                        if (isEmpty || isHtmlFallback) showGeneratedLanding();
+                        else next(markdown);
+                    }, showGeneratedLanding);
+                }, showGeneratedLanding);
             }
         },
         toc: {
@@ -216,7 +228,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </script>
 
 <script src="lib/docsify.min.js"></script>
-<script src="lib/navigation.js?v=46"></script>
+<script src="lib/navigation.js?v=48"></script>
 <script src="lib/footer-hook.js"></script>
 <script src="lib/plugins/search.min.js"></script>
 <script src="lib/plugins/docsify-themeable.min.js"></script>

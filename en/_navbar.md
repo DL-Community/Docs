@@ -1,4 +1,5 @@
 - [Home](/en/about)
-- [Game Docs](/en/dlce)
+- [Docs](/en/dlce)
+- [Social](/en/social)
 - [Legal](/en/legal)
 - [Sponsor](https://github.com/sponsors/Aaron8052)

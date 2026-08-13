@@ -11,17 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/DESIGN.md" beforeDir="false" afterPath="$PROJECT_DIR$/DESIGN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/home.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/en/social/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_navbar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/about/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/about/home.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/css/docs-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/docs-app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/social/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social/beta-test.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social/faq.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
         "id": "PR_kwDOMiGia87-GWcF",
         "number": 23
       },
-      "lastSeen": 1786653748495
+      "lastSeen": 1786664269311
     }
   ]
 }]]></component>
@@ -468,7 +469,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786659150215</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1786662401372</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1786662401372</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="更新群规" />
     <MESSAGE value="增加备案号" />
     <MESSAGE value="加宽页面" />
     <MESSAGE value="更新" />
@@ -514,7 +522,8 @@
     <MESSAGE value="fix bugs; redesign" />
     <MESSAGE value="correct level information" />
     <MESSAGE value="bug fix&#10;&#10;- breadcrumb navigation&#10;- mobile website layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix&#10;&#10;- breadcrumb navigation&#10;- mobile website layout" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

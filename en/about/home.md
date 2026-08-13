@@ -25,52 +25,15 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 <iframe frameborder="0" src="https://itch.io/embed/3021536?link_color=2c9cff" width="552" height="167"><a href="https://fengyandl.itch.io/dlce">Dancing Line Community Edition by fengyandl</a></iframe>
 
-## Communities :id=communities
-
-<div class="icon-grid">
-  <a class="icon-grid-group" href="https://chinadlrs.com/app/?id=25" target="_blank">
-    <div class="icon-grid-item">
-          <img class="icon-grid-img" src="/Docs/lib/img/dlrs.png" alt="DLRS">
-          <div class="icon-grid-label">China DLRS</div>
-    </div>
-  </a>
-
-  <a class="icon-grid-group" href="https://space.bilibili.com/187016314" target="_blank">
-    <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/Docs/lib/img/bili.png" alt="Bilibili">
-      <div class="icon-grid-label">Bilibili</div>
-    </div>
-  </a>
-
-  <a class="icon-grid-group" href="https://www.youtube.com/@DLCommunityEdition" target="_blank">
-    <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/Docs/lib/img/yt_icon_red_digital.png" alt="YouTube">
-      <div class="icon-grid-label">YouTube</div>
-    </div>
-  </a>
-
-  <a class="icon-grid-group" href="https://pd.qq.com/s/2njtk4vj2" target="_blank">
-    <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/Docs/lib/img/qq-channel.png" alt="Tencent Channel">
-      <div class="icon-grid-label">Tencent Channel</div>
-    </div>
-  </a>
-
-  <a class="icon-grid-group" href="https://discord.gg/8Ew5n3XadT" target="_blank">
-    <div class="icon-grid-item">
-      <img class="icon-grid-img" src="/Docs/lib/img/discord.png" alt="Discord">
-      <div class="icon-grid-label">Discord</div>
-    </div>
-  </a>
-</div>
-
 ## Spec Requirements
 
 <!-- tabs:start -->
 
 <!-- tab:Windows -->
 
-?> Requires a 64-bit processor and operating system
+?> Requires a 64-bit processor and operating system.
+
+!> Windows 7 or older systems are not supported.
 
 ### Recommended
 
@@ -88,7 +51,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 > The minimum configuration cannot guarantee a complete game experience.
 
-- **Operating System**: Windows 7 SP1
+- **Operating System**: Windows 8
 - **Processor**: Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz
 - **Graphics API**: Direct3D11 or OpenGLCore
 - **Graphics Card (GPU)**: NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 6950

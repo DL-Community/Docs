@@ -1,0 +1,6 @@
+- [Discord](https://discord.gg/8Ew5n3XadT)
+- [YouTube](https://www.youtube.com/@DLCommunityEdition)
+- [China DLRS](https://chinadlrs.com/app/?id=25)
+- [Bilibili](https://space.bilibili.com/187016314)
+- [Tencent Channel](https://pd.qq.com/s/2njtk4vj2)
+- [Sponsor](https://github.com/sponsors/Aaron8052)

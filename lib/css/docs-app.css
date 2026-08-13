@@ -129,6 +129,7 @@
     --search-input-border-color: #3b3e41;
     --search-input-color: #f3f4f5;
     --search-input-placeholder-color: #9da1a6;
+    --search-input-background-image: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 24 24' fill='none' stroke='%239da1a6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='10.5' r='7.5'/%3E%3Cline x1='21' y1='21' x2='15.8' y2='15.8'/%3E%3C/svg%3E");
     --navbar-root-color: #e2e3e5;
     --navbar-root-color--hover: #ffffff;
     --navbar-root-color--active: #55afff;
@@ -1142,11 +1143,16 @@ body.docs-route-pending .markdown-section {
 }
 
 .category-card-copy strong {
+    display: -webkit-box;
     overflow: hidden;
     color: var(--strong-color);
     font-size: 1rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .category-card-arrow {
