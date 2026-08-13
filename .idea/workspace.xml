@@ -14,11 +14,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DESIGN.md" beforeDir="false" afterPath="$PROJECT_DIR$/DESIGN.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/en/i18n.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/i18n.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/_sidebar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/css/docs-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/docs-app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
     </list>
@@ -117,7 +115,7 @@
       <workItem from="1760820822621" duration="18000" />
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
-      <workItem from="1786602620015" duration="16400000" />
+      <workItem from="1786602620015" duration="18324000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -423,7 +421,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786615882893</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix bugs; redesign">
+      <option name="closed" value="true" />
+      <created>1786648406072</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1786648406072</updated>
+    </task>
+    <task id="LOCAL-00040" summary="correct level information">
+      <option name="closed" value="true" />
+      <created>1786649475661</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1786649475661</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,8 +458,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="完善文档" />
-    <MESSAGE value="更新游戏设置文档" />
     <MESSAGE value="增加自定义后处理枚举值相关的文档" />
     <MESSAGE value="更新群规" />
     <MESSAGE value="增加备案号" />
@@ -469,7 +481,9 @@
     <MESSAGE value="redesigned website" />
     <MESSAGE value="redesign website" />
     <MESSAGE value="fix formating" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix formating" />
+    <MESSAGE value="fix bugs; redesign" />
+    <MESSAGE value="correct level information" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct level information" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
