@@ -1,12 +1,5 @@
 # 游戏设置
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li><a href="#/dlce/game-settings">游戏设置</a></li>
-    <li><a href="#/dlce/game-settings-accessibility">辅助功能</a></li>
-  </ol>
-</nav>
-
 ## 触控反馈
 > **适用于**<br>iOS、Android。
 - 开启后玩家点击屏幕时会在点击的位置显示特效。

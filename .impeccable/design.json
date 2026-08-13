@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-13T03:27:15.9616151-04:00",
+  "title": "Design System: DLCE Docs",
+  "extensions": {
+    "colorMeta": {
+      "primary-blue": { "role": "primary", "displayName": "Navigation Blue", "canonical": "#2c9cff", "tonalRamp": ["#061a2b", "#0a3557", "#105a91", "#147fd6", "#2c9cff", "#69baff", "#a8d8ff", "#e8f5ff"] },
+      "primary-blue-strong": { "role": "primary", "displayName": "Navigation Blue Strong", "canonical": "#147fd6", "tonalRamp": ["#061725", "#0a2e49", "#0e4d7b", "#147fd6", "#419be1", "#78b9eb", "#b4d9f5", "#edf8ff"] },
+      "light-canvas": { "role": "neutral", "displayName": "Paper Canvas", "canonical": "#ffffff", "tonalRamp": ["#242424", "#444444", "#666666", "#8a8a8a", "#b0b0b0", "#d1d1d1", "#ebebeb", "#ffffff"] },
+      "dark-canvas": { "role": "neutral", "displayName": "Graphite Canvas", "canonical": "#18191a", "tonalRamp": ["#101112", "#18191a", "#292b2d", "#414447", "#62666a", "#8f9499", "#c9cccf", "#f2f3f4"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Document Display", "purpose": "One H1 per Markdown page." },
+      "body": { "displayName": "Reading Body", "purpose": "Multilingual long-form documentation." },
+      "label": { "displayName": "Navigation Label", "purpose": "Tabs, tree labels, and controls." },
+      "supporting": { "displayName": "Supporting Text", "purpose": "Breadcrumbs and secondary UI copy." },
+      "caption": { "displayName": "Caption", "purpose": "Card support labels." },
+      "micro": { "displayName": "Micro Label", "purpose": "Page-outline section labels." }
+    },
+    "shadows": [
+      { "name": "mobile-drawer", "value": "10px 0 30px rgba(0, 0, 0, 0.22)", "purpose": "Separates the open mobile navigation drawer from content." }
+    ],
+    "motion": [
+      { "name": "fast-state", "value": "150ms ease-out", "purpose": "Hover and active feedback." },
+      { "name": "panel-enter", "value": "220ms ease-out", "purpose": "Page-outline and drawer transitions." }
+    ],
+    "breakpoints": [
+      { "name": "rail", "value": "71rem" },
+      { "name": "mobile", "value": "48rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Header Control",
+      "kind": "button",
+      "refersTo": "header-control",
+      "description": "Compact square control for menu and theme actions.",
+      "html": "<button class=\"ds-header-control\" aria-label=\"Menu\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 7h16M4 12h16M4 17h16\"/></svg></button>",
+      "css": ".ds-header-control{display:grid;place-items:center;width:40px;height:40px;padding:0;border:1px solid #343638;border-radius:8px;background:transparent;color:#e3e4e6;transition:background-color 150ms ease-out,border-color 150ms ease-out}.ds-header-control svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}.ds-header-control:hover{border-color:#2c9cff;background:#2a2c2f}.ds-header-control:focus-visible{outline:3px solid color-mix(in srgb,#2c9cff 72%,transparent);outline-offset:2px}"
+    },
+    {
+      "name": "Top Navigation Tab",
+      "kind": "nav",
+      "description": "Natural-width global section tab.",
+      "html": "<a class=\"ds-nav-tab ds-nav-tab-active\" href=\"#\">Game Docs</a>",
+      "css": ".ds-nav-tab{position:relative;display:inline-flex;align-items:center;height:64px;padding:0 14px;color:#e2e3e5;font-weight:650;text-decoration:none}.ds-nav-tab:after{position:absolute;right:14px;bottom:0;left:14px;height:3px;border-radius:3px 3px 0 0;background:#2c9cff;content:'';opacity:0;transform:scaleX(.55);transition:opacity 150ms ease-out,transform 150ms ease-out}.ds-nav-tab:hover,.ds-nav-tab-active{color:#55afff}.ds-nav-tab:hover:after,.ds-nav-tab-active:after{opacity:1;transform:scaleX(1)}.ds-nav-tab:focus-visible{outline:3px solid color-mix(in srgb,#2c9cff 72%,transparent);outline-offset:-3px}"
+    },
+    {
+      "name": "Sidebar Active Link",
+      "kind": "nav",
+      "refersTo": "sidebar-active",
+      "description": "Current Markdown page in the document tree.",
+      "html": "<a class=\"ds-sidebar-link\" href=\"#\">Game Settings</a>",
+      "css": ".ds-sidebar-link{display:block;padding:9px 38px 9px 12px;border-radius:6px;background:#253342;color:#55afff;font-weight:650;text-decoration:none}.ds-sidebar-link:hover{background:#2a3d50;color:#fff}.ds-sidebar-link:focus-visible{outline:3px solid color-mix(in srgb,#2c9cff 72%,transparent);outline-offset:2px}"
+    },
+    {
+      "name": "Category Card",
+      "kind": "card",
+      "refersTo": "category-card",
+      "description": "Generated link to one immediate child Markdown page.",
+      "html": "<a class=\"ds-category-card\" href=\"#\"><span class=\"ds-card-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M6 3h8l4 4v14H6zM14 3v5h5M9 12h6M9 16h6\"/></svg></span><span><strong>Accessibility</strong><small>Open document</small></span></a>",
+      "css": ".ds-category-card{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:14px;min-height:92px;padding:20px;border:1px solid #343638;border-radius:10px;background:#1e1f20;color:#e3e4e6;text-decoration:none;transition:border-color 160ms ease-out,transform 160ms ease-out}.ds-category-card span:last-child{display:grid;gap:5px}.ds-category-card small{color:#a5a9af}.ds-category-card:hover{border-color:#2c9cff;transform:translateY(-2px)}.ds-category-card:focus-visible{outline:3px solid color-mix(in srgb,#2c9cff 72%,transparent);outline-offset:2px}.ds-card-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:8px;background:#25384b;color:#2c9cff}.ds-card-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.8}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "description": "Sidebar document search.",
+      "html": "<input class=\"ds-search\" type=\"search\" placeholder=\"Search documentation\">",
+      "css": ".ds-search{box-sizing:border-box;width:100%;height:42px;padding:0 14px;border:1px solid #3b3e41;border-radius:8px;background:#292b2d;color:#f3f4f5;font:inherit}.ds-search:focus{border-color:#2c9cff;outline:0;box-shadow:0 0 0 3px color-mix(in srgb,#2c9cff 22%,transparent)}"
+    },
+    {
+      "name": "Information Notice",
+      "kind": "custom",
+      "description": "Readable semantic notice for dark documentation surfaces.",
+      "html": "<p class=\"ds-notice\"><strong>Note</strong><br>Supporting information stays legible in dark mode.</p>",
+      "css": ".ds-notice{padding:16px 24px;border-left:4px solid #49aaff;border-radius:0 8px 8px 0;background:#1e3040;color:#e5f4ff;line-height:1.65}.ds-notice strong{color:inherit}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Graphite Wayfinder",
+    "overview": "DLCE Docs is a restrained documentation workspace with graphite surfaces, clean paper surfaces, and one established blue used to communicate location and action.",
+    "keyCharacteristics": ["Persistent three-part wayfinding", "One blue accent with neutral layered surfaces", "Compact controls and restrained motion", "Theme- and language-aware UI"],
+    "rules": [
+      { "name": "The One-Accent Rule", "body": "Blue communicates navigation and interaction; do not introduce unrelated accent colors for ordinary controls.", "section": "colors" },
+      { "name": "The Reading-First Rule", "body": "Use the display scale once per document; navigation never competes with the page H1.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Do not add persistent card shadows to documentation navigation; use border and tone first.", "section": "elevation" }
+    ],
+    "dos": ["Do keep global, document, and in-page navigation visually separate.", "Do obtain UI strings from the language dictionaries.", "Do preserve the established blue and transparent DLCE artwork."],
+    "donts": ["Don't place H2/H3 links back inside the Markdown page tree.", "Don't hard-code new interface copy in navigation logic.", "Don't add gradients or unrelated accent colors."]
+  }
+}

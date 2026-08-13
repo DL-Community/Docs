@@ -3,33 +3,25 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dlce/contents.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/en/dlce/contents.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/home.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/character.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/commands.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/notes-challenge.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_navbar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/about/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/about/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/about/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/localization.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/home.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/character.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/commands.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/_sidebar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/eula.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/eula.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/open-source.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/privacy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/social/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/_sidebar.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +44,12 @@
     &quot;assignee&quot;: &quot;Aaron8052&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/DL-Community/Docs.git&quot;,
-    &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:DL-Community/Docs.git",
+    "accountId": "ce8c0946-1f81-4ede-a76c-f14d3f2af77a"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="vcs:///Users/fengyan/Documents/GitHub/Docs/dlce/about.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="vcs:///Users/fengyan/Documents/GitHub/Docs/dlce/about.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -77,23 +69,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiang/Documents/GitHub/Docs&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "git.auto.fetch.suggestion.counter": "1",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jiang/Documents/GitHub/Docs",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -121,6 +118,7 @@
       <workItem from="1760820822621" duration="18000" />
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
+      <workItem from="1786602620015" duration="11214000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -386,7 +384,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760816850498</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="redesigned website">
+      <option name="closed" value="true" />
+      <created>1786611996886</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1786611996886</updated>
+    </task>
+    <task id="LOCAL-00035" summary="redesigned website">
+      <option name="closed" value="true" />
+      <created>1786613341191</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1786613341191</updated>
+    </task>
+    <task id="LOCAL-00036" summary="redesign website">
+      <option name="closed" value="true" />
+      <created>1786613346423</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1786613346423</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +429,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="语言" />
     <MESSAGE value="更新3.5版本相关文档" />
     <MESSAGE value="完善文档" />
     <MESSAGE value="更新游戏设置文档" />
@@ -431,7 +452,9 @@
     <MESSAGE value="basePath" />
     <MESSAGE value="basePath" />
     <MESSAGE value="nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="nav" />
+    <MESSAGE value="redesigned website" />
+    <MESSAGE value="redesign website" />
+    <option name="LAST_COMMIT_MESSAGE" value="redesign website" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

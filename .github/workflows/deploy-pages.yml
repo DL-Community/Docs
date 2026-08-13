@@ -1,0 +1,51 @@
+name: Deploy Docsify to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy static Docsify site
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare static site
+        run: |
+          mkdir -p "$RUNNER_TEMP/docs-site"
+          rsync -a \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '.idea/' \
+            --exclude '.impeccable/' \
+            --exclude 'DESIGN.md' \
+            --exclude 'PRODUCT.md' \
+            --exclude 'README.md' \
+            ./ "$RUNNER_TEMP/docs-site/"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/docs-site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

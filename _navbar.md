@@ -1,16 +1,5 @@
-- [主页](/about/home)
-- [文档](/dlce/contents.md)
-- [社区](/social/home)
-- 更多
-  - [法律](/legal/eula)
-  - [赞助](https://afdian.com/a/fengyanDL)
-- ![zh-cn](https://img.shields.io/badge/语言-简体中文-red.svg)
-  - <a href="#/en/about/home" target="_blank">![en](https://img.shields.io/badge/lang-English-blue.svg)</a>
-
-<!-- 
-- 社交媒体
-  - [<img src="/Docs/lib/img/bili-s.png" width="24" alt="哔哩哔哩"> 哔哩哔哩](https://space.bilibili.com/187016314)
-  - [<img src="/Docs/lib/img/qq.png" width="24" alt="QQ群"> QQ群](/dlce-group/about.md)
-  - [<img src="/Docs/lib/img/qq-channel.png" width="24" alt="腾讯频道"> 腾讯频道](https://pd.qq.com/s/2njtk4vj2)
-  - [<img src="/Docs/lib/img/afdian.png" width="24" alt="爱发电"> 爱发电赞助](https://afdian.com/a/fengyanDL)
--->
+- [首页](/about/)
+- [游戏文档](/dlce/)
+- [官方社区](/social/)
+- [法律信息](/legal/)
+- [赞助](https://afdian.com/a/fengyanDL)

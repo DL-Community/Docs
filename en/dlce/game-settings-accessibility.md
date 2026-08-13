@@ -1,12 +1,5 @@
 # Settings
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li><a href="#/en/dlce/game-settings">Settings</a></li>
-    <li><a href="#/en/dlce/game-settings-accessibility">Accessibility</a></li>
-  </ol>
-</nav>
-
 ## Touch Feedback
 > **Available for**<br>iOS
 - When enabled, a special effect will appear at the tap location when the player taps the screen.

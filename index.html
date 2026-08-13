@@ -1,180 +1,187 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <title>跳舞的线：社区版 Wiki</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="跳舞的线：社区版官方 Wiki">
+    <meta name="application-name" content="跳舞的线：社区版 Wiki">
+    <meta property="og:title" content="跳舞的线：社区版 Wiki">
+    <meta property="og:description" content="跳舞的线：社区版官方 Wiki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#18191a">
 
-    <meta name="description" content="跳舞的线：社区版 官方Wiki">
+    <script src="i18n.js"></script>
+    <script src="en/i18n.js"></script>
 
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="/Docs/lib/img/dlce.png" type="image/png">
 
-    <link rel="icon" href="/lib/img/dlce.png" type="image/x-icon"/>
-    <link rel="shortcut icon" href="/lib/img/dlce.png" type="image/x-icon"/>
+    <script>
+        (function () {
+            var storedTheme;
+            try {
+                storedTheme = localStorage.getItem('dlce-docs-theme');
+            } catch (error) {
+                storedTheme = null;
+            }
+            var theme = storedTheme || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+            document.documentElement.dataset.theme = theme;
 
+            var legacyLanguage = location.hash.match(/^#\/(?:zh|zh-Hans|zh-cn)(?=\/|$)(.*)$/i);
+            if (legacyLanguage) {
+                location.replace('#' + (legacyLanguage[1] || '/'));
+            }
+        })();
+    </script>
 
-    <!-- https://jhildenbiddle.github.io/docsify-themeable/#/themes -->
-    <!-- Theme: Simple (light + dark) -->
+    <link rel="stylesheet" href="lib/css/theme-simple.css">
     <link rel="stylesheet" href="lib/css/styles.css">
     <link rel="stylesheet" href="lib/css/icon-grid.css">
     <link rel="stylesheet" href="lib/css/grid.css">
     <link rel="stylesheet" href="lib/css/breadcrumb.css">
     <link rel="stylesheet" href="lib/css/light.css">
-    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="lib/css/theme-simple.css">
-    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="lib/css/theme-simple-dark.css">
-    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="lib/css/prism-light.css">
-    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="lib/css/prism-dark.css">
-
-    <style media="(prefers-color-scheme: dark)">
-        :root {
-            --base-background-color: rgba(22, 22, 22, 1);
-
-            --hr-border: 1px solid var(--heading-h1-border-color);
-
-            --theme-color: rgba(44, 156, 255, 1);
-            --theme-hue: 325;
-            --theme-lightness: 45%;
-            --link-color: var(--theme-color);
-            --table-row-odd-background: var(--sidebar-background);
-            --code-inline-background: var(--sidebar-border-color);
-            --heading-h1-border-color: rgba(77, 77, 77, 1);
-            --heading-h2-border-color: var(--heading-h1-border-color);
-            --heading-h3-border-color: var(--heading-h1-border-color);
-            --heading-h4-border-color: var(--heading-h1-border-color);
-            --heading-h5-border-color: var(--heading-h1-border-color);
-            --heading-h6-border-color: var(--heading-h1-border-color);
-            --blockquote-background: var(--sidebar-background);
-            --navbar-menu-background: var(--sidebar-border-color);
-            --sidebar-background: rgba(33, 33, 33, 1);
-            --sidebar-toggle-background: var(--sidebar-background);
-            --sidebar-border-color: rgba(55, 55, 55, 1);
-            --search-input-background-color: var(--sidebar-border-color);
-            --search-input-background-color--focus: var(--sidebar-border-color);
-            --search-input-border-color: rgba(55, 55, 55, 1);
-        }
-    </style>
-
-    <style>
-        nav.app-nav li ul {
-            min-width: 150px;
-        }
-
-        :root {
-            --base-font-size: 16px;
-            --link-color: var(--theme-color);
-            --sidebar-width: 22rem;
-            --table-body-border-color: rgba(126, 126, 126, 0.22);
-            --table-head-border-color: var(--table-body-border-color);
-            --table-head-border-width: 0.1rem;
-            --table-body-border-width: var(--table-head-border-width);
-            --table-cell-border-color: var(--table-body-border-color);
-            --navbar-menu-link-color--hover: var(--theme-color);
-            --navbar-menu-link-color--active: var(--theme-color);
-
-        }
-    </style>
+    <link id="prism-light-theme" rel="stylesheet" href="lib/css/prism-light.css">
+    <link id="prism-dark-theme" rel="stylesheet" href="lib/css/prism-dark.css">
     <link rel="stylesheet" href="lib/css/docsify-tabs.css">
+    <link rel="stylesheet" href="lib/css/docs-app.css?v=25">
 
+    <script>
+        (function () {
+            var dark = document.documentElement.dataset.theme === 'dark';
+            document.getElementById('prism-light-theme').media = dark ? 'not all' : 'all';
+            document.getElementById('prism-dark-theme').media = dark ? 'all' : 'not all';
+        })();
+    </script>
 </head>
 
 <body>
+<!--
+THESIS: Give the existing Docsify wiki Docusaurus-grade wayfinding without changing its content engine or URLs.
+OWN-WORLD: Restrained graphite surfaces, the established #2c9cff blue, crisp dividers, and dense documentation controls.
+STORY: Readers choose a major area in the top bar, navigate its collapsible tree at left, then read without losing context.
+FIRST VIEWPORT: A 64px global header spans the page; brand and section tabs lead, utilities close it, and the current section tree anchors the left rail.
+FORM: Docusaurus-inspired documentation shell, directly specified by the user; seed key user-pinned-docusaurus-docsify.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<header class="docs-header" aria-label="网站顶栏">
+    <a class="docs-brand" id="docs-brand" href="#/about/home" aria-label="跳舞的线：社区版 Wiki 首页">
+        <img src="/Docs/lib/img/dlce.png" alt="" width="34" height="34">
+        <span id="docs-brand-label">跳舞的线：社区版 Wiki</span>
+    </a>
+    <div class="docs-header-actions">
+        <div class="language-switcher" id="language-switcher">
+            <button class="language-switcher-trigger" id="language-switcher-trigger" type="button" aria-label="切换语言" aria-expanded="false" aria-controls="language-menu">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.2 2.45 3.35 5.45 3.35 9S14.2 18.55 12 21M12 3C9.8 5.45 8.65 8.45 8.65 12S9.8 18.55 12 21"/></svg>
+                <span id="current-language">简体中文</span>
+                <svg class="chevron" aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg>
+            </button>
+            <div class="language-menu" id="language-menu" hidden>
+                <a id="language-zh" href="#/about/home" lang="zh-CN" data-language-code="zh" data-language-prefix="" data-language-home="/about/home" data-language-label-key="language_zh">简体中文</a>
+                <a id="language-en" href="#/en/about/home" lang="en" data-language-code="en" data-language-prefix="/en" data-language-home="/en/about/home" data-language-label-key="language_en">English</a>
+            </div>
+        </div>
+        <a class="header-icon-link" href="https://github.com/DL-Community/Docs" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 4.8 18 5.1 18 5.1c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/></svg>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换为浅色模式">
+            <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+            <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg>
+        </button>
+    </div>
+</header>
+
 <div class="center" id="app">Loading...</div>
+
 <script>
+    var zhUI = window.DLCE_I18N.zh;
+    var enUI = window.DLCE_I18N.en;
     window.$docsify = {
         basePath: '/Docs/',
         toc: {
             tocMaxLevel: 5,
             target: 'h1, h2, h3, h4, h5, h6',
-            ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+            ignoreHeaders: ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
         },
-        alias :{
-           "/" : "/about/home",
-           "/dlce/about" : "/about/home",
-           "/en/" : "en/about/home",
-           "/en/dlce/about" : "en/about/home",
+        alias: {
+            '/': '/about/home',
+            '/about/': '/about/home',
+            '/dlce/': '/dlce/contents',
+            '/social/': '/social/home',
+            '/legal/': '/legal/eula',
+            '/dlce/about': '/about/home',
+            '/en/': 'en/about/home',
+            '/en/about/': '/en/about/home',
+            '/en/dlce/': '/en/dlce/contents',
+            '/en/social/': '/en/social/home',
+            '/en/legal/': '/en/legal/eula',
+            '/en/dlce/about': 'en/about/home',
 
-           "/dlce/versions" : "/about/versions",
-           "/dlce/localization" : "/about/localization",
-           "/en/dlce/localization" : "/en/about/localization",
-
-           "/404" : "/_404.md",
-           "/en/404" : "/en/_404.md",
-
-           "/en" : "/en/",
-
-           "/dlce/eula" : "/legal/eula",
-           "/dlce/privacy" : "/legal/privacy",
-           "/dlce/open-source" : "/legal/open-source",
-
-           "/en/dlce/eula" : "/en/legal/eula",
-           "/en/dlce/privacy" : "/en/legal/privacy",
-           "/en/dlce/open-source" : "/en/legal/open-source",
-
-           "/dlce/custom_post_processing" : "/dlce/custom-post-processing/home",
-           "/dlce/custom_post_processing_v2" : "/dlce/custom-post-processing/v2",
-           "/dlce/custom_post_processing_v1" : "/dlce/custom-post-processing/v1",
-           "/dlce/custom_post_processing_legacy" : "/dlce/custom-post-processing/v1",
+            '/404': '/_404.md',
+            '/en/404': '/en/_404.md',
+            '/en': '/en/',
+            '/dlce/eula': '/legal/eula',
+            '/dlce/privacy': '/legal/privacy',
+            '/dlce/open-source': '/legal/open-source',
+            '/en/dlce/eula': '/en/legal/eula',
+            '/en/dlce/privacy': '/en/legal/privacy',
+            '/en/dlce/open-source': '/en/legal/open-source',
+            '/dlce/custom_post_processing': '/dlce/custom-post-processing/home',
+            '/dlce/custom_post_processing_v2': '/dlce/custom-post-processing/v2',
+            '/dlce/custom_post_processing_v1': '/dlce/custom-post-processing/v1',
+            '/dlce/custom_post_processing_legacy': '/dlce/custom-post-processing/legacy'
         },
-        name: '跳舞的线：社区版 Wiki',
-        nameLink: {
-            '/en': '#/en/about/home',
-            '/': '#/about/home',
-        },
+        name: '',
         homepage: 'home.md',
         loadSidebar: true,
         loadNavbar: true,
         maxLevel: 0,
         subMaxLevel: 2,
-        sidebarDisplayLevel: 0,
-        topMargin: 50,
-        notFoundPage:
-        {
-            "/": "/404",
-            "/en/": "/en/404",
+        topMargin: 76,
+        notFoundPage: {
+            '/': '/404',
+            '/en/': '/en/404'
         },
         auto2top: true,
-        fallbackLanguages: ['/',"/en"],
+        fallbackLanguages: ['/', '/en'],
         search: {
             maxAge: 86400000,
             paths: 'auto',
-            placeholder:
-                {
-                    '/en' : 'Search Documentation',
-                    '/' : '搜索文档',
-                },
-            noData:{
-                '/en' : 'No Results',
-                '/' : '找不到结果',
+            placeholder: {
+                '/en': enUI.search_placeholder,
+                '/': zhUI.search_placeholder
+            },
+            noData: {
+                '/en': enUI.search_no_results,
+                '/': zhUI.search_no_results
             },
             depth: 4,
             hideOtherSidebarContent: true,
             pathNamespaces: ['/', '/en'],
-            namespace: '/Docs',
+            namespace: '/Docs'
         },
         tabs: {
             sync: true,
             theme: 'material',
-            tabComments: true,
+            tabComments: true
         },
         pagination: {
             previousText: {
-              '/en/': 'PREVIOUS',
-              '/': '上一文档'
+                '/en/': enUI.pagination_previous,
+                '/': zhUI.pagination_previous
             },
-            // or
             nextText: {
-              '/en/': 'NEXT',
-              '/': '下一文档'
+                '/en/': enUI.pagination_next,
+                '/': zhUI.pagination_next
             },
             crossChapter: true,
-            crossChapterText: true,
-       },
-    }
+            crossChapterText: true
+        }
+    };
 </script>
 
 <script src="lib/docsify.min.js"></script>
+<script src="lib/navigation.js?v=22"></script>
 <script src="lib/footer-hook.js"></script>
 <script src="lib/plugins/search.min.js"></script>
 <script src="lib/plugins/docsify-themeable.min.js"></script>
@@ -182,11 +189,9 @@
 <script src="lib/plugins/zoom-image.min.js"></script>
 <script src="lib/plugins/docsify-copy-code.min.js"></script>
 <script src="lib/plugins/docsify-tabs.js"></script>
-<!--https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-ini.min.js-->
 <script src="lib/plugins/prism-ini.min.js"></script>
 <script src="lib/plugins/prism-json.min.js"></script>
 <script src="lib/plugins/docsify-pagination.min.js"></script>
-<!--script src="lib/plugins/prism-uri.min.js"></script-->
 </body>
 
 </html>
