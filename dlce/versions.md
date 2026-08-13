@@ -26,6 +26,7 @@
 ![功能](https://img.shields.io/badge/功能-blue.svg)
 
 - 修复了部分影响游戏体验的问题
+
 ### 3.8.0
 ![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
 ![功能](https://img.shields.io/badge/功能-blue.svg)
