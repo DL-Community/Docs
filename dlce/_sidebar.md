@@ -2,7 +2,7 @@
 - [多语言](/dlce/localization.md)
 - [货币](/dlce/coins)
 - [音符挑战](/dlce/notes-challenge)
-- [角色外观](/dlce/character)
+- [角色装饰](/dlce/character)
 - [关卡信息](/dlce/level_information)
 - 自定义后期处理效果
   - [V2](/dlce/custom-post-processing/v2)
