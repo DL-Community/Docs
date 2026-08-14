@@ -47,7 +47,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
 | **Soft Particles**                           | No       | No  | No      | No        | No        | Supported         |
 | **Built-In Post-Processing (if applicable)** | No       | No  | No      | Supported | Supported | Supported         |
 | **HDR Rendering**                            | No       | No  | No      | No        | No        | Supported         |
-| **Deferred Rendering**                       | No       | No  | No      | Partial   | Supported | Supported         |
+| **Deferred Rendering**                       | No       | No  | No      | Partial   | Partial | Supported         |
 
 ## Resolution
 <!-- tabs:start -->
