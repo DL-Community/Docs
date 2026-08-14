@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T04:35:23.000Z",
+  "generatedAt": "2026-08-14T08:58:28.000Z",
   "files": {
     "_404.md": {
       "updatedAt": "2024-08-11T15:00:07.000Z",
       "commit": "b50e9fc1cb619edcc5bda37d1fe0d4cbfe308455"
     },
     "_navbar.md": {
-      "updatedAt": "2026-08-13T23:06:39.000Z",
-      "commit": "e2c844c8512fbc56ce0b9e21b476359e53355bd4"
+      "updatedAt": "2026-08-14T04:49:12.000Z",
+      "commit": "c413eb8455117492a5d11cbbd151843f4e5e6db5"
     },
     "_sidebar.md": {
       "updatedAt": "2026-08-13T19:13:25.000Z",
@@ -27,8 +27,8 @@
       "commit": "e2c844c8512fbc56ce0b9e21b476359e53355bd4"
     },
     "dlce/_sidebar.md": {
-      "updatedAt": "2026-08-13T23:53:24.000Z",
-      "commit": "adcb9b9eb1da8bea807c98cc06d6b6d3dffe2762"
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
     },
     "dlce/character.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
@@ -58,14 +58,6 @@
       "updatedAt": "2025-09-07T15:50:51.000Z",
       "commit": "26e4d198338bf9ada3e7582f7b3cc890779c55ab"
     },
-    "dlce/game-settings-accessibility.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
-    },
-    "dlce/game-settings.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
-    },
     "dlce/level_information.md": {
       "updatedAt": "2026-08-14T03:47:09.000Z",
       "commit": "3161698bebebe90026201de80873fac9119cf465"
@@ -78,6 +70,18 @@
       "updatedAt": "2026-08-14T03:29:30.000Z",
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
     },
+    "dlce/settings/accessibility.md": {
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+    },
+    "dlce/settings/advanced.md": {
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+    },
+    "dlce/settings/general.md": {
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+    },
     "dlce/versions.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
@@ -87,8 +91,8 @@
       "commit": "b50e9fc1cb619edcc5bda37d1fe0d4cbfe308455"
     },
     "en/_navbar.md": {
-      "updatedAt": "2026-08-13T23:48:33.000Z",
-      "commit": "bc8c5e847724d840ebe8e6ae10863e3c5b9c4d68"
+      "updatedAt": "2026-08-14T04:49:12.000Z",
+      "commit": "c413eb8455117492a5d11cbbd151843f4e5e6db5"
     },
     "en/_sidebar.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
@@ -103,8 +107,8 @@
       "commit": "bc8c5e847724d840ebe8e6ae10863e3c5b9c4d68"
     },
     "en/dlce/_sidebar.md": {
-      "updatedAt": "2026-08-13T10:07:20.000Z",
-      "commit": "65a13d7155705b183c4468f22b3291f75afb0e9a"
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
     },
     "en/dlce/character.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
@@ -115,14 +119,6 @@
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
     },
     "en/dlce/commands.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
-    },
-    "en/dlce/game-settings-accessibility.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
-    },
-    "en/dlce/game-settings.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
     },
@@ -137,6 +133,18 @@
     "en/dlce/notes-challenge.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+    },
+    "en/dlce/settings/accessibility.md": {
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+    },
+    "en/dlce/settings/advanced.md": {
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+    },
+    "en/dlce/settings/general.md": {
+      "updatedAt": "2026-08-14T08:58:28.000Z",
+      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
     },
     "en/legal/_sidebar.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
