@@ -4,5 +4,5 @@
 - [Legal](/en/legal)
 - Links
   - [Main Site](https://dl-community.github.io)
-  - [Wiki Legacy](https://dl-community.github.io/Docs-Legacy/#/en)
+  - [Wiki Legacy](https://dl-community.github.io/Docs-Legacy/#/en/)
   - [Sponsor](https://github.com/sponsors/Aaron8052)
