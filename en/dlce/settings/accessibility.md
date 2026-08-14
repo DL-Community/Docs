@@ -1,4 +1,4 @@
-# Settings
+# Accessibility
 <!-- last-modified -->
 
 ## Touch Feedback
@@ -14,16 +14,21 @@
 ## Hide Cursor
 - Choose when to automatically hide the mouse cursor.
 
-| Mode | Details             |
-|-----|----------------|
-| Never  | 	Never automatically hide the mouse cursor      |
+| Mode            | Details                                                           |
+|-----------------|-------------------------------------------------------------------|
+| Never           | 	Never automatically hide the mouse cursor                        |
 | When stationary | Automatically hides the mouse cursor when the mouse is stationary |
-| While Playing | Hide the mouse cursor during gameplay |
+| While Playing   | Hide the mouse cursor during gameplay                             |
 
 ## Status Bar
 > Only available to certain iPhone models featuring a notch display or Dynamic Island.
 
 - Turn on/off the system status bar.
+
+## App Icon :id=app-icon
+> **Available for**<br>macOS、iOS.
+
+- Change app icon.
 
 ## View Logs
 
@@ -32,7 +37,7 @@
    <!--b>Details</b-->
 <!--/summary-->
 
-> **Available for**<br>Windows, macOS, iOS on Mac，only available after turning on [Output Log](#Output_Log) settings。
+> **Available for**<br>Windows, macOS, iOS on Mac，only available after turning on [Output Log](/en/dlce/settings/advanced.md#output-log) settings。
 - View the game's debug log using text editor (like Notepad).
 
 <!--/details-->

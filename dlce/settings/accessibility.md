@@ -1,4 +1,4 @@
-# 游戏设置
+# 辅助功能
 <!-- last-modified -->
 
 ## 触控反馈
@@ -25,6 +25,11 @@
 
 - 开启/关闭顶部系统状态栏。
 
+## 应用图标 :id=app-icon
+> **适用于**<br>macOS、iOS。
+
+- 更换应用图标。
+
 ## 查看日志
 
 <!--details-->
@@ -32,7 +37,7 @@
    <!--b>详情</b-->
 <!--/summary-->
 
-> **适用于**<br>Windows、macOS、iOS on Mac，仅在开启[输出日志](#输出日志)后可用。
+> **适用于**<br>Windows、macOS、iOS on Mac，仅在开启[输出日志](/dlce/settings/advanced.md#输出日志)后可用。
 - 使用文本编辑器查看游戏的调试日志。
 
 <!--/details-->
@@ -47,7 +52,7 @@
 <blockquote>
 
 **相关文档**
-- [自定义后期处理效果](/dlce/custom_post_processing.md)
+- [自定义后期处理效果](/dlce/custom-post-processing/v2.md)
 - [启动参数](/dlce/commands.md)
 
 </blockquote>

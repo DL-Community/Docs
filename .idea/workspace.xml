@@ -11,10 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy-pages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy-pages.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dlce/settings/general.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/en/dlce/settings/general.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/settings/accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/settings/advanced.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/settings/accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/settings/advanced.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,15 +133,7 @@
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
       <workItem from="1786602620015" duration="18324000" />
-      <workItem from="1786676253976" duration="8211000" />
-    </task>
-    <task id="LOCAL-00005" summary="-">
-      <option name="closed" value="true" />
-      <created>1745089271812</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1745089271812</updated>
+      <workItem from="1786676253976" duration="12601000" />
     </task>
     <task id="LOCAL-00006" summary="更新游戏设置文档">
       <option name="closed" value="true" />
@@ -522,7 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786682954164</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="improve navbar">
+      <option name="closed" value="true" />
+      <created>1786684655502</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1786684655502</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="EN sidebar" />
     <MESSAGE value="Language Badge" />
     <MESSAGE value="体力方块获取方式。" />
     <MESSAGE value="navigation" />
@@ -568,7 +572,8 @@
     <MESSAGE value="update favicon" />
     <MESSAGE value="improvements" />
     <MESSAGE value="add link to main site on navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="add link to main site on navbar" />
+    <MESSAGE value="improve navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve navbar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

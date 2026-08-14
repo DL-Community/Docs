@@ -7,6 +7,8 @@
 - 自定义后期处理效果
   - [V2](/dlce/custom-post-processing/v2)
   - [V1](/dlce/custom-post-processing/v1)
-- [游戏设置](/dlce/game-settings)
-  - [辅助功能](/dlce/game-settings-accessibility)
+- 游戏设置
+  - [通用设置](/dlce/settings/general.md)
+  - [辅助功能](/dlce/settings/accessibility.md)
+  - [高级设置](/dlce/settings/advanced.md)
 - [启动选项](/dlce/commands)
