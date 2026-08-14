@@ -134,6 +134,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     var enUI = window.DLCE_I18N.en;
     window.$docsify = {
         basePath: '/Docs/',
+        routerMode: 'hash',
         routes: {
             '/(?:[^/]+/)?[^/]+/__overview/[^/]+/?': function (categoryPath, matched, next) {
                 next('<span data-category-landing-placeholder hidden></span>');
@@ -241,7 +242,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </script>
 
 <script src="lib/docsify.min.js"></script>
-<script src="lib/navigation.js?v=54"></script>
+<script src="lib/navigation-scope.js?v=2"></script>
+<script src="lib/navigation.js?v=56"></script>
 <script src="lib/footer-hook.js"></script>
 <script src="lib/markdown-components.js?v=1"></script>
 <script src="lib/components/last-modified.js?v=2"></script>

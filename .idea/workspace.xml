@@ -13,39 +13,8 @@
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/deploy-pages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy-pages.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/character.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/coins.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/commands.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/contents.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/legacy.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/~~_sidebar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/notes-challenge.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/character.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/coins.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/commands.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/contents.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/game-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/level_information.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/localization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/notes-challenge.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/en/i18n.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/open-source.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/privacy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/i18n.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/eula.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/eula.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/open-source.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/privacy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/css/docs-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/docs-app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +63,6 @@
     &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;
   }
 }</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="vcs:///Users/fengyan/Documents/GitHub/Docs/dlce/about.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="vcs:///Users/fengyan/Documents/GitHub/Docs/dlce/about.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -163,39 +128,7 @@
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
       <workItem from="1786602620015" duration="18324000" />
-      <workItem from="1786676253976" duration="1743000" />
-    </task>
-    <task id="LOCAL-00001" summary="更新3.5版本相关文档">
-      <option name="closed" value="true" />
-      <created>1745036586429</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1745036586429</updated>
-    </task>
-    <task id="LOCAL-00002" summary="-">
-      <option name="closed" value="true" />
-      <created>1745083633718</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1745083633718</updated>
-    </task>
-    <task id="LOCAL-00003" summary="-">
-      <option name="closed" value="true" />
-      <created>1745084424660</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1745084424660</updated>
-    </task>
-    <task id="LOCAL-00004" summary="完善文档">
-      <option name="closed" value="true" />
-      <created>1745088477106</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1745088477106</updated>
+      <workItem from="1786676253976" duration="8211000" />
     </task>
     <task id="LOCAL-00005" summary="-">
       <option name="closed" value="true" />
@@ -525,7 +458,71 @@
       <option name="project" value="LOCAL" />
       <updated>1786665874157</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="add last modification date">
+      <option name="closed" value="true" />
+      <created>1786678166141</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1786678166141</updated>
+    </task>
+    <task id="LOCAL-00047" summary="add last modification date">
+      <option name="closed" value="true" />
+      <created>1786678170550</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1786678170550</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update level information">
+      <option name="closed" value="true" />
+      <created>1786679230975</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1786679230975</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add favico support for external links in document">
+      <option name="closed" value="true" />
+      <created>1786680138696</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1786680138696</updated>
+    </task>
+    <task id="LOCAL-00050" summary="improve favico support for external links in document">
+      <option name="closed" value="true" />
+      <created>1786681128916</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1786681128917</updated>
+    </task>
+    <task id="LOCAL-00051" summary="update favicon">
+      <option name="closed" value="true" />
+      <created>1786682124199</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1786682124199</updated>
+    </task>
+    <task id="LOCAL-00052" summary="improvements">
+      <option name="closed" value="true" />
+      <created>1786682435892</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1786682435892</updated>
+    </task>
+    <task id="LOCAL-00053" summary="add link to main site on navbar">
+      <option name="closed" value="true" />
+      <created>1786682954164</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1786682954164</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,13 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="更新" />
-    <MESSAGE value="footer" />
-    <MESSAGE value="增加开源库公示" />
-    <MESSAGE value="English translations WIP" />
-    <MESSAGE value="优化icon grid样式，增加item选中边框效果" />
-    <MESSAGE value="css" />
-    <MESSAGE value="gap" />
     <MESSAGE value="EN sidebar" />
     <MESSAGE value="Language Badge" />
     <MESSAGE value="体力方块获取方式。" />
@@ -571,7 +561,14 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="更新角色装饰页面" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="add last modification date" />
+    <MESSAGE value="update level information" />
+    <MESSAGE value="add favico support for external links in document" />
+    <MESSAGE value="improve favico support for external links in document" />
+    <MESSAGE value="update favicon" />
+    <MESSAGE value="improvements" />
+    <MESSAGE value="add link to main site on navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add link to main site on navbar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
