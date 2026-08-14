@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-14T04:15:36.835Z",
+  "sites": {
+    "https://afdian.com/a/fengyanDL": {
+      "standard": "https://static.afdiancdn.com/static/img/icons/apple-touch-icon-152x152.png"
+    },
+    "https://chinadlrs.com/app/?id=25": {
+      "standard": "https://chinadlrs.com/favicon.ico"
+    },
+    "https://discord.gg/8Ew5n3XadT": {
+      "standard": "https://discord.com/assets/favicon.ico"
+    },
+    "https://github.com/sponsors/Aaron8052": {
+      "standard": "https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg"
+    },
+    "https://pd.qq.com/s/2njtk4vj2": {
+      "standard": "https://pd.qq.com/favicon.svg",
+      "dark": "https://pd.qq.com/favicon-dark.png"
+    },
+    "https://space.bilibili.com/187016314": {
+      "standard": "https://www.bilibili.com/favicon.ico"
+    },
+    "https://www.youtube.com/@DLCommunityEdition": {
+      "standard": "https://www.youtube.com/s/desktop/01a26818/img/favicon_144x144.png"
+    }
+  }
+}

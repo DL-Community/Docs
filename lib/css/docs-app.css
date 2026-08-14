@@ -1129,7 +1129,15 @@ body.docs-route-pending .markdown-section {
 }
 
 .category-card-icon.has-site-icon {
-    background: rgba(240, 242, 245, 0.4);
+    background: rgba(240, 242, 245, 0.2);
+}
+
+:root[data-theme='light'] .category-card-icon.has-site-icon {
+    color-scheme: light;
+}
+
+:root[data-theme='dark'] .category-card-icon.has-site-icon {
+    color-scheme: dark;
 }
 
 .category-card-icon svg,

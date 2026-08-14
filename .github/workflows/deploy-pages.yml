@@ -30,11 +30,16 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Test Markdown components
-        run: node scripts/markdown-components.test.mjs
+      - name: Test site scripts
+        run: |
+          node scripts/markdown-components.test.mjs
+          node scripts/external-favicons.test.mjs
 
       - name: Generate Markdown modification records
         run: node scripts/generate-last-modified.mjs
+
+      - name: Discover external favicons
+        run: node scripts/generate-external-favicons.mjs
 
       - name: Prepare static site
         run: |
