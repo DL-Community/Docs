@@ -1,4 +1,5 @@
 # Settings
+<!-- last-modified -->
 
 ## Touch Feedback
 > **Available for**<br>iOS

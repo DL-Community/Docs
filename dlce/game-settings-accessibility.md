@@ -1,4 +1,5 @@
 # 游戏设置
+<!-- last-modified -->
 
 ## 触控反馈
 > **适用于**<br>iOS、Android。

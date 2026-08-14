@@ -1296,7 +1296,8 @@ body.docs-route-pending .markdown-section {
     }
 }
 
-.docsify-pagination-container {
+body .docsify-pagination-container {
+    border-top: 1px solid var(--docs-header-border);
     gap: 1rem;
 }
 

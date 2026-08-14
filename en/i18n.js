@@ -33,6 +33,7 @@
         search_placeholder: 'Search documentation',
         search_no_results: 'No results',
         pagination_previous: 'PREVIOUS',
-        pagination_next: 'NEXT'
+        pagination_next: 'NEXT',
+        last_modified: 'Last updated on {date}'
     };
 })();

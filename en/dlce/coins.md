@@ -1,4 +1,5 @@
 # Currencies :id=coins
+<!-- last-modified -->
 
 > In-game currency
 

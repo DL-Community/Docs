@@ -1,4 +1,5 @@
 # Privacy Policy
+<!-- last-modified -->
 
 Thank you for choosing our game! We respect and protect the privacy of our players, and are committed to handling your personal information in a responsible and transparent manner.
 
@@ -47,5 +48,3 @@ We may update this privacy policy from time to time to reflect changes in our bu
 --------
 
 Thank you again for your support and trust! If you have any questions or concerns, please do not hesitate to contact us.
-
-> Last Updated: Apr 20, 2023

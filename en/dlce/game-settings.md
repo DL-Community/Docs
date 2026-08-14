@@ -1,4 +1,5 @@
 # Settings
+<!-- last-modified -->
 
 > - The following options are not available on all platforms. Please refer to the actual in-game version for specifics.
 > - Click the menu icon in the lower right corner of the game's main interface to access the settings.

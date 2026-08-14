@@ -11,10 +11,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy-pages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy-pages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/coins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/contents.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/legacy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/~~_sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/notes-challenge.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/coins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/contents.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/game-settings.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/localization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/notes-challenge.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/en/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/open-source.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/privacy.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/i18n.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/eula.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/eula.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/open-source.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/privacy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/css/docs-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/docs-app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +67,27 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN"
+      &quot;state&quot;: &quot;OPEN&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOMiGia87-GWcF",
-        "number": 23
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOMiGia87-GWcF&quot;,
+        &quot;number&quot;: 23
       },
-      "lastSeen": 1786664269311
+      &quot;lastSeen&quot;: 1786664269311
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:DL-Community/Docs.git&quot;,
@@ -132,6 +163,7 @@
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
       <workItem from="1786602620015" duration="18324000" />
+      <workItem from="1786676253976" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
       <option name="closed" value="true" />
@@ -485,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786665205859</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="-">
+      <option name="closed" value="true" />
+      <created>1786665874157</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1786665874157</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="加宽页面" />
     <MESSAGE value="更新" />
     <MESSAGE value="footer" />
     <MESSAGE value="增加开源库公示" />
@@ -531,7 +570,8 @@
     <MESSAGE value="bug fix&#10;&#10;- breadcrumb navigation&#10;- mobile website layout" />
     <MESSAGE value="refactor" />
     <MESSAGE value="更新角色装饰页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新角色装饰页面" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

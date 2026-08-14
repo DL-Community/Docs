@@ -33,6 +33,7 @@
         search_placeholder: '搜索文档',
         search_no_results: '找不到结果',
         pagination_previous: '上一文档',
-        pagination_next: '下一文档'
+        pagination_next: '下一文档',
+        last_modified: '最后修改于 {date}'
     };
 })();

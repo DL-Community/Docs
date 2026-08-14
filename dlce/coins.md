@@ -1,4 +1,5 @@
 # 货币 :id=coins
+<!-- last-modified -->
 
 > 游戏内货币
 

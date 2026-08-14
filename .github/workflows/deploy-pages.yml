@@ -24,9 +24,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+
+      - name: Test Markdown components
+        run: node scripts/markdown-components.test.mjs
+
+      - name: Generate Markdown modification records
+        run: node scripts/generate-last-modified.mjs
 
       - name: Prepare static site
         run: |
@@ -36,6 +44,7 @@ jobs:
             --exclude '.github/' \
             --exclude '.idea/' \
             --exclude '.impeccable/' \
+            --exclude 'scripts/' \
             --exclude 'DESIGN.md' \
             --exclude 'PRODUCT.md' \
             --exclude 'README.md' \

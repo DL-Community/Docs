@@ -1,0 +1,23 @@
+.markdown-section .markdown-component--last-modified {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 2rem;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid var(--docs-accent, var(--theme-color));
+    border-radius: 7px;
+    background: color-mix(
+        in srgb,
+        var(--docs-accent, var(--theme-color)) 8%,
+        transparent
+    );
+    color: var(--base-color);
+    font-size: 0.92rem;
+    line-height: 1.25;
+    vertical-align: middle;
+}
+
+.markdown-section .markdown-component--last-modified time {
+    color: inherit;
+}

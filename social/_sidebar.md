@@ -1,6 +1,6 @@
 - QQ 群
-  - [官方 QQ 群](/social/qq)
-  - [QQ 群规](/social/rules)
+  - [官方群](/social/qq)
+  - [群规](/social/rules)
 - [DLRS 同人群官方网站](https://chinadlrs.com/app/?id=25)
 - [哔哩哔哩](https://space.bilibili.com/187016314)
 - [爱发电赞助](https://afdian.com/a/fengyanDL)
