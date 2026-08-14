@@ -1125,6 +1125,11 @@ body.docs-route-pending .markdown-section {
     border-radius: 8px;
     background: var(--docs-active);
     color: var(--docs-accent);
+    transition: background-color 160ms ease-out;
+}
+
+.category-card-icon.has-site-icon {
+    background: rgba(240, 242, 245, 0.4);
 }
 
 .category-card-icon svg,
@@ -1136,6 +1141,13 @@ body.docs-route-pending .markdown-section {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 1.8;
+}
+
+.category-card-site-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .category-card-copy {
@@ -1164,6 +1176,10 @@ body.docs-route-pending .markdown-section {
 .category-card:hover .category-card-arrow {
     color: var(--docs-accent);
     transform: translateX(0.2rem);
+}
+
+.category-card:hover .category-card-arrow--external {
+    transform: translate(0.14rem, -0.14rem);
 }
 
 .markdown-section h2,
