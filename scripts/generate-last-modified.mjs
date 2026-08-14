@@ -21,6 +21,11 @@ function normalizePath(file) {
     return file.split(path.sep).join('/');
 }
 
+function normalizeUtcTimestamp(value) {
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? '' : date.toISOString();
+}
+
 const markdownFiles = git(['ls-files', '-z', '--', '*.md'])
     .split('\0')
     .filter(Boolean)
@@ -48,15 +53,18 @@ for (const file of markdownFiles) {
     const separator = history.indexOf('\0');
     if (separator === -1) continue;
 
+    const updatedAt = normalizeUtcTimestamp(history.slice(0, separator));
+    if (!updatedAt) continue;
+
     files[normalizePath(file)] = {
-        updatedAt: history.slice(0, separator),
+        updatedAt,
         commit: history.slice(separator + 1)
     };
 }
 
 let generatedAt = new Date().toISOString();
 try {
-    generatedAt = git(['log', '-1', '--format=%cI']).trim() || generatedAt;
+    generatedAt = normalizeUtcTimestamp(git(['log', '-1', '--format=%cI']).trim()) || generatedAt;
 } catch (error) {
     // A repository without commits still receives a valid generation timestamp.
 }
