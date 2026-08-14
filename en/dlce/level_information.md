@@ -74,7 +74,7 @@
 | **The Samurai HD**                    | SamuraiHD         | FengYanDL, Maek                                                                                | -                                                                                                                                                               |
 | **The Samurai**                       | Samurai           | Maek                                                                                           | -                                                                                                                                                               |
 | **The Savanna**                       | Africa            | BOOMBIT                                                                                        | -                                                                                                                                                               |
-| **The Space (Max Studio)**            | Space             | Design: MaxIceFlame<br/>Porting: GP0108, FengYanDL                                             | Yann Tiersen - Comptine D'un Autre Été, L'après-Midi[YouTube](https://www.youtube.com/watch?v=znfYwABeSZ0)                                                      |
+| **The Space (Max Studio)**            | Space             | Design: MaxIceFlame<br/>Porting: GP0108, FengYanDL                                             | Yann Tiersen - Comptine D'un Autre Été, L'après-Midi<br/>[YouTube](https://www.youtube.com/watch?v=znfYwABeSZ0)                                                 |
 | **The Space (New Version)**           | TheSpace          | Level Creator: FengYanDL<br/>Original Design: MaxIceFlame<br/>Sound Recording: 十年叔叔            | Wooden - The Space<br/>[Bilibili](https://www.bilibili.com/video/BV1WU421d7Vm)                                                                                  |
 | **The Spring Festival**               | SpringFestival    | [Will-DL](https://space.bilibili.com/327231334)                                                | 赵梦泽simon - 春节<br/>[Bilibili](https://www.bilibili.com/video/BV1cg411c76S)                                                                                       |
 | **The Spring Lullaby**                | SpringAwake       | Maek                                                                                           | -                                                                                                                                                               |
@@ -102,6 +102,6 @@
 <blockquote>
 
 **Related Topics**
-- [Custom post-processing effects](/dlce/custom_post_processing.md) (Chinese only, English WIP)
+- [Custom post-processing effects](/dlce/custom-post-processing/v2) (Chinese only, English WIP)
 
 </blockquote>
