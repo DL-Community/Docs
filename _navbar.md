@@ -2,5 +2,7 @@
 - [游戏文档](/dlce)
 - [官方社区](/social)
 - [法律信息](/legal)
-- [主站](https://dl-community.github.io)
-- [赞助](https://afdian.com/a/fengyanDL)
+- 链接
+  - [主站](https://dl-community.github.io)
+  - [旧版 Wiki](https://dl-community.github.io/Docs-Legacy)
+  - [赞助](https://afdian.com/a/fengyanDL)

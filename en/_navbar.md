@@ -2,5 +2,7 @@
 - [Docs](/en/dlce)
 - [Social](/en/social)
 - [Legal](/en/legal)
-- [Main Site](https://dl-community.github.io)
-- [Sponsor](https://github.com/sponsors/Aaron8052)
+- Links
+  - [Main Site](https://dl-community.github.io)
+  - [Wiki Legacy](https://dl-community.github.io/Docs-Legacy/#/en)
+  - [Sponsor](https://github.com/sponsors/Aaron8052)
