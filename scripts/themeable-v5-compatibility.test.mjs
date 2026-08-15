@@ -35,5 +35,25 @@ assert.match(
     /\.markdown-section \.table-wrapper td::before\s*\{[^}]*content:\s*attr\(data-table-label\)/s,
     'Narrow-screen tables must render the site-owned column label'
 );
+assert.match(
+    appCss,
+    /\.mobile-sidebar-shadow\s*\{[^}]*width:\s*100vw/s,
+    'The mobile sidebar backdrop must cover the content area outside the drawer'
+);
+assert.match(
+    appCss,
+    /body\.close \.mobile-sidebar-shadow\s*\{[^}]*pointer-events:\s*auto/s,
+    'The mobile sidebar backdrop must accept dismissal taps while the drawer is open'
+);
+assert.match(
+    navigation,
+    /mobileBackdrop\.addEventListener\('click',[\s\S]*?toggle\.click\(\)/,
+    'Clicking the narrow-screen backdrop must close the drawer through its existing toggle'
+);
+assert.match(
+    navigation,
+    /mobileBackdrop\.removeAttribute\('inert'\)/,
+    'Docsify v5 must not make the site-owned dismissible backdrop inert'
+);
 
 console.log('Docsify v5 Themeable compatibility tests passed.');

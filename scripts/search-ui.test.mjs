@@ -186,7 +186,7 @@ assert.match(indexSource, /noData:\s*docsifyLocalizedSearchText\('search_no_resu
 assert.match(indexSource, /pathNamespaces:\s*docsifySearchPathNamespaces\(\)/);
 
 const cssSource = readFileSync('lib/css/docs-app.css', 'utf8');
-assert.match(cssSource, /\.sidebar \.search \.results-panel:not\(:empty\)\s*\{\s*display:\s*block;/);
+assert.match(cssSource, /\.sidebar \.search \.results-panel:not\(:empty\)\s*\{[^}]*display:\s*grid;/s);
 assert.match(
     cssSource,
     /\.sidebar \.search \.clear-button \.visually-hidden\s*\{[^}]*clip-path:\s*inset\(50%\)[^}]*white-space:\s*nowrap/s,
@@ -194,13 +194,23 @@ assert.match(
 );
 assert.match(
     cssSource,
-    /\.sidebar \.search \.input-wrap\s*\{[^}]*margin-inline:\s*-0\.75rem/s,
-    'The v5 search controls must stay inside the visible sidebar edge'
+    /\.sidebar \.search \.input-wrap\s*\{[^}]*width:\s*100%[^}]*margin-inline:\s*0[^}]*border-radius:\s*var\(--docs-radius\)/s,
+    'The v5 search controls must be inset within the sidebar as one rounded control'
 );
 assert.match(
     cssSource,
     /\.sidebar \.search \.input-wrap > \.clear-button\s*\{[^}]*width:\s*var\(--_button-size, 20px\)[^}]*padding:\s*0/s,
     'The legacy Themeable clear-button width and padding must not collapse or offset the v5 X icon'
+);
+assert.match(
+    cssSource,
+    /\.sidebar \.search \.matching-post,[^}]*\{[^}]*border:\s*1px solid var\(--sidebar-border-color\) !important[^}]*border-radius:\s*var\(--docs-radius\)/s,
+    'Search results must render as rounded cards aligned with the search field'
+);
+assert.doesNotMatch(
+    cssSource,
+    /(?:^|\n)\.content\s*\{[^}]*padding-top:/s,
+    'Page-layout spacing must not leak into v5 search-result descriptions that also use the content class'
 );
 
 console.log('Docsify v5 search UI and localization tests passed.');

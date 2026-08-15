@@ -54,6 +54,7 @@
     --border-radius-m: 8px;
     --duration-fast: 150ms;
     --duration-medium: 220ms;
+    --sidebar-item-fade-duration: 180ms;
     --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
     --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
     --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
@@ -352,19 +353,6 @@ body.sticky.close .docs-header > .sidebar-toggle {
 
 .docs-header > .sidebar-toggle .sidebar-toggle-button span:nth-child(3) {
     transform: translateY(calc(var(--sidebar-toggle-icon-height) / 2));
-}
-
-.docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(1) {
-    transform: translateY(0) rotate(45deg);
-}
-
-.docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(2) {
-    opacity: 0;
-    transform: scaleX(0.45);
-}
-
-.docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(3) {
-    transform: translateY(0) rotate(-45deg);
 }
 
 .docs-header > .sidebar-toggle:active {
@@ -671,27 +659,42 @@ nav.app-nav {
 }
 
 .sidebar .search .input-wrap {
+    box-sizing: border-box;
     position: relative;
-    /* Themeable assumes 25px sidebar padding. This site uses 0.75rem, so its
-       legacy negative margin pushed the v5 clear button past the sidebar edge. */
-    margin-inline: -0.75rem;
+    width: 100%;
+    margin-inline: 0;
+    overflow: hidden;
+    border: 1px solid var(--search-input-border-color);
+    border-radius: var(--docs-radius);
+    background-color: var(--search-input-background-color);
+    transition: background-color 180ms ease-out, border-color 180ms ease-out,
+        box-shadow 180ms ease-out;
+}
+
+.sidebar .search .input-wrap:focus-within {
+    border-color: var(--docs-accent);
+    background-color: var(--search-input-background-color--focus);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--docs-accent) 22%, transparent);
 }
 
 .sidebar .search input {
+    box-sizing: border-box;
     width: 100%;
     margin: 0;
     padding: 0.7rem 0.8rem 0.7rem 2.4rem;
-    border: 1px solid var(--search-input-border-color);
-    border-radius: 7px;
+    border: 0;
+    border-radius: inherit;
     background-color: var(--search-input-background-color);
     background-position: 0.75rem center;
     color: var(--search-input-color);
     box-shadow: none;
 }
 
-.sidebar .search input:focus {
-    border-color: var(--docs-accent);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--docs-accent) 22%, transparent);
+.sidebar .search input:focus,
+.sidebar .search input:focus-visible {
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
 }
 
 /* The v5 search plugin ships this label for assistive technology. Themeable's
@@ -719,7 +722,75 @@ nav.app-nav {
 
 /* Docsify v5 renders search results without the v4-only `.show` class. */
 .sidebar .search .results-panel:not(:empty) {
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 0.7rem;
+}
+
+.sidebar .search .results-status {
+    margin: 0.75rem 0 0;
+    padding-inline: 0.5rem;
+}
+
+.sidebar .search .matching-post,
+.sidebar .search .matching-post:last-child {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--sidebar-border-color) !important;
+    border-radius: var(--docs-radius);
+    background-color: color-mix(in srgb, var(--sidebar-background) 84%, var(--base-background-color));
+}
+
+.sidebar .search .matching-post > a {
+    position: relative;
+    z-index: 0;
     display: block;
+    overflow: hidden;
+    padding: 0.75rem 0.8rem;
+    border-radius: inherit;
+    color: var(--sidebar-nav-link-color);
+    text-decoration: none;
+    transition: color var(--duration-medium) ease;
+}
+
+.sidebar .search .matching-post > a::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    background-color: var(--sidebar-nav-link-background--hover);
+    content: '';
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--sidebar-item-fade-duration) ease;
+}
+
+.sidebar .search .matching-post:hover > a,
+.sidebar .search .matching-post:focus-within > a {
+    color: var(--sidebar-nav-link-color--hover);
+}
+
+.sidebar .search .matching-post:hover > a::after,
+.sidebar .search .matching-post:focus-within > a::after {
+    opacity: 1;
+}
+
+.sidebar .search .matching-post > a:focus-visible {
+    outline-offset: -3px;
+}
+
+.sidebar .search .matching-post .title {
+    margin: 0 0 0.35rem;
+    color: inherit;
+    font-weight: var(--sidebar-nav-link-font-weight);
+}
+
+.sidebar .search .matching-post .content {
+    color: var(--docs-muted);
+    line-height: 1.55;
 }
 
 .sidebar-nav {
@@ -769,7 +840,7 @@ nav.app-nav {
     content: '';
     opacity: 0;
     pointer-events: none;
-    transition: opacity 180ms ease;
+    transition: opacity var(--sidebar-item-fade-duration) ease;
 }
 
 .sidebar-nav li > a:hover {
@@ -948,11 +1019,11 @@ nav.app-nav {
     }
 }
 
-.content {
+main > .content {
     padding-top: var(--docs-header-height);
 }
 
-body.has-page-toc .content {
+body.has-page-toc main > .content {
     margin-right: 16rem;
 }
 
@@ -1464,7 +1535,7 @@ body .docsify-pagination-container {
 }
 
 @media (max-width: 71rem) {
-    body.has-page-toc .content {
+    body.has-page-toc main > .content {
         margin-right: 0;
     }
 
@@ -1545,9 +1616,26 @@ body .docsify-pagination-container {
         height: 38px;
     }
 
+    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0.45);
+    }
+
+    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
     .sidebar {
         z-index: 105;
         box-shadow: none;
+    }
+
+    body.close .sidebar + .content {
+        transform: none;
     }
 
     .mobile-sidebar-shadow {
@@ -1557,8 +1645,7 @@ body .docsify-pagination-container {
         top: var(--docs-header-height);
         bottom: 0;
         left: 0;
-        width: var(--docs-sidebar-width);
-        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.22);
+        width: 100vw;
         content: '';
         opacity: 0;
         pointer-events: none;
@@ -1567,8 +1654,18 @@ body .docsify-pagination-container {
             transform var(--duration-medium) var(--ease-drawer);
     }
 
+    .mobile-sidebar-shadow::before {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: var(--docs-sidebar-width);
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.22);
+        content: '';
+        pointer-events: none;
+    }
+
     body.close .mobile-sidebar-shadow {
         opacity: 1;
+        pointer-events: auto;
         transform: translateX(0);
     }
 
@@ -1828,7 +1925,7 @@ body .docsify-pagination-container {
         order: 3;
     }
 
-    .content {
+    main > .content {
         margin-left: 0;
     }
 

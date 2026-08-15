@@ -1,20 +1,66 @@
 :root {
     /* Tab blocks */
-    /*--docsifytabs-border-color: #ededed;*/
-    --docsifytabs-border-px: 1.5px 0px;
-    --docsifytabs-border-radius-px: 0px;
-    --docsifytabs-margin: 1em 0em;
+    --docsifytabs-border-px: 0;
+    --docsifytabs-border-radius-px: 0;
+    --docsifytabs-margin: 1em 0;
 
     /* Tabs */
-    /* --docsifytabs-tab-background: #f8f8f8; */
-    /* --docsifytabs-tab-background--active: var(--docsifytabs-content-background); */
-    /*--docsifytabs-tab-color: #999;*/
-    /* --docsifytabs-tab-color--active: inherit;*/
+    --docsifytabs-tab-background: transparent;
+    --docsifytabs-tab-background--active: transparent;
+    --docsifytabs-tab-color: var(--docs-muted);
+    --docsifytabs-tab-color--active: var(--base-color);
     --docsifytabs-tab-highlight-px: 3px;
-    /* --docsifytabs-tab-highlight-color: var(--theme-color, currentColor); */
-    --docsifytabs-tab-padding: 0.5em 1em;
+    --docsifytabs-tab-highlight-color: var(--docs-accent, var(--theme-color, currentColor));
+    --docsifytabs-tab-padding: 0.6rem 0.9rem;
 
     /* Tab content */
-    /*--docsifytabs-content-background: inherit;*/
-    --docsifytabs-content-padding:1.5rem 0rem;
+    --docsifytabs-content-padding: 1.5rem 0;
+}
+
+.docsify-tabs--material > .docsify-tabs__tab {
+    position: relative;
+    margin-right: 0.2rem;
+    border-radius: var(--border-radius-m, 8px);
+    box-shadow: none;
+    transition:
+        background-color var(--sidebar-item-fade-duration, 180ms) ease,
+        color var(--sidebar-item-fade-duration, 180ms) ease;
+}
+
+.docsify-tabs--material {
+    row-gap: 0.5rem;
+}
+
+.docsify-tabs--material > .docsify-tabs__tab--active {
+    border-radius: var(--border-radius-m, 8px) var(--border-radius-m, 8px) 0 0;
+    box-shadow: none;
+}
+
+.docsify-tabs--material > .docsify-tabs__tab--active::after {
+    position: absolute;
+    right: 0;
+    bottom: calc(0px - var(--docsifytabs-tab-highlight-px));
+    left: 0;
+    height: var(--docsifytabs-tab-highlight-px);
+    border-radius: 0;
+    background-color: var(--docsifytabs-tab-highlight-color);
+    content: '';
+}
+
+.docsify-tabs--material > .docsify-tabs__content {
+    border: 0;
+    margin-top: -0.5rem;
+}
+
+.docsify-tabs--material > .docsify-tabs__tab:focus-visible {
+    background-color: var(--docs-hover);
+    outline: 2px solid var(--docs-accent, var(--theme-color, currentColor));
+    outline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .docsify-tabs--material > .docsify-tabs__tab:hover {
+        background-color: var(--docs-hover);
+        color: var(--base-color);
+    }
 }
