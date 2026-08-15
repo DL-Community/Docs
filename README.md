@@ -1,8 +1,10 @@
-# 编辑 Wiki / Contribute
-- 请通过提交 Pull Request 的形式来编辑本 Wiki
-- Edit this wiki via Pull Request
-
-## 网站基于 [docsify](https://docsify.js.org/#/zh-cn/) 编写
+# 关于 DLCE 文档站
+## 技术
+- 网站底层路由和 Markdown 渲染基于 [docsify v5](https://docsify.js.org/#/zh-cn/)，视觉样式由定制层提供。
+## 编辑文档站
+- 请 fork 本仓库并编辑文档站内容后通过 Pull Request 提交；
+- Pull Request 内容经过审核后将被合并到本仓库中并上线至网站；
+- 请保证仅修改站内 Markdown 文档内容，不要修改网站底层框架代码和 CSS 样式表。对于试图修改网站底层的 PR 将被退回。
 
 ## Markdown 插入式组件
 
