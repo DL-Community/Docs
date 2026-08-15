@@ -4,11 +4,26 @@ import { existsSync, readFileSync } from 'node:fs';
 const index = readFileSync('index.html', 'utf8');
 const navigation = readFileSync('lib/navigation.js', 'utf8');
 const appCss = readFileSync('lib/css/docs-app.css', 'utf8');
+const coreCss = readFileSync('lib/css/docsify-v5-core.min.css', 'utf8');
 
 assert.match(
     index,
-    /<link rel="stylesheet" href="lib\/css\/theme-simple\.css">/,
-    'The Themeable CSS foundation must remain loaded'
+    /<link rel="stylesheet" href="lib\/css\/docsify-v5-core\.min\.css\?v=\d+">/,
+    'The local Docsify v5 core theme must provide the fallback layer'
+);
+assert.doesNotMatch(
+    index,
+    /theme-simple(?:-dark)?\.css/,
+    'The v4 Themeable stylesheets must not remain in the page'
+);
+assert.ok(
+    index.indexOf('docsify-v5-core.min.css') < index.indexOf('docs-app.css'),
+    'The Docsify core fallback must load before the site override'
+);
+assert.match(
+    coreCss,
+    /^@layer docsify-base\{/,
+    'The official core must remain in a low-priority cascade layer'
 );
 assert.doesNotMatch(
     index,
@@ -19,6 +34,63 @@ assert.equal(
     existsSync('lib/plugins/docsify-themeable.min.js'),
     false,
     'The unused v4 Themeable runtime should not remain in the deployed files'
+);
+assert.equal(existsSync('lib/css/theme-simple.css'), false, 'The v4 light theme must be removed');
+assert.equal(existsSync('lib/css/theme-simple-dark.css'), false, 'The unused v4 dark theme must be removed');
+assert.match(
+    appCss,
+    /--color-bg:\s*var\(--base-background-color\)/,
+    'The site theme must drive Docsify v5 color tokens'
+);
+assert.match(
+    appCss,
+    /main > \.content,[\s\S]*transition:\s*margin-left[^;]+;[\s\S]*margin-right/,
+    'The site shell must animate content movement for both navigation rails'
+);
+assert.match(
+    appCss,
+    /\.markdown-section,[\s\S]*max-width:\s*var\(--content-max-width\);\s*margin:\s*0 auto/,
+    'Wide-screen content must remain centered between the navigation rails'
+);
+assert.match(
+    appCss,
+    /\.markdown-section li\s*\{[^}]*margin:\s*0/s,
+    'Frequently used document lists must retain the site spacing instead of the v5 fallback spacing'
+);
+assert.match(
+    appCss,
+    /\.markdown-section \.docsify-tabs__tab\s*\{[^}]*line-height:\s*normal/s,
+    'The site tabs must retain their established control height'
+);
+assert.match(
+    appCss,
+    /\.markdown-section a:not\(\[class\]\):hover\s*\{[^}]*text-decoration:\s*underline;[^}]*text-decoration-thickness:\s*1px/s,
+    'Plain document links must use a thin underline only on hover'
+);
+assert.match(
+    appCss,
+    /\.markdown-section :is\(h1, h2, h3, h4, h5, h6\) > a\s*\{[^}]*text-underline-offset:\s*auto/s,
+    'Heading anchors must retain the font-native underline position'
+);
+assert.match(
+    appCss,
+    /\.markdown-section :is\(h1, h2, h3, h4, h5, h6\) > a:hover\s*\{[^}]*text-decoration-thickness:\s*auto/s,
+    'Heading hover underlines must retain the font-native display weight'
+);
+assert.match(
+    appCss,
+    /\.markdown-section\s+\.ui-kit-color\s*\{[^}]*display:\s*flex[^}]*overflow-x:\s*auto/s,
+    'The official UI Kit palette layout must keep swatches above their code samples'
+);
+assert.match(
+    appCss,
+    /\.markdown-section blockquote\s*\{[^}]*background:\s*var\(--blockquote-background\)/s,
+    'The site-owned blockquote background must survive the v5 theme migration'
+);
+assert.doesNotMatch(
+    appCss,
+    /--blockquote-em-font-style/,
+    'The removed Themeable variable must not suppress semantic emphasis'
 );
 assert.match(
     navigation,
@@ -34,6 +106,11 @@ assert.match(
     appCss,
     /\.markdown-section \.table-wrapper td::before\s*\{[^}]*content:\s*attr\(data-table-label\)/s,
     'Narrow-screen tables must render the site-owned column label'
+);
+assert.match(
+    appCss,
+    /@media \(max-width: 30em\)[\s\S]*\.markdown-section \.table-wrapper tbody,[\s\S]*display:\s*block;[\s\S]*\.markdown-section \.table-wrapper thead\s*\{\s*display:\s*none/s,
+    'Narrow-screen tables must collapse into labeled row cards and hide the desktop header'
 );
 assert.match(
     appCss,
@@ -80,5 +157,20 @@ assert.match(
     /mobileBackdrop\.removeAttribute\('inert'\)/,
     'Docsify v5 must not make the site-owned dismissible backdrop inert'
 );
+assert.match(
+    navigation,
+    /header\.removeAttribute\('inert'\)/,
+    'Docsify v5 must not make the header-owned mobile toggle inert while the drawer is open'
+);
+assert.match(
+    navigation,
+    /if \(mobileNow && !wasMobile\) \{\s*resetDocsifyV5MobileSidebarState\(/,
+    'Crossing into the mobile breakpoint must align Docsify v5 sidebar state before the first tap'
+);
+assert.doesNotMatch(
+    appCss,
+    /\.docs-header\s*>\s*\.sidebar-toggle:(?:hover|active)\s*\{/,
+    'The header menu toggle must not change color or scale on pointer interaction'
+);
 
-console.log('Docsify v5 Themeable compatibility tests passed.');
+console.log('Docsify v5 core-layer compatibility tests passed.');

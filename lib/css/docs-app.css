@@ -43,13 +43,33 @@
     --sidebar-toggle-border-radius: 0;
     --sidebar-toggle-border-width: 0;
     --notice-border-width: 0 0 0 var(--docs-notice-rule-width);
+    --callout-bg: #f5f7f9;
+    --callout-border-color: #e2e5e9;
+    --callout-border-radius: 3px;
+    --callout-border-width: 1px;
+    --callout-charm-bg: transparent;
+    --callout-charm-border-radius: 50%;
+    --callout-charm-color: #ffffff;
+    --callout-charm-content: '';
+    --callout-charm-font-size: 16px;
+    --callout-charm-inset: 1em auto auto 15px;
+    --callout-charm-size: 26px;
+    --callout-charm-translate: 0;
+    --callout-color: var(--base-color);
+    --callout-padding: 1em 1em 1em calc(25px + var(--callout-charm-size));
     --heading-font-weight: 700;
     --heading-h1-font-size: clamp(2rem, 4vw, 2.75rem);
     --heading-h1-border-width: 0;
+    --heading-h2-font-size: 1.776889rem;
     --heading-h2-border-width: 0 0 1px;
     --heading-h2-padding: 0 0 0.45rem;
     --heading-h2-margin: 2.4rem 0 1rem;
+    --heading-h3-font-size: 1.333rem;
     --heading-h3-margin: 2rem 0 0.75rem;
+    --heading-h4-font-size: 1rem;
+    --heading-h5-font-size: 0.750188rem;
+    --heading-h6-font-size: 0.562782rem;
+    --heading-margin: 2.5rem 0 0;
     --border-radius-s: 6px;
     --border-radius-m: 8px;
     --duration-fast: 150ms;
@@ -58,6 +78,22 @@
     --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
     --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
     --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+    /* Bridge the site theme to Docsify v5's core design tokens. The official
+       core is the base layer; everything in this file remains the site-owned
+       top-level override. */
+    --color-bg: var(--base-background-color);
+    --color-text: var(--base-color);
+    --border-color: var(--docs-header-border);
+    --font-family: var(--base-font-family);
+    --font-size: var(--base-font-size);
+    --font-weight: 400;
+    --line-height: var(--base-line-height);
+    --sidebar-bg: var(--sidebar-background);
+    --sidebar-color: var(--base-color);
+    --sidebar-font-size: var(--base-font-size);
+    --sidebar-link-color: var(--sidebar-nav-link-color);
+    --sidebar-link-color-active: var(--sidebar-nav-link-color--active);
 }
 
 :root[data-theme='light'] {
@@ -84,12 +120,15 @@
     --search-input-border-color: #d7dbe0;
     --search-input-color: #1c1e21;
     --search-input-placeholder-color: #717780;
+    --search-input-background-image: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 24 24' fill='none' stroke='%23717780' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='10.5' r='7.5'/%3E%3Cline x1='21' y1='21' x2='15.8' y2='15.8'/%3E%3C/svg%3E");
     --navbar-root-color: #30343b;
     --navbar-root-color--hover: #111318;
     --navbar-root-color--active: #147fd6;
     --navbar-menu-background: #ffffff;
     --blockquote-background: #f5f7f9;
     --blockquote-border-color: var(--docs-accent-strong);
+    --docs-callout-note-background: color-mix(in srgb, var(--docs-accent), #ffffff 90%);
+    --docs-callout-note-border: color-mix(in srgb, var(--docs-accent), #ffffff 75%);
     --code-inline-background: #eef1f4;
     --code-inline-color: #353b43;
     --heading-h2-border-color: #e2e5e9;
@@ -99,12 +138,6 @@
     --docs-table-border: #c9cfd6;
     --docs-table-head-background: #f0f2f5;
     --hr-border: 1px solid #e2e5e9;
-    --notice-important-background: #fff1f5;
-    --notice-important-border-color: #d91f5b;
-    --notice-important-color: #3a1723;
-    --notice-tip-background: #edf7ff;
-    --notice-tip-border-color: #1689d8;
-    --notice-tip-color: #153348;
 }
 
 :root[data-theme='dark'] {
@@ -138,6 +171,8 @@
     --navbar-menu-background: #242628;
     --blockquote-background: #232527;
     --blockquote-border-color: var(--docs-accent);
+    --docs-callout-note-background: transparent;
+    --docs-callout-note-border: color-mix(in srgb, var(--docs-accent), var(--base-background-color) 30%);
     --code-inline-background: #2a2c2f;
     --code-inline-color: #e7e9eb;
     --heading-h2-border-color: #343638;
@@ -147,12 +182,6 @@
     --docs-table-border: #555960;
     --docs-table-head-background: #27292e;
     --hr-border: 1px solid #343638;
-    --notice-important-background: #35232a;
-    --notice-important-border-color: #ff5c8d;
-    --notice-important-color: #ffeaf0;
-    --notice-tip-background: #1e3040;
-    --notice-tip-border-color: #49aaff;
-    --notice-tip-color: #e5f4ff;
 }
 
 html {
@@ -161,6 +190,108 @@ html {
 
 body {
     min-width: 320px;
+}
+
+/* Docsify v5 core supplies the default shell. These declarations are the
+   site-specific shell contract formerly supplied indirectly by Themeable. */
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main > .content,
+body:has(.sidebar.show) main > .content {
+    position: static;
+    inset: auto;
+    left: auto;
+    transition: margin-left var(--duration-medium) var(--ease-out),
+        margin-right var(--duration-medium) var(--ease-out),
+        transform var(--duration-medium) var(--ease-out);
+}
+
+main::before {
+    content: none;
+}
+
+.sidebar {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    right: auto;
+    left: 0;
+    width: var(--docs-sidebar-width);
+    overflow-x: hidden;
+    overflow-y: auto;
+    translate: none;
+}
+
+.sidebar-nav {
+    margin: var(--sidebar-nav-margin);
+    padding: var(--sidebar-nav-padding);
+}
+
+.sidebar-nav > *,
+.sidebar-nav ul {
+    margin-inline: 0;
+}
+
+.sidebar-nav ul {
+    margin-block: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin: 0;
+}
+
+.sidebar-nav li > p {
+    margin: 0;
+}
+
+.sidebar-nav li > a {
+    margin: var(--sidebar-nav-link-margin);
+    padding: 0.25em 2.35rem 0.25em 1.25rem;
+    color: var(--sidebar-nav-link-color);
+}
+
+.docs-header > .sidebar-toggle,
+body:has(.sidebar.show) .docs-header > .sidebar-toggle {
+    translate: none;
+}
+
+.docs-header button[type],
+.sidebar button[type] {
+    margin-block: 0;
+    box-shadow: none;
+    line-height: normal;
+}
+
+.docs-header button[type]:hover:not(:focus-visible),
+.sidebar button[type]:hover:not(:focus-visible) {
+    outline: none;
+}
+
+@media (min-width: 48em) {
+    .sidebar + .content {
+        margin-left: var(--docs-sidebar-width);
+    }
+
+    .sidebar {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 47.99em) {
+    .sidebar {
+        transform: translateX(calc(-1 * var(--docs-sidebar-width)));
+    }
+
+    body.close .sidebar {
+        transform: translateX(0);
+    }
 }
 
 body,
@@ -284,10 +415,7 @@ nav.app-nav > ul > li:not([data-header-navigation-processed='true']):has(> a[tar
     display: none;
 }
 
-.docs-header > .sidebar-toggle,
-body.close .docs-header > .sidebar-toggle,
-body.sticky .docs-header > .sidebar-toggle,
-body.sticky.close .docs-header > .sidebar-toggle {
+.docs-header > .sidebar-toggle {
     position: relative !important;
     z-index: 1;
     inset: auto;
@@ -302,12 +430,8 @@ body.sticky.close .docs-header > .sidebar-toggle {
     border: 1px solid var(--docs-header-border);
     border-radius: var(--docs-radius);
     background: transparent;
-    color: var(--navbar-root-color);
+    color: var(--sidebar-toggle-icon-color);
     transform: none;
-    transition: background-color var(--duration-fast) var(--ease-out),
-        border-color var(--duration-fast) var(--ease-out),
-        color var(--duration-fast) var(--ease-out),
-        transform var(--duration-fast) var(--ease-out);
 }
 
 .docs-header > .docs-brand {
@@ -319,23 +443,33 @@ body.sticky.close .docs-header > .sidebar-toggle {
     order: 3;
 }
 
-.docs-header > .sidebar-toggle:hover {
-    border-color: color-mix(in srgb, var(--docs-accent) 45%, var(--docs-header-border));
-    background: var(--docs-hover);
-    color: var(--navbar-root-color--hover);
-}
-
 .docs-header > .sidebar-toggle .sidebar-toggle-button {
-    position: relative;
-    inset: auto;
+    display: block;
+    position: absolute;
+    inset: 50% auto auto 50%;
     width: 22px;
     height: 18px;
+    margin: 0;
     border: 0;
     background: transparent;
+    color: inherit;
+    transform: translate(-50%, -50%);
+}
+
+.docs-header > .sidebar-toggle .sidebar-toggle-button:hover {
+    background: transparent;
+    color: inherit;
 }
 
 .docs-header > .sidebar-toggle .sidebar-toggle-button span {
+    position: absolute;
+    top: calc(50% - var(--sidebar-toggle-icon-stroke-width) / 2);
+    left: calc(50% - var(--sidebar-toggle-icon-width) / 2);
+    width: var(--sidebar-toggle-icon-width);
+    height: var(--sidebar-toggle-icon-stroke-width);
     margin-top: 0;
+    border-radius: 0;
+    background: currentColor;
     transform-origin: center;
     transition: opacity var(--duration-fast) var(--ease-out),
         transform var(--duration-medium) var(--ease-in-out);
@@ -353,10 +487,6 @@ body.sticky.close .docs-header > .sidebar-toggle {
 
 .docs-header > .sidebar-toggle .sidebar-toggle-button span:nth-child(3) {
     transform: translateY(calc(var(--sidebar-toggle-icon-height) / 2));
-}
-
-.docs-header > .sidebar-toggle:active {
-    transform: scale(0.96);
 }
 
 .header-icon-link,
@@ -688,6 +818,20 @@ nav.app-nav {
     background-position: 0.75rem center;
     color: var(--search-input-color);
     box-shadow: none;
+}
+
+.sidebar .search input[type='search'] {
+    min-width: 0;
+    padding: 0.65em 1em 0.65em 50px;
+    border: 0;
+    background-color: transparent;
+    background-image: var(--search-input-background-image);
+    background-position: 21px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    color: var(--search-input-color);
+    font-size: inherit;
+    line-height: 1;
 }
 
 .sidebar .search input:focus,
@@ -1104,7 +1248,9 @@ body.has-page-toc main > .content {
 
 .markdown-section,
 .app-nav:not(:empty) ~ main .markdown-section {
+    width: auto;
     max-width: var(--content-max-width);
+    margin: 0 auto;
     padding: 2.6rem clamp(1.5rem, 4vw, 4rem) 4rem;
 }
 
@@ -1118,9 +1264,72 @@ body.docs-route-pending .markdown-section {
 
 .markdown-section h1 {
     margin: 0 0 0.75rem;
+    font-size: var(--heading-h1-font-size);
     font-weight: 750;
     letter-spacing: -0.025em;
     line-height: 1.15;
+}
+
+.markdown-section :is(h2, h3, h4, h5, h6) {
+    color: var(--heading-color);
+    font-weight: var(--heading-font-weight);
+    line-height: var(--base-line-height);
+}
+
+.markdown-section h2 {
+    margin: var(--heading-h2-margin);
+    padding: var(--heading-h2-padding);
+    border-width: var(--heading-h2-border-width);
+    border-style: solid;
+    border-color: var(--heading-h2-border-color);
+    font-size: var(--heading-h2-font-size);
+}
+
+.markdown-section h3 {
+    margin: var(--heading-h3-margin);
+    font-size: var(--heading-h3-font-size);
+}
+
+.markdown-section h4 {
+    margin: var(--heading-margin);
+    font-size: var(--heading-h4-font-size);
+}
+
+.markdown-section h5 {
+    margin: var(--heading-margin);
+    font-size: var(--heading-h5-font-size);
+}
+
+.markdown-section h6 {
+    margin: var(--heading-margin);
+    font-size: var(--heading-h6-font-size);
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5, h6):first-child {
+    margin-top: 0;
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5) + :is(h2, h3, h4, h5, h6) {
+    margin-top: 1rem;
+}
+
+.markdown-section figure,
+.markdown-section p,
+.markdown-section ol,
+.markdown-section ul {
+    margin: 1em 0;
+}
+
+.markdown-section li {
+    margin: 0;
+}
+
+.markdown-section ol ol,
+.markdown-section ol ul,
+.markdown-section ul ol,
+.markdown-section ul ul {
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
 }
 
 .docs-breadcrumb {
@@ -1341,8 +1550,64 @@ body.docs-route-pending .markdown-section {
     max-width: var(--docs-prose-max-width);
 }
 
-.markdown-section a:not(.anchor) {
+.markdown-section a:not([class]) {
+    text-decoration: none;
     text-underline-offset: 0.18em;
+}
+
+.markdown-section a:not([class]):hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.markdown-section .docs-breadcrumb a:hover,
+.markdown-section .docsify-pagination-container a:hover {
+    text-decoration: none;
+}
+
+.markdown-section .docsify-tabs__tab {
+    line-height: normal;
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5, h6) > a {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: auto;
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5, h6) > a:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: auto;
+}
+
+/* Docsify's UI Kit page keeps each swatch directly above its rendered markup.
+   These four rules come from the official UI Kit page rather than core.css;
+   horizontal overflow stays local to the palette on narrow screens. */
+.markdown-section .ui-kit-color {
+    display: flex;
+    max-width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    font-size: var(--font-size-s);
+    overscroll-behavior-inline: contain;
+}
+
+.markdown-section .ui-kit-color figure {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.markdown-section .ui-kit-color figure > div {
+    height: 4rem;
+    border-radius: var(--border-radius);
+}
+
+.markdown-section .ui-kit-color figcaption {
+    padding: 0.5em 0;
+    text-align: center;
 }
 
 /* Themeable v4 forces inline code onto one line. Keep fenced code scrollable,
@@ -1354,89 +1619,135 @@ body.docs-route-pending .markdown-section {
 }
 
 .markdown-section blockquote,
-.markdown-section .tip,
-.markdown-section .warn,
 .markdown-section .callout {
+    box-sizing: border-box;
     width: 100%;
     max-width: var(--docs-prose-max-width);
 }
 
 .markdown-section blockquote {
+    overflow: visible;
+    margin: 2em 0;
+    padding: 1.5em;
+    border-style: solid;
     border-left-width: var(--docs-notice-rule-width);
     border-left-color: var(--blockquote-border-color);
     border-radius: 0 var(--docs-radius) var(--docs-radius) 0;
+    background: var(--blockquote-background);
 }
 
-.markdown-section .tip {
-    color: var(--notice-important-color);
-}
-
-.markdown-section .warn {
-    color: var(--notice-tip-color);
-}
-
-/* Docsify v5 keeps the legacy markers but uses semantic callout classes:
- * !> -> .callout.important and ?> -> .callout.tip. Themeable v4 used
- * .tip for important notices and .warn for tips, so bridge the two maps here.
+/* Docsify v5 callouts. Legacy ?> and !> markers are normalized to Note and
+ * Caution before rendering so the five standard semantic classes stay intact.
  */
-.markdown-section .callout.important {
+.markdown-section .callout {
     position: relative;
-    margin: 2em 0;
-    padding: var(--notice-padding);
-    border-width: var(--notice-important-border-width, var(--notice-border-width, 0));
-    border-style: var(--notice-important-border-style, var(--notice-border-style));
-    border-color: var(--notice-important-border-color, var(--notice-border-color));
-    border-radius: var(--notice-border-radius);
-    background: var(--notice-important-background, var(--notice-background));
-    color: var(--notice-important-color, var(--notice-color));
-    font-family: var(--notice-font-family);
-    font-weight: var(--notice-font-weight);
+    margin: 1.5rem 0;
+    padding: var(--callout-padding);
+    border: solid var(--callout-border-color);
+    border-width: var(--callout-border-width);
+    border-radius: var(--callout-border-radius);
+    background: var(--callout-bg);
+    color: var(--callout-color);
 }
 
-.markdown-section .callout.important::before {
-    display: inline-block;
-    position: var(--notice-before-position, relative);
-    top: var(--notice-before-top);
-    left: var(--notice-before-left);
-    width: var(--notice-before-width);
-    height: var(--notice-before-height);
-    margin: var(--notice-before-margin);
-    padding: var(--notice-before-padding);
-    border-radius: var(--notice-before-border-radius);
-    background: var(--notice-important-before-background, var(--notice-before-background));
-    color: var(--notice-important-before-color, var(--notice-before-color));
-    content: var(--notice-important-before-content, var(--notice-before-content));
-    font-family: var(--notice-before-font-family);
-    font-size: var(--notice-before-font-size);
-    font-weight: var(--notice-before-font-weight);
-    line-height: var(--notice-before-line-height);
+.markdown-section .callout::before {
+    position: absolute;
+    inset: var(--callout-charm-inset);
+    width: var(--callout-charm-size);
+    height: var(--callout-charm-size);
+    translate: var(--callout-charm-translate);
+    border-radius: var(--callout-charm-border-radius);
+    background: var(--callout-charm-bg);
+    color: var(--callout-charm-color);
+    content: var(--callout-charm-content);
+    font-size: var(--callout-charm-font-size);
+    font-weight: 600;
+    line-height: var(--callout-charm-size);
     text-align: center;
 }
 
+.markdown-section .callout.caution {
+    --callout-bg: #fef2f2;
+    --callout-border-color: #fecaca;
+    --callout-charm-bg: #ef4444 center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="13" height="13" fill="white"><path d="M10 14C10 15.1 9.1 16 8 16 6.9 16 6 15.1 6 14 6 12.9 6.9 12 8 12 9.1 12 10 12.9 10 14Z"/><path d="M10 1.6C10 1.2 9.8 0.9 9.6 0.7 9.2 0.3 8.6 0 8 0 7.4 0 6.8 0.2 6.5 0.6 6.2 0.9 6 1.2 6 1.6 6 1.7 6 1.8 6 1.9L6.8 9.6C6.9 9.9 7 10.1 7.2 10.2 7.4 10.4 7.7 10.5 8 10.5 8.3 10.5 8.6 10.4 8.8 10.3 9 10.1 9.1 9.9 9.2 9.6L10 1.9C10 1.8 10 1.7 10 1.6Z"/></svg>');
+}
+
+.markdown-section .callout.important {
+    --callout-bg: #f5f3ff;
+    --callout-border-color: #ddd6fe;
+    --callout-charm-bg: #8b5cf6 center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="white"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"/></svg>');
+}
+
+.markdown-section .callout.note {
+    --callout-bg: var(--docs-callout-note-background);
+    --callout-border-color: var(--docs-callout-note-border);
+    --callout-charm-bg: var(--docs-accent) center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" fill="white"><path d="M9.1 0C10.2 0 10.7 0.7 10.7 1.6 10.7 2.6 9.8 3.6 8.6 3.6 7.6 3.6 7 3 7 2 7 1.1 7.7 0 9.1 0Z"/><path d="M5.8 16C5 16 4.4 15.5 5 13.2L5.9 9.1C6.1 8.5 6.1 8.2 5.9 8.2 5.7 8.2 4.6 8.6 3.9 9.1L3.5 8.4C5.6 6.6 7.9 5.6 8.9 5.6 9.8 5.6 9.9 6.6 9.5 8.2L8.4 12.5C8.2 13.2 8.3 13.5 8.5 13.5 8.7 13.5 9.6 13.2 10.4 12.5L10.9 13.2C8.9 15.2 6.7 16 5.8 16Z"/></svg>');
+}
+
 .markdown-section .callout.tip {
-    border-width: var(--notice-tip-border-width, var(--notice-border-width, 0));
-    border-style: var(--notice-tip-border-style, var(--notice-border-style));
-    border-color: var(--notice-tip-border-color, var(--notice-border-color));
-    background: var(--notice-tip-background, var(--notice-background));
-    color: var(--notice-tip-color, var(--notice-color));
+    --callout-bg: #f0fdfa;
+    --callout-border-color: #99f6e4;
+    --callout-charm-bg: #14b8a6 center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" fill="white"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"/></svg>');
 }
 
-.markdown-section .callout.tip::before {
-    background: var(--notice-tip-before-background, var(--notice-before-background));
-    color: var(--notice-tip-before-color, var(--notice-before-color));
-    content: var(--notice-tip-before-content, var(--notice-before-content));
+.markdown-section .callout.warning {
+    --callout-bg: #fffbeb;
+    --callout-border-color: #fde68a;
+    --callout-charm-bg: #fcd34d center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="13" height="13" fill="%23a16207"><path d="M10 14C10 15.1 9.1 16 8 16 6.9 16 6 15.1 6 14 6 12.9 6.9 12 8 12 9.1 12 10 12.9 10 14Z"/><path d="M10 1.6C10 1.2 9.8 0.9 9.6 0.7 9.2 0.3 8.6 0 8 0 7.4 0 6.8 0.2 6.5 0.6 6.2 0.9 6 1.2 6 1.6 6 1.7 6 1.8 6 1.9L6.8 9.6C6.9 9.9 7 10.1 7.2 10.2 7.4 10.4 7.7 10.5 8 10.5 8.3 10.5 8.6 10.4 8.8 10.3 9 10.1 9.1 9.9 9.2 9.6L10 1.9C10 1.8 10 1.7 10 1.6Z"/></svg>');
 }
 
-.markdown-section .tip strong,
-.markdown-section .warn strong,
+:root[data-theme='dark'] .markdown-section .callout {
+    --callout-bg: transparent;
+}
+
+:root[data-theme='dark'] .markdown-section .callout.caution {
+    --callout-border-color: #991b1b;
+}
+
+:root[data-theme='dark'] .markdown-section .callout.important {
+    --callout-border-color: #5b21b6;
+}
+
+:root[data-theme='dark'] .markdown-section .callout.note {
+    --callout-border-color: var(--docs-callout-note-border);
+}
+
+:root[data-theme='dark'] .markdown-section .callout.tip {
+    --callout-border-color: #115e59;
+}
+
+:root[data-theme='dark'] .markdown-section .callout.warning {
+    --callout-border-color: #a16207;
+}
+
+.markdown-section .callout > :first-child {
+    margin-top: 0;
+}
+
+.markdown-section .callout > :last-child {
+    margin-bottom: 0;
+}
+
+.markdown-section .callout .callout {
+    margin: 1rem 0;
+}
+
 .markdown-section .callout strong {
     color: inherit;
 }
 
-.markdown-section .tip a,
-.markdown-section .warn a,
 .markdown-section .callout a {
     color: var(--docs-accent);
+}
+
+.markdown-section .callout code:not([class*='lang-']):not([class*='language-']) {
+    background: rgba(0, 0, 0, 0.05);
+    color: inherit;
+}
+
+:root[data-theme='dark'] .markdown-section .callout code:not([class*='lang-']):not([class*='language-']),
+:root[data-theme='dark'] .markdown-section .callout pre[data-lang] {
+    background: var(--base-background-color);
 }
 
 .markdown-section img {
@@ -1445,7 +1756,12 @@ body.docs-route-pending .markdown-section {
 }
 
 .markdown-section table {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    overflow: auto;
     border: 1px solid var(--docs-table-border);
+    border-spacing: 0;
     border-collapse: collapse;
     background: var(--base-background-color);
 }
@@ -1461,7 +1777,17 @@ body.docs-route-pending .markdown-section {
 
 .markdown-section th,
 .markdown-section td {
+    padding: 0.75em 0.5em;
     border: 1px solid var(--docs-table-border);
+}
+
+.markdown-section th:not([align]) {
+    text-align: left;
+}
+
+.markdown-section th {
+    color: var(--strong-color);
+    font-weight: 600;
 }
 
 .markdown-section tbody tr:nth-child(odd) {
@@ -1476,14 +1802,42 @@ body.docs-route-pending .markdown-section {
     display: contents;
 }
 
+.markdown-section .table-wrapper {
+    overflow-x: auto;
+}
+
+.markdown-section .table-wrapper table {
+    display: table;
+    width: 100%;
+}
+
+.markdown-section .table-wrapper td::before {
+    display: none;
+}
+
 @media (max-width: 30em) {
+    .markdown-section .table-wrapper tbody,
+    .markdown-section .table-wrapper tr,
+    .markdown-section .table-wrapper td {
+        display: block;
+    }
+
     .markdown-section .table-wrapper table {
         border: 0;
         background: transparent;
     }
 
+    .markdown-section .table-wrapper thead {
+        display: none;
+    }
+
     .markdown-section .table-wrapper tr {
+        padding: 0.75em 0.5em;
         border: 1px solid var(--docs-table-border);
+    }
+
+    .markdown-section .table-wrapper tr:not(:last-child) {
+        border-bottom: 0;
     }
 
     .markdown-section .table-wrapper td {
@@ -1731,8 +2085,7 @@ body .docsify-pagination-container {
         line-height: 1.35;
         text-decoration: none;
         white-space: normal;
-        transition: background-color var(--duration-medium) ease,
-            color var(--duration-medium) ease;
+        transition: background-color var(--duration-medium) ease;
     }
 
     .sidebar .mobile-primary-nav a.active-section {
@@ -1811,8 +2164,7 @@ body .docsify-pagination-container {
         line-height: 1.25;
         text-decoration: none;
         touch-action: manipulation;
-        transition: background-color var(--duration-medium) ease,
-            color var(--duration-medium) ease;
+        transition: background-color var(--duration-medium) ease;
     }
 
     .sidebar .mobile-language-link.is-current {
@@ -1847,8 +2199,7 @@ body .docsify-pagination-container {
         color: var(--sidebar-nav-link-color);
         text-decoration: none;
         touch-action: manipulation;
-        transition: background-color var(--duration-medium) ease,
-            color var(--duration-medium) ease;
+        transition: background-color var(--duration-medium) ease;
     }
 
     .mobile-github-link svg {
@@ -1914,8 +2265,7 @@ body .docsify-pagination-container {
         line-height: 1.35;
         text-decoration: none;
         overflow-wrap: anywhere;
-        transition: background-color var(--duration-medium) ease,
-            color var(--duration-medium) ease;
+        transition: background-color var(--duration-medium) ease;
     }
 
     .mobile-expanded-menu-list a:focus-visible {
@@ -1992,7 +2342,6 @@ body .docsify-pagination-container {
 @media (max-width: 47.99em) and (hover: hover) and (pointer: fine) {
     .sidebar .mobile-primary-nav a:hover {
         background-color: var(--sidebar-nav-link-background--hover);
-        color: var(--sidebar-nav-link-color--hover);
         text-decoration: none;
     }
 
@@ -2005,7 +2354,6 @@ body .docsify-pagination-container {
     .mobile-expanded-menu-list a:hover,
     .mobile-github-link:hover {
         background-color: var(--sidebar-nav-link-background--hover);
-        color: var(--sidebar-nav-link-color--hover);
         text-decoration: none;
     }
 

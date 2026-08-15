@@ -72,7 +72,7 @@ const maintenanceGuide = readFileSync('SPECIAL-COMMENTS.md', 'utf8');
 
 assert.match(
     index,
-    /<script src="lib\/overview-metadata\.js\?v=2"><\/script>\s*<script src="lib\/navigation\.js\?v=66"><\/script>/,
+    /<script src="lib\/overview-metadata\.js\?v=2"><\/script>\s*<script src="lib\/navigation\.js\?v=68"><\/script>/,
     'The overview metadata parser must load before the navigation renderer'
 );
 assert.match(

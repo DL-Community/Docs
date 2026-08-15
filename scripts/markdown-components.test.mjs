@@ -113,6 +113,48 @@ assert.ok(transformed.includes('    <!-- last-modified -->'));
 assert.ok(transformed.includes('```md\n<!-- last-modified -->\n```'));
 assert.ok(transformed.includes('<!-- unknown-component -->'));
 
+const calloutTransformed = hooks.beforeEach([
+    '?> Legacy info with `inline code`.',
+    '',
+    '!> Legacy caution.',
+    '',
+    '> ?> Nested legacy info.',
+    '',
+    '    ?> Indented code stays unchanged.',
+    '',
+    '```md',
+    '?> Fenced code stays unchanged.',
+    '```'
+].join('\n'));
+
+assert.match(
+    calloutTransformed,
+    /> \[!NOTE\]\n> Legacy info with `inline code`\./
+);
+assert.match(calloutTransformed, /> \[!CAUTION\]\n> Legacy caution\./);
+assert.match(
+    calloutTransformed,
+    /> > \[!NOTE\]\n> > Nested legacy info\./
+);
+assert.match(calloutTransformed, /^ {4}\?> Indented code stays unchanged\.$/m);
+assert.match(calloutTransformed, /```md\n\?> Fenced code stays unchanged\.\n```/);
+
+const crlfCalloutTransformed = hooks.beforeEach([
+    '?> Windows info.',
+    '',
+    '!> Windows caution.',
+    '',
+    '> ?> Nested Windows info.'
+].join('\r\n'));
+
+assert.match(crlfCalloutTransformed, /> \[!NOTE\]\r\n> Windows info\./);
+assert.match(crlfCalloutTransformed, /> \[!CAUTION\]\r\n> Windows caution\./);
+assert.match(
+    crlfCalloutTransformed,
+    /> > \[!NOTE\]\r\n> > Nested Windows info\./
+);
+assert.doesNotMatch(crlfCalloutTransformed, /(^|\r\n)[!?]>/);
+
 const rendered = await renderAfterEach(
     hooks.afterEach,
     `<p><strong>${placeholder}</strong></p>`
