@@ -32,6 +32,12 @@
         section_intro: '选择一个文档开始阅读。',
         search_placeholder: '搜索文档',
         search_no_results: '找不到结果',
+        search_result_found: '找到 {count} 个结果',
+        search_results_found: '找到 {count} 个结果',
+        search_result_label: '搜索结果 {index}',
+        search_clear: '清除搜索',
+        search_shortcut_slash: '按 / 开始搜索',
+        search_shortcut_control_k: '按 Control+K 开始搜索',
         pagination_previous: '上一文档',
         pagination_next: '下一文档',
         last_modified: '最后修改于 {date}'

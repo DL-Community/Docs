@@ -132,6 +132,38 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <script>
     var zhUI = window.DLCE_I18N.zh;
     var enUI = window.DLCE_I18N.en;
+
+    function docsifyLanguageDefinitions() {
+        return Array.prototype.map.call(
+            document.querySelectorAll('#language-menu a[data-language-code]'),
+            function (link) {
+                return {
+                    code: link.dataset.languageCode,
+                    prefix: (link.dataset.languagePrefix || '').replace(/\/$/, '')
+                };
+            }
+        ).sort(function (left, right) {
+            return right.prefix.length - left.prefix.length;
+        });
+    }
+
+    function docsifyLocalizedSearchText(key) {
+        var dictionaries = window.DLCE_I18N || {};
+        return docsifyLanguageDefinitions().reduce(function (localized, definition) {
+            var dictionary = dictionaries[definition.code] || dictionaries.zh || {};
+            localized[definition.prefix || '/'] = dictionary[key]
+                || (dictionaries.zh && dictionaries.zh[key])
+                || key;
+            return localized;
+        }, {});
+    }
+
+    function docsifySearchPathNamespaces() {
+        return docsifyLanguageDefinitions().map(function (definition) {
+            return definition.prefix || '/';
+        });
+    }
+
     window.$docsify = {
         basePath: '/Docs/',
         routerMode: 'hash',
@@ -219,17 +251,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         search: {
             maxAge: 86400000,
             paths: 'auto',
-            placeholder: {
-                '/en': enUI.search_placeholder,
-                '/': zhUI.search_placeholder
-            },
-            noData: {
-                '/en': enUI.search_no_results,
-                '/': zhUI.search_no_results
-            },
+            placeholder: docsifyLocalizedSearchText('search_placeholder'),
+            noData: docsifyLocalizedSearchText('search_no_results'),
             depth: 4,
             hideOtherSidebarContent: true,
-            pathNamespaces: ['/', '/en'],
+            pathNamespaces: docsifySearchPathNamespaces(),
             namespace: '/Docs'
         },
         tabs: {

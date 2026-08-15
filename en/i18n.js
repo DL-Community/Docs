@@ -32,6 +32,12 @@
         section_intro: 'Choose a document to start reading.',
         search_placeholder: 'Search documentation',
         search_no_results: 'No results',
+        search_result_found: 'Found {count} result',
+        search_results_found: 'Found {count} results',
+        search_result_label: 'Search result {index}',
+        search_clear: 'Clear search',
+        search_shortcut_slash: 'Press / to search',
+        search_shortcut_control_k: 'Press Control+K to search',
         pagination_previous: 'PREVIOUS',
         pagination_next: 'NEXT',
         last_modified: 'Last updated on {date}'

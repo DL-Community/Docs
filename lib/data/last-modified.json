@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T08:58:28.000Z",
+  "generatedAt": "2026-08-15T04:01:41.000Z",
   "files": {
     "_404.md": {
       "updatedAt": "2024-08-11T15:00:07.000Z",
       "commit": "b50e9fc1cb619edcc5bda37d1fe0d4cbfe308455"
     },
     "_navbar.md": {
-      "updatedAt": "2026-08-14T04:49:12.000Z",
-      "commit": "c413eb8455117492a5d11cbbd151843f4e5e6db5"
+      "updatedAt": "2026-08-15T02:27:09.000Z",
+      "commit": "2da5e5d306fd2de576635704e83467ea220d98bb"
     },
     "_sidebar.md": {
       "updatedAt": "2026-08-13T19:13:25.000Z",
@@ -79,20 +79,20 @@
       "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
     },
     "dlce/settings/general.md": {
-      "updatedAt": "2026-08-14T08:58:28.000Z",
-      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+      "updatedAt": "2026-08-14T20:07:38.000Z",
+      "commit": "85c38513c41b01c1f0ea65696037320af6feec79"
     },
     "dlce/versions.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-14T17:11:37.000Z",
+      "commit": "dafcc5ab1b473f62369edb1c7002afea46ef7953"
     },
     "en/_404.md": {
       "updatedAt": "2024-08-11T15:00:07.000Z",
       "commit": "b50e9fc1cb619edcc5bda37d1fe0d4cbfe308455"
     },
     "en/_navbar.md": {
-      "updatedAt": "2026-08-14T04:49:12.000Z",
-      "commit": "c413eb8455117492a5d11cbbd151843f4e5e6db5"
+      "updatedAt": "2026-08-15T02:27:09.000Z",
+      "commit": "2da5e5d306fd2de576635704e83467ea220d98bb"
     },
     "en/_sidebar.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
@@ -143,8 +143,8 @@
       "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
     },
     "en/dlce/settings/general.md": {
-      "updatedAt": "2026-08-14T08:58:28.000Z",
-      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+      "updatedAt": "2026-08-14T20:08:59.000Z",
+      "commit": "28619e1aad5f8d494dc5886d86d38800057d2c23"
     },
     "en/legal/_sidebar.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
@@ -199,8 +199,8 @@
       "commit": "0f895ffa5b84f39a3c81dd8d7fdd6c0661bc2051"
     },
     "social/_sidebar.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-14T09:32:50.000Z",
+      "commit": "3117f02250ce807127f24f3873223355cd5e1b7d"
     },
     "social/home.md": {
       "updatedAt": "2026-07-01T22:20:00.000Z",

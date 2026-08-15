@@ -691,6 +691,11 @@ nav.app-nav {
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--docs-accent) 22%, transparent);
 }
 
+/* Docsify v5 renders search results without the v4-only `.show` class. */
+.sidebar .search .results-panel:not(:empty) {
+    display: block;
+}
+
 .sidebar-nav {
     flex: 1 1 auto;
     order: 1;

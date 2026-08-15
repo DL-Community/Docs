@@ -10,12 +10,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_navbar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/css/docs-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/docs-app.css" afterDir="false" />
-    </list>
+    <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,28 +73,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiang/Documents/GitHub/Docs&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "feat/docsify-v5",
+    "git.auto.fetch.suggestion.counter": "1",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jiang/Documents/GitHub/Docs",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -128,23 +123,7 @@
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
       <workItem from="1786602620015" duration="18324000" />
-      <workItem from="1786676253976" duration="15025000" />
-    </task>
-    <task id="LOCAL-00011" summary="增加备案号">
-      <option name="closed" value="true" />
-      <created>1752680001892</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1752680001892</updated>
-    </task>
-    <task id="LOCAL-00012" summary="加宽页面">
-      <option name="closed" value="true" />
-      <created>1752681364246</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1752681364246</updated>
+      <workItem from="1786676253976" duration="19157000" />
     </task>
     <task id="LOCAL-00013" summary="更新">
       <option name="closed" value="true" />
@@ -522,7 +501,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786699971970</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="-">
+      <option name="closed" value="true" />
+      <created>1786760830365</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1786760830365</updated>
+    </task>
+    <task id="LOCAL-00061" summary="新增 github actions 部署时缓存版本更新">
+      <option name="closed" value="true" />
+      <created>1786763168382</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1786763168384</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="qq" />
     <MESSAGE value="header" />
     <MESSAGE value="basePath" />
     <MESSAGE value="basePath" />
@@ -568,7 +562,8 @@
     <MESSAGE value="fix deployment" />
     <MESSAGE value="导航栏增加旧版 wiki 入口" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="新增 github actions 部署时缓存版本更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增 github actions 部署时缓存版本更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
