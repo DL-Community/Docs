@@ -1644,8 +1644,8 @@ body .docsify-pagination-container {
         z-index: 104;
         top: var(--docs-header-height);
         bottom: 0;
-        left: 0;
-        width: 100vw;
+        left: var(--docs-sidebar-width);
+        width: calc(100vw - var(--docs-sidebar-width));
         content: '';
         opacity: 0;
         pointer-events: none;
@@ -1657,8 +1657,8 @@ body .docsify-pagination-container {
     .mobile-sidebar-shadow::before {
         position: absolute;
         inset: 0 auto 0 0;
-        width: var(--docs-sidebar-width);
-        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.22);
+        width: 1px;
+        box-shadow: -8px 0 24px 6px rgba(0, 0, 0, 0.22);
         content: '';
         pointer-events: none;
     }

@@ -37,8 +37,13 @@ assert.match(
 );
 assert.match(
     appCss,
+    /\.mobile-sidebar-shadow\s*\{[^}]*left:\s*var\(--docs-sidebar-width\);[^}]*width:\s*calc\(100vw - var\(--docs-sidebar-width\)\)/s,
+    'The mobile sidebar backdrop must begin after the drawer and cover only the content area'
+);
+assert.doesNotMatch(
+    appCss,
     /\.mobile-sidebar-shadow\s*\{[^}]*width:\s*100vw/s,
-    'The mobile sidebar backdrop must cover the content area outside the drawer'
+    'The mobile sidebar backdrop must never overlap the drawer controls'
 );
 assert.match(
     appCss,
@@ -49,6 +54,11 @@ assert.match(
     navigation,
     /mobileBackdrop\.addEventListener\('click',[\s\S]*?toggle\.click\(\)/,
     'Clicking the narrow-screen backdrop must close the drawer through its existing toggle'
+);
+assert.match(
+    navigation,
+    /mobileBackdrop\.addEventListener\('click', function \(event\) \{\s*if \(event\.target !== mobileBackdrop\) return;/,
+    'The mobile sidebar backdrop handler must ignore clicks from nested visual elements'
 );
 assert.match(
     navigation,
