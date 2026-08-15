@@ -47,6 +47,16 @@ assert.doesNotMatch(
 );
 assert.match(
     appCss,
+    /\.mobile-sidebar-shadow::before\s*\{[^}]*background:\s*linear-gradient\(to right,[^}]*\)/s,
+    'The mobile drawer edge shadow must fade rightward into the content area'
+);
+assert.doesNotMatch(
+    appCss,
+    /\.mobile-sidebar-shadow::before\s*\{[^}]*box-shadow:/s,
+    'The mobile drawer edge shadow must not spread back over the sidebar'
+);
+assert.match(
+    appCss,
     /body\.close \.mobile-sidebar-shadow\s*\{[^}]*pointer-events:\s*auto/s,
     'The mobile sidebar backdrop must accept dismissal taps while the drawer is open'
 );

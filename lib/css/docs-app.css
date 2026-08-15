@@ -1657,8 +1657,8 @@ body .docsify-pagination-container {
     .mobile-sidebar-shadow::before {
         position: absolute;
         inset: 0 auto 0 0;
-        width: 1px;
-        box-shadow: -8px 0 24px 6px rgba(0, 0, 0, 0.22);
+        width: 1.5rem;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0));
         content: '';
         pointer-events: none;
     }
