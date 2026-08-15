@@ -1240,7 +1240,8 @@ body.docs-route-pending .markdown-section {
 
 .markdown-section blockquote,
 .markdown-section .tip,
-.markdown-section .warn {
+.markdown-section .warn,
+.markdown-section .callout {
     width: 100%;
     max-width: var(--docs-prose-max-width);
 }
@@ -1259,13 +1260,67 @@ body.docs-route-pending .markdown-section {
     color: var(--notice-tip-color);
 }
 
+/* Docsify v5 keeps the legacy markers but uses semantic callout classes:
+ * !> -> .callout.important and ?> -> .callout.tip. Themeable v4 used
+ * .tip for important notices and .warn for tips, so bridge the two maps here.
+ */
+.markdown-section .callout.important {
+    position: relative;
+    margin: 2em 0;
+    padding: var(--notice-padding);
+    border-width: var(--notice-important-border-width, var(--notice-border-width, 0));
+    border-style: var(--notice-important-border-style, var(--notice-border-style));
+    border-color: var(--notice-important-border-color, var(--notice-border-color));
+    border-radius: var(--notice-border-radius);
+    background: var(--notice-important-background, var(--notice-background));
+    color: var(--notice-important-color, var(--notice-color));
+    font-family: var(--notice-font-family);
+    font-weight: var(--notice-font-weight);
+}
+
+.markdown-section .callout.important::before {
+    display: inline-block;
+    position: var(--notice-before-position, relative);
+    top: var(--notice-before-top);
+    left: var(--notice-before-left);
+    width: var(--notice-before-width);
+    height: var(--notice-before-height);
+    margin: var(--notice-before-margin);
+    padding: var(--notice-before-padding);
+    border-radius: var(--notice-before-border-radius);
+    background: var(--notice-important-before-background, var(--notice-before-background));
+    color: var(--notice-important-before-color, var(--notice-before-color));
+    content: var(--notice-important-before-content, var(--notice-before-content));
+    font-family: var(--notice-before-font-family);
+    font-size: var(--notice-before-font-size);
+    font-weight: var(--notice-before-font-weight);
+    line-height: var(--notice-before-line-height);
+    text-align: center;
+}
+
+.markdown-section .callout.tip {
+    border-width: var(--notice-tip-border-width, var(--notice-border-width, 0));
+    border-style: var(--notice-tip-border-style, var(--notice-border-style));
+    border-color: var(--notice-tip-border-color, var(--notice-border-color));
+    background: var(--notice-tip-background, var(--notice-background));
+    color: var(--notice-tip-color, var(--notice-color));
+}
+
+.markdown-section .callout.tip::before {
+    background: var(--notice-tip-before-background, var(--notice-before-background));
+    color: var(--notice-tip-before-color, var(--notice-before-color));
+    content: var(--notice-tip-before-content, var(--notice-before-content));
+}
+
 .markdown-section .tip strong,
-.markdown-section .warn strong {
+.markdown-section .warn strong,
+.markdown-section .callout strong {
     color: inherit;
 }
 
 .markdown-section .tip a,
-.markdown-section .warn a {
+.markdown-section .warn a,
+.markdown-section .callout a {
     color: var(--docs-accent);
 }
 
