@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T04:01:41.000Z",
+  "generatedAt": "2026-08-15T20:16:16.000Z",
   "files": {
     "_404.md": {
       "updatedAt": "2024-08-11T15:00:07.000Z",
@@ -79,12 +79,12 @@
       "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
     },
     "dlce/settings/general.md": {
-      "updatedAt": "2026-08-14T20:07:38.000Z",
-      "commit": "85c38513c41b01c1f0ea65696037320af6feec79"
+      "updatedAt": "2026-08-15T05:43:44.000Z",
+      "commit": "2673067e50b74abe893efae6b2c6fc2a1b5773ad"
     },
     "dlce/versions.md": {
-      "updatedAt": "2026-08-14T17:11:37.000Z",
-      "commit": "dafcc5ab1b473f62369edb1c7002afea46ef7953"
+      "updatedAt": "2026-08-15T17:43:13.000Z",
+      "commit": "e1be23ab9151b99cf381616f9b28bb6a6d66f5ea"
     },
     "en/_404.md": {
       "updatedAt": "2024-08-11T15:00:07.000Z",
@@ -191,8 +191,8 @@
       "commit": "65a13d7155705b183c4468f22b3291f75afb0e9a"
     },
     "README.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-15T20:14:58.000Z",
+      "commit": "063f40c91652714483832d466e34c58c9b14f6ac"
     },
     "share/open-source.md": {
       "updatedAt": "2025-09-10T00:22:53.000Z",

@@ -1305,6 +1305,16 @@ body.docs-route-pending .markdown-section {
     -webkit-line-clamp: 2;
 }
 
+.category-card-description {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--docs-muted);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
 .category-card-arrow {
     margin-left: 0.75rem;
     color: var(--docs-muted);
