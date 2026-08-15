@@ -43,6 +43,7 @@ jobs:
           node scripts/markdown-components.test.mjs
           node scripts/external-favicons.test.mjs
           node scripts/navigation-scope.test.mjs
+          node scripts/stamp-cache-version.test.mjs
 
       - name: Generate Markdown modification records
         run: node scripts/generate-last-modified.mjs
@@ -63,6 +64,11 @@ jobs:
             --exclude 'PRODUCT.md' \
             --exclude 'README.md' \
             ./ "$RUNNER_TEMP/docs-site/"
+
+      - name: Stamp deploy cache version
+        env:
+          DEPLOY_COMMIT_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: node scripts/stamp-cache-version.mjs "$RUNNER_TEMP/docs-site" "$DEPLOY_COMMIT_SHA"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -152,7 +152,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
                     return;
                 }
 
-                fetch(readmePath).then(function (response) {
+                if (typeof window.DLCE_VERSIONED_URL === 'function') {
+                    readmePath = window.DLCE_VERSIONED_URL(readmePath);
+                }
+
+                fetch(readmePath, { cache: 'no-cache' }).then(function (response) {
                     if (!response.ok) {
                         showGeneratedLanding();
                         return;
@@ -201,6 +205,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         homepage: 'home.md',
         loadSidebar: true,
         loadNavbar: true,
+        requestHeaders: {
+            'Cache-Control': 'no-cache'
+        },
         maxLevel: 0,
         subMaxLevel: 0,
         topMargin: 76,
