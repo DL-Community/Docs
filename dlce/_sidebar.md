@@ -24,3 +24,4 @@
   <!-- desc: "网络连接和音频 DSP 缓冲区等" -->
   - [高级设置](/dlce/settings/advanced.md)
 - [启动选项](/dlce/commands)
+- [账号系统](/dlce/account.md)

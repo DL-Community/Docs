@@ -33,11 +33,13 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 ?> Requires a 64-bit processor and operating system.
 
-!> Windows 7 or older systems are not supported.
+?> Windows 7 or older systems are not supported.
+
+!> The [Microsoft VC++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version) is required to run the game on Windows.
 
 ### Recommended
 
-- **Operating System**: Windows 10 64bit / Windows 11 64bit
+- **Operating System**: Windows 11 64bit
 - **Processor**: Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz or higher
 - **Graphics API**: Direct3D12
 - **Graphics Card (GPU)**: NVIDIA GTX 1060／AMD Radeon RX 480 or higher
@@ -51,7 +53,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 > The minimum configuration cannot guarantee a complete game experience.
 
-- **Operating System**: Windows 8
+- **Operating System**: Windows 8 64bit
 - **Processor**: Intel Core i5-2400 3.1GHz / AMD Radeon FX-8120 3.1GHz
 - **Graphics API**: Direct3D11 or OpenGLCore
 - **Graphics Card (GPU)**: NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 6950

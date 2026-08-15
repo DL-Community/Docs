@@ -1,4 +1,6 @@
 <!-- page-desc: "Join the community to interact with us." -->
+<!-- desc: "Install the game using itch client for automatically game update." -->
+- [itch.io](https://itch.io/app)
 <!-- desc: "Receive official announcements and information" -->
 - [Discord](https://discord.gg/8Ew5n3XadT)
 <!-- desc: "Official Video Channel (Global)" -->
