@@ -672,6 +672,9 @@ nav.app-nav {
 
 .sidebar .search .input-wrap {
     position: relative;
+    /* Themeable assumes 25px sidebar padding. This site uses 0.75rem, so its
+       legacy negative margin pushed the v5 clear button past the sidebar edge. */
+    margin-inline: -0.75rem;
 }
 
 .sidebar .search input {
@@ -689,6 +692,29 @@ nav.app-nav {
 .sidebar .search input:focus {
     border-color: var(--docs-accent);
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--docs-accent) 22%, transparent);
+}
+
+/* The v5 search plugin ships this label for assistive technology. Themeable's
+   v4 CSS does not include the matching utility from the v5 core theme. */
+.sidebar .search .clear-button .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sidebar .search .input-wrap > .clear-button {
+    box-sizing: border-box;
+    flex: 0 0 var(--_button-size, 20px);
+    width: var(--_button-size, 20px);
+    height: var(--_button-size, 20px);
+    padding: 0;
 }
 
 /* Docsify v5 renders search results without the v4-only `.show` class. */
@@ -1238,6 +1264,14 @@ body.docs-route-pending .markdown-section {
     text-underline-offset: 0.18em;
 }
 
+/* Themeable v4 forces inline code onto one line. Keep fenced code scrollable,
+   but allow inline code to wrap with the surrounding prose on narrow screens. */
+.markdown-section code:not([class*='lang-']):not([class*='language-']) {
+    white-space: break-spaces;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 .markdown-section blockquote,
 .markdown-section .tip,
 .markdown-section .warn,
@@ -1385,6 +1419,7 @@ body.docs-route-pending .markdown-section {
     }
 
     .markdown-section .table-wrapper td::before {
+        content: attr(data-table-label);
         display: block;
         grid-column: 1;
         grid-row: 1;

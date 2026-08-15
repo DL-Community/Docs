@@ -187,5 +187,20 @@ assert.match(indexSource, /pathNamespaces:\s*docsifySearchPathNamespaces\(\)/);
 
 const cssSource = readFileSync('lib/css/docs-app.css', 'utf8');
 assert.match(cssSource, /\.sidebar \.search \.results-panel:not\(:empty\)\s*\{\s*display:\s*block;/);
+assert.match(
+    cssSource,
+    /\.sidebar \.search \.clear-button \.visually-hidden\s*\{[^}]*clip-path:\s*inset\(50%\)[^}]*white-space:\s*nowrap/s,
+    'The localized clear-search label must stay available to assistive technology without covering the v5 X icon'
+);
+assert.match(
+    cssSource,
+    /\.sidebar \.search \.input-wrap\s*\{[^}]*margin-inline:\s*-0\.75rem/s,
+    'The v5 search controls must stay inside the visible sidebar edge'
+);
+assert.match(
+    cssSource,
+    /\.sidebar \.search \.input-wrap > \.clear-button\s*\{[^}]*width:\s*var\(--_button-size, 20px\)[^}]*padding:\s*0/s,
+    'The legacy Themeable clear-button width and padding must not collapse or offset the v5 X icon'
+);
 
 console.log('Docsify v5 search UI and localization tests passed.');
