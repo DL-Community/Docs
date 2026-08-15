@@ -1649,8 +1649,8 @@ body .docsify-pagination-container {
         content: '';
         opacity: 0;
         pointer-events: none;
-        transform: translateX(-100%);
-        transition: opacity var(--duration-medium) var(--ease-out),
+        transform: translateX(calc(-1 * var(--docs-sidebar-width)));
+        transition: opacity var(--duration-medium) var(--ease-drawer),
             transform var(--duration-medium) var(--ease-drawer);
     }
 
@@ -1671,7 +1671,7 @@ body .docsify-pagination-container {
 
     body.ready-transition.ready-fix > .mobile-sidebar-shadow {
         opacity: 0;
-        transition: opacity var(--duration-medium) var(--ease-out),
+        transition: opacity var(--duration-medium) var(--ease-drawer),
             transform var(--duration-medium) var(--ease-drawer);
     }
 

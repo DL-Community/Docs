@@ -40,6 +40,11 @@ assert.match(
     /\.mobile-sidebar-shadow\s*\{[^}]*left:\s*var\(--docs-sidebar-width\);[^}]*width:\s*calc\(100vw - var\(--docs-sidebar-width\)\)/s,
     'The mobile sidebar backdrop must begin after the drawer and cover only the content area'
 );
+assert.match(
+    appCss,
+    /\.mobile-sidebar-shadow\s*\{[^}]*transform:\s*translateX\(calc\(-1 \* var\(--docs-sidebar-width\)\)\);[^}]*transition:\s*opacity var\(--duration-medium\) var\(--ease-drawer\),\s*transform var\(--duration-medium\) var\(--ease-drawer\)/s,
+    'The mobile backdrop and drawer must use the same travel distance, duration, and easing'
+);
 assert.doesNotMatch(
     appCss,
     /\.mobile-sidebar-shadow\s*\{[^}]*width:\s*100vw/s,
