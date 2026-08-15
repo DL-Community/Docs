@@ -1,5 +1,6 @@
 :root {
     --docs-header-height: 64px;
+    --scroll-padding-top: calc(var(--docs-header-height) + 1rem);
     --docs-sidebar-width: 19rem;
     --docs-accent: #2c9cff;
     --docs-accent-strong: #147fd6;
@@ -154,7 +155,7 @@
 }
 
 html {
-    scroll-padding-top: calc(var(--docs-header-height) + 1rem);
+    scroll-padding-top: var(--scroll-padding-top);
 }
 
 body {
@@ -172,6 +173,29 @@ body,
 *:focus-visible {
     outline: 3px solid color-mix(in srgb, var(--docs-accent) 72%, transparent);
     outline-offset: 2px;
+}
+
+#skip-to-content {
+    position: fixed;
+    z-index: 1000;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0 0 var(--docs-radius) var(--docs-radius);
+    background: var(--docs-accent-strong);
+    color: #ffffff;
+    font: 650 0.875rem/1.35 var(--base-font-family);
+    transform: translate(-50%, calc(-100% - 0.5rem));
+    transition: transform var(--duration-fast) var(--ease-out);
+}
+
+#skip-to-content:focus-visible {
+    transform: translate(-50%, 0);
+}
+
+.search .kbd-group {
+    display: none !important;
 }
 
 .docs-header {
