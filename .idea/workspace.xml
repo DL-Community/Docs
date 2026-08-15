@@ -11,15 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dlce/settings/general.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/en/dlce/settings/general.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/settings/accessibility.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/settings/advanced.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/settings/accessibility.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/settings/advanced.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_navbar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/css/docs-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/docs-app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,47 +128,7 @@
       <workItem from="1760820844194" duration="10000" />
       <workItem from="1760820871178" duration="1243000" />
       <workItem from="1786602620015" duration="18324000" />
-      <workItem from="1786676253976" duration="12601000" />
-    </task>
-    <task id="LOCAL-00006" summary="更新游戏设置文档">
-      <option name="closed" value="true" />
-      <created>1745698676285</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1745698676285</updated>
-    </task>
-    <task id="LOCAL-00007" summary="更新游戏设置文档">
-      <option name="closed" value="true" />
-      <created>1745699919586</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1745699919586</updated>
-    </task>
-    <task id="LOCAL-00008" summary="增加自定义后处理枚举值相关的文档">
-      <option name="closed" value="true" />
-      <created>1751594962196</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1751594962196</updated>
-    </task>
-    <task id="LOCAL-00009" summary="增加自定义后处理枚举值相关的文档">
-      <option name="closed" value="true" />
-      <created>1751595025321</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1751595025321</updated>
-    </task>
-    <task id="LOCAL-00010" summary="更新群规">
-      <option name="closed" value="true" />
-      <created>1752677686407</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1752677686407</updated>
+      <workItem from="1786676253976" duration="15025000" />
     </task>
     <task id="LOCAL-00011" summary="增加备案号">
       <option name="closed" value="true" />
@@ -527,7 +482,47 @@
       <option name="project" value="LOCAL" />
       <updated>1786684655502</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update game settings docs">
+      <option name="closed" value="true" />
+      <created>1786697910281</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1786697910281</updated>
+    </task>
+    <task id="LOCAL-00056" summary="fix deployment">
+      <option name="closed" value="true" />
+      <created>1786699288375</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1786699288375</updated>
+    </task>
+    <task id="LOCAL-00057" summary="导航栏增加旧版 wiki 入口">
+      <option name="closed" value="true" />
+      <created>1786699629943</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1786699629943</updated>
+    </task>
+    <task id="LOCAL-00058" summary="-">
+      <option name="closed" value="true" />
+      <created>1786699761883</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1786699761883</updated>
+    </task>
+    <task id="LOCAL-00059" summary="-">
+      <option name="closed" value="true" />
+      <created>1786699971970</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1786699971970</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,9 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Language Badge" />
-    <MESSAGE value="体力方块获取方式。" />
-    <MESSAGE value="navigation" />
     <MESSAGE value="qq" />
     <MESSAGE value="header" />
     <MESSAGE value="basePath" />
@@ -564,7 +556,6 @@
     <MESSAGE value="bug fix&#10;&#10;- breadcrumb navigation&#10;- mobile website layout" />
     <MESSAGE value="refactor" />
     <MESSAGE value="更新角色装饰页面" />
-    <MESSAGE value="-" />
     <MESSAGE value="add last modification date" />
     <MESSAGE value="update level information" />
     <MESSAGE value="add favico support for external links in document" />
@@ -573,7 +564,11 @@
     <MESSAGE value="improvements" />
     <MESSAGE value="add link to main site on navbar" />
     <MESSAGE value="improve navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve navbar" />
+    <MESSAGE value="update game settings docs" />
+    <MESSAGE value="fix deployment" />
+    <MESSAGE value="导航栏增加旧版 wiki 入口" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

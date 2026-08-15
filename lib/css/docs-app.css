@@ -1742,6 +1742,7 @@ body .docsify-pagination-container {
         align-items: stretch;
         overflow: visible;
         gap: 1rem;
+        padding-top: 2rem;
     }
 
     body .docsify-pagination-container .pagination-item {
