@@ -4,7 +4,7 @@
 <!-- desc: "Gameplay introduction" -->
 - [Notes Challenge](/en/dlce/notes-challenge)
 - [Characters](/en/dlce/character)
-<!-- desc: "Level and Music Creator Information" -->
+<!-- desc: "Level and music creator Information" -->
 - [Level Information](/en/dlce/level_information)
 - Settings
   <!-- desc: "Quality, synchronization and language…" -->
