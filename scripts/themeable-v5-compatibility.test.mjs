@@ -98,6 +98,11 @@ assert.match(
     /--sidebar-nav-link-padding:\s*0\.25em 2\.35rem 0\.25em 1\.25rem;[\s\S]*\.sidebar-nav li > a\s*\{[^}]*padding:\s*var\(--sidebar-nav-link-padding\)/s,
     'All sidebar links must share the same horizontal padding token'
 );
+assert.match(
+    appCss,
+    /--sidebar-nav-padding:\s*1rem 0\.75rem;/,
+    'The document tree must use equal top and bottom padding without a trailing blank area'
+);
 assert.doesNotMatch(
     appCss,
     /\.sidebar-nav li > a\[target=['"]_blank['"]\]\s*\{[^}]*padding:/s,

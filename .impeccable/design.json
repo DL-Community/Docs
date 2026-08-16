@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-13T03:27:15.9616151-04:00",
+  "generatedAt": "2026-08-16T04:01:34-04:00",
   "title": "Design System: DLCE Docs",
   "extensions": {
     "colorMeta": {
@@ -18,15 +18,19 @@
       "micro": { "displayName": "Micro Label", "purpose": "Page-outline section labels." }
     },
     "shadows": [
-      { "name": "mobile-drawer", "value": "10px 0 30px rgba(0, 0, 0, 0.22)", "purpose": "Separates the open mobile navigation drawer from content." }
+      { "name": "transient-menu", "value": "0 10px 30px rgba(0, 0, 0, 0.18)", "purpose": "Lifts temporary header menus above the documentation shell." }
     ],
     "motion": [
-      { "name": "fast-state", "value": "150ms ease-out", "purpose": "Hover and active feedback." },
-      { "name": "panel-enter", "value": "220ms ease-out", "purpose": "Page-outline and drawer transitions." }
+      { "name": "fast-state", "value": "150ms cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Hover and active feedback." },
+      { "name": "medium-state", "value": "220ms cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Content movement and page-outline transitions." },
+      { "name": "overlay-drawer", "value": "220ms cubic-bezier(0.32, 0.72, 0, 1)", "purpose": "Compact desktop sidebar and backdrop transitions." },
+      { "name": "docsify-mobile-drawer", "value": "250ms ease", "purpose": "Preserves Docsify v5 mobile sidebar motion." }
     ],
     "breakpoints": [
-      { "name": "rail", "value": "71rem" },
-      { "name": "mobile", "value": "48rem" }
+      { "name": "docsify-core-mobile", "value": "640px" },
+      { "name": "site-mobile-max", "value": "47.99em" },
+      { "name": "compact-desktop-max", "value": "64rem" },
+      { "name": "page-outline-rail-max", "value": "71rem" }
     ]
   },
   "components": [
