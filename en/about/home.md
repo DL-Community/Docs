@@ -55,6 +55,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 ### Minimum
 
+> [!WARNING] 
 > The minimum configuration cannot guarantee a complete game experience.
 
 - **Operating System**: Windows 8 64bit
@@ -84,6 +85,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 ### Minimum
 
+> [!WARNING] 
 > The minimum configuration cannot guarantee a complete game experience.
 
 - **Operating System**: macOS 11
@@ -109,6 +111,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 ### Minimum
 
+> [!WARNING] 
 > The minimum configuration cannot guarantee a complete game experience.
 
 - **Operating System**: macOS 11 or newer
@@ -133,6 +136,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 ### Minimum
 
+> [!WARNING] 
 > The minimum configuration cannot guarantee a complete game experience.
 
 - **Operating System**: iOS 12
@@ -154,6 +158,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 ### Minimum
 
+> [!WARNING] 
 > The minimum configuration cannot guarantee a complete game experience.
 
 - **Operating System**: Android 5.1
