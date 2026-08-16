@@ -245,13 +245,23 @@ assert.match(
 );
 assert.match(
     navigation,
-    /restoreLocation === window\.location\.href[\s\S]*window\.scrollTo\(0, restoreScrollY\)/,
-    'Closing the drawer without navigating must restore the previous document position'
+    /restoreDocumentPath === normalizeRoute\(currentPath\(\)\)[\s\S]*window\.scrollTo\(0, restoreScrollY\)/,
+    'Closing the drawer on the same document, including heading navigation, must restore the previous position first'
 );
 assert.match(
     navigation,
     /syncMobileSidebarScrollLock\(mobile && expanded\);/,
     'The scroll lock must follow the synchronized mobile drawer state'
+);
+assert.match(
+    navigation,
+    /new MutationObserver\(function \(\) \{[\s\S]*syncSidebarToggleState\(\);[\s\S]*\}\)\.observe\(sidebar, \{\s*attributes:\s*true,\s*attributeFilter:\s*\['class'\]\s*\}\);/,
+    'Every Docsify sidebar class change must synchronize the backdrop, scroll lock, and toggle state'
+);
+assert.match(
+    navigation,
+    /function resetNewDocumentScrollPosition\(\) \{[\s\S]*nextPath !== lastCompletedDocumentPath[\s\S]*if \(!pathChanged \|\| currentHeadingId\(\)\) return;[\s\S]*requestAnimationFrame[\s\S]*window\.scrollTo\(0, 0\);[\s\S]*hook\.doneEach[\s\S]*resetNewDocumentScrollPosition\(\);/,
+    'Completed document navigation must return to the top without overriding same-page heading links'
 );
 assert.match(
     navigation,
@@ -340,8 +350,8 @@ assert.match(
 );
 assert.match(
     navigation,
-    /!window\.matchMedia\(docsifyCoreMobileMedia\)\.matches[\s\S]*sidebar\.classList\.contains\('show'\)[\s\S]*!navigationLinkIsExternal\(link\)[\s\S]*toggle\.click\(\)/,
-    'Links in the 641-767px drawer range must retain automatic dismissal beyond Docsify core mobile detection'
+    /!window\.matchMedia\(docsifyCoreMobileMedia\)\.matches[\s\S]*!navigationLinkIsExternal\(link\)[\s\S]*window\.setTimeout\(function \(\) \{[\s\S]*sidebar\.classList\.contains\('show'\)[\s\S]*resetDocsifyV5MobileSidebarState\(toggle, sidebar\);[\s\S]*syncSidebarToggleState\(\);[\s\S]*\}, 0\);/,
+    'Links in the 641-767px drawer range must dismiss after routing so Docsify auto2top is preserved'
 );
 assert.doesNotMatch(
     appCss,
