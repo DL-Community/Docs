@@ -215,6 +215,16 @@ assert.match(
 );
 assert.match(
     appCss,
+    /\.sidebar-nav,\s*\.page-toc-rail\s*\{[^}]*flex:\s*1 1 0;[^}]*min-height:\s*0;/s,
+    'The mobile page tree and page outline must divide their available sidebar height evenly'
+);
+assert.match(
+    appCss,
+    /\.page-toc-rail\s*\{[^}]*order:\s*3;[^}]*max-height:\s*none;/s,
+    'The mobile page outline must not retain the narrower-layout viewport-height cap'
+);
+assert.match(
+    appCss,
     /body\.mobile-sidebar-scroll-locked \.mobile-sidebar-shadow\s*\{[^}]*touch-action:\s*none;/s,
     'Swiping the open drawer backdrop must not pan the page behind it'
 );

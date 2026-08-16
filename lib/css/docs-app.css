@@ -2304,14 +2304,19 @@ body .docsify-pagination-container {
         outline-offset: -2px;
     }
 
-    .sidebar-nav {
+    .sidebar-nav,
+    .page-toc-rail {
         flex: 1 1 0;
-        order: 2;
         min-height: 0;
+    }
+
+    .sidebar-nav {
+        order: 2;
     }
 
     .page-toc-rail {
         order: 3;
+        max-height: none;
     }
 
     main > .content {
