@@ -250,27 +250,27 @@ assert.match(
 );
 assert.match(
     navigation,
-    /syncMobileSidebarScrollLock\(mobile && expanded\);/,
-    'The scroll lock must follow the synchronized mobile drawer state'
+    /syncMobileSidebarScrollLock\(layoutTier === 'mobile' && expanded\);/,
+    'The scroll lock must follow only the mobile tier drawer state'
 );
 assert.match(
     navigation,
-    /new MutationObserver\(function \(\) \{[\s\S]*syncSidebarToggleState\(\);[\s\S]*\}\)\.observe\(sidebar, \{\s*attributes:\s*true,\s*attributeFilter:\s*\['class'\]\s*\}\);/,
-    'Every Docsify sidebar class change must synchronize the backdrop, scroll lock, and toggle state'
+    /new MutationObserver\(function \(\) \{[\s\S]*docsifyExpanded === sidebarExpanded[\s\S]*!docsifyExpanded[\s\S]*sidebarExpanded = false;[\s\S]*setDocsifyV5SidebarExpanded\(toggle, sidebar, sidebarExpanded\);[\s\S]*\}\)\.observe\(sidebar, \{/,
+    'The controller must accept native dismissal while rejecting unsolicited Docsify expansion'
+);
+assert.doesNotMatch(
+    navigation,
+    /resetNewDocumentScrollPosition|lastCompletedDocumentPath/,
+    'Document auto2top must remain owned by Docsify instead of a second completion hook'
 );
 assert.match(
     navigation,
-    /function resetNewDocumentScrollPosition\(\) \{[\s\S]*nextPath !== lastCompletedDocumentPath[\s\S]*if \(!pathChanged \|\| currentHeadingId\(\)\) return;[\s\S]*requestAnimationFrame[\s\S]*window\.scrollTo\(0, 0\);[\s\S]*hook\.doneEach[\s\S]*resetNewDocumentScrollPosition\(\);/,
-    'Completed document navigation must return to the top without overriding same-page heading links'
+    /mobileBackdrop\.addEventListener\('click',[\s\S]*setDocsifyV5SidebarExpanded\(toggle, sidebar, false\)/,
+    'Clicking the overlay backdrop must close the drawer through the controller'
 );
 assert.match(
     navigation,
-    /mobileBackdrop\.addEventListener\('click',[\s\S]*?toggle\.click\(\)/,
-    'Clicking the narrow-screen backdrop must close the drawer through its existing toggle'
-);
-assert.match(
-    navigation,
-    /mobileBackdrop\.addEventListener\('click',[\s\S]*window\.matchMedia\(docsCompactDesktopMedia\)\.matches[\s\S]*toggle\.click\(\)/,
+    /mobileBackdrop\.addEventListener\('click',[\s\S]*currentSidebarLayoutTier\(\) === 'wide'[\s\S]*setDocsifyV5SidebarExpanded\(toggle, sidebar, false\)/,
     'The shared overlay backdrop must dismiss both compact desktop and mobile sidebars'
 );
 assert.match(
@@ -290,23 +290,23 @@ assert.match(
 );
 assert.match(
     navigation,
-    /\(mobileNow && !wasMobile\) \|\|\s*\(compactDesktopNow && !wasCompactDesktop\)[\s\S]*resetDocsifyV5MobileSidebarState\(/,
-    'Entering either constrained layout must align the default closed sidebar state'
+    /function applySidebarLayoutTier\(toggle, sidebar\)[\s\S]*nextTier !== sidebarLayoutTier[\s\S]*setDocsifyV5SidebarExpanded\(toggle, sidebar, nextTier === 'wide'\)/,
+    'Every tier transition must set one explicit default: open only on wide desktop'
 );
 assert.match(
     navigation,
-    /docsifyCoreMobileQuery\.addEventListener\('change',[\s\S]*!event\.matches &&[\s\S]*window\.matchMedia\(docsMobileLayoutMedia\)\.matches[\s\S]*resetDocsifyV5MobileSidebarState\(toggle, sidebar\);[\s\S]*syncSidebarToggleState\(\);/,
-    'Leaving Docsify mobile detection must not open the drawer before the site layout leaves mobile mode'
+    /toggle\.addEventListener\('click', function \(event\) \{[\s\S]*event\.stopImmediatePropagation\(\);[\s\S]*setDocsifyV5SidebarExpanded\(toggle, sidebar, !sidebarExpanded\);[\s\S]*\}, true\);/,
+    'The site controller must intercept the toggle before Docsify applies its independent breakpoint state'
+);
+assert.doesNotMatch(
+    navigation,
+    /docsifyCoreMobileMedia|docsifyCoreMobileQuery|toggle\.click\(\)/,
+    'The controller must not depend on Docsify\'s 640px breakpoint or recursive synthetic clicks'
 );
 assert.match(
     navigation,
-    /!mobileNow &&\s*!compactDesktopNow &&\s*\(wasMobile \|\| wasCompactDesktop\) &&\s*usesDocsifyV5SidebarState\(sidebar\) &&\s*!sidebar\.classList\.contains\('show'\)[\s\S]*?toggle\.click\(\);/,
-    'Only entering wide desktop must restore the sidebar through Docsify native state'
-);
-assert.match(
-    navigation,
-    /var docsMobileLayoutMedia = '\(max-width: 47\.99em\)';[\s\S]*var docsCompactDesktopMedia = '\(max-width: 64rem\)';[\s\S]*var docsifyCoreMobileMedia = '\(max-width: 640px\)';/,
-    'Mobile, compact desktop, and Docsify core behavior breakpoints must remain explicit'
+    /var docsMobileLayoutMedia = '\(max-width: 47\.99em\)';[\s\S]*var docsCompactDesktopMedia = '\(max-width: 64rem\)';[\s\S]*function currentSidebarLayoutTier\(\)[\s\S]*return 'mobile';[\s\S]*return 'compact';[\s\S]*return 'wide';/,
+    'The site must expose exactly three content-driven sidebar layout tiers'
 );
 assert.match(
     appCss,
@@ -325,7 +325,7 @@ assert.match(
 );
 assert.match(
     navigation,
-    /var layoutTierChanged =[\s\S]*mobileNow !== wasMobile \|\|[\s\S]*compactDesktopNow !== wasCompactDesktop;[\s\S]*document\.body\.classList\.add\('sidebar-breakpoint-sync'\)[\s\S]*sidebar\.getBoundingClientRect\(\);[\s\S]*requestAnimationFrame[\s\S]*document\.body\.classList\.remove\('sidebar-breakpoint-sync'\)/,
+    /function applySidebarLayoutTier\(toggle, sidebar\)[\s\S]*document\.body\.classList\.add\('sidebar-breakpoint-sync'\)[\s\S]*sidebar\.getBoundingClientRect\(\);[\s\S]*requestAnimationFrame[\s\S]*document\.body\.classList\.remove\('sidebar-breakpoint-sync'\)/,
     'Responsive tier changes must suppress unintended sidebar travel for one frame'
 );
 assert.match(
@@ -350,8 +350,13 @@ assert.match(
 );
 assert.match(
     navigation,
-    /!window\.matchMedia\(docsifyCoreMobileMedia\)\.matches[\s\S]*!navigationLinkIsExternal\(link\)[\s\S]*window\.setTimeout\(function \(\) \{[\s\S]*sidebar\.classList\.contains\('show'\)[\s\S]*resetDocsifyV5MobileSidebarState\(toggle, sidebar\);[\s\S]*syncSidebarToggleState\(\);[\s\S]*\}, 0\);/,
-    'Links in the 641-767px drawer range must dismiss after routing so Docsify auto2top is preserved'
+    /sidebar\.addEventListener\('click', function \(event\) \{[\s\S]*currentSidebarLayoutTier\(\) === 'mobile'[\s\S]*sidebarLinkTargetsCurrentHeading\(link\)[\s\S]*syncMobileSidebarScrollLock\(false\);[\s\S]*\}, true\);/,
+    'Same-document heading links must unlock before Docsify starts smooth scrolling'
+);
+assert.match(
+    navigation,
+    /currentSidebarLayoutTier\(\) !== 'mobile'[\s\S]*navigationLinkIsExternal\(link\)[\s\S]*window\.setTimeout\(function \(\) \{[\s\S]*setDocsifyV5SidebarExpanded\(toggle, sidebar, false\);/,
+    'All internal mobile links must dismiss through the controller after Docsify receives the click'
 );
 assert.doesNotMatch(
     appCss,
