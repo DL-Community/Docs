@@ -165,6 +165,11 @@ assert.match(
 );
 assert.match(
     appCss,
+    /@media \(max-width: 64rem\)\s*\{[\s\S]*?\.docs-header > \.sidebar-toggle\[aria-expanded='true'\][\s\S]*?rotate\(45deg\)[\s\S]*?opacity:\s*0;[\s\S]*?rotate\(-45deg\)[\s\S]*?\}/s,
+    'Mobile and compact-desktop overlay drawers must share the hamburger-to-close animation'
+);
+assert.match(
+    appCss,
     /\.sidebar\s*\{[^}]*bottom:\s*auto;[^}]*height:\s*calc\(100vh - var\(--docs-header-height\)\);[^}]*height:\s*calc\(100dvh - var\(--docs-header-height\)\);/s,
     'The mobile sidebar must follow the dynamic visual viewport while retaining a legacy viewport fallback'
 );
@@ -175,8 +180,8 @@ assert.match(
 );
 assert.match(
     appCss,
-    /\.mobile-sidebar-shadow\s*\{[^}]*transform:\s*translateX\(calc\(-1 \* var\(--docs-sidebar-width\)\)\);[^}]*transition:\s*opacity var\(--duration-medium\) var\(--ease-drawer\),\s*transform var\(--duration-medium\) var\(--ease-drawer\)/s,
-    'The mobile backdrop and drawer must use the same travel distance, duration, and easing'
+    /\.mobile-sidebar-shadow\s*\{[^}]*transform:\s*translateX\(calc\(-1 \* var\(--docs-sidebar-width\)\)\);[^}]*transition:\s*opacity 250ms ease,\s*transform 250ms ease/s,
+    'The mobile backdrop must stay synchronized with the Docsify v5 drawer animation'
 );
 assert.doesNotMatch(
     appCss,
@@ -250,6 +255,11 @@ assert.match(
 );
 assert.match(
     navigation,
+    /mobileBackdrop\.addEventListener\('click',[\s\S]*window\.matchMedia\(docsCompactDesktopMedia\)\.matches[\s\S]*toggle\.click\(\)/,
+    'The shared overlay backdrop must dismiss both compact desktop and mobile sidebars'
+);
+assert.match(
+    navigation,
     /mobileBackdrop\.addEventListener\('click', function \(event\) \{\s*if \(event\.target !== mobileBackdrop\) return;/,
     'The mobile sidebar backdrop handler must ignore clicks from nested visual elements'
 );
@@ -265,8 +275,68 @@ assert.match(
 );
 assert.match(
     navigation,
-    /if \(mobileNow && !wasMobile\) \{\s*resetDocsifyV5MobileSidebarState\(/,
-    'Crossing into the mobile breakpoint must align Docsify v5 sidebar state before the first tap'
+    /\(mobileNow && !wasMobile\) \|\|\s*\(compactDesktopNow && !wasCompactDesktop\)[\s\S]*resetDocsifyV5MobileSidebarState\(/,
+    'Entering either constrained layout must align the default closed sidebar state'
+);
+assert.match(
+    navigation,
+    /docsifyCoreMobileQuery\.addEventListener\('change',[\s\S]*!event\.matches &&[\s\S]*window\.matchMedia\(docsMobileLayoutMedia\)\.matches[\s\S]*resetDocsifyV5MobileSidebarState\(toggle, sidebar\);[\s\S]*syncSidebarToggleState\(\);/,
+    'Leaving Docsify mobile detection must not open the drawer before the site layout leaves mobile mode'
+);
+assert.match(
+    navigation,
+    /!mobileNow &&\s*!compactDesktopNow &&\s*\(wasMobile \|\| wasCompactDesktop\) &&\s*usesDocsifyV5SidebarState\(sidebar\) &&\s*!sidebar\.classList\.contains\('show'\)[\s\S]*?toggle\.click\(\);/,
+    'Only entering wide desktop must restore the sidebar through Docsify native state'
+);
+assert.match(
+    navigation,
+    /var docsMobileLayoutMedia = '\(max-width: 47\.99em\)';[\s\S]*var docsCompactDesktopMedia = '\(max-width: 64rem\)';[\s\S]*var docsifyCoreMobileMedia = '\(max-width: 640px\)';/,
+    'Mobile, compact desktop, and Docsify core behavior breakpoints must remain explicit'
+);
+assert.match(
+    appCss,
+    /@media \(max-width: 47\.99em\) \{[\s\S]*?\.sidebar\s*\{[^}]*transform:\s*none;[^}]*translate:\s*calc\(-1 \* var\(--docs-sidebar-width\)\);/s,
+    'The closed mobile drawer must use the Docsify v5 translate-based position'
+);
+assert.match(
+    appCss,
+    /body:has\(\.sidebar\.show\) \.sidebar\s*\{[^}]*transform:\s*none;[^}]*translate:\s*0;/s,
+    'The open mobile drawer must follow Docsify v5 sidebar state directly'
+);
+assert.match(
+    appCss,
+    /@media \(min-width: 48em\) \{[\s\S]*?\.sidebar:not\(\.show\)\s*\{[^}]*transform:\s*translateX\(calc\(-1 \* var\(--docs-sidebar-width\)\)\);[^}]*\}[\s\S]*?\.sidebar:not\(\.show\) \+ \.content\s*\{[^}]*margin-left:\s*0;/s,
+    'Desktop CSS must follow Docsify sidebar state immediately without waiting for the body.close mirror'
+);
+assert.match(
+    navigation,
+    /var layoutTierChanged =[\s\S]*mobileNow !== wasMobile \|\|[\s\S]*compactDesktopNow !== wasCompactDesktop;[\s\S]*document\.body\.classList\.add\('sidebar-breakpoint-sync'\)[\s\S]*sidebar\.getBoundingClientRect\(\);[\s\S]*requestAnimationFrame[\s\S]*document\.body\.classList\.remove\('sidebar-breakpoint-sync'\)/,
+    'Responsive tier changes must suppress unintended sidebar travel for one frame'
+);
+assert.match(
+    appCss,
+    /body\.sidebar-breakpoint-sync \.sidebar\s*\{[^}]*transition-property:\s*background-color,\s*border-color;[^}]*\}[\s\S]*body\.sidebar-breakpoint-sync main > \.content\s*\{[^}]*transition:\s*none;/s,
+    'Breakpoint synchronization must disable only positional sidebar and content motion'
+);
+assert.match(
+    appCss,
+    /@media \(max-width: 47\.99em\) \{[\s\S]*?\.docs-brand\s*\{[^}]*flex:\s*1 1 0;[^}]*max-width:\s*none;[^}]*\}[\s\S]*?\.docs-brand > span:not\(\.docs-brand-logo\)\s*\{[^}]*flex:\s*1 1 auto;[^}]*min-width:\s*0;[^}]*max-width:\s*none;/s,
+    'The mobile title must consume all space left between fixed header controls before ellipsizing'
+);
+assert.match(
+    appCss,
+    /@media \(max-width: 47\.99em\) \{[\s\S]*\.sidebar\s*\{[^}]*transition:\s*translate 250ms ease,/s,
+    'The mobile drawer must retain Docsify v5 original motion timing while desktop keeps the site animation'
+);
+assert.match(
+    appCss,
+    /@media \(min-width: 48em\) and \(max-width: 64rem\) \{[\s\S]*?\.sidebar \+ \.content,[\s\S]*?body:has\(\.sidebar\.show\) \.sidebar \+ \.content\s*\{[^}]*margin-left:\s*0;[\s\S]*?body:has\(\.sidebar\.show\) \.mobile-sidebar-shadow\s*\{[^}]*pointer-events:\s*auto;[^}]*transform:\s*translateX\(0\);/s,
+    'Compact desktop must overlay its sidebar without narrowing the desktop content canvas'
+);
+assert.match(
+    navigation,
+    /!window\.matchMedia\(docsifyCoreMobileMedia\)\.matches[\s\S]*sidebar\.classList\.contains\('show'\)[\s\S]*!navigationLinkIsExternal\(link\)[\s\S]*toggle\.click\(\)/,
+    'Links in the 641-767px drawer range must retain automatic dismissal beyond Docsify core mobile detection'
 );
 assert.doesNotMatch(
     appCss,

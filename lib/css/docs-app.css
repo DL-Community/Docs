@@ -284,16 +284,34 @@ body:has(.sidebar.show) .docs-header > .sidebar-toggle {
     .sidebar {
         transform: translateX(0);
     }
+
+    .sidebar:not(.show) {
+        transform: translateX(calc(-1 * var(--docs-sidebar-width)));
+    }
+
+    .sidebar:not(.show) + .content {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 47.99em) {
     .sidebar {
-        transform: translateX(calc(-1 * var(--docs-sidebar-width)));
+        transform: none;
+        translate: calc(-1 * var(--docs-sidebar-width));
     }
 
-    body.close .sidebar {
-        transform: translateX(0);
+    body:has(.sidebar.show) .sidebar {
+        transform: none;
+        translate: 0;
     }
+}
+
+body.sidebar-breakpoint-sync .sidebar {
+    transition-property: background-color, border-color;
+}
+
+body.sidebar-breakpoint-sync main > .content {
+    transition: none;
 }
 
 body,
@@ -1937,6 +1955,58 @@ body .docsify-pagination-container {
     }
 }
 
+@media (max-width: 64rem) {
+    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0.45);
+    }
+
+    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+}
+
+@media (min-width: 48em) and (max-width: 64rem) {
+    .sidebar + .content,
+    body:has(.sidebar.show) .sidebar + .content {
+        margin-left: 0;
+    }
+
+    .mobile-sidebar-shadow {
+        display: block;
+        position: fixed;
+        z-index: 49;
+        top: var(--docs-header-height);
+        bottom: 0;
+        left: var(--docs-sidebar-width);
+        width: calc(100vw - var(--docs-sidebar-width));
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(calc(-1 * var(--docs-sidebar-width)));
+        transition: opacity var(--duration-medium) var(--ease-drawer),
+            transform var(--duration-medium) var(--ease-drawer);
+    }
+
+    .mobile-sidebar-shadow::before {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 1.5rem;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0));
+        content: '';
+        pointer-events: none;
+    }
+
+    body:has(.sidebar.show) .mobile-sidebar-shadow {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+}
+
 @media (max-width: 47.99em) {
     :root {
         --docs-header-height: 58px;
@@ -1964,12 +2034,15 @@ body .docsify-pagination-container {
     }
 
     .docs-brand {
-        flex-basis: auto;
+        flex: 1 1 0;
+        max-width: none;
     }
 
-    .docs-brand span {
+    .docs-brand > span:not(.docs-brand-logo) {
         display: block;
-        max-width: min(48vw, 15rem);
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: none;
         font-size: 0.92rem;
     }
 
@@ -1996,25 +2069,14 @@ body .docsify-pagination-container {
         height: 38px;
     }
 
-    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(1) {
-        transform: translateY(0) rotate(45deg);
-    }
-
-    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(2) {
-        opacity: 0;
-        transform: scaleX(0.45);
-    }
-
-    .docs-header > .sidebar-toggle[aria-expanded='true'] .sidebar-toggle-button span:nth-child(3) {
-        transform: translateY(0) rotate(-45deg);
-    }
-
     .sidebar {
         z-index: 105;
         bottom: auto;
         height: calc(100vh - var(--docs-header-height));
         height: calc(100dvh - var(--docs-header-height));
         box-shadow: none;
+        transition: translate 250ms ease, background-color 180ms var(--ease-out),
+            border-color 180ms var(--ease-out);
     }
 
     body.mobile-sidebar-scroll-locked .sidebar-nav {
@@ -2039,8 +2101,7 @@ body .docsify-pagination-container {
         opacity: 0;
         pointer-events: none;
         transform: translateX(calc(-1 * var(--docs-sidebar-width)));
-        transition: opacity var(--duration-medium) var(--ease-drawer),
-            transform var(--duration-medium) var(--ease-drawer);
+        transition: opacity 250ms ease, transform 250ms ease;
     }
 
     .mobile-sidebar-shadow::before {
@@ -2064,8 +2125,7 @@ body .docsify-pagination-container {
 
     body.ready-transition.ready-fix > .mobile-sidebar-shadow {
         opacity: 0;
-        transition: opacity var(--duration-medium) var(--ease-drawer),
-            transform var(--duration-medium) var(--ease-drawer);
+        transition: opacity 250ms ease, transform 250ms ease;
     }
 
     body.ready-transition.ready-fix.close > .mobile-sidebar-shadow {

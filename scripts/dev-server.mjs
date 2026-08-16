@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { watch } from 'node:fs';
+import { networkInterfaces } from 'node:os';
 import path from 'node:path';
 
 const repositoryRoot = process.cwd();
@@ -122,8 +123,26 @@ const activeWatchers = watchModificationSources();
 const server = createServer(serve);
 
 server.listen(port, host, function () {
-    console.log(`Docs preview: http://${host}:${port}${basePath}`);
+    console.log('');
+    console.log('DLCE Wiki preview server is running.');
+    console.log(`Local:   http://127.0.0.1:${port}${basePath}`);
+
+    const networkAddresses = Object.values(networkInterfaces())
+        .flat()
+        .filter(function (address) {
+            return address && address.family === 'IPv4' && !address.internal;
+        })
+        .map(function (address) {
+            return address.address;
+        });
+
+    Array.from(new Set(networkAddresses)).forEach(function (address) {
+        console.log(`Network: http://${address}:${port}${basePath}`);
+    });
+
+    console.log('');
     console.log('Markdown modification records refresh automatically.');
+    console.log('Press Ctrl+C to stop the server.');
 });
 
 function shutdown() {
