@@ -14,8 +14,7 @@
 ### **iOS on Mac**
 
 > [!WARNING]
-> **Note**<br>
-Due to Mac system limitations, some settings that are not available on Mac will still be displayed.
+> Due to Mac system limitations, some settings that are not available on Mac will still be displayed.
 Settings not listed below are not supported on Mac.
 
 <!-- tabs:start -->

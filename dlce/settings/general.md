@@ -8,8 +8,7 @@
 > 点击游戏主界面右下角的菜单图标进入游戏设置。
 
 > [!IMPORTANT]
-> **注意**<br>
-下文中 macOS 和 iOS on Mac 分别代表不同平台。
+> 下文中 macOS 和 iOS on Mac 分别代表不同平台。
 </br>前者为 macOS 电脑版本，后者为 iOS 版本运行于 M 芯片 Mac 电脑的版本。
 
 ## 语言
