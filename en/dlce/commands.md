@@ -1,6 +1,7 @@
 # Launch Options
 <!-- last-modified -->
 
+> [!IMPORTANT]
 > **Available for**<br>Windows, macOS
 
 ## Config File :id=configs
@@ -46,7 +47,8 @@ FrameRate=60
 Server=0
 Timeout=10
 ```
-?> If some configurations overlap with commands in [Launch Arguments](#args), the game will prioritize the settings from [Launch Arguments](#args).
+> [!NOTE]
+> If some configurations overlap with commands in [Launch Arguments](#args), the game will prioritize the settings from [Launch Arguments](#args).
 
 | Name                 | Description                                                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -63,10 +65,14 @@ Timeout=10
 
 ## Launch Arguments :id=args
 
-?> The command with strikethrough format indicates that it is deprecated and no longer available in the latest version
+> [!NOTE]
+> The command with strikethrough format indicates that it is deprecated and no longer available in the latest version
 
-> **Tips**<br>
-> To apply these commands, you can either apply them by launching the parameters from the command line or by placing them under the `[Command Line Args]` of the configuration file above. **Do note that，DLCE Classic only supports these commands via command line, and some commands are unavailable in Classic.**
+> [!TIP]
+> To apply these commands, you can either apply them by launching the parameters from the command line or by placing them under the `[Command Line Args]` of the configuration file above. 
+
+> [!WARNING]
+> DLCE Legacy only supports these commands via command line, and some commands are unavailable in Legacy.
 
 | Commands                   | Description                                                                                                                                                                                                                                                                        | Notes                                                                                                                                                                                                  |
 |:---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

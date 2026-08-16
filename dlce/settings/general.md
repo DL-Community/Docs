@@ -1,10 +1,14 @@
 # 通用设置
 <!-- last-modified -->
 
-> - 下列选项并非在所有平台上都可用，具体以游戏实际版本为准。
-> - 点击游戏主界面右下角的菜单图标进入游戏设置。
+> [!IMPORTANT]
+> 下列选项并非在所有平台上都可用，具体以游戏实际版本为准。
 
-!> **注意**<br>
+> [!TIP]
+> 点击游戏主界面右下角的菜单图标进入游戏设置。
+
+> [!IMPORTANT]
+> **注意**<br>
 下文中 macOS 和 iOS on Mac 分别代表不同平台。
 </br>前者为 macOS 电脑版本，后者为 iOS 版本运行于 M 芯片 Mac 电脑的版本。
 
@@ -18,7 +22,8 @@
    <!--b>详情</b-->
 <!--/summary-->
 
-!> 下列自动调节**不建议**同时开启多个，否则可能会导致**音画同步修正过度**。
+> [!WARNING]
+> 下列自动调节**不建议**同时开启多个，否则可能会导致**音画同步修正过度**。
 
 <!-- tabs:start -->
 
@@ -45,9 +50,11 @@
 ## 画质
 - 调整游戏**场景 / 画面复杂度及其质量**。
 
-!> 并非所有关卡都包含内置后期处理效果
+> [!IMPORTANT]
+> 并非所有关卡都包含内置后期处理效果
 
-?> 对于玩家[自定义后期处理效果](/dlce/custom-post-processing/v2.md)，不论哪种画质模式，都会始终应用到关卡中。
+> [!IMPORTANT]
+> 对于玩家[自定义后期处理效果](/dlce/custom-post-processing/v2.md)，不论哪种画质模式，都会始终应用到关卡中。
 
 | 画质           | 非常低 | 低 | 中  | 高  | 极高 | 极限（仅电脑端） |
 |--------------|-----|---|----|----|----|----------|
@@ -84,7 +91,8 @@
 
 <!-- tabs:end -->
 
-?> 分辨率越低，游戏越流畅。
+> [!TIP]
+> 分辨率越低，游戏越流畅。
 
 <!--/details-->
 
@@ -115,6 +123,7 @@
    <!--b>详情</b-->
 <!--/summary-->
 
+> [!IMPORTANT]
 > **适用于**<br>Windows、macOS、iOS on Mac、Android。
 - 选择抗锯齿模式。
 
@@ -143,6 +152,7 @@
    <!--b>详情</b-->
 <!--/summary-->
 
+> [!IMPORTANT]
 > **适用于**<br>Windows、macOS。
 - 调整键位绑定。
 
@@ -153,11 +163,13 @@
 <!--/details-->
 
 ## 辅助功能
-?> 见 [辅助功能](/dlce/settings/accessibility.md)。
+> [!NOTE]
+> 见 [辅助功能](/dlce/settings/accessibility.md)。
 
 
 ## 高级设置 :id=advanced-settings
-?> 见 [高级设置](/dlce/settings/advanced.md)。
+> [!NOTE]
+> 见 [高级设置](/dlce/settings/advanced.md)。
 
 <blockquote>
 

@@ -113,7 +113,7 @@ assert.ok(transformed.includes('    <!-- last-modified -->'));
 assert.ok(transformed.includes('```md\n<!-- last-modified -->\n```'));
 assert.ok(transformed.includes('<!-- unknown-component -->'));
 
-const calloutTransformed = hooks.beforeEach([
+const legacySyntaxSource = [
     '?> Legacy info with `inline code`.',
     '',
     '!> Legacy caution.',
@@ -125,35 +125,24 @@ const calloutTransformed = hooks.beforeEach([
     '```md',
     '?> Fenced code stays unchanged.',
     '```'
-].join('\n'));
+].join('\n');
+const legacySyntaxTransformed = hooks.beforeEach(legacySyntaxSource);
 
-assert.match(
-    calloutTransformed,
-    /> \[!NOTE\]\n> Legacy info with `inline code`\./
+assert.equal(
+    legacySyntaxTransformed,
+    legacySyntaxSource,
+    'Legacy ?> and !> syntax must pass through to Docsify v5 without custom mapping'
 );
-assert.match(calloutTransformed, /> \[!CAUTION\]\n> Legacy caution\./);
-assert.match(
-    calloutTransformed,
-    /> > \[!NOTE\]\n> > Nested legacy info\./
-);
-assert.match(calloutTransformed, /^ {4}\?> Indented code stays unchanged\.$/m);
-assert.match(calloutTransformed, /```md\n\?> Fenced code stays unchanged\.\n```/);
 
-const crlfCalloutTransformed = hooks.beforeEach([
+const crlfLegacySyntaxSource = [
     '?> Windows info.',
     '',
     '!> Windows caution.',
     '',
     '> ?> Nested Windows info.'
-].join('\r\n'));
+].join('\r\n');
 
-assert.match(crlfCalloutTransformed, /> \[!NOTE\]\r\n> Windows info\./);
-assert.match(crlfCalloutTransformed, /> \[!CAUTION\]\r\n> Windows caution\./);
-assert.match(
-    crlfCalloutTransformed,
-    /> > \[!NOTE\]\r\n> > Nested Windows info\./
-);
-assert.doesNotMatch(crlfCalloutTransformed, /(^|\r\n)[!?]>/);
+assert.equal(hooks.beforeEach(crlfLegacySyntaxSource), crlfLegacySyntaxSource);
 
 const rendered = await renderAfterEach(
     hooks.afterEach,

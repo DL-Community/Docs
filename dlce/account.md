@@ -10,7 +10,8 @@
 - 玩家需要前往网站注册账号后才能登录游戏。
 
 ## Game Center
-!> 仅支持 iOS
+> [!IMPORTANT]
+> 仅支持 iOS
 
 - 由 Apple 官方提供的 Game Center 身份登录；
 - 云存档由 iCloud 提供，玩家需要开启游戏的 iCloud 读写权限才能支持云存档；

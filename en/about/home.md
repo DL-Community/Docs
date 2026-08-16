@@ -2,7 +2,8 @@
 
 Welcome to the DLCE Database, where the latest content of this game will be periodically updated.
 
-?> The English translations are still WIP, some content may only available in Chinese.
+> [!NOTE]
+> The English translations are still WIP, some content may only available in Chinese.
 You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the page.
 
 ## Downloads :id=downloads
@@ -31,11 +32,14 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 <!-- tab:Windows -->
 
-?> Requires a 64-bit processor and operating system.
+> [!NOTE]
+> Requires a 64-bit processor and operating system.
 
-?> Windows 7 or older systems are not supported.
+> [!WARNING]
+> Windows 7 or older systems are not supported.
 
-!> The [Microsoft VC++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version) is required to run the game on Windows.
+> [!CAUTION]
+> The [Microsoft VC++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version) is required to run the game on Windows.
 
 ### Recommended
 
@@ -63,9 +67,11 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 <!-- tab:macOS -->
 
-?> Requires a 64-bit processor and operating system.
+> [!NOTE]
+> Requires a 64-bit processor and operating system.
 
-!> Intel-based Mac is not supported by this game.
+> [!WARNING]
+> Intel-based Mac is not supported by this game.
 
 ### Recommended
 
@@ -89,7 +95,8 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 <!-- tab:iOS on Mac -->
 
-?> Requires a 64-bit processor and operating system.
+> [!NOTE]
+> Requires a 64-bit processor and operating system.
 
 ### Recommended
 
@@ -113,7 +120,8 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 
 <!-- tab:iOS -->
 
-?> Requires a 64-bit processor and operating system.
+> [!NOTE]
+> Requires a 64-bit processor and operating system.
 
 ### Recommended
 

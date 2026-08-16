@@ -4,14 +4,17 @@
 <!-- tabs:start -->
 ### **Windows**
 
-?> See [Launch Options](/en/dlce/commands.md)。
+> [!NOTE]
+> See [Launch Options](/en/dlce/commands.md)。
 
 ### **macOS**
-?> See [Launch Options](/en/dlce/commands.md)。
+> [!NOTE]
+> See [Launch Options](/en/dlce/commands.md)。
 
 ### **iOS on Mac**
 
-!> **Note**<br>
+> [!WARNING]
+> **Note**<br>
 Due to Mac system limitations, some settings that are not available on Mac will still be displayed.
 Settings not listed below are not supported on Mac.
 
@@ -30,7 +33,8 @@ Settings not listed below are not supported on Mac.
 ### Frame Rate
 - Adjust the maximum frame rate of the game, up to 120 FPS.
 
-?> 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
+> [!NOTE]
+> 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
 
 ### Display Frame Rate
 
@@ -44,7 +48,8 @@ Settings not listed below are not supported on Mac.
 ### Login Method
 - Choose a method to login the game, either using DLRS GAS or Game Center.
 
-!> Game progress does not share between login methods.
+> [!WARNING]
+> Game progress does not share between login methods.
 
 ### Server
 - Select the region for the level-downloading server.
@@ -84,7 +89,8 @@ Settings not listed below are not supported on Mac.
 ### Frame Rate
 - Adjust the maximum frame rate of the game, up to 120 FPS.
 
-?> 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
+> [!NOTE]
+> 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
 
 ### Display Frame Rate
 
@@ -98,7 +104,8 @@ Settings not listed below are not supported on Mac.
 ### Login Method
 - Choose a method to login the game, either using DLRS GAS or Game Center.
 
-!> Game progress does not share between login methods.
+> [!WARNING]
+> Game progress does not share between login methods.
 
 ### Server
 - Select the region for the level-downloading server.

@@ -1,11 +1,14 @@
 # Settings
 <!-- last-modified -->
 
-> - The following options are not available on all platforms. Please refer to the actual in-game version for specifics.
-> - Click the menu icon in the lower right corner of the game's main interface to access the settings.
+> [!IMPORTANT]
+> The following options are not available on all platforms. Please refer to the actual in-game version for specifics.
 
-!> **Note**<br>
-In the following text, macOS and iOS on Mac refer to different platforms respectively.<br>
+> [!TIP]
+> Click the menu icon in the lower right corner of the game's main interface to access the settings.
+
+> [!IMPORTANT]
+> In the following text, macOS and iOS on Mac refer to different platforms respectively.<br>
 The former is the macOS desktop version, while the latter is the iOS version running on Mac computers with M-series chips.
 
 ## Language
@@ -13,7 +16,8 @@ The former is the macOS desktop version, while the latter is the iOS version run
 - For details, please refer to [Localizations](/en/dlce/localization.md).
 
 ## Synchronization
-!> It is **not recommended** to enable multiple automatic adjustments below simultaneously, as doing so may lead to **excessive synchronization correction**.
+> [!WARNING]
+> It is **not recommended** to enable multiple automatic adjustments below simultaneously, as doing so may lead to **excessive synchronization correction**.
 
 <!-- tabs:start -->
 
@@ -66,7 +70,8 @@ The former is the macOS desktop version, while the latter is the iOS version run
 
 <!-- tabs:end -->
 
-?> Lower resolutions provide smoother gameplay performance.
+> [!TIP]
+> Lower resolutions provide smoother gameplay performance.
 
 ## Display Mode
 
@@ -95,6 +100,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
    <!--b>Details</b-->
 <!--/summary-->
 
+> [!IMPORTANT]
 > **Available for**<br>Windows, macOS,  iOS on Mac.
 - Choose the Anti-Aliasing (AA) mode
 
@@ -122,6 +128,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
    <!--b>Details</b-->
 <!--/summary-->
 
+> [!IMPORTANT]
 > **Available for**<br>Windows, macOS.
 - Adjust the key bindings.
 
@@ -132,11 +139,13 @@ The former is the macOS desktop version, while the latter is the iOS version run
 <!--/details-->
 
 ## Accessibility
-?> See [Accessibility](/en/dlce/settings/accessibility.md).
+> [!NOTE]
+> See [Accessibility](/en/dlce/settings/accessibility.md).
 
 
 ## Advanced Settings :id=advanced-settings
-?> See [Advanced Settings](/en/dlce/settings/advanced.md).
+> [!NOTE]
+> See [Advanced Settings](/en/dlce/settings/advanced.md).
 
 <blockquote>
 

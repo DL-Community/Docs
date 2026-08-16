@@ -2,14 +2,14 @@
 <!-- last-modified -->
 
 ## 触控反馈
+> [!IMPORTANT]
 > **适用于**<br>iOS、Android。
 - 开启后玩家点击屏幕时会在点击的位置显示特效。
 
 ## 陀螺仪效果
-> **适用于**<br>Windows、macOS、iOS、Android。
+> [!IMPORTANT]
+> **适用于**<br>iOS、Android。
 - 开启/关闭主界面关卡预览的陀螺仪视差效果。
-
-?> 在没有陀螺仪的设备上，使用鼠标位置模拟陀螺仪效果。
 
 ## 隐藏光标
 - 选择何时自动隐藏鼠标光标。
@@ -21,11 +21,13 @@
 | 游玩中 | 在关卡游玩过程中隐藏鼠标光标 |
 
 ## 状态栏
+> [!IMPORTANT]
 > 仅适用于带有刘海屏或灵动岛的 iPhone 机型。
 
 - 开启/关闭顶部系统状态栏。
 
 ## 应用图标 :id=app-icon
+> [!IMPORTANT]
 > **适用于**<br>macOS、iOS。
 
 - 更换应用图标。
@@ -37,6 +39,7 @@
    <!--b>详情</b-->
 <!--/summary-->
 
+> [!IMPORTANT]
 > **适用于**<br>Windows、macOS、iOS on Mac，仅在开启[输出日志](/dlce/settings/advanced.md#输出日志)后可用。
 - 使用文本编辑器查看游戏的调试日志。
 

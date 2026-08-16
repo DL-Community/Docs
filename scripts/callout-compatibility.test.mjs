@@ -41,4 +41,4 @@ assert.match(
 assert.doesNotMatch(css, /\.markdown-section \.callout\.important::before/);
 assert.doesNotMatch(css, /--notice-important-background/);
 
-console.log('Docsify v5 callout and legacy mapping styles passed.');
+console.log('Docsify v5 callout styles passed.');

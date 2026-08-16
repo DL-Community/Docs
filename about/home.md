@@ -32,11 +32,14 @@
 <!-- tabs:start -->
 
 <!-- tab:Windows -->
-?> 需要 64 位处理器和操作系统
+> [!NOTE]
+> 需要 64 位处理器和操作系统
 
-?> 游戏不兼容 Windows 7 及以下的操作系统
+> [!WARNING]
+> 游戏不兼容 Windows 7 及以下的操作系统
 
-!> 游戏需要安装 [Microsoft VC++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version) 运行库才能运行
+> [!CAUTION]
+> 游戏需要安装 [Microsoft VC++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version) 运行库才能运行
 
 ### 推荐配置
 - **操作系统**：Windows 11 64bit
@@ -61,9 +64,11 @@
 
 <!-- tab:macOS -->
 
-?> 需要 64 位处理器和操作系统
+> [!NOTE]
+> 需要 64 位处理器和操作系统
 
-!> 游戏不兼容基于 Intel 处理器的 Mac
+> [!WARNING]
+> 游戏不兼容基于 Intel 处理器的 Mac
 
 ### 推荐配置
 - **操作系统**：macOS 15 或更高版本
@@ -84,7 +89,8 @@
 
 <!-- tab:iOS on Mac -->
 
-?> 需要 64 位处理器和操作系统
+> [!NOTE]
+> 需要 64 位处理器和操作系统
 ### 推荐配置
 - **操作系统**：macOS 15 或更高版本
 - **处理器**：Apple M3 或更高配置
@@ -104,7 +110,8 @@
 
 <!-- tab:iOS -->
 
-?> 需要 64 位处理器和操作系统
+> [!NOTE]
+> 需要 64 位处理器和操作系统
 ### 推荐配置
 - **操作系统**：iOS 18 或更高
 - **内存**：8 GB RAM

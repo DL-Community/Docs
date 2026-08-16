@@ -1,7 +1,7 @@
 # 官方QQ群
 <!-- last-modified -->
 
-> 由于群内爆满，**请勿同时加入多个群聊**。
+> [!WARNING] 由于群内爆满，**请勿同时加入多个群聊**。
 
 <div class="icon-grid-horizontal">
   <a class="icon-grid-group" href="https://qm.qq.com/q/SXFE20prWg" target="_blank">

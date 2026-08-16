@@ -9,8 +9,8 @@
 
 ## Skins :id=skins
 
-?> **Note**
-<br> Skins do not affect the character's collision size.
+> [!TIP]
+> Skins do not affect the character's collision size.
 
 
 | Skin          | Price                      |

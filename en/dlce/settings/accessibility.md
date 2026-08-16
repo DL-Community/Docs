@@ -2,15 +2,14 @@
 <!-- last-modified -->
 
 ## Touch Feedback
+> [!IMPORTANT]
 > **Available for**<br>iOS
 - When enabled, a special effect will appear at the tap location when the player taps the screen.
 
 ## Gyroscope Effect
-> **Available for**<br>Windows, macOS, iOS.
+> [!IMPORTANT]
+> **Available for**<br>iOS.
 - Enable/disable the gyroscope parallax effect in the main screen level preview.
-
-?> On devices without a gyroscope, use the mouse position to simulate the gyroscope effect.
-
 ## Hide Cursor
 - Choose when to automatically hide the mouse cursor.
 
@@ -21,11 +20,13 @@
 | While Playing   | Hide the mouse cursor during gameplay                             |
 
 ## Status Bar
+> [!IMPORTANT]
 > Only available to certain iPhone models featuring a notch display or Dynamic Island.
 
 - Turn on/off the system status bar.
 
 ## App Icon :id=app-icon
+> [!IMPORTANT]
 > **Available for**<br>macOS、iOS.
 
 - Change app icon.
@@ -37,6 +38,7 @@
    <!--b>Details</b-->
 <!--/summary-->
 
+> [!IMPORTANT]
 > **Available for**<br>Windows, macOS, iOS on Mac，only available after turning on [Output Log](/en/dlce/settings/advanced.md#output-log) settings。
 - View the game's debug log using text editor (like Notepad).
 
