@@ -199,6 +199,41 @@ assert.match(
     'The mobile sidebar backdrop must accept dismissal taps while the drawer is open'
 );
 assert.match(
+    appCss,
+    /html\.mobile-sidebar-scroll-locked,\s*body\.mobile-sidebar-scroll-locked\s*\{[^}]*overflow:\s*hidden;[^}]*overscroll-behavior:\s*none;/s,
+    'Opening the mobile sidebar must disable root-page scrolling and overscroll'
+);
+assert.match(
+    appCss,
+    /body\.mobile-sidebar-scroll-locked\s*\{[^}]*position:\s*fixed;[^}]*top:\s*calc\(-1 \* var\(--docs-mobile-sidebar-scroll-y, 0px\)\);/s,
+    'The iOS body scroll lock must preserve the document position while the sidebar is open'
+);
+assert.match(
+    appCss,
+    /body\.mobile-sidebar-scroll-locked \.sidebar-nav\s*\{[^}]*overscroll-behavior-y:\s*contain;/s,
+    'Sidebar momentum must stop at the navigation boundary instead of chaining to the page'
+);
+assert.match(
+    appCss,
+    /body\.mobile-sidebar-scroll-locked \.mobile-sidebar-shadow\s*\{[^}]*touch-action:\s*none;/s,
+    'Swiping the open drawer backdrop must not pan the page behind it'
+);
+assert.match(
+    navigation,
+    /function syncMobileSidebarScrollLock\(locked\)[\s\S]*body\.style\.setProperty\('--docs-mobile-sidebar-scroll-y',[\s\S]*root\.classList\.add\(lockClass\)[\s\S]*body\.classList\.add\(lockClass\)/,
+    'The mobile drawer must capture and freeze the current document scroll position'
+);
+assert.match(
+    navigation,
+    /restoreLocation === window\.location\.href[\s\S]*window\.scrollTo\(0, restoreScrollY\)/,
+    'Closing the drawer without navigating must restore the previous document position'
+);
+assert.match(
+    navigation,
+    /syncMobileSidebarScrollLock\(mobile && expanded\);/,
+    'The scroll lock must follow the synchronized mobile drawer state'
+);
+assert.match(
     navigation,
     /mobileBackdrop\.addEventListener\('click',[\s\S]*?toggle\.click\(\)/,
     'Clicking the narrow-screen backdrop must close the drawer through its existing toggle'

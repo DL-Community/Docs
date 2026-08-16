@@ -1943,6 +1943,20 @@ body .docsify-pagination-container {
         --docs-sidebar-width: min(86vw, 21rem);
     }
 
+    html.mobile-sidebar-scroll-locked,
+    body.mobile-sidebar-scroll-locked {
+        overflow: hidden;
+        overscroll-behavior: none;
+    }
+
+    body.mobile-sidebar-scroll-locked {
+        position: fixed;
+        top: calc(-1 * var(--docs-mobile-sidebar-scroll-y, 0px));
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+
     .docs-header {
         z-index: 120;
         gap: 0.45rem;
@@ -2003,6 +2017,10 @@ body .docsify-pagination-container {
         box-shadow: none;
     }
 
+    body.mobile-sidebar-scroll-locked .sidebar-nav {
+        overscroll-behavior-y: contain;
+    }
+
     body.close .sidebar + .content {
         transform: none;
     }
@@ -2038,6 +2056,10 @@ body .docsify-pagination-container {
         opacity: 1;
         pointer-events: auto;
         transform: translateX(0);
+    }
+
+    body.mobile-sidebar-scroll-locked .mobile-sidebar-shadow {
+        touch-action: none;
     }
 
     body.ready-transition.ready-fix > .mobile-sidebar-shadow {
