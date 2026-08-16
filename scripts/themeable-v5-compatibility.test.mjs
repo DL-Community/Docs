@@ -5,6 +5,7 @@ const index = readFileSync('index.html', 'utf8');
 const navigation = readFileSync('lib/navigation.js', 'utf8');
 const appCss = readFileSync('lib/css/docs-app.css', 'utf8');
 const coreCss = readFileSync('lib/css/docsify-v5-core.min.css', 'utf8');
+const tabsCss = readFileSync('lib/css/docsify-tabs.css', 'utf8');
 
 assert.match(
     index,
@@ -44,6 +45,41 @@ assert.match(
 );
 assert.match(
     appCss,
+    /--docs-theme-color:\s*#147fd6;[\s\S]*--docs-accent:\s*var\(--docs-theme-color\);[\s\S]*--theme-color:\s*var\(--docs-theme-color\)/,
+    'The light theme and Docsify v5 fallback must share one site-blue token'
+);
+assert.match(
+    appCss,
+    /:root\[data-theme='dark'\]\s*\{[^}]*--docs-theme-color:\s*#55afff/s,
+    'The dark theme must use one readable site-blue token'
+);
+assert.match(
+    appCss,
+    /\.app-nav > ul > li > a::after\s*\{[^}]*background:\s*var\(--docs-theme-color\)/s,
+    'The top-navigation text and underline must share the site theme color'
+);
+assert.match(
+    tabsCss,
+    /--docsifytabs-tab-highlight-color:\s*var\(--docs-theme-color/,
+    'Markdown tab highlights must share the site theme color'
+);
+assert.match(
+    appCss,
+    /:root\[data-theme='dark'\] \.markdown-section \.callout\.caution\s*\{[^}]*--callout-bg:\s*color-mix[\s\S]*:root\[data-theme='dark'\] \.markdown-section \.callout\.note\s*\{[^}]*--callout-bg:\s*var\(--docs-callout-note-background\)[\s\S]*:root\[data-theme='dark'\] \.markdown-section \.callout\.warning\s*\{[^}]*--callout-bg:\s*color-mix/s,
+    'Dark semantic callouts must retain subtle type-colored surfaces'
+);
+assert.match(
+    appCss,
+    /:root\[data-theme='dark'\] \.markdown-section \.callout code:not\([^}]*\)\s*\{\s*background:\s*var\(--code-inline-background\)/s,
+    'Inline code inside dark callouts must remain visually distinct from the tinted surface'
+);
+assert.match(
+    appCss,
+    /\.markdown-section \.callout\.caution\s*\{[^}]*--callout-border-color:\s*#fca5a5/s,
+    'Light caution callouts must retain a clearly visible red border'
+);
+assert.match(
+    appCss,
     /main > \.content,[\s\S]*transition:\s*margin-left[^;]+;[\s\S]*margin-right/,
     'The site shell must animate content movement for both navigation rails'
 );
@@ -56,6 +92,16 @@ assert.match(
     appCss,
     /\.markdown-section li\s*\{[^}]*margin:\s*0/s,
     'Frequently used document lists must retain the site spacing instead of the v5 fallback spacing'
+);
+assert.match(
+    appCss,
+    /--sidebar-nav-link-padding:\s*0\.25em 2\.35rem 0\.25em 1\.25rem;[\s\S]*\.sidebar-nav li > a\s*\{[^}]*padding:\s*var\(--sidebar-nav-link-padding\)/s,
+    'All sidebar links must share the same horizontal padding token'
+);
+assert.doesNotMatch(
+    appCss,
+    /\.sidebar-nav li > a\[target=['"]_blank['"]\]\s*\{[^}]*padding:/s,
+    'External sidebar links must not override the shared link padding'
 );
 assert.match(
     appCss,

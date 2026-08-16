@@ -2,16 +2,17 @@
     --docs-header-height: 64px;
     --scroll-padding-top: calc(var(--docs-header-height) + 1rem);
     --docs-sidebar-width: 19rem;
-    --docs-accent: #2c9cff;
-    --docs-accent-strong: #147fd6;
+    --docs-theme-color: #147fd6;
+    --docs-accent: var(--docs-theme-color);
+    --docs-accent-strong: var(--docs-theme-color);
     --docs-radius: 8px;
     --docs-prose-max-width: 100%;
     --docs-notice-rule-width: 4px;
     --base-font-family: "Segoe UI Variable Text", "Segoe UI", "Microsoft YaHei UI", "PingFang SC", sans-serif;
     --base-font-size: 16px;
     --base-line-height: 1.65;
-    --theme-color: var(--docs-accent);
-    --link-color: var(--docs-accent-strong);
+    --theme-color: var(--docs-theme-color);
+    --link-color: var(--docs-theme-color);
     --content-max-width: 78rem;
     --sidebar-width: var(--docs-sidebar-width);
     --sidebar-padding: 0;
@@ -21,7 +22,7 @@
     --sidebar-nav-indent: 0.8rem;
     --sidebar-nav-link-margin: 0.08rem 0;
     --sidebar-nav-row-height: 2.75rem;
-    --sidebar-nav-link-padding: 0 2.35rem 0 0.75rem;
+    --sidebar-nav-link-padding: 0.25em 2.35rem 0.25em 1.25rem;
     --sidebar-nav-link-border-radius: 6px;
     --sidebar-nav-link-border-width: 0;
     --sidebar-nav-link-border-width--hover: 0;
@@ -110,7 +111,7 @@
     --sidebar-border-color: #e2e5e9;
     --sidebar-nav-link-color: #30343b;
     --sidebar-nav-link-color--hover: #111318;
-    --sidebar-nav-link-color--active: #147fd6;
+    --sidebar-nav-link-color--active: var(--docs-theme-color);
     --sidebar-nav-link-background--hover: #eceff2;
     --sidebar-nav-link-background--active: #eceff2;
     --sidebar-toggle-background: #f7f8fa;
@@ -123,12 +124,12 @@
     --search-input-background-image: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 24 24' fill='none' stroke='%23717780' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='10.5' r='7.5'/%3E%3Cline x1='21' y1='21' x2='15.8' y2='15.8'/%3E%3C/svg%3E");
     --navbar-root-color: #30343b;
     --navbar-root-color--hover: #111318;
-    --navbar-root-color--active: #147fd6;
+    --navbar-root-color--active: var(--docs-theme-color);
     --navbar-menu-background: #ffffff;
     --blockquote-background: #f5f7f9;
-    --blockquote-border-color: var(--docs-accent-strong);
+    --blockquote-border-color: var(--docs-theme-color);
     --docs-callout-note-background: color-mix(in srgb, var(--docs-accent), #ffffff 90%);
-    --docs-callout-note-border: color-mix(in srgb, var(--docs-accent), #ffffff 75%);
+    --docs-callout-note-border: var(--docs-theme-color);
     --code-inline-background: #eef1f4;
     --code-inline-color: #353b43;
     --heading-h2-border-color: #e2e5e9;
@@ -141,6 +142,7 @@
 }
 
 :root[data-theme='dark'] {
+    --docs-theme-color: #55afff;
     --base-background-color: #18191a;
     --base-color: #e3e4e6;
     --strong-color: #ffffff;
@@ -154,7 +156,7 @@
     --sidebar-border-color: #343638;
     --sidebar-nav-link-color: #d5d7da;
     --sidebar-nav-link-color--hover: #ffffff;
-    --sidebar-nav-link-color--active: #55afff;
+    --sidebar-nav-link-color--active: var(--docs-theme-color);
     --sidebar-nav-link-background--hover: #292b2d;
     --sidebar-nav-link-background--active: #292b2d;
     --sidebar-toggle-background: #1e1f20;
@@ -167,12 +169,12 @@
     --search-input-background-image: url("data:image/svg+xml,%3Csvg height='20' width='20' viewBox='0 0 24 24' fill='none' stroke='%239da1a6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='10.5' r='7.5'/%3E%3Cline x1='21' y1='21' x2='15.8' y2='15.8'/%3E%3C/svg%3E");
     --navbar-root-color: #e2e3e5;
     --navbar-root-color--hover: #ffffff;
-    --navbar-root-color--active: #55afff;
+    --navbar-root-color--active: var(--docs-theme-color);
     --navbar-menu-background: #242628;
     --blockquote-background: #232527;
-    --blockquote-border-color: var(--docs-accent);
-    --docs-callout-note-background: transparent;
-    --docs-callout-note-border: color-mix(in srgb, var(--docs-accent), var(--base-background-color) 30%);
+    --blockquote-border-color: var(--docs-theme-color);
+    --docs-callout-note-background: color-mix(in srgb, var(--base-background-color) 86%, var(--docs-theme-color));
+    --docs-callout-note-border: var(--docs-theme-color);
     --code-inline-background: #2a2c2f;
     --code-inline-color: #e7e9eb;
     --heading-h2-border-color: #343638;
@@ -253,7 +255,7 @@ main::before {
 
 .sidebar-nav li > a {
     margin: var(--sidebar-nav-link-margin);
-    padding: 0.25em 2.35rem 0.25em 1.25rem;
+    padding: var(--sidebar-nav-link-padding);
     color: var(--sidebar-nav-link-color);
 }
 
@@ -745,7 +747,7 @@ nav.app-nav {
     left: 0.85rem;
     height: 3px;
     border-radius: 3px 3px 0 0;
-    background: var(--docs-accent);
+    background: var(--docs-theme-color);
     content: '';
     opacity: 0;
     transform: scaleX(0.5);
@@ -969,10 +971,6 @@ nav.app-nav {
     text-decoration: none;
     transition: background-color var(--duration-medium) ease,
         color var(--duration-medium) ease;
-}
-
-.sidebar-nav li > a[target='_blank'] {
-    padding: var(--sidebar-nav-pagelink-padding, var(--sidebar-nav-link-padding));
 }
 
 .sidebar-nav li > a::after {
@@ -1373,7 +1371,7 @@ body.docs-route-pending .markdown-section {
 }
 
 .docs-breadcrumb span[aria-current='page'] {
-    color: var(--docs-accent);
+    color: var(--docs-theme-color);
     font-weight: 550;
     text-decoration: none;
 }
@@ -1406,19 +1404,19 @@ body.docs-route-pending .markdown-section {
 
 .docs-breadcrumb .docs-breadcrumb-home:hover {
     background: var(--docs-hover);
-    color: var(--docs-accent);
+    color: var(--docs-theme-color);
     text-decoration: none;
 }
 
 .docs-breadcrumb a:hover,
 .docs-breadcrumb a:focus-visible {
     background: var(--docs-hover);
-    color: var(--docs-accent);
+    color: var(--docs-theme-color);
     text-decoration: none;
 }
 
 .docs-breadcrumb a:focus-visible {
-    outline: 2px solid var(--docs-accent);
+    outline: 2px solid var(--docs-theme-color);
     outline-offset: 2px;
 }
 
@@ -1668,7 +1666,7 @@ body.docs-route-pending .markdown-section {
 
 .markdown-section .callout.caution {
     --callout-bg: #fef2f2;
-    --callout-border-color: #fecaca;
+    --callout-border-color: #fca5a5;
     --callout-charm-bg: #ef4444 center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="13" height="13" fill="white"><path d="M10 14C10 15.1 9.1 16 8 16 6.9 16 6 15.1 6 14 6 12.9 6.9 12 8 12 9.1 12 10 12.9 10 14Z"/><path d="M10 1.6C10 1.2 9.8 0.9 9.6 0.7 9.2 0.3 8.6 0 8 0 7.4 0 6.8 0.2 6.5 0.6 6.2 0.9 6 1.2 6 1.6 6 1.7 6 1.8 6 1.9L6.8 9.6C6.9 9.9 7 10.1 7.2 10.2 7.4 10.4 7.7 10.5 8 10.5 8.3 10.5 8.6 10.4 8.8 10.3 9 10.1 9.1 9.9 9.2 9.6L10 1.9C10 1.8 10 1.7 10 1.6Z"/></svg>');
 }
 
@@ -1681,7 +1679,7 @@ body.docs-route-pending .markdown-section {
 .markdown-section .callout.note {
     --callout-bg: var(--docs-callout-note-background);
     --callout-border-color: var(--docs-callout-note-border);
-    --callout-charm-bg: var(--docs-accent) center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" fill="white"><path d="M9.1 0C10.2 0 10.7 0.7 10.7 1.6 10.7 2.6 9.8 3.6 8.6 3.6 7.6 3.6 7 3 7 2 7 1.1 7.7 0 9.1 0Z"/><path d="M5.8 16C5 16 4.4 15.5 5 13.2L5.9 9.1C6.1 8.5 6.1 8.2 5.9 8.2 5.7 8.2 4.6 8.6 3.9 9.1L3.5 8.4C5.6 6.6 7.9 5.6 8.9 5.6 9.8 5.6 9.9 6.6 9.5 8.2L8.4 12.5C8.2 13.2 8.3 13.5 8.5 13.5 8.7 13.5 9.6 13.2 10.4 12.5L10.9 13.2C8.9 15.2 6.7 16 5.8 16Z"/></svg>');
+    --callout-charm-bg: var(--docs-theme-color) center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" fill="white"><path d="M9.1 0C10.2 0 10.7 0.7 10.7 1.6 10.7 2.6 9.8 3.6 8.6 3.6 7.6 3.6 7 3 7 2 7 1.1 7.7 0 9.1 0Z"/><path d="M5.8 16C5 16 4.4 15.5 5 13.2L5.9 9.1C6.1 8.5 6.1 8.2 5.9 8.2 5.7 8.2 4.6 8.6 3.9 9.1L3.5 8.4C5.6 6.6 7.9 5.6 8.9 5.6 9.8 5.6 9.9 6.6 9.5 8.2L8.4 12.5C8.2 13.2 8.3 13.5 8.5 13.5 8.7 13.5 9.6 13.2 10.4 12.5L10.9 13.2C8.9 15.2 6.7 16 5.8 16Z"/></svg>');
 }
 
 .markdown-section .callout.tip {
@@ -1696,27 +1694,28 @@ body.docs-route-pending .markdown-section {
     --callout-charm-bg: #fcd34d center no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="13" height="13" fill="%23a16207"><path d="M10 14C10 15.1 9.1 16 8 16 6.9 16 6 15.1 6 14 6 12.9 6.9 12 8 12 9.1 12 10 12.9 10 14Z"/><path d="M10 1.6C10 1.2 9.8 0.9 9.6 0.7 9.2 0.3 8.6 0 8 0 7.4 0 6.8 0.2 6.5 0.6 6.2 0.9 6 1.2 6 1.6 6 1.7 6 1.8 6 1.9L6.8 9.6C6.9 9.9 7 10.1 7.2 10.2 7.4 10.4 7.7 10.5 8 10.5 8.3 10.5 8.6 10.4 8.8 10.3 9 10.1 9.1 9.9 9.2 9.6L10 1.9C10 1.8 10 1.7 10 1.6Z"/></svg>');
 }
 
-:root[data-theme='dark'] .markdown-section .callout {
-    --callout-bg: transparent;
-}
-
 :root[data-theme='dark'] .markdown-section .callout.caution {
+    --callout-bg: color-mix(in srgb, var(--base-background-color) 86%, #ef4444);
     --callout-border-color: #991b1b;
 }
 
 :root[data-theme='dark'] .markdown-section .callout.important {
+    --callout-bg: color-mix(in srgb, var(--base-background-color) 86%, #8b5cf6);
     --callout-border-color: #5b21b6;
 }
 
 :root[data-theme='dark'] .markdown-section .callout.note {
+    --callout-bg: var(--docs-callout-note-background);
     --callout-border-color: var(--docs-callout-note-border);
 }
 
 :root[data-theme='dark'] .markdown-section .callout.tip {
+    --callout-bg: color-mix(in srgb, var(--base-background-color) 86%, #14b8a6);
     --callout-border-color: #115e59;
 }
 
 :root[data-theme='dark'] .markdown-section .callout.warning {
+    --callout-bg: color-mix(in srgb, var(--base-background-color) 86%, #fcd34d);
     --callout-border-color: #a16207;
 }
 
@@ -1745,7 +1744,10 @@ body.docs-route-pending .markdown-section {
     color: inherit;
 }
 
-:root[data-theme='dark'] .markdown-section .callout code:not([class*='lang-']):not([class*='language-']),
+:root[data-theme='dark'] .markdown-section .callout code:not([class*='lang-']):not([class*='language-']) {
+    background: var(--code-inline-background);
+}
+
 :root[data-theme='dark'] .markdown-section .callout pre[data-lang] {
     background: var(--base-background-color);
 }

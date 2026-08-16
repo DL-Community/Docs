@@ -10,7 +10,7 @@
     --docsifytabs-tab-color: var(--docs-muted);
     --docsifytabs-tab-color--active: var(--base-color);
     --docsifytabs-tab-highlight-px: 3px;
-    --docsifytabs-tab-highlight-color: var(--docs-accent, var(--theme-color, currentColor));
+    --docsifytabs-tab-highlight-color: var(--docs-theme-color, var(--theme-color, currentColor));
     --docsifytabs-tab-padding: 0.6rem 0.9rem;
 
     /* Tab content */
@@ -54,7 +54,7 @@
 
 .docsify-tabs--material > .docsify-tabs__tab:focus-visible {
     background-color: var(--docs-hover);
-    outline: 2px solid var(--docs-accent, var(--theme-color, currentColor));
+    outline: 2px solid var(--docs-theme-color, var(--theme-color, currentColor));
     outline-offset: 2px;
 }
 
