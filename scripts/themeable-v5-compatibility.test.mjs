@@ -165,6 +165,16 @@ assert.match(
 );
 assert.match(
     appCss,
+    /\.sidebar\s*\{[^}]*bottom:\s*auto;[^}]*height:\s*calc\(100vh - var\(--docs-header-height\)\);[^}]*height:\s*calc\(100dvh - var\(--docs-header-height\)\);/s,
+    'The mobile sidebar must follow the dynamic visual viewport while retaining a legacy viewport fallback'
+);
+assert.match(
+    appCss,
+    /\.mobile-sidebar-shadow\s*\{[^}]*bottom:\s*auto;[^}]*height:\s*calc\(100vh - var\(--docs-header-height\)\);[^}]*height:\s*calc\(100dvh - var\(--docs-header-height\)\);/s,
+    'The mobile sidebar backdrop must follow the same dynamic visual viewport as the drawer'
+);
+assert.match(
+    appCss,
     /\.mobile-sidebar-shadow\s*\{[^}]*transform:\s*translateX\(calc\(-1 \* var\(--docs-sidebar-width\)\)\);[^}]*transition:\s*opacity var\(--duration-medium\) var\(--ease-drawer\),\s*transform var\(--duration-medium\) var\(--ease-drawer\)/s,
     'The mobile backdrop and drawer must use the same travel distance, duration, and easing'
 );

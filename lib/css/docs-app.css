@@ -1997,6 +1997,9 @@ body .docsify-pagination-container {
 
     .sidebar {
         z-index: 105;
+        bottom: auto;
+        height: calc(100vh - var(--docs-header-height));
+        height: calc(100dvh - var(--docs-header-height));
         box-shadow: none;
     }
 
@@ -2009,9 +2012,11 @@ body .docsify-pagination-container {
         position: fixed;
         z-index: 104;
         top: var(--docs-header-height);
-        bottom: 0;
+        bottom: auto;
         left: var(--docs-sidebar-width);
         width: calc(100vw - var(--docs-sidebar-width));
+        height: calc(100vh - var(--docs-header-height));
+        height: calc(100dvh - var(--docs-header-height));
         content: '';
         opacity: 0;
         pointer-events: none;
