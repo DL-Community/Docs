@@ -1,0 +1,3 @@
+- [終端使用者授權合約（EULA）](/zh-TW/legal/eula)
+- [隱私政策](/zh-TW/legal/privacy)
+- [開放原始碼程式庫](/zh-TW/legal/open-source)

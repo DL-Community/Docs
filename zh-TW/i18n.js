@@ -1,0 +1,46 @@
+(function () {
+    'use strict';
+
+    window.DLCE_I18N = window.DLCE_I18N || {};
+    window.DLCE_I18N['zh-TW'] = {
+        site_title: '跳舞的線：社群版 Wiki',
+        meta_description: '跳舞的線：社群版官方 Wiki',
+        header_label: '網站頁首',
+        home_label: '跳舞的線：社群版 Wiki 首頁',
+        language_switch: '切換語言',
+        language_zh: '簡體中文',
+        language_zh_TW: '繁體中文',
+        language_en: 'English',
+        github_repo: 'GitHub 儲存庫',
+        theme_to_light: '切換為淺色模式',
+        theme_to_dark: '切換為深色模式',
+        theme_mode_auto: '自動',
+        theme_mode_light: '淺色',
+        theme_mode_dark: '深色',
+        theme_mode_auto_current: '自動（目前為{theme}）',
+        theme_switch: '主題：{current}；點選切換到{next}模式',
+        theme_current: '主題：{current}',
+        sidebar_show: '展開導覽',
+        sidebar_hide: '收合導覽',
+        group_expand: '展開{label}',
+        group_collapse: '收合{label}',
+        main_navigation: '主要導覽',
+        auxiliary_navigation: '外部連結與更多選項',
+        sidebar_utilities: '語言與外部連結',
+        toc_title: '本頁目錄',
+        breadcrumb_label: '階層連結',
+        category_intro: '選擇此分類中的文件。',
+        section_intro: '選擇一份文件開始閱讀。',
+        search_placeholder: '搜尋文件',
+        search_no_results: '找不到結果',
+        search_result_found: '找到 {count} 個結果',
+        search_results_found: '找到 {count} 個結果',
+        search_result_label: '搜尋結果 {index}',
+        search_clear: '清除搜尋',
+        search_shortcut_slash: '按 / 開始搜尋',
+        search_shortcut_control_k: '按 Control+K 開始搜尋',
+        pagination_previous: '上一篇',
+        pagination_next: '下一篇',
+        last_modified: '最後更新於 {date}'
+    };
+})();

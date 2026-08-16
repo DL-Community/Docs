@@ -22,6 +22,7 @@
     >
 
     <script src="i18n.js"></script>
+    <script src="zh-TW/i18n.js"></script>
     <script src="en/i18n.js"></script>
 
     <script>
@@ -112,6 +113,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             </button>
             <div class="language-menu" id="language-menu" hidden>
                 <a id="language-zh" href="#/about/home" lang="zh-CN" data-language-code="zh" data-language-prefix="" data-language-home="/about/home" data-language-label-key="language_zh">简体中文</a>
+                <a id="language-zh-TW" href="#/about/home" lang="zh-TW" data-language-code="zh-TW" data-language-prefix="/zh-TW" data-language-home="/zh-TW/about/home" data-language-label-key="language_zh_TW">繁體中文</a>
                 <a id="language-en" href="#/en/about/home" lang="en" data-language-code="en" data-language-prefix="/en" data-language-home="/en/about/home" data-language-label-key="language_en">English</a>
             </div>
         </div>
@@ -131,6 +133,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <script>
     var zhUI = window.DLCE_I18N.zh;
+    var zhTWUI = window.DLCE_I18N['zh-TW'];
     var enUI = window.DLCE_I18N.en;
 
     function docsifyLanguageDefinitions() {
@@ -213,25 +216,38 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             '/dlce/about': '/about/home',
             '/en/': 'en/about/home',
             '/en/dlce/about': 'en/about/home',
+            '/zh-TW/': '/zh-TW/about/home',
+            '/zh-TW/dlce/about': '/zh-TW/about/home',
 
             '/404': '/_404.md',
             '/en/404': '/en/_404.md',
             '/en': '/en/',
+            '/zh-TW/404': '/zh-TW/_404.md',
+            '/zh-TW': '/zh-TW/',
             '/dlce/eula': '/legal/eula',
             '/dlce/privacy': '/legal/privacy',
             '/dlce/open-source': '/legal/open-source',
             '/en/dlce/eula': '/en/legal/eula',
             '/en/dlce/privacy': '/en/legal/privacy',
             '/en/dlce/open-source': '/en/legal/open-source',
+            '/zh-TW/dlce/eula': '/zh-TW/legal/eula',
+            '/zh-TW/dlce/privacy': '/zh-TW/legal/privacy',
+            '/zh-TW/dlce/open-source': '/zh-TW/legal/open-source',
             '/dlce/custom_post_processing': '/dlce/custom-post-processing/home',
             '/dlce/custom_post_processing_v2': '/dlce/custom-post-processing/v2',
             '/dlce/custom_post_processing_v1': '/dlce/custom-post-processing/v1',
             '/dlce/custom_post_processing_legacy': '/dlce/custom-post-processing/legacy',
+            '/zh-TW/dlce/custom_post_processing': '/zh-TW/dlce/custom-post-processing/home',
+            '/zh-TW/dlce/custom_post_processing_v2': '/zh-TW/dlce/custom-post-processing/v2',
+            '/zh-TW/dlce/custom_post_processing_v1': '/zh-TW/dlce/custom-post-processing/v1',
+            '/zh-TW/dlce/custom_post_processing_legacy': '/zh-TW/dlce/custom-post-processing/legacy',
 
             '/dlce/game-settings': '/dlce/settings/general',
             '/en/dlce/game-settings': '/en/dlce/settings/general',
+            '/zh-TW/dlce/game-settings': '/zh-TW/dlce/settings/general',
             '/dlce/game-settings-accessibility': '/dlce/settings/accessibility',
             '/en/dlce/game-settings-accessibility': '/en/dlce/settings/accessibility',
+            '/zh-TW/dlce/game-settings-accessibility': '/zh-TW/dlce/settings/accessibility',
         },
         name: '',
         homepage: 'home.md',
@@ -244,8 +260,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         subMaxLevel: 0,
         notFoundPage: {
             '/Docs/en/': '/en/404',
-            '/': '/404',
-            '/en/': '/en/404'
+            '/en/': '/en/404',
+            '/Docs/zh-TW/': '/zh-TW/404',
+            '/zh-TW/': '/zh-TW/404',
+            '/': '/404'
         },
         auto2top: true,
         fallbackLanguages: ['/', '/en'],
@@ -267,10 +285,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         pagination: {
             previousText: {
                 '/en/': enUI.pagination_previous,
+                '/zh-TW/': zhTWUI.pagination_previous,
                 '/': zhUI.pagination_previous
             },
             nextText: {
                 '/en/': enUI.pagination_next,
+                '/zh-TW/': zhTWUI.pagination_next,
                 '/': zhUI.pagination_next
             },
             crossChapter: true,

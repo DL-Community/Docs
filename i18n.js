@@ -9,6 +9,7 @@
         home_label: '跳舞的线：社区版 Wiki 首页',
         language_switch: '切换语言',
         language_zh: '简体中文',
+        language_zh_TW: '繁體中文',
         language_en: 'English',
         github_repo: 'GitHub 仓库',
         theme_to_light: '切换为浅色模式',

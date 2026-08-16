@@ -9,6 +9,7 @@
         home_label: 'Dancing Line: Community Edition Wiki home',
         language_switch: 'Switch language',
         language_zh: '简体中文',
+        language_zh_TW: '繁體中文',
         language_en: 'English',
         github_repo: 'GitHub repository',
         theme_to_light: 'Switch to light mode',

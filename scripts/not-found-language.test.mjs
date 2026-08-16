@@ -32,5 +32,16 @@ assert.equal(
     'Default-language routes must continue to load the Chinese 404 page'
 );
 assert.match(index, /['"]\/en\/404['"]:\s*['"]\/en\/_404\.md['"]/, 'The English 404 alias must target the English Markdown file');
+assert.equal(
+    resolveNotFoundPage('/Docs/zh-TW/missing-page.md'),
+    '/zh-TW/404',
+    'Traditional Chinese routes under the deployed /Docs/ base path must load the localized 404 page'
+);
+assert.equal(
+    resolveNotFoundPage('/zh-TW/missing-page.md'),
+    '/zh-TW/404',
+    'Traditional Chinese routes without the deployed base path must keep the localized fallback'
+);
+assert.match(index, /['"]\/zh-TW\/404['"]:\s*['"]\/zh-TW\/_404\.md['"]/, 'The Traditional Chinese 404 alias must target the localized Markdown file');
 
 console.log('Language-aware 404 routing tests passed.');

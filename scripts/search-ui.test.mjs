@@ -9,10 +9,12 @@ function loadDictionary(file, language) {
 }
 
 const zh = loadDictionary('i18n.js', 'zh');
+const zhTW = loadDictionary('zh-TW/i18n.js', 'zh-TW');
 const en = loadDictionary('en/i18n.js', 'en');
 
 for (const [dictionary, expected] of [
     [zh, { count: '找到 2 个结果', clear: '清除搜索', result: '搜索结果 1' }],
+    [zhTW, { count: '找到 2 個結果', clear: '清除搜尋', result: '搜尋結果 1' }],
     [en, { count: 'Found 2 results', clear: 'Clear search', result: 'Search result 1' }]
 ]) {
     assert.equal(dictionary.search_results_found.replace('{count}', '2'), expected.count);
@@ -97,6 +99,17 @@ const languageLinks = [
     }),
     element({
         dataset: {
+            languageCode: 'zh-TW',
+            languagePrefix: '/zh-TW',
+            languageHome: '/zh-TW/about/home',
+            languageLabelKey: 'language_zh_TW'
+        },
+        getAttribute(name) {
+            return name === 'lang' ? 'zh-TW' : null;
+        }
+    }),
+    element({
+        dataset: {
             languageCode: 'en',
             languagePrefix: '/en',
             languageHome: '/en/about/home',
@@ -121,7 +134,7 @@ const document = {
     }
 };
 const window = {
-    DLCE_I18N: { zh, en },
+    DLCE_I18N: { zh, 'zh-TW': zhTW, en },
     $docsify: { plugins: [] },
     location: { hash: '#/dlce/settings/general' },
     addEventListener() {},
@@ -156,6 +169,12 @@ assert.equal(clearButton.getAttribute('aria-label'), '清除搜索');
 assert.equal(clearButton.getAttribute('type'), 'button');
 assert.equal(results[0].getAttribute('aria-label'), '搜索结果 1');
 assert.equal(shortcuts[0].getAttribute('title'), '按 / 开始搜索');
+
+window.location.hash = '#/zh-TW/dlce/settings/general';
+window.DLCE_SEARCH_UI.sync();
+assert.equal(resultsStatus.textContent, '找到 2 個結果');
+assert.equal(clearButton.getAttribute('aria-label'), '清除搜尋');
+assert.equal(results[0].getAttribute('aria-label'), '搜尋結果 1');
 
 window.location.hash = '#/en/dlce/settings/general';
 window.DLCE_SEARCH_UI.sync();
