@@ -401,7 +401,7 @@
 
 ***
 
-### 3.3.2
+### 3.3.2.1145
 ![功能](https://img.shields.io/badge/功能-blue.svg)
 
 - 游戏结算画面支持拷贝分享图片；
@@ -508,6 +508,7 @@
 ![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
 ![功能](https://img.shields.io/badge/功能-blue.svg)
 
+- 修正关卡对音
 **仅Windows**
 - 更新分辨率设置界面，现在允许非屏幕最大分辨率开启全屏模式。
 
@@ -886,7 +887,7 @@
 ***
 
 ### 1.0.9.2
-![功能](https://img.shields.io/badge/功能-bluesvg)
+![功能](https://img.shields.io/badge/功能-blue.svg)
 
 - 新增「音画同步」音阶设置。
 
@@ -915,7 +916,7 @@
 ![内容](https://img.shields.io/badge/内容-yellow.svg)
 
 【更新日志】
-**新增关卡：田野、田野（Remix）**
+**新增关卡：田野、田野（Reggae Remix）**
 - 结算页面显示关卡Remix标志。
 
 【修复】
@@ -944,8 +945,8 @@
 
 ### 1.0.5
 ![BUG](https://img.shields.io/badge/BUG_修复-red.svg)
-
 ![内容](https://img.shields.io/badge/内容-yellow.svg)
+
 【更新日志】
 **新增关卡：水晶**
 
