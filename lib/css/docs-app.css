@@ -1586,16 +1586,30 @@ body.docs-route-pending .markdown-section {
 }
 
 .markdown-section :is(h1, h2, h3, h4, h5, h6) > a {
-    color: inherit;
     text-decoration: none;
     text-underline-offset: auto;
 }
 
-.markdown-section :is(h1, h2, h3, h4, h5, h6) > a:hover {
+.markdown-section :is(h1, h2, h3, h4, h5, h6) > a.anchor {
     color: inherit;
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5, h6) > a:not(.anchor) {
+    color: var(--link-color);
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5, h6) > a:hover {
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-decoration-thickness: auto;
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5, h6) > a.anchor:hover {
+    color: inherit;
+}
+
+.markdown-section :is(h1, h2, h3, h4, h5, h6) > a:not(.anchor):hover {
+    color: var(--link-color-hover);
 }
 
 /* Docsify's UI Kit page keeps each swatch directly above its rendered markup.

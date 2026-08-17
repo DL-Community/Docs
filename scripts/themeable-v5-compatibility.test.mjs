@@ -125,8 +125,23 @@ assert.match(
 );
 assert.match(
     appCss,
+    /\.markdown-section :is\(h1, h2, h3, h4, h5, h6\) > a\.anchor\s*\{[^}]*color:\s*inherit/s,
+    'Same-document heading anchors must retain the heading color'
+);
+assert.match(
+    appCss,
+    /\.markdown-section :is\(h1, h2, h3, h4, h5, h6\) > a:not\(\.anchor\)\s*\{[^}]*color:\s*var\(--link-color\)/s,
+    'Linked heading text must use the document link color'
+);
+assert.match(
+    appCss,
     /\.markdown-section :is\(h1, h2, h3, h4, h5, h6\) > a:hover\s*\{[^}]*text-decoration-thickness:\s*auto/s,
     'Heading hover underlines must retain the font-native display weight'
+);
+assert.match(
+    appCss,
+    /\.markdown-section :is\(h1, h2, h3, h4, h5, h6\) > a:not\(\.anchor\):hover\s*\{[^}]*color:\s*var\(--link-color-hover\)/s,
+    'Linked heading hover state must use the document link hover color'
 );
 assert.match(
     appCss,
