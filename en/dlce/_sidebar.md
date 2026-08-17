@@ -1,10 +1,10 @@
 <!-- desc: "View the game's multi-language contributor list, or contribute" -->
 - [Localization](/en/dlce/localization)
-<!-- desc："Check the in-game currency-related stuff" -->
+<!-- desc: "Check the in-game currency-related stuff" -->
 - [Currencies](/en/dlce/coins)
 <!-- desc: "Game mode introduction" -->
 - [Notes Challenge](/en/dlce/notes-challenge)
-<!-- desc："Game characters and decorations" -->
+<!-- desc: "Game characters and decorations" -->
 - [Characters](/en/dlce/character)
 <!-- desc: "Level and music creator Information" -->
 - [Level Information](/en/dlce/level_information)
@@ -15,5 +15,5 @@
   - [Accessibility](/en/dlce/settings/accessibility.md)
   <!-- desc: "Network and audio DSP buffer…" -->
   - [Advanced Settings](/en/dlce/settings/advanced.md)
-<!-- desc："Apply the options before launching the game" -->
+<!-- desc: "Apply the options before launching the game" -->
 - [Launch Options](/en/dlce/commands)
