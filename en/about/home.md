@@ -1,6 +1,6 @@
-# Dancing Line Community Edition
+# Dancing Line Community Edition Wiki
 
-Welcome to the DLCE Database, where the latest content of this game will be periodically updated.
+Welcome to the DLCE Wiki, where the latest content of this game will be periodically updated.
 
 > [!NOTE]
 > The English translations are still WIP, some content may only available in Chinese.
