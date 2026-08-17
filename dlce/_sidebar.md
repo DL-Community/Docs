@@ -2,9 +2,11 @@
 - [版本历史](/dlce/versions.md)
 <!-- desc: "查看游戏多语言贡献者名单，或参与贡献" -->
 - [多语言](/dlce/localization.md)
+<!-- desc："查看游戏内货币相关应用" -->
 - [货币](/dlce/coins)
 <!-- desc: "玩法介绍" -->
 - [音符挑战](/dlce/notes-challenge)
+<!-- desc："游戏内角色装饰相关信息" -->
 - [角色装饰](/dlce/character)
 <!-- desc: "关卡与音乐制作者信息" -->
 - [关卡信息](/dlce/level_information)
@@ -23,5 +25,7 @@
   - [辅助功能](/dlce/settings/accessibility.md)
   <!-- desc: "网络连接和音频 DSP 缓冲区等" -->
   - [高级设置](/dlce/settings/advanced.md)
+<!-- desc："开始游戏前启用选项应用" -->
 - [启动选项](/dlce/commands)
+<!-- desc："游戏账号信息" -->
 - [账号系统](/dlce/account.md)
