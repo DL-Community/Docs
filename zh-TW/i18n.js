@@ -8,7 +8,7 @@
         header_label: '網站頁首',
         home_label: '跳舞的線：社群版 Wiki 首頁',
         language_switch: '切換語言',
-        language_zh: '簡體中文',
+        language_zh: '简体中文',
         language_zh_TW: '繁體中文',
         language_en: 'English',
         github_repo: 'GitHub 儲存庫',
