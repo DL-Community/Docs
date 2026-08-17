@@ -15,7 +15,7 @@
   - [輔助功能](/zh-TW/dlce/settings/accessibility.md)
   <!-- desc: "網路連線和音訊 DSP 緩衝區等" -->
   - [進階設定](/zh-TW/dlce/settings/advanced.md)
-<!-- desc: "開始遊戲前啟用選項應用" -->
+<!-- desc: "開始遊戲前動選項應用" -->
 - [啟動選項](/zh-TW/dlce/commands)
 <!-- desc: "遊戲賬戶信息" -->
 - [帳戶系統](/zh-TW/dlce/account.md)
