@@ -1,0 +1,52 @@
+# 官方QQ群
+<!-- last-modified -->
+
+> [!WARNING] 由於群內爆滿，**請勿同時加入多個群組**。
+
+<div class="icon-grid-horizontal">
+  <a class="icon-grid-group" href="https://qm.qq.com/q/SXFE20prWg" target="_blank">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="http://p.qlogo.cn/gh/1037371510/1037371510/640/" alt="【群頭像】">
+      <div class="icon-grid-label">一群 1037371510</div>
+    </div>
+  </a>
+
+  <a class="icon-grid-group" href="https://qm.qq.com/q/sCGWedbhjE" target="_blank">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="http://p.qlogo.cn/gh/1031814914/1031814914/640/" alt="【群頭像】">
+      <div class="icon-grid-label">二群 1031814914</div>
+    </div>
+  </a>
+
+  <a class="icon-grid-group" href="https://qm.qq.com/q/uM4zwY7gSA" target="_blank">
+    <div class="icon-grid-item">
+        <img class="icon-grid-img" src="http://p.qlogo.cn/gh/1054849649/1054849649/640/" alt="【群頭像】">
+        <div class="icon-grid-label">三群 1054849649</div>
+    </div>
+  </a>
+
+  <a class="icon-grid-group" href="https://qm.qq.com/q/hKo8ljaWIg" target="_blank">
+    <div class="icon-grid-item">
+        <img class="icon-grid-img" src="http://p.qlogo.cn/gh/780866342/780866342/640/" alt="【群頭像】">
+        <div class="icon-grid-label">四群 780866342</div>
+    </div>
+  </a>
+
+  <a class="icon-grid-group" href="https://qm.qq.com/q/NWhW39ygSc" target="_blank">
+    <div class="icon-grid-item">
+        <img class="icon-grid-img" src="http://p.qlogo.cn/gh/1055854812/1055854812/640/" alt="【群頭像】">
+        <div class="icon-grid-label">五群 1055854812</div>
+    </div>
+  </a>
+</div>
+
+## 其他
+
+<div class="icon-grid-horizontal">
+  <a class="icon-grid-group" href="https://pd.qq.com/s/2njtk4vj2" target="_blank">
+    <div class="icon-grid-item">
+      <img class="icon-grid-img" src="https://groupprohead.gtimg.cn/591386364031612875/100" alt="【頻道頭像】">
+      <div class="icon-grid-label">騰訊頻道</div>
+    </div>
+  </a>
+</div>
