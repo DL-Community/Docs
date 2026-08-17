@@ -15,7 +15,20 @@
     color: var(--base-color);
     font-size: 0.92rem;
     line-height: 1.25;
+    text-decoration: none;
     vertical-align: middle;
+    transition: background-color var(--duration-fast, 150ms) ease-out;
+}
+
+.markdown-section a.markdown-component--last-modified:hover,
+.markdown-section a.markdown-component--last-modified:focus-visible {
+    background: color-mix(
+        in srgb,
+        var(--docs-accent, var(--theme-color)) 14%,
+        transparent
+    );
+    color: var(--base-color);
+    text-decoration: none;
 }
 
 .markdown-section .markdown-component--last-modified time {

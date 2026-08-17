@@ -41,6 +41,7 @@
         search_shortcut_control_k: '按 Control+K 开始搜索',
         pagination_previous: '上一文档',
         pagination_next: '下一文档',
-        last_modified: '最后修改于 {date}'
+        last_modified: '最后修改于 {date}',
+        last_modified_commit_label: '最后修改于 {date}；在 GitHub 查看此次提交'
     };
 })();

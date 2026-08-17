@@ -41,6 +41,7 @@
         search_shortcut_control_k: 'Press Control+K to search',
         pagination_previous: 'PREVIOUS',
         pagination_next: 'NEXT',
-        last_modified: 'Last updated on {date}'
+        last_modified: 'Last updated on {date}',
+        last_modified_commit_label: 'Last updated on {date}; view this commit on GitHub'
     };
 })();
