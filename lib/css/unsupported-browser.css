@@ -1,0 +1,174 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #202124;
+    font-family: "Segoe UI", "Microsoft YaHei UI", "PingFang SC", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #147fd6;
+}
+
+a:focus {
+    outline: 3px solid #9bd2ff;
+    outline-offset: 3px;
+}
+
+.legacy-browser-page {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+}
+
+.legacy-browser-center {
+    display: table-cell;
+    padding: 40px 24px;
+    vertical-align: middle;
+}
+
+.legacy-browser-content {
+    width: 92%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.legacy-browser-header {
+    margin-bottom: 28px;
+}
+
+.legacy-browser-logo {
+    display: block;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 24px;
+    object-fit: contain;
+}
+
+h1 {
+    margin: 0 0 14px;
+    color: #101114;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.legacy-browser-intro {
+    max-width: 680px;
+    margin: 0;
+    color: #555b63;
+    font-size: 18px;
+}
+
+h2 {
+    margin: 30px 0 12px;
+    color: #202124;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.browser-list {
+    margin: 0 -6px;
+    padding: 0;
+    list-style: none;
+}
+
+.browser-list li {
+    display: inline-block;
+    width: 22%;
+    min-width: 130px;
+    margin: 6px;
+    vertical-align: top;
+}
+
+.browser-list a {
+    display: block;
+    padding: 13px 15px;
+    border: 1px solid #d9dde2;
+    border-radius: 8px;
+    background: #f7f8fa;
+    color: #202124;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.browser-list a:hover {
+    border-color: #2c9cff;
+    color: #147fd6;
+    text-decoration: underline;
+}
+
+.legacy-browser-actions {
+    margin-top: 34px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e5e9;
+}
+
+.legacy-browser-continue {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid #147fd6;
+    border-radius: 8px;
+    background: #2c9cff;
+    color: #ffffff;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.legacy-browser-continue:hover {
+    background: #147fd6;
+}
+
+.legacy-browser-caution {
+    margin: 13px 0 0;
+    color: #686e76;
+    font-size: 14px;
+}
+
+.legacy-browser-languages {
+    margin: 26px 0 0;
+    color: #686e76;
+    font-size: 14px;
+}
+
+.legacy-browser-languages a {
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 620px) {
+    .legacy-browser-center {
+        padding: 28px 18px;
+        vertical-align: top;
+    }
+
+    .legacy-browser-content {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .legacy-browser-intro {
+        font-size: 16px;
+    }
+
+    .browser-list li {
+        width: 100%;
+        min-width: 0;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .legacy-browser-continue {
+        border: 2px solid currentColor;
+    }
+}

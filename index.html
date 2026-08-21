@@ -21,6 +21,8 @@
         data-dark-href="/Docs/lib/img/favicon/white.png"
     >
 
+    <script src="lib/supported-languages.js?v=1"></script>
+    <script id="legacy-browser-gate" src="lib/legacy-browser-gate.js?v=1"></script>
     <script src="i18n.js"></script>
     <script src="zh-TW/i18n.js"></script>
     <script src="en/i18n.js"></script>
@@ -111,11 +113,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
                 <span id="current-language">简体中文</span>
                 <svg class="chevron" aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg>
             </button>
-            <div class="language-menu" id="language-menu" hidden>
-                <a id="language-zh" href="#/about/home" lang="zh-CN" data-language-code="zh" data-language-prefix="" data-language-home="/about/home" data-language-label-key="language_zh">简体中文</a>
-                <a id="language-zh-TW" href="#/about/home" lang="zh-TW" data-language-code="zh-TW" data-language-prefix="/zh-TW" data-language-home="/zh-TW/about/home" data-language-label-key="language_zh_TW">繁體中文</a>
-                <a id="language-en" href="#/en/about/home" lang="en" data-language-code="en" data-language-prefix="/en" data-language-home="/en/about/home" data-language-label-key="language_en">English</a>
-            </div>
+            <div class="language-menu" id="language-menu" hidden></div>
+            <script>
+                window.DLCE_RENDER_SITE_LANGUAGE_MENU(document.getElementById('language-menu'));
+            </script>
         </div>
         <a class="header-icon-link" href="https://github.com/DL-Community/Docs" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 4.8 18 5.1 18 5.1c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/></svg>

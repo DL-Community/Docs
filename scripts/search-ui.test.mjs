@@ -94,7 +94,7 @@ const languageLinks = [
             languageCode: 'zh',
             languagePrefix: '',
             languageHome: '/about/home',
-            languageLabelKey: 'language_zh'
+            languageLabel: '简体中文'
         }
     }),
     element({
@@ -102,7 +102,7 @@ const languageLinks = [
             languageCode: 'zh-TW',
             languagePrefix: '/zh-TW',
             languageHome: '/zh-TW/about/home',
-            languageLabelKey: 'language_zh_TW'
+            languageLabel: '繁體中文'
         },
         getAttribute(name) {
             return name === 'lang' ? 'zh-TW' : null;
@@ -113,7 +113,7 @@ const languageLinks = [
             languageCode: 'en',
             languagePrefix: '/en',
             languageHome: '/en/about/home',
-            languageLabelKey: 'language_en'
+            languageLabel: 'English'
         },
         getAttribute(name) {
             return name === 'lang' ? 'en' : null;
