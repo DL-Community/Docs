@@ -26,6 +26,7 @@
     <script src="i18n.js"></script>
     <script src="zh-TW/i18n.js"></script>
     <script src="en/i18n.js"></script>
+    <script src="ja/i18n.js"></script>
 
     <script>
         (function () {
@@ -136,6 +137,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     var zhUI = window.DLCE_I18N.zh;
     var zhTWUI = window.DLCE_I18N['zh-TW'];
     var enUI = window.DLCE_I18N.en;
+    var jaUI = window.DLCE_I18N.ja;
 
     function docsifyLanguageDefinitions() {
         return Array.prototype.map.call(
@@ -285,11 +287,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         },
         pagination: {
             previousText: {
+                '/ja/': jaUI.pagination_previous,
                 '/en/': enUI.pagination_previous,
                 '/zh-TW/': zhTWUI.pagination_previous,
                 '/': zhUI.pagination_previous
             },
             nextText: {
+                '/ja/': jaUI.pagination_next,
                 '/en/': enUI.pagination_next,
                 '/zh-TW/': zhTWUI.pagination_next,
                 '/': zhUI.pagination_next
