@@ -10,7 +10,7 @@
 ### 取得
 - 使用[星星](#star)兌換
 - 使用[音符](#note)兌換
-- 完成每日任務
+- 完成[日常任務](/zh-TW/dlce/missions.md)
 - 用盡最後一個方塊後，300 秒後會自動恢復 15 個方塊。
 
 ## 星星 ✨ :id=star
@@ -21,7 +21,7 @@
 - 關卡內復活
 
 ### 取得
-- 完成每日任務
+- 完成[日常任務](/zh-TW/dlce/missions.md)
 - 通關關卡
 - 使用[音符](#note)兌換
 
@@ -38,5 +38,6 @@
 **相關文件**
 - [音符挑戰](/zh-TW/dlce/notes-challenge.md)
 - [角色外觀](/zh-TW/dlce/character.md)
+- [日常任務](/zh-TW/dlce/missions.md)
 
 </blockquote>
