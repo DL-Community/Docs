@@ -1,7 +1,7 @@
 # Missions
 <!-- last-modified --> 
 
->Gameplay
+> Gameplay
 
 ## Mission rules
 The game offers 5 missions, of which the first 2 are fixed and the remaining 3 refresh every 24 hours. Each completed mission rewards you with stars or energy cubes.
