@@ -10,7 +10,7 @@
 ### Obtain
 - Redeem using [stars](#star)
 - Redeem using [notes](#note)
-- Complete Missions
+- Complete [Missions](/en/dlce/missions.md)
 - 10 cubes will automatically refill after 300 seconds when you use last Energy Cube.
 
 ## Star ✨ :id=star
@@ -21,7 +21,7 @@
 - In-level revivals
 
 ### Obtain
-- Complete Missions
+- Complete [Missions](/en/dlce/missions.md)
 - Complete levels
 - Redeem using [notes](#note)
 
@@ -38,5 +38,6 @@
 **Related Topics**
 - [Notes Challenge](/en/dlce/notes-challenge.md)
 - [Characters](/en/dlce/character.md)
+- [Missions](/en/dlce/missions.md)
 
 </blockquote>
