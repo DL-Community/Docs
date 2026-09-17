@@ -30,6 +30,6 @@ The game offers 5 missions, of which the first 2 are fixed and the remaining 3 r
 <blockquote>
 
 **Related Topics**
-- [Currencies](/dlce/coins.md)
+- [Currencies](/en/dlce/coins.md)
 
 </blockquote>
