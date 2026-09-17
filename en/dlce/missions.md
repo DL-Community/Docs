@@ -24,7 +24,7 @@ The game offers 5 missions, of which the first 2 are fixed and the remaining 3 r
 | **Consume 15 cubes**                             | **20 Energy Cubes** |
 
 ## Additions
-- “Missions”is at the top of the main menu, and you can also access it from the [Stars](/dlce/coins.md#star) interface and [Energy Cubes](/dlce/coins.md#cube) interface.
+- “Missions”is at the top of the main menu, and you can also access it from the [Stars](/en/dlce/coins.md#star) interface and [Energy Cubes](/en/dlce/coins.md#cube) interface.
 - Complete missions are greyed out and muted.
 
 <blockquote>
