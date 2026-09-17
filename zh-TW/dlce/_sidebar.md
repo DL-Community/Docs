@@ -2,7 +2,7 @@
 - [多語言](/zh-TW/dlce/localization.md)
 <!-- desc: "查看遊戲內貨幣相關應用" -->
 - [貨幣](/zh-TW/dlce/coins)
-  <!-- desc: "遊戲任務項目" -->
+<!-- desc: "遊戲任務項目" -->
 - [日常任務](/zh-TW/dlce/missions)
 <!-- desc: "玩法介紹" -->
 - [音符挑戰](/zh-TW/dlce/notes-challenge)
