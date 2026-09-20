@@ -3,6 +3,6 @@
 - [Social](/en/social)
 - [Legal](/en/legal)
 - More
-  - [Main Site](https://dl-community.github.io)
-  - [Wiki Legacy](https://dl-community.github.io/Docs-Legacy/#/en/)
+  - [Main Site](https://dlce.somnartis.net)
+  - [Wiki Legacy](https://dlce.somnartis.net/Docs-Legacy/#/en/)
   - [Sponsor](https://github.com/sponsors/Aaron8052)

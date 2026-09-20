@@ -3,6 +3,6 @@
 - [官方社区](/social)
 - [法律信息](/legal)
 - 更多
-  - [主站](https://dl-community.github.io)
-  - [旧版 Wiki](https://dl-community.github.io/Docs-Legacy)
+  - [主站](https://dlce.somnartis.net)
+  - [旧版 Wiki](https://dlce.somnartis.net/Docs-Legacy)
   - [赞助](https://afdian.com/a/fengyanDL)
