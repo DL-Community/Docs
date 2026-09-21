@@ -90,7 +90,7 @@
 
 <!-- tab:网络 -->
 ### 登录方式
-- 选择使用 DLRS GAS 账户 还是 Game Center 登录游戏。
+- 选择使用 [DLRS 同人游戏通用账号系统](/dlce/account.md#DLRS同人游戏通用账号系统) 还是 [Game Center](/dlce/account.md#GameCenter) 登录游戏。
 
 > [!WARNING]
 > 两种登录方式存档不互通。
@@ -144,5 +144,6 @@
 **相关文档**
 - [自定义后期处理效果](/dlce/custom-post-processing/home.md)
 - [启动参数](/dlce/commands.md)
+- [登录系统](/dlce/account.md)
 
 </blockquote>
