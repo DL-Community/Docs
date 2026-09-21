@@ -26,11 +26,14 @@
 
 <!-- tab:视频 -->
 
-### 帧率
+### 帧率（已失效）
 - 调整游戏帧率上限，最高可设置为120FPS。
 
 > [!NOTE]
 > 只有在支持ProMotion的Mac内置屏幕或高刷新率的外置显示器上才能启用120FPS。
+
+> [!IMPORTANT]
+> 该内容自版本[3.8.0](/dlce/versions.md#3.8.0)后失效。
 
 ### 显示帧率
 - 在游戏右下角显示当前帧率。
@@ -40,13 +43,17 @@
 
 <!-- tab:网络 -->
 ### 登陆方式
-- 选择使用 DLRS GAS 账户 还是 Game Center 登录游戏。
+- 选择使用 [DLRS 同人游戏通用账号系统](/dlce/account.md#DLRS同人游戏通用账号系统) 还是 [Game Center](/dlce/account.md#GameCenter) 登录游戏。
 
 > [!WARNING]
 > 两种登录方式存档不互通。
 
 ### 服务器
-- 选择关卡下载服务器的地区。
+- 选择关卡下载服务器的地区，主要有以下选择：
+  - 默认
+  - Unity Online Services（备选）
+  - GitHub
+  - Unity Gaming Services
 
 ### 超时（秒）
 - 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。
@@ -76,11 +83,14 @@
 - 默认值：512。
 
 <!-- tab:视频 -->
-### 帧率
+### 帧率（已失效）
 - 调整游戏帧率上限，最高可设置为120FPS。
 
 > [!NOTE]
 > 只有在支持 ProMotion 的设备上才能启用120FPS。
+
+> [!IMPORTANT]
+> 该内容自版本[3.8.0](/dlce/versions.md#3.8.0)后失效。
 
 ### 显示帧率
 - 在游戏右下角显示当前帧率。
@@ -96,7 +106,11 @@
 > 两种登录方式存档不互通。
 
 ### 服务器
-- 选择关卡下载服务器的地区。
+- 选择关卡下载服务器的地区，主要有以下选择：
+  - 默认
+  - Unity Online Services（备选）
+  - GitHub
+  - Unity Gaming Services
 
 ### 超时（秒）
 - 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。
@@ -128,7 +142,11 @@
 - 在游戏右下角显示当前帧率。
 
 ### 服务器
-- 选择关卡下载服务器的地区。
+- 选择关卡下载服务器的地区，主要有以下选择：
+  - 默认
+  - Unity Online Services（备选）
+  - GitHub
+  - Unity Gaming Services
 
 ### 超时（秒）
 - 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。
@@ -145,5 +163,6 @@
 - [自定义后期处理效果](/dlce/custom-post-processing/home.md)
 - [启动参数](/dlce/commands.md)
 - [登录系统](/dlce/account.md)
+- [版本历史](/dlce/versions.md)
 
 </blockquote>
