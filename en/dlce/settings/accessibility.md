@@ -49,7 +49,7 @@
 - Permanently delete game save data, including iCloud saves or DLRS GAS saves.
 
 ### Clear Cache
-- Clear locally generated game data (shared images, ad cache, configuration files, etc.) and local game saves (will not clear iCloud saves or DLRS GAS saves).
+- Clear locally generated game data (shared images, configuration files, etc.) and local game saves (will not clear iCloud saves or DLRS GAS saves).
 
 <blockquote>
 
