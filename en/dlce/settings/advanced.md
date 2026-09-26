@@ -24,16 +24,19 @@ Settings not listed below are not supported on Mac.
 - Adjusts the overall game volume.
 
 ### I/O Buffer Size
-- Adjusts the audio DSP buffer size. If audio playback is choppy, or the game music disappears after playing ads, try increasing this value.
-- Default Value：512。
+- Adjusts the audio DSP buffer size. If audio playback is choppy, or the game music disappears, try increasing this value.
+- Default Value：512.
 
 <!-- tab:Video -->
 
-### Frame Rate
+### Frame Rate (Deprecated)
 - Adjust the maximum frame rate of the game, up to 120 FPS.
 
 > [!NOTE]
 > 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
+
+> [!IMPORTANT]
+> This content becomes invalid after **3.8.0**.
 
 ### Display Frame Rate
 
@@ -52,9 +55,14 @@ Settings not listed below are not supported on Mac.
 
 ### Server
 - Select the region for the level-downloading server.
-
+- You can choose from the following servers:
+  - Default
+  - Unity Online Services（alternative）
+  - GitHub
+  - Unity Gaming Services
+    
 ### Timeout (seconds)
-- Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads, and advertisements).
+- Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads).
 
 <!-- tab:Debug -->
 ### Output Log
@@ -80,16 +88,19 @@ Settings not listed below are not supported on Mac.
 - Adjusts the overall game volume.
 
 ### I/O Buffer Size
-- Adjusts the audio DSP buffer size. If audio playback is choppy, or the game music disappears after playing ads, try increasing this value.
-- Default Value：512。
+- Adjusts the audio DSP buffer size. If audio playback is choppy, or the game music disappears, try increasing this value.
+- Default Value：512.
 
 <!-- tab:Video -->
 
-### Frame Rate
+### Frame Rate (Deprecated)
 - Adjust the maximum frame rate of the game, up to 120 FPS.
 
 > [!NOTE]
 > 120 FPS can only be enabled on a Mac's built-in screen that supports ProMotion or a high refresh rate external display.
+
+> [!IMPORTANT]
+> This content becomes invalid after **3.8.0**.
 
 ### Display Frame Rate
 
@@ -108,9 +119,14 @@ Settings not listed below are not supported on Mac.
 
 ### Server
 - Select the region for the level-downloading server.
+- You can choose from the following servers:
+  - Default
+  - Unity Online Services（alternative）
+  - GitHub
+  - Unity Gaming Services
 
 ### Timeout (seconds)
-- Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads, and advertisements).
+- Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads).
 
 <!-- tab:Others -->
 ### Multi-touch Support :id=MultiTouch
@@ -127,25 +143,30 @@ Settings not listed below are not supported on Mac.
 
 ### **Android**
 
-### I/O 缓冲区大小
-- 调整音频DSP缓冲区大小，如果音频播放出现卡顿，或播放广告后游戏音乐消失，可以尝试增大此数值。
-- 默认值：512。
+### I/O Buffer Size
+- Adjusts the audio DSP buffer size. If audio playback is choppy, or the game music disappears, try increasing this value.
+- Default Value：512.
 
-### 帧率
-- 调整游戏帧率上限，最高可设置为240FPS。
+### Frame Rate
+- Adjust the maximum frame rate of the game, up to 240 FPS.
 
-### 显示帧率
-- 在游戏右下角显示当前帧率。
+### Display Frame Rate
 
-### 服务器
-- 选择关卡下载服务器的地区。
+- Displays the current frame rate in the lower right corner of the game.
 
-### 超时（秒）
-- 设置资源下载等待时间（秒），超过此时间后仍未下载完成则判定为下载失败。
-  此设置会影响所有下载行为（例如游戏初始化、关卡下载和广告等）。
+### Server
+- Select the region for the level-downloading server.
+- You can choose from the following servers:
+  - Default
+  - Unity Online Services（alternative）
+  - GitHub
+  - Unity Gaming Services
 
-### 多点触控支持 :id=MultiTouch-Android
-- 允许同时使用多个手指控制角色。
+### Timeout (seconds)
+- Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads).
+
+### Multi-touch Support :id=MultiTouch-Android
+- Allows simultaneous control of the character with multiple fingers.
 
 <!-- tabs:end -->
 
