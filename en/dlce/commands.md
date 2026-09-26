@@ -60,7 +60,7 @@ Timeout=10
 | FrameRate           | Game frame rate limit; -1 for unlimited frame rate, default: 60 <br/>This has the same effect as the `-frame_rate_#` command.                                                                         |
 | [Network]           | Network configuration                                                                                                                    |
 | Server              | Change the game server: <br/>0: Default (equivalent to not using the command)<br/>1: Unity Online Services.<br/>2: GitHub<br/>3: Unity Gaming Services<br/>This has the same effect as the `-server_#` command. |
-| Timeout             | Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads, and advertisements). 0 for no timeout.                                                |
+| Timeout             | Set the waiting time (seconds) for resource download. If the download is not completed in time, it will be considered a failure. This setting affects all download behaviors (such as game initialization, level downloads). 0 for no timeout.                                                |
 
 
 ## Launch Arguments :id=args
