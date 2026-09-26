@@ -2,7 +2,7 @@
 - [Localization](/en/dlce/localization)
 <!-- desc: "Check the in-game currency-related stuff" -->
 - [Currencies](/en/dlce/coins)
-<!-- desc: "Game missions list" -->
+<!-- desc: "Game mission list" -->
 - [Missions](/en/dlce/missions)
 <!-- desc: "Game mode introduction" -->
 - [Notes Challenge](/en/dlce/notes-challenge)
