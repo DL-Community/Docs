@@ -29,7 +29,7 @@ Settings not listed below are not supported on Mac.
 
 <!-- tab:Video -->
 
-### Frame Rate（Expired）
+### Frame Rate(Deprecated)
 - Adjust the maximum frame rate of the game, up to 120 FPS.
 
 > [!NOTE]
@@ -93,7 +93,7 @@ Settings not listed below are not supported on Mac.
 
 <!-- tab:Video -->
 
-### Frame Rate（Expired）
+### Frame Rate(Deprecated)
 - Adjust the maximum frame rate of the game, up to 120 FPS.
 
 > [!NOTE]
