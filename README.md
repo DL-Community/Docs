@@ -15,3 +15,4 @@
 - [LEGACY-BROWSER.md](LEGACY-BROWSER.md)：旧浏览器检测范围、多语言提示页和测试入口的维护指南。
 
 ## [网站样式示例](https://dlce.somnartis.net/Docs/#/styles)
+- Markdown 样式继承自 [docsify v5](https://docsify.js.org/#/zh-cn/ui-kit)
