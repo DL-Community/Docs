@@ -2515,3 +2515,137 @@ body .docsify-pagination-container {
         transition-timing-function: ease !important;
     }
 }
+
+/* Shared footer layout for every localized footer fragment. */
+.markdown-section:has(> .docs-footer),
+.app-nav:not(:empty) ~ main .markdown-section:has(> .docs-footer) {
+    padding-bottom: 0;
+}
+
+.markdown-section .docs-footer {
+    margin-top: 32px;
+    padding: 28px 0 22px;
+    border-top: 1px solid var(--docs-header-border);
+    text-align: left;
+}
+
+.docs-footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px 24px;
+}
+
+.docs-footer-brand {
+    min-width: 0;
+}
+
+.docs-footer-title {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.markdown-section .docs-footer a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.markdown-section .docs-footer-url {
+    color: var(--docs-muted);
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.docs-footer-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    padding-top: 2px;
+}
+
+.markdown-section .docs-footer-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--base-color);
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.docs-footer-actions svg {
+    width: 15px;
+    height: 15px;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.docs-footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px 12px;
+    margin-top: 30px;
+    color: var(--docs-muted);
+    font-size: 11px;
+}
+
+.docs-footer-legal sup {
+    margin-left: 1px;
+    font-size: 8px;
+}
+
+.markdown-section .docs-footer-legal a {
+    color: inherit;
+}
+
+.markdown-section .docs-footer a:hover {
+    color: var(--docs-theme-color);
+}
+
+.markdown-section .docs-footer a:focus-visible {
+    outline: 2px solid var(--docs-theme-color);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+@media (max-width: 600px) {
+    .markdown-section .docs-footer {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: start;
+        gap: 20px 12px;
+    }
+
+    .docs-footer-main {
+        display: contents;
+    }
+
+    .docs-footer-brand {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .docs-footer-title {
+        font-size: 14px;
+    }
+
+    .docs-footer-actions {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .docs-footer-legal {
+        grid-column: 2;
+        grid-row: 1;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+        text-align: right;
+    }
+}
