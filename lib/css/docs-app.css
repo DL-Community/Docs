@@ -1850,6 +1850,12 @@ body.docs-route-pending .markdown-section {
 }
 
 @media (max-width: 30em) {
+    .markdown-section .table-wrapper th,
+    .markdown-section .table-wrapper td {
+        /* Stacked rows use left alignment regardless of Markdown column alignment. */
+        text-align: left !important;
+    }
+
     .markdown-section .table-wrapper tbody,
     .markdown-section .table-wrapper tr,
     .markdown-section .table-wrapper td {
