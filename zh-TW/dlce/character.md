@@ -69,10 +69,7 @@
 | 瑞鼠         | 音符挑戰商店取得 |
 | 耳機         | 音符挑戰商店取得 |
 
-<blockquote>
-
-**相關文件**
-- [貨幣 > 星星](/zh-TW/dlce/coins.md#star)
-- [音符挑戰](/zh-TW/dlce/notes-challenge.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /zh-TW/dlce/coins.md#star
+- /zh-TW/dlce/notes-challenge.md
+<!-- related-docs:end -->

@@ -53,7 +53,7 @@ assert.deepEqual(
 assert.equal(zhTW.pagination_previous, '上一篇');
 assert.equal(zhTW.pagination_next, '下一篇');
 
-assert.match(index, /<script src="zh-TW\/i18n\.js"><\/script>/);
+assert.match(index, /<script src="zh-TW\/i18n\.js(?:\?[^"]*)?"><\/script>/);
 assert.match(index, /var zhTWUI = window\.DLCE_I18N\['zh-TW'\]/);
 assert.match(index, /['"]\/Docs\/zh-TW\/['"]:\s*['"]\/zh-TW\/404['"]/);
 assert.match(index, /['"]\/zh-TW\/404['"]:\s*['"]\/zh-TW\/_404\.md['"]/);

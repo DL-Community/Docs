@@ -27,9 +27,6 @@ The game offers 5 missions, of which the first 2 are fixed and the remaining 3 r
 - “Missions”is at the top of the main menu, and you can also access it from the [Stars](/en/dlce/coins.md#star) interface and [Energy Cubes](/en/dlce/coins.md#cube) interface.
 - Complete missions are greyed out and muted.
 
-<blockquote>
-
-**Related Topics**
-- [Currencies](/en/dlce/coins.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/coins.md
+<!-- related-docs:end -->

@@ -94,9 +94,6 @@ Timeout=10
 | ~~`-disable_sound`~~       | 在遊戲全域範圍內停用聲音（即使設定中已經開啟）                                                                                  | **❗在2.0.2版本中移除**                               |
 | ~~`-graphics_tier_#`~~     | 更改影像層為"#"（0-2的整數）<br />0：低<br />1：中<br />2：高                                                             | 影像層越高，渲染消耗越高，不建議手動設定<br />遊戲引擎預設會根據裝置效能自動調整此設定 |
 
-<blockquote>
-
-**相關文件**
-- [遊戲設定 > 進階設定](/zh-TW/dlce/settings/advanced.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /zh-TW/dlce/settings/advanced.md
+<!-- related-docs:end -->

@@ -51,9 +51,6 @@
 ### Clear Cache
 - Clear locally generated game data (shared images, configuration files, etc.) and local game saves (will not clear iCloud saves or DLRS GAS saves).
 
-<blockquote>
-
-**Related Topics**
-- [Launch Options](/en/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/commands.md
+<!-- related-docs:end -->

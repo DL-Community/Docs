@@ -30,10 +30,7 @@
 - 游戏内音符商店可显示刷新时长
 - 可通过消耗对应关卡的音符数量来跳过一个关卡
 
-<blockquote>
-
-**相关文档**
-- [货币](/dlce/coins.md)
-- [角色外观](/dlce/character.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/coins.md
+- /dlce/character.md
+<!-- related-docs:end -->

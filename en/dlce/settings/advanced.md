@@ -171,9 +171,6 @@ Settings not listed below are not supported on Mac.
 <!-- tabs:end -->
 
 
-<blockquote>
-
-**Related Topics**
-- [Launch Options](/en/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/commands.md
+<!-- related-docs:end -->

@@ -100,9 +100,6 @@
 |               **戰殤**                |      TheWar       | [海綿DL](https://space.bilibili.com/5872193)                                                     | 趙夢澤simon - 戰殤                                                                                                                                                      |
 |               **足球**                |     Football      | BOOMBIT                                                                                          | -                                                                                                                                                                       |
 
-<blockquote>
-
-**相關文件**
-- [自訂後處理效果](/dlce/custom-post-processing)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/custom-post-processing
+<!-- related-docs:end -->

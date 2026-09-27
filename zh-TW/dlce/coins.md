@@ -33,11 +33,8 @@
 ### 取得
 - [音符挑戰](/zh-TW/dlce/notes-challenge.md)通關
 
-<blockquote>
-
-**相關文件**
-- [音符挑戰](/zh-TW/dlce/notes-challenge.md)
-- [角色外觀](/zh-TW/dlce/character.md)
-- [日常任務](/zh-TW/dlce/missions.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /zh-TW/dlce/notes-challenge.md
+- /zh-TW/dlce/character.md
+- /zh-TW/dlce/missions.md
+<!-- related-docs:end -->

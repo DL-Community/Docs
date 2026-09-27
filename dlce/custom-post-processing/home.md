@@ -11,10 +11,7 @@
 ### [V1 后处理（旧版）](/dlce/custom-post-processing/v1.md#Legacy)
 支持 <b>DLCE v1.2.9 及以上版本和怀旧版</b>。DLCE 最新版本仍支持 V1，但不推荐使用。
 
-<blockquote>
-
-**相关文档**
-- [游戏设置 > 画质](/dlce/game-settings.md#画质)
-- [关卡信息](/dlce/level_information.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/settings/general.md#画质
+- /dlce/level_information.md
+<!-- related-docs:end -->

@@ -147,9 +147,6 @@ The former is the macOS desktop version, while the latter is the iOS version run
 > [!NOTE]
 > See [Advanced Settings](/en/dlce/settings/advanced.md).
 
-<blockquote>
-
-**Related Topics**
-- [Launch Options](/en/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/commands.md
+<!-- related-docs:end -->

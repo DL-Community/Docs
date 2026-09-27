@@ -170,10 +170,7 @@
 > [!NOTE]
 > 见 [高级设置](/dlce/settings/advanced.md)。
 
-<blockquote>
-
-**相关文档**
-- [自定义后期处理效果](/dlce/custom-post-processing/home.md)
-- [启动参数](/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/custom-post-processing/home.md
+- /dlce/commands.md
+<!-- related-docs:end -->

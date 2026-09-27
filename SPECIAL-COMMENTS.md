@@ -93,7 +93,7 @@
 
 ## Markdown 插入式组件
 
-组件标记可以出现在普通 Markdown 行中的任意位置。当前注册的组件只有 `last-modified`。
+组件共用 `lib/markdown-components.js` 引擎。`last-modified` 是行内组件，`related-docs` 是独立块组件。
 
 ### 最后修改时间
 
@@ -122,7 +122,33 @@ window.DLCE_MARKDOWN_COMPONENTS.register('example', {
 });
 ```
 
-`context` 提供当前路由、真实 Markdown 文件路径、语言代码、HTML 语言、i18n 查询、HTML 转义和站点资源 URL 解析能力。添加组件脚本后，在 `index.html` 中于 `lib/markdown-components.js` 之后加载即可。
+`context` 提供当前路由、真实 Markdown 文件路径、语言定义、i18n 查询、HTML 转义、站点资源 URL 解析和 `resolveFile(path)` 路由文件解析能力。添加组件脚本后，在 `index.html` 中于 `lib/markdown-components.js` 之后加载即可。
+
+### 相关文档
+
+将需要推荐的链接写在成对的独立注释之间，文档名称自动生成：
+
+```md
+<!-- related-docs:start -->
+<!-- desc: "查看新版配置方式与参数。" -->
+- /dlce/custom-post-processing/v1.md#new
+<!-- desc: "调整游戏画质。" -->
+- /dlce/settings/general.md#画质
+- /dlce/level_information.md
+<!-- related-docs:end -->
+```
+
+- 默认标题按当前界面语言显示“相关文档”。可在列表之前添加 `<!-- title: "延伸阅读" -->` 覆盖。
+- `desc` 可选，仅描述紧随其后的一个条目；省略时只显示名称，不预留描述空行。描述按纯文本输出。
+- 名称优先使用目标语言侧栏的层级名称；未收录时读取目标文档的一级标题。目录页使用分组名称或 `page-title`，同路径存在真实 Markdown 文件时优先读取该文档。
+- 链接包含锚点时，名称末尾追加目标小节标题，支持 Docsify `:id=...`。例如显示“自定义后期处理效果 › V1 › 新版”。
+- 支持站内绝对路径、相对当前 Markdown 文件的路径、`#/...` 路由及 `?id=...` 锚点。推荐保留链接中的语言前缀，组件不会自动改写链接语言。
+- 需要覆盖名称时，使用普通 Markdown 链接：`- [自定义名称](/dlce/level_information.md)`。
+- 外部链接只支持 HTTP/HTTPS，使用新标签页打开；建议手写名称。自动取名失败时保留链接并显示路径，不影响正文阅读。
+- 桌面端两列、移动端单列；仅有一项时占满一行。整张卡片可点击，同排等高；只有一行名称时，名称和箭头上下居中。有描述时，名称与描述作为整体居中。
+- 列表保持单层；开始和结束标记各占一行，不支持组件嵌套。空列表不显示组件。缺少结束标记、嵌套或不符合格式时保留原始 Markdown；代码示例中的注释不会生成组件。
+
+块组件注册时使用 `block: true`，并提供 `parse(source)` 和 `render(context)`；引擎将注释之间的内容放入 `context.source`。解析失败返回 `null`，避免误吞正文。`related-docs` 的脚本和样式位于 `lib/components/related-docs.js`、`lib/components/related-docs.css`。
 
 ## Docsify Tabs
 

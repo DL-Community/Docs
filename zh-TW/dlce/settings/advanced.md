@@ -153,11 +153,9 @@
 
 <!-- tabs:end -->
 
-<blockquote>
-
-**相關文件**
-- [自訂後處理效果](/zh-TW/dlce/custom-post-processing/home.md)
-- [啟動參數](/zh-TW/dlce/commands.md)
-- [賬戶系統](/zh-TW/dlce/account.md)
-
-</blockquote>
+<!-- related-docs:start -->
+<!-- desc: "目前僅提供簡體中文版本。" -->
+- /dlce/custom-post-processing/home.md
+- /zh-TW/dlce/commands.md
+- /zh-TW/dlce/account.md
+<!-- related-docs:end -->

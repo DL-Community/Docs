@@ -170,10 +170,8 @@
 > [!NOTE]
 > 見 [進階設定](/zh-TW/dlce/settings/advanced.md)。
 
-<blockquote>
-
-**相關文件**
-- [自訂後處理效果](/zh-TW/dlce/custom-post-processing/home.md)
-- [啟動參數](/zh-TW/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+<!-- desc: "目前僅提供簡體中文版本。" -->
+- /dlce/custom-post-processing/home.md
+- /zh-TW/dlce/commands.md
+<!-- related-docs:end -->

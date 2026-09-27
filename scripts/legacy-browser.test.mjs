@@ -171,7 +171,7 @@ assert.doesNotMatch(
     'The site language menu must not duplicate a hard-coded language list'
 );
 assert.ok(
-    index.indexOf('id="legacy-browser-gate"') < index.indexOf('<script src="i18n.js"'),
+    index.indexOf('id="legacy-browser-gate"') < index.indexOf('<script src="i18n.js'),
     'The old-browser gate must execute before the modern site shell scripts'
 );
 

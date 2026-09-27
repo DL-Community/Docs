@@ -157,12 +157,9 @@
 
 <!-- tabs:end -->
 
-<blockquote>
-
-**相关文档**
-- [自定义后期处理效果](/dlce/custom-post-processing/home.md)
-- [启动参数](/dlce/commands.md)
-- [登录系统](/dlce/account.md)
-- [版本历史](/dlce/versions.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/custom-post-processing/home.md
+- /dlce/commands.md
+- /dlce/account.md
+- /dlce/versions
+<!-- related-docs:end -->

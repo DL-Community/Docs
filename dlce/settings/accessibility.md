@@ -52,10 +52,7 @@
 ### 清除缓存
 - 清空游戏本地生成的数据（分享图、配置文件等）以及本地游戏存档（不会清除 iCloud 的云端进度或 GAS 的云端进度）。
 
-<blockquote>
-
-**相关文档**
-- [自定义后期处理效果](/dlce/custom-post-processing/v2.md)
-- [启动参数](/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/custom-post-processing/v2.md
+- /dlce/commands.md
+<!-- related-docs:end -->

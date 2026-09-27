@@ -70,10 +70,7 @@
 | Headphones       | Obtain from the Note Store |
 
 
-<blockquote>
-
-**Related Topics**
-- [Coins > Star](/en/dlce/coins.md#star)
-- [Notes Challenge](/en/dlce/notes-challenge.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/coins.md#star
+- /en/dlce/notes-challenge.md
+<!-- related-docs:end -->

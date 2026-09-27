@@ -18,9 +18,6 @@
 - 雲存檔與其他登入方式不互通，僅能在 iOS 裝置使用 Game Center 登入的遊戲之間進行同步；
 - 遊戲啟動時自動登入，直接進入遊戲，無需玩家手動干預。
 
-<blockquote>
-
-**相關文件**
-- [登入方式](/zh-TW/dlce/settings/advanced.md#登入方式)
-
-</blockquote>
+<!-- related-docs:start -->
+- /zh-TW/dlce/settings/advanced.md#登入方式
+<!-- related-docs:end -->

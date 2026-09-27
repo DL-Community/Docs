@@ -33,11 +33,8 @@
 ### 获取
 - [音符挑战](/dlce/notes-challenge.md)通关
 
-<blockquote>
-
-**相关文档**
-- [音符挑战](/dlce/notes-challenge.md)
-- [角色外观](/dlce/character.md)
-- [日常任务](/dlce/missions.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/notes-challenge.md
+- /dlce/character.md
+- /dlce/missions.md
+<!-- related-docs:end -->

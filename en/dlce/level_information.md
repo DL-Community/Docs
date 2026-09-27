@@ -100,9 +100,7 @@
 |            **The Winter**             |      Seasons      | BOOMBIT                                                                                          | Igor Dvorkin，Duncan Pittock，Ellie Kidd  - LA SERENISSIMA<br/>[Audio Network](https://cn.audionetwork.com/browse/m/track/la-serenissima_39776)                         |
 |            **Zen Garden**             |      ChinaB       | Cheetah Mobile, BOOMBIT                                                                          | -                                                                                                                                                                       |
 
-<blockquote>
-
-**Related Topics**
-- [Custom post-processing effects](/dlce/custom-post-processing) (Chinese only, English WIP)
-
-</blockquote>
+<!-- related-docs:start -->
+<!-- desc: "Custom Post-Processing effects. Chinese only, English WIP" -->
+- /dlce/custom-post-processing
+<!-- related-docs:end -->

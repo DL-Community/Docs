@@ -33,11 +33,8 @@
 ### Obtain
 - Completing levels in [Notes Challenge](/en/dlce/notes-challenge.md)
 
-<blockquote>
-
-**Related Topics**
-- [Notes Challenge](/en/dlce/notes-challenge.md)
-- [Characters](/en/dlce/character.md)
-- [Missions](/en/dlce/missions.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/notes-challenge.md
+- /en/dlce/character.md
+- /en/dlce/missions.md
+<!-- related-docs:end -->

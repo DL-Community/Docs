@@ -27,9 +27,6 @@
 - “日常任務”位於主菜單功能首個，也可以從[星星](/zh-TW/dlce/coins.md#star)界面和[體力方塊](/zh-TW/dlce/coins.md#cube)界面轉移。
 - 每項任務完成後任務項漸灰終止。
 
-<blockquote>
-
-**相關文件**
-- [貨幣](/zh-TW/dlce/coins.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /zh-TW/dlce/coins.md
+<!-- related-docs:end -->

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T06:24:54.000Z",
+  "generatedAt": "2026-09-27T06:29:02.000Z",
   "files": {
     "_404.md": {
       "updatedAt": "2026-08-16T23:48:53.000Z",
@@ -27,24 +27,24 @@
       "commit": "e2c844c8512fbc56ce0b9e21b476359e53355bd4"
     },
     "dlce/_sidebar.md": {
-      "updatedAt": "2026-09-27T05:59:29.000Z",
-      "commit": "98a67bcce215877603c746875b872efcc2d7a5a6"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/account.md": {
       "updatedAt": "2026-08-16T01:00:52.000Z",
       "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
     },
     "dlce/character.md": {
-      "updatedAt": "2026-08-16T01:06:01.000Z",
-      "commit": "a64ad9aff256d899c487f66588112e411fffc359"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/coins.md": {
       "updatedAt": "2026-09-12T22:55:18.000Z",
       "commit": "6e3323ff2ada4316931a11031008b1423d2a7389"
     },
     "dlce/commands.md": {
-      "updatedAt": "2026-09-21T15:34:31.000Z",
-      "commit": "f279cab4e6eb2e1973bf952eb204421914ddfdb0"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/custom-post-processing/home.md": {
       "updatedAt": "2025-09-07T15:53:01.000Z",
@@ -55,52 +55,52 @@
       "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
     },
     "dlce/custom-post-processing/v2.md": {
-      "updatedAt": "2026-09-13T00:28:20.000Z",
-      "commit": "f1763e7ee08a9c20407defd6aa38aa0077935c4d"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/custom-post-processing/V2Template.md": {
       "updatedAt": "2025-09-07T15:50:51.000Z",
       "commit": "26e4d198338bf9ada3e7582f7b3cc890779c55ab"
     },
     "dlce/level_information.md": {
-      "updatedAt": "2026-08-16T01:00:52.000Z",
-      "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/localization.md": {
       "updatedAt": "2026-08-17T00:50:17.000Z",
       "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
     },
     "dlce/missions.md": {
-      "updatedAt": "2026-09-11T15:04:27.000Z",
-      "commit": "f979725a5f603eed8b63118d700f34e092ea8577"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/notes-challenge.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
     },
     "dlce/settings/accessibility.md": {
-      "updatedAt": "2026-09-21T15:27:01.000Z",
-      "commit": "48d0fe8025e4f6f96d83ecbe581d2a35fe972506"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/settings/advanced.md": {
       "updatedAt": "2026-09-21T15:30:06.000Z",
       "commit": "52b26dd8d85a3fa72720c0880e19d1350365788a"
     },
     "dlce/settings/general.md": {
-      "updatedAt": "2026-08-16T01:06:01.000Z",
-      "commit": "a64ad9aff256d899c487f66588112e411fffc359"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/versions/v1.md": {
-      "updatedAt": "2026-09-27T01:33:32.000Z",
-      "commit": "31d73f97bcf5a8e7f857868f15d743839643d6f2"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/versions/v2.md": {
-      "updatedAt": "2026-09-27T01:33:32.000Z",
-      "commit": "31d73f97bcf5a8e7f857868f15d743839643d6f2"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/versions/v3.md": {
-      "updatedAt": "2026-09-27T01:33:32.000Z",
-      "commit": "31d73f97bcf5a8e7f857868f15d743839643d6f2"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/_404.md": {
       "updatedAt": "2026-08-16T23:48:53.000Z",
@@ -127,44 +127,44 @@
       "commit": "98a67bcce215877603c746875b872efcc2d7a5a6"
     },
     "en/dlce/character.md": {
-      "updatedAt": "2026-08-16T01:00:52.000Z",
-      "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/dlce/coins.md": {
       "updatedAt": "2026-09-13T00:34:02.000Z",
       "commit": "b6a25336e3549f8503158282cf31d3568708acd9"
     },
     "en/dlce/commands.md": {
-      "updatedAt": "2026-09-26T16:39:52.000Z",
-      "commit": "000ebaf3c54354c3c31bcf3000328ce97378b1cb"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/dlce/level_information.md": {
-      "updatedAt": "2026-08-16T01:00:52.000Z",
-      "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/dlce/localization.md": {
       "updatedAt": "2026-08-17T00:50:17.000Z",
       "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
     },
     "en/dlce/missions.md": {
-      "updatedAt": "2026-09-17T14:07:09.000Z",
-      "commit": "dd72dc4ab5d8ae321da5e599c461e88d0fb1e2c9"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/dlce/notes-challenge.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
     },
     "en/dlce/settings/accessibility.md": {
-      "updatedAt": "2026-09-26T16:56:07.000Z",
-      "commit": "20cd20baab2c25d4bca4983f8871509f12dc27c2"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/dlce/settings/advanced.md": {
       "updatedAt": "2026-09-26T16:36:59.000Z",
       "commit": "d39fc3991c8a5320b2906a90545a99b81cee418d"
     },
     "en/dlce/settings/general.md": {
-      "updatedAt": "2026-08-16T01:00:52.000Z",
-      "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/legal/_sidebar.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
@@ -299,44 +299,44 @@
       "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
     },
     "zh-TW/dlce/character.md": {
-      "updatedAt": "2026-08-17T00:50:17.000Z",
-      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "zh-TW/dlce/coins.md": {
       "updatedAt": "2026-09-13T00:39:09.000Z",
       "commit": "a4c38f238b154ba25f07eb2851e6bd668ebf89dc"
     },
     "zh-TW/dlce/commands.md": {
-      "updatedAt": "2026-09-26T16:57:21.000Z",
-      "commit": "140f7942fbaa4e9733f8f2a5307a3214164713fd"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "zh-TW/dlce/level_information.md": {
-      "updatedAt": "2026-08-17T00:50:17.000Z",
-      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "zh-TW/dlce/localization.md": {
       "updatedAt": "2026-08-17T00:50:17.000Z",
       "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
     },
     "zh-TW/dlce/missions.md": {
-      "updatedAt": "2026-09-17T14:08:19.000Z",
-      "commit": "91c64c15666e7ecf31e4137e0e385f378b888849"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "zh-TW/dlce/notes-challenge.md": {
       "updatedAt": "2026-08-17T00:50:17.000Z",
       "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
     },
     "zh-TW/dlce/settings/accessibility.md": {
-      "updatedAt": "2026-09-26T16:54:48.000Z",
-      "commit": "d193d29339a44d391070dcd82f252c25fb7da7eb"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "zh-TW/dlce/settings/advanced.md": {
       "updatedAt": "2026-09-26T16:52:29.000Z",
       "commit": "6952dba216da595eac52cf65e3778b3013f98ebc"
     },
     "zh-TW/dlce/settings/general.md": {
-      "updatedAt": "2026-08-17T00:50:17.000Z",
-      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "zh-TW/legal/_sidebar.md": {
       "updatedAt": "2026-08-17T00:50:17.000Z",

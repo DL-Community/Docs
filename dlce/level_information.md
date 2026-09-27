@@ -100,9 +100,6 @@
 |               **战殇**                |      TheWar       | [海绵DL](https://space.bilibili.com/5872193)                                                     | 赵梦泽simon - 战殇                                                                                                                                                      |
 |               **足球**                |     Football      | BOOMBIT                                                                                          | -                                                                                                                                                                       |
 
-<blockquote>
-
-**相关文档**
-- [自定义后期处理效果](/dlce/custom-post-processing)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/custom-post-processing
+<!-- related-docs:end -->

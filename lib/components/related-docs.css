@@ -1,0 +1,98 @@
+.markdown-section .related-docs {
+    margin-block: 2.5rem;
+    text-align: left;
+}
+
+.markdown-section .related-docs-title {
+    margin: 0 0 1rem;
+    color: var(--strong-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.markdown-section .related-docs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.markdown-section .related-docs-grid > li {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.markdown-section .related-docs-grid > li:only-child {
+    grid-column: 1 / -1;
+}
+
+.markdown-section a.related-docs-card {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    min-height: 44px;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid var(--docs-header-border);
+    border-radius: 10px;
+    background: var(--base-background-color);
+    color: var(--docs-accent);
+    text-decoration: none;
+    transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.markdown-section .related-docs-copy {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.markdown-section .related-docs-name {
+    display: block;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.markdown-section .related-docs-description {
+    display: block;
+    margin-top: 0.4rem;
+    color: var(--docs-muted);
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.markdown-section .related-docs-arrow {
+    flex: none;
+    color: var(--docs-muted);
+    font-size: 1.2em;
+}
+
+.markdown-section a.related-docs-card:focus-visible {
+    outline: 2px solid var(--docs-accent);
+    outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .markdown-section a.related-docs-card:hover {
+        border-color: var(--docs-accent);
+        background: color-mix(in srgb, var(--docs-accent) 8%, var(--base-background-color));
+    }
+}
+
+@media (max-width: 47.99em) {
+    .markdown-section .related-docs-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .markdown-section a.related-docs-card { transition: none; }
+}

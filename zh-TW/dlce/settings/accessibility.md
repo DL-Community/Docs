@@ -52,10 +52,8 @@
 ### 清除快取
 - 清空遊戲本地生成的資料（分享圖、設定檔等）以及本地遊戲存檔（不會清除 iCloud 或 DLRS GAS 賬戶的雲端進度）。
 
-<blockquote>
-
-**相關文件**
-- [自訂後處理效果](/zh-TW/dlce/custom-post-processing/v2.md)
-- [啟動參數](/zh-TW/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+<!-- desc: "目前僅提供簡體中文版本。" -->
+- /dlce/custom-post-processing/v2.md
+- /zh-TW/dlce/commands.md
+<!-- related-docs:end -->

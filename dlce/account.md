@@ -18,9 +18,6 @@
 - 云存档与其他登录方式不互通，仅能在 iOS 设备使用 Game Center 登录的游戏之间进行同步；
 - 游戏启动时自动登录，直接进入游戏，无需玩家手动干预。
 
-<blockquote>
-
-**相关文档**
-- [登录方式](/dlce/settings/advanced.md#登录方式)
-
-</blockquote>
+<!-- related-docs:start -->
+- /dlce/settings/advanced.md#登录方式
+<!-- related-docs:end -->

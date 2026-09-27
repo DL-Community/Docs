@@ -94,9 +94,6 @@ Timeout=10
 |    ~~`-disable_sound`~~    | Disables sound globally in the game (even if Enabled in Settings)                                                                                                                                                                                                                  | **❗No longer available from version 2.0.2**                                                                                                                                                           |
 |   ~~`-graphics_tier_#`~~   | Changes the graphics tier to "#" (Accpeted value: 0, 1, 2)<br />0: Low<br />1: Medium<br />2: High                                                                                                                                                                                 | The higher the graphics tier, the higher the rendering time is. Manual setting is not recommended.<br />The game engine will automatically adjust this setting based on device performance by default. |
 
-<blockquote>
-
-**Related Topics**
-- [Settings > Advanced Settings](/en/dlce/game-settings.md#advanced-settings)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/settings/advanced.md
+<!-- related-docs:end -->

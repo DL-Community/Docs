@@ -30,10 +30,7 @@
 - 遊戲內的音符商店會顯示下次更新的倒數時間
 - 可透過消耗對應關卡的音符數量來跳過一個關卡
 
-<blockquote>
-
-**相關文件**
-- [貨幣](/zh-TW/dlce/coins.md)
-- [角色外觀](/zh-TW/dlce/character.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /zh-TW/dlce/coins.md
+- /zh-TW/dlce/character.md
+<!-- related-docs:end -->
