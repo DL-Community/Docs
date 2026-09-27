@@ -1,19 +1,28 @@
 <!-- desc: "汇总游戏更新记录。" -->
 - 版本历史 :id=versions
   <!-- page-desc: "选择一个主要版本。" -->
-  - [3.0](/dlce/versions/v3.md)
-  - [2.0](/dlce/versions/v2.md)
-  - [1.0](/dlce/versions/v1.md)
+  <!-- desc: "当前游戏的最新版本。" -->
+  - [3.0 版本](/dlce/versions/v3.md)
+  <!-- desc: "2.x 旧版本历史记录。" -->
+  - [2.0 版本](/dlce/versions/v2.md)
+  <!-- desc: "1.x 旧版本历史记录。" -->
+  - [1.0 版本](/dlce/versions/v1.md)
+
 <!-- desc: "查看游戏多语言贡献者名单，或参与贡献。" -->
 - [多语言](/dlce/localization.md)
+
 <!-- desc: "查看游戏内货币相关应用。" -->
 - [货币](/dlce/coins)
+
 <!-- desc: "游戏任务栏目。" -->
 - [日常任务](/dlce/missions.md)
+
 <!-- desc: "玩法介绍。" -->
 - [音符挑战](/dlce/notes-challenge)
+
 <!-- desc: "游戏内角色装饰相关信息。" -->
 - [角色装饰](/dlce/character)
+
 <!-- desc: "关卡与音乐制作者信息。" -->
 - [关卡信息](/dlce/level_information)
 
@@ -32,7 +41,9 @@
   - [辅助功能](/dlce/settings/accessibility.md)
   <!-- desc: "网络连接和音频 DSP 缓冲区等。" -->
   - [高级设置](/dlce/settings/advanced.md)
+
 <!-- desc: "开始游戏前启用选项应用"。 -->
 - [启动选项](/dlce/commands)
+
 <!-- desc: "游戏账号信息。" -->
 - [账号系统](/dlce/account.md)

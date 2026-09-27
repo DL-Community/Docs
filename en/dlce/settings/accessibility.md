@@ -13,11 +13,11 @@
 ## Hide Cursor
 - Choose when to automatically hide the mouse cursor.
 
-| Mode            | Details                                                           |
-|-----------------|-------------------------------------------------------------------|
-| Never           | 	Never automatically hide the mouse cursor                        |
+|      Mode       | Details                                                           |
+|:---------------:|-------------------------------------------------------------------|
+|      Never      | 	Never automatically hide the mouse cursor                        |
 | When stationary | Automatically hides the mouse cursor when the mouse is stationary |
-| While Playing   | Hide the mouse cursor during gameplay                             |
+|  While Playing  | Hide the mouse cursor during gameplay                             |
 
 ## Status Bar
 > [!IMPORTANT]
