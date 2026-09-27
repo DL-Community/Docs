@@ -1546,12 +1546,14 @@ body.docs-route-pending .markdown-section {
     transition: transform 160ms ease-out;
 }
 
-.category-card:hover .category-card-arrow {
+.category-card:hover .category-card-arrow,
+.related-docs-card:hover .category-card-arrow {
     color: var(--docs-accent);
     transform: translateX(0.2rem);
 }
 
-.category-card:hover .category-card-arrow--external {
+.category-card:hover .category-card-arrow--external,
+.related-docs-card:hover .category-card-arrow--external {
     transform: translate(0.14rem, -0.14rem);
 }
 

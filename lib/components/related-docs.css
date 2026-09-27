@@ -70,8 +70,7 @@
 
 .markdown-section .related-docs-arrow {
     flex: none;
-    color: var(--docs-muted);
-    font-size: 1.2em;
+    margin-left: 0;
 }
 
 .markdown-section a.related-docs-card:focus-visible {
@@ -94,5 +93,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .markdown-section a.related-docs-card { transition: none; }
+    .markdown-section a.related-docs-card,
+    .markdown-section .related-docs-arrow { transition: none; }
 }
