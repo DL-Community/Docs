@@ -155,7 +155,7 @@
 
 <!-- related-docs:start -->
 <!-- desc: "目前僅提供簡體中文版本。" -->
-- /dlce/custom-post-processing/home.md
+- /dlce/custom-post-processing
 - /zh-TW/dlce/commands.md
 - /zh-TW/dlce/account.md
 <!-- related-docs:end -->
