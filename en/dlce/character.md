@@ -57,17 +57,17 @@
 
 ## Decorations :id=dec
 
-| Decoration       | Price                      |
-|------------------|----------------------------|
-| Christmas Hat    | ✨ 750                      |
-| Bamboo Dragonfly | ✨ 750                      |
-| Bowler Hat       | ✨ 750                      |
-| Mexican Hat      | ✨ 750                      |
-| Wizard Hat       | Obtain from the Note Store |
-| SweetDog Hat     | Obtain from the Note Store |
-| Sprite           | Obtain from the Note Store |
-| Rat              | Obtain from the Note Store |
-| Headphones       | Obtain from the Note Store |
+|    Decoration    |           Price            |
+|:----------------:|:--------------------------:|
+|  Christmas Hat   |           ✨ 750           |
+| Bamboo Dragonfly |           ✨ 750           |
+|    Bowler Hat    |           ✨ 750           |
+|   Mexican Hat    |           ✨ 750           |
+|    Wizard Hat    | Obtain from the Note Store |
+|   SweetDog Hat   | Obtain from the Note Store |
+|      Sprite      | Obtain from the Note Store |
+|       Rat        | Obtain from the Note Store |
+|    Headphones    | Obtain from the Note Store |
 
 
 <!-- related-docs:start -->
