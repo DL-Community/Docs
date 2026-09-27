@@ -1,6 +1,5 @@
 <!-- desc: "汇总游戏更新记录。" -->
-<!-- pathname: "versions" -->
-- 版本历史
+- 版本历史 :id=versions
   <!-- page-desc: "选择一个主要版本。" -->
   - [3.0](/dlce/versions/v3.md)
   - [2.0](/dlce/versions/v2.md)
@@ -19,16 +18,14 @@
 - [关卡信息](/dlce/level_information)
 
 <!-- desc: "提供玩家自定义后期处理效果的配置方法。" -->
-<!-- pathname: "custom-post-processing" -->
-- 自定义后期处理效果
+- 自定义后期处理效果 :id=custom-post-processing
   <!-- page-desc: "选择一个后期处理版本。" -->
   <!-- desc: "支持 DLCE v3.5 及以上版本。推荐使用此版本。" -->
   - [V2](/dlce/custom-post-processing/v2)
   <!-- desc: "支持 DLCE v1.2.9 及以上版本和怀旧版。DLCE 最新版本仍支持 V1，但不推荐使用。" -->
   - [V1](/dlce/custom-post-processing/v1)
 
-<!-- pathname: "settings" -->
-- 游戏设置
+- 游戏设置 :id=settings
   <!-- desc: "画质、音画同步和游戏语言等。" -->
   - [通用设置](/dlce/settings/general.md)
   <!-- desc: "鼠标和触控等。" -->

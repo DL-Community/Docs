@@ -11,17 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dlce/versions/v1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dlce/versions/v2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPECIAL-COMMENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/SPECIAL-COMMENTS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions/v3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/last-modified.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/last-modified.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/overview-metadata.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/overview-metadata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/overview-metadata.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/overview-metadata.test.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +61,9 @@
     &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/molantsing/Documents/GitHub/DLCE-Docs/lib/data/last-modified.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -556,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="header" />
     <MESSAGE value="basePath" />
     <MESSAGE value="basePath" />
     <MESSAGE value="nav" />
@@ -581,7 +574,8 @@
     <MESSAGE value="导航栏增加旧版 wiki 入口" />
     <MESSAGE value="-" />
     <MESSAGE value="新增 github actions 部署时缓存版本更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增 github actions 部署时缓存版本更新" />
+    <MESSAGE value="新增指定子目录节点地址的功能&#10;&#10;- 参数 pathname" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增指定子目录节点地址的功能&#10;&#10;- 参数 pathname" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

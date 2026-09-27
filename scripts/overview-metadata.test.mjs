@@ -27,7 +27,7 @@ assert.deepEqual(metadata.items, [
     {
         label: '版本历史',
         href: '/dlce/versions.md',
-        pathname: '',
+        id: '',
         description: '这是版本历史项目的描述：包含冒号',
         pageTitle: '',
         pageDescription: '',
@@ -37,7 +37,7 @@ assert.deepEqual(metadata.items, [
     {
         label: '自定义后期处理效果',
         href: '',
-        pathname: '',
+        id: '',
         description: '',
         pageTitle: '自定义后期处理',
         pageDescription: '选择一个版本继续阅读。',
@@ -47,7 +47,7 @@ assert.deepEqual(metadata.items, [
     {
         label: 'V2',
         href: '/dlce/custom-post-processing/v2',
-        pathname: '',
+        id: '',
         description: 'V2 项目描述',
         pageTitle: '',
         pageDescription: '',
@@ -70,8 +70,7 @@ assert.equal(interruptedDescription.items[0].description, '');
 const descriptionScopes = parse(`
 <!-- page-desc: "整个游戏文档目录" -->
 <!-- desc: "版本卡片描述" -->
-<!-- pathname: "versions" -->
-- 版本历史
+- 版本历史 :id=versions
   <!-- page-desc: "选择一个主要版本。" -->
   <!-- desc: "第三版卡片描述" -->
   - 3.0
@@ -100,7 +99,7 @@ assert.deepEqual(Array.from(descriptionScopes.items, item => [item.label, item.p
     ['账号系统', '']
 ]);
 assert.equal(descriptionScopes.items[0].description, '版本卡片描述');
-assert.equal(descriptionScopes.items[0].pathname, 'versions');
+assert.equal(descriptionScopes.items[0].id, 'versions');
 assert.equal(descriptionScopes.items[1].description, '第三版卡片描述');
 
 const leafBeforeGroup = parse('- [角色装饰](/dlce/character)\n<!-- page-desc: 忽略 -->\n- 分组\n  - [文档](/guide)');
@@ -111,10 +110,10 @@ assert.equal(interruptedPageDescription.items[0].pageDescription, '');
 
 const gameSidebar = parse(readFileSync('dlce/_sidebar.md', 'utf8'));
 assert.equal(gameSidebar.pageDescription, '');
-assert.equal(gameSidebar.items.find(item => item.pathname === 'versions').pageDescription, '选择一个主要版本。');
-assert.equal(gameSidebar.items.find(item => item.pathname === 'custom-post-processing').pageDescription, '选择一个后期处理版本。');
+assert.equal(gameSidebar.items.find(item => item.id === 'versions').pageDescription, '选择一个主要版本。');
+assert.equal(gameSidebar.items.find(item => item.id === 'custom-post-processing').pageDescription, '选择一个后期处理版本。');
 assert.equal(context.DLCE_OVERVIEW_METADATA.sidebarMarkdown(
-    '<!-- pathname: "versions" -->\n- 版本历史\n<!-- page-desc: "选择版本" -->\n  - [3.0](/dlce/versions/v3)'
+    '- 版本历史 :id=versions\n<!-- page-desc: "选择版本" -->\n  - [3.0](/dlce/versions/v3)'
 ), '- 版本历史\n  - [3.0](/dlce/versions/v3)', 'Unindented metadata must not break nested Markdown lists');
 assert.equal(context.DLCE_OVERVIEW_METADATA.sidebarMarkdown(null), null);
 for (const prefix of ['', 'en/', 'zh-TW/']) {
@@ -186,19 +185,29 @@ console.log('Sidebar overview metadata tests passed.');
 
 // Execute the production route handler with controlled HTTP responses.
 const customMetadata = parse(`
-<!-- pathname: "versions" -->
 <!-- desc: "版本说明" -->
-- 版本历史
+- 版本历史 :id=versions
   - [3.0](/dlce/versions/v3)
-<!-- pathname: "versions" -->
-- 重复分组
+- 重复分组 :id=versions
   - [2.0](/dlce/versions/v2)
 `);
-assert.equal(customMetadata.items[0].pathname, 'versions');
+assert.equal(customMetadata.items[0].id, 'versions');
 assert.equal(customMetadata.items[0].description, '版本说明');
-assert.equal(customMetadata.items[1].pathname, '');
-assert.equal(parse('<!-- pathname: "lost" -->\n普通文本\n- 分组').items[0].pathname, '');
-assert.equal(parse('<!-- pathname: "" -->\n- 分组').items[0].pathname, '');
+assert.equal(customMetadata.items[1].id, '');
+assert.equal(parse('- 分组 :id=first\n  - 子项\n- 下一个分组').items[2].id, '');
+assert.equal(parse('- 分组 :id=').items[0].id, '');
+assert.equal(customMetadata.items[0].label, '版本历史');
+assert.deepEqual(Array.from(customMetadata.items[1].path), ['版本历史', '3.0']);
+const nestedIds = parse('- **版本历史** :id=versions\n  - 旧版本 :id=legacy\n    - [1.0](/dlce/versions/v1)');
+assert.equal(nestedIds.items[0].id, 'versions');
+assert.equal(nestedIds.items[1].id, 'legacy');
+assert.deepEqual(Array.from(nestedIds.items[2].path), ['版本历史', '旧版本', '1.0']);
+const explicitIdLink = '- [文档](/guide ":id=guide-link")';
+assert.equal(parse(explicitIdLink).items[0].id, '');
+assert.equal(context.DLCE_OVERVIEW_METADATA.sidebarMarkdown(explicitIdLink), explicitIdLink);
+assert.equal(context.DLCE_OVERVIEW_METADATA.sidebarMarkdown('# 标题 :id=heading'), '# 标题 :id=heading');
+assert.equal(parse('<!-- pathname: "removed" -->\n- 分组\n  - [文档](/guide)').items[0].id, '',
+    'The removed pathname comment must no longer define a route');
 
 const routeContext = vm.createContext({
     window: { $docsify: { routes: {} } },
@@ -227,14 +236,14 @@ async function resolveRoute(path, status, body = '') {
 assert.equal(await resolveRoute('/dlce/versions', 200, '# 真实文档'), '# 真实文档');
 assert.equal(routeContext.customCategoryRoutes['/dlce/versions'], undefined);
 assert.match(await resolveRoute('/dlce/versions', 404), /data-category-landing-placeholder/);
-assert.equal(routeContext.customCategoryRoutes['/dlce/versions'], 'pathname:["版本历史"]');
+assert.equal(routeContext.customCategoryRoutes['/dlce/versions'], 'id:["版本历史"]');
 assert.equal(await resolveRoute('/dlce/versions', 200, '# 新增文件'), '# 新增文件');
 assert.equal(routeContext.customCategoryRoutes['/dlce/versions'], undefined);
 assert.equal(await resolveRoute('/dlce/versions', 500), undefined);
 assert.equal(await resolveRoute('/dlce/unknown', 404), undefined);
 assert.match(await resolveRoute('/en/dlce/versions', 404), /data-category-landing-placeholder/);
-for (const pathname of ['', '../versions', 'a/b', '__overview', 'x?y']) {
-    assert.equal(routeContext.customCategoryPath({ pathname }, '/dlce/'), '');
+for (const id of ['', '../versions', 'a/b', '__overview', 'x?y']) {
+    assert.equal(routeContext.customCategoryPath({ id }, '/dlce/'), '');
 }
-assert.equal(routeContext.customCategoryPath({ pathname: 'my-versions_2' }, '/en/dlce/'), '/en/dlce/my-versions_2');
+assert.equal(routeContext.customCategoryPath({ id: 'my-versions_2' }, '/en/dlce/'), '/en/dlce/my-versions_2');
 console.log('Custom overview routes: Markdown priority, 404 fallback, localization and validation passed.');

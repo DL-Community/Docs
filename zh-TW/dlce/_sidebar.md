@@ -11,8 +11,7 @@
 <!-- desc: "關卡與音樂製作者資訊" -->
 - [關卡資訊](/zh-TW/dlce/level_information)
 
-<!-- pathname: "settings" -->
-- 遊戲設定
+- 遊戲設定 :id=settings
   <!-- desc: "畫質、音畫同步和遊戲語言等" -->
   - [一般設定](/zh-TW/dlce/settings/general.md)
   <!-- desc: "滑鼠和觸控等" -->

@@ -11,8 +11,7 @@
 <!-- desc: "Level and music creator Information" -->
 - [Level Information](/en/dlce/level_information)
 
-<!-- pathname: "settings" -->
-- Settings
+- Settings :id=settings
   <!-- desc: "Quality, synchronization and language…" -->
   - [General Settings](/en/dlce/settings/general.md)
   <!-- desc: "Mouse and touch screen…" -->
