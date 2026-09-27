@@ -15,8 +15,8 @@ const metadata = JSON.parse(JSON.stringify(parse(`
 - [版本历史](/dlce/versions.md)
 
 <!-- page-title: "自定义后期处理" -->
-<!-- page-desc: "选择一个版本继续阅读。" -->
 - 自定义后期处理效果
+  <!-- page-desc: "选择一个版本继续阅读。" -->
   <!-- item-desc: "V2 项目描述" -->
   - [V2](/dlce/custom-post-processing/v2)
 `)));
@@ -27,6 +27,7 @@ assert.deepEqual(metadata.items, [
     {
         label: '版本历史',
         href: '/dlce/versions.md',
+        pathname: '',
         description: '这是版本历史项目的描述：包含冒号',
         pageTitle: '',
         pageDescription: '',
@@ -36,6 +37,7 @@ assert.deepEqual(metadata.items, [
     {
         label: '自定义后期处理效果',
         href: '',
+        pathname: '',
         description: '',
         pageTitle: '自定义后期处理',
         pageDescription: '选择一个版本继续阅读。',
@@ -45,6 +47,7 @@ assert.deepEqual(metadata.items, [
     {
         label: 'V2',
         href: '/dlce/custom-post-processing/v2',
+        pathname: '',
         description: 'V2 项目描述',
         pageTitle: '',
         pageDescription: '',
@@ -64,6 +67,61 @@ assert.equal(noMetadata.items[0].description, '');
 const interruptedDescription = parse('<!-- desc: 不应跨过普通文本 -->\n普通文本\n- [文档](/guide)');
 assert.equal(interruptedDescription.items[0].description, '');
 
+const descriptionScopes = parse(`
+<!-- page-desc: "整个游戏文档目录" -->
+<!-- desc: "版本卡片描述" -->
+<!-- pathname: "versions" -->
+- 版本历史
+  <!-- page-desc: "选择一个主要版本。" -->
+  <!-- desc: "第三版卡片描述" -->
+  - 3.0
+    <!-- page-desc: "选择第三版文档。" -->
+    - [更新记录](/dlce/versions/v3)
+      <!-- page-desc: "没有子页面，应忽略" -->
+  - [2.0](/dlce/versions/v2)
+- [角色装饰](/dlce/character)
+  <!-- page-desc: "不能影响后面的分组" -->
+- 游戏设置
+
+<!-- page-desc: "不缩进也绑定上方分组" -->
+  - [通用设置](/dlce/settings/general)
+- [账号系统](/dlce/account)
+<!-- page-desc: "文件末尾的叶节点描述也应忽略" -->
+`);
+assert.equal(descriptionScopes.pageDescription, '整个游戏文档目录');
+assert.deepEqual(Array.from(descriptionScopes.items, item => [item.label, item.pageDescription]), [
+    ['版本历史', '选择一个主要版本。'],
+    ['3.0', '选择第三版文档。'],
+    ['更新记录', ''],
+    ['2.0', ''],
+    ['角色装饰', ''],
+    ['游戏设置', '不缩进也绑定上方分组'],
+    ['通用设置', ''],
+    ['账号系统', '']
+]);
+assert.equal(descriptionScopes.items[0].description, '版本卡片描述');
+assert.equal(descriptionScopes.items[0].pathname, 'versions');
+assert.equal(descriptionScopes.items[1].description, '第三版卡片描述');
+
+const leafBeforeGroup = parse('- [角色装饰](/dlce/character)\n<!-- page-desc: 忽略 -->\n- 分组\n  - [文档](/guide)');
+assert.equal(leafBeforeGroup.pageDescription, '');
+assert.ok(leafBeforeGroup.items.every(item => item.pageDescription === ''));
+const interruptedPageDescription = parse('- 分组\n普通文本\n<!-- page-desc: 不应跨过普通文本 -->\n  - [文档](/guide)');
+assert.equal(interruptedPageDescription.items[0].pageDescription, '');
+
+const gameSidebar = parse(readFileSync('dlce/_sidebar.md', 'utf8'));
+assert.equal(gameSidebar.pageDescription, '');
+assert.equal(gameSidebar.items.find(item => item.pathname === 'versions').pageDescription, '选择一个主要版本。');
+assert.equal(gameSidebar.items.find(item => item.pathname === 'custom-post-processing').pageDescription, '选择一个后期处理版本。');
+assert.equal(context.DLCE_OVERVIEW_METADATA.sidebarMarkdown(
+    '<!-- pathname: "versions" -->\n- 版本历史\n<!-- page-desc: "选择版本" -->\n  - [3.0](/dlce/versions/v3)'
+), '- 版本历史\n  - [3.0](/dlce/versions/v3)', 'Unindented metadata must not break nested Markdown lists');
+assert.equal(context.DLCE_OVERVIEW_METADATA.sidebarMarkdown(null), null);
+for (const prefix of ['', 'en/', 'zh-TW/']) {
+    const communitySidebar = parse(readFileSync(prefix + 'social/_sidebar.md', 'utf8'));
+    assert.ok(communitySidebar.pageDescription, 'Existing top-level localized descriptions must still work');
+}
+
 const index = readFileSync('index.html', 'utf8');
 const navigation = readFileSync('lib/navigation.js', 'utf8');
 const appCss = readFileSync('lib/css/docs-app.css', 'utf8');
@@ -72,7 +130,7 @@ const maintenanceGuide = readFileSync('SPECIAL-COMMENTS.md', 'utf8');
 
 assert.match(
     index,
-    /<script src="lib\/overview-metadata\.js\?v=2"><\/script>\s*<script src="lib\/navigation\.js\?v=\d+"><\/script>/,
+    /<script src="lib\/overview-metadata\.js\?v=\d+"><\/script>\s*<script src="lib\/navigation\.js\?v=\d+"><\/script>/,
     'The overview metadata parser must load before the navigation renderer'
 );
 assert.match(
@@ -125,3 +183,58 @@ assert.match(
 });
 
 console.log('Sidebar overview metadata tests passed.');
+
+// Execute the production route handler with controlled HTTP responses.
+const customMetadata = parse(`
+<!-- pathname: "versions" -->
+<!-- desc: "版本说明" -->
+- 版本历史
+  - [3.0](/dlce/versions/v3)
+<!-- pathname: "versions" -->
+- 重复分组
+  - [2.0](/dlce/versions/v2)
+`);
+assert.equal(customMetadata.items[0].pathname, 'versions');
+assert.equal(customMetadata.items[0].description, '版本说明');
+assert.equal(customMetadata.items[1].pathname, '');
+assert.equal(parse('<!-- pathname: "lost" -->\n普通文本\n- 分组').items[0].pathname, '');
+assert.equal(parse('<!-- pathname: "" -->\n- 分组').items[0].pathname, '');
+
+const routeContext = vm.createContext({
+    window: { $docsify: { routes: {} } },
+    CATEGORY_ROUTE_SEGMENT: '__overview',
+    normalizedOverviewLabel: value => value,
+    customCategoryRoutes: Object.create(null),
+    normalizeRoute: value => (value || '').replace(/\.md$/, '').replace(/\/$/, ''),
+    sectionFromPath: () => 'dlce',
+    languageDefinitionForPath: path => ({ code: path.startsWith('/en/') ? 'en' : 'zh' }),
+    sectionLandingPath: (section, code) => (code === 'en' ? '/en' : '') + '/' + section + '/',
+    loadSectionOverviewMetadata: async () => customMetadata,
+    languageTargetResource: path => '/Docs' + path + '.md'
+});
+vm.runInContext(navigation.slice(navigation.indexOf('    function childMetadataItems('),
+    navigation.indexOf('    function addCategoryCardDescription(')), routeContext);
+vm.runInContext(navigation.slice(navigation.indexOf('    function customCategoryPath('),
+    navigation.indexOf('    function setAttributeIfChanged(')), routeContext);
+const routeHandler = Object.values(routeContext.window.$docsify.routes)[0];
+async function resolveRoute(path, status, body = '') {
+    routeContext.window.fetch = async resource => {
+        assert.equal(resource, '/Docs' + path + '.md');
+        return { ok: status === 200, status, text: async () => body };
+    };
+    return new Promise(resolve => routeHandler(path, [], resolve));
+}
+assert.equal(await resolveRoute('/dlce/versions', 200, '# 真实文档'), '# 真实文档');
+assert.equal(routeContext.customCategoryRoutes['/dlce/versions'], undefined);
+assert.match(await resolveRoute('/dlce/versions', 404), /data-category-landing-placeholder/);
+assert.equal(routeContext.customCategoryRoutes['/dlce/versions'], 'pathname:["版本历史"]');
+assert.equal(await resolveRoute('/dlce/versions', 200, '# 新增文件'), '# 新增文件');
+assert.equal(routeContext.customCategoryRoutes['/dlce/versions'], undefined);
+assert.equal(await resolveRoute('/dlce/versions', 500), undefined);
+assert.equal(await resolveRoute('/dlce/unknown', 404), undefined);
+assert.match(await resolveRoute('/en/dlce/versions', 404), /data-category-landing-placeholder/);
+for (const pathname of ['', '../versions', 'a/b', '__overview', 'x?y']) {
+    assert.equal(routeContext.customCategoryPath({ pathname }, '/dlce/'), '');
+}
+assert.equal(routeContext.customCategoryPath({ pathname: 'my-versions_2' }, '/en/dlce/'), '/en/dlce/my-versions_2');
+console.log('Custom overview routes: Markdown priority, 404 fallback, localization and validation passed.');

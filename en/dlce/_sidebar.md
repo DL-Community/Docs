@@ -10,6 +10,8 @@
 - [Characters](/en/dlce/character)
 <!-- desc: "Level and music creator Information" -->
 - [Level Information](/en/dlce/level_information)
+
+<!-- pathname: "settings" -->
 - Settings
   <!-- desc: "Quality, synchronization and language…" -->
   - [General Settings](/en/dlce/settings/general.md)

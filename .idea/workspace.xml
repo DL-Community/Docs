@@ -10,7 +10,19 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="" />
+    <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dlce/versions/v1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dlce/versions/v2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPECIAL-COMMENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/SPECIAL-COMMENTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions/v3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/last-modified.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/last-modified.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/overview-metadata.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/overview-metadata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/overview-metadata.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/overview-metadata.test.mjs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +66,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:DL-Community/Docs.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/DL-Community/Docs.git&quot;,
     &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;
   }
 }</component>
@@ -80,15 +92,21 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "WebServerToolWindowFactoryState": "false",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "feat/docsify-v5",
+    "git-widget-placeholder": "main",
     "git.auto.fetch.suggestion.counter": "1",
     "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/jiang/Documents/GitHub/Docs",
     "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/molantsing/Library/Application Support/JetBrains/Rider2026.2/node/versions/24.21.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -582,5 +600,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
