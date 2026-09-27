@@ -70,6 +70,6 @@
 |    耳机     | 音符挑战商店获取 |
 
 <!-- related-docs:start -->
-- /dlce/coins.md#star
-- /dlce/notes-challenge.md
+- coins.md#star
+- notes-challenge.md
 <!-- related-docs:end -->

@@ -70,6 +70,6 @@
 |    耳機     | 音符挑戰商店取得 |
 
 <!-- related-docs:start -->
-- /zh-TW/dlce/coins.md#star
-- /zh-TW/dlce/notes-challenge.md
+- coins.md#star
+- notes-challenge.md
 <!-- related-docs:end -->

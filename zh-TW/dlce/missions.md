@@ -28,5 +28,5 @@
 - 每項任務完成後任務項漸灰終止。
 
 <!-- related-docs:start -->
-- /zh-TW/dlce/coins.md
+- coins.md
 <!-- related-docs:end -->

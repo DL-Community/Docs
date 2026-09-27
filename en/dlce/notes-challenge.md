@@ -31,6 +31,6 @@
 - Players can now spend corresponding notes to skip a challenge level once.
 
 <!-- related-docs:start -->
-- /en/dlce/coins.md
-- /en/dlce/character.md
+- coins.md
+- character.md
 <!-- related-docs:end -->

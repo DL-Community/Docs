@@ -28,5 +28,5 @@
 - 每项任务完成后任务项变灰静默。
 
 <!-- related-docs:start -->
-- /dlce/coins.md
+- coins.md
 <!-- related-docs:end -->

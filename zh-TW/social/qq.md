@@ -50,3 +50,8 @@
     </div>
   </a>
 </div>
+
+<!-- related-docs:start -->
+<!-- desc: "閱讀群規" -->
+- rules.md
+<!-- related-docs:end -->

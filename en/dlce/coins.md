@@ -34,7 +34,7 @@
 - Completing levels in [Notes Challenge](/en/dlce/notes-challenge.md)
 
 <!-- related-docs:start -->
-- /en/dlce/notes-challenge.md
-- /en/dlce/character.md
-- /en/dlce/missions.md
+- notes-challenge.md
+- character.md
+- missions.md
 <!-- related-docs:end -->

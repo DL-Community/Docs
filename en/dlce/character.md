@@ -71,6 +71,6 @@
 
 
 <!-- related-docs:start -->
-- /en/dlce/coins.md#star
-- /en/dlce/notes-challenge.md
+- coins.md#star
+- notes-challenge.md
 <!-- related-docs:end -->

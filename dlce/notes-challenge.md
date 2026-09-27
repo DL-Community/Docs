@@ -31,6 +31,6 @@
 - 可通过消耗对应关卡的音符数量来跳过一个关卡
 
 <!-- related-docs:start -->
-- /dlce/coins.md
-- /dlce/character.md
+- coins.md
+- character.md
 <!-- related-docs:end -->

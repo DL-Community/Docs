@@ -28,5 +28,5 @@ The game offers 5 missions, of which the first 2 are fixed and the remaining 3 r
 - Complete missions are greyed out and muted.
 
 <!-- related-docs:start -->
-- /en/dlce/coins.md
+- coins.md
 <!-- related-docs:end -->

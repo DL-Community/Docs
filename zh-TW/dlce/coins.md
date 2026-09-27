@@ -34,7 +34,7 @@
 - [音符挑戰](/zh-TW/dlce/notes-challenge.md)通關
 
 <!-- related-docs:start -->
-- /zh-TW/dlce/notes-challenge.md
-- /zh-TW/dlce/character.md
-- /zh-TW/dlce/missions.md
+- notes-challenge.md
+- character.md
+- missions.md
 <!-- related-docs:end -->

@@ -95,5 +95,5 @@ Timeout=10
 |   ~~`-graphics_tier_#`~~   | 更改图像层为"#"（0-2的整数）<br />0：低<br />1：中<br />2：高                                                                                                         | 图像层越高，渲染消耗越高，不建议手动设置<br />游戏引擎默认会根据设备性能自动调节此设定 |
 
 <!-- related-docs:start -->
-- /dlce/settings/advanced.md
+- settings/advanced.md
 <!-- related-docs:end -->

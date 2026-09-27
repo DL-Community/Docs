@@ -101,6 +101,6 @@
 |            **Zen Garden**             |      ChinaB       | Cheetah Mobile, BOOMBIT                                                                          | -                                                                                                                                                                       |
 
 <!-- related-docs:start -->
-<!-- desc: "Custom Post-Processing effects. Chinese only, English WIP" -->
-- /dlce/custom-post-processing
+<!-- desc: "Chinese only, English WIP" -->
+- [Custom Post-Processing Effects](/dlce/custom-post-processing)
 <!-- related-docs:end -->

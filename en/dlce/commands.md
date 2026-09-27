@@ -95,5 +95,5 @@ Timeout=10
 |   ~~`-graphics_tier_#`~~   | Changes the graphics tier to "#" (Accpeted value: 0, 1, 2)<br />0: Low<br />1: Medium<br />2: High                                                                                                                                                                                 | The higher the graphics tier, the higher the rendering time is. Manual setting is not recommended.<br />The game engine will automatically adjust this setting based on device performance by default. |
 
 <!-- related-docs:start -->
-- /en/dlce/settings/advanced.md
+- settings/advanced.md
 <!-- related-docs:end -->

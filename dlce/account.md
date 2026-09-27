@@ -19,5 +19,5 @@
 - 游戏启动时自动登录，直接进入游戏，无需玩家手动干预。
 
 <!-- related-docs:start -->
-- /dlce/settings/advanced.md#登录方式
+- settings/advanced.md#登录方式
 <!-- related-docs:end -->

@@ -101,5 +101,5 @@
 |               **足球**                |     Football      | BOOMBIT                                                                                          | -                                                                                                                                                                       |
 
 <!-- related-docs:start -->
-- /dlce/custom-post-processing
+- custom-post-processing
 <!-- related-docs:end -->

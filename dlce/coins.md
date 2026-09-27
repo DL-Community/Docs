@@ -34,7 +34,7 @@
 - [音符挑战](/dlce/notes-challenge.md)通关
 
 <!-- related-docs:start -->
-- /dlce/notes-challenge.md
-- /dlce/character.md
-- /dlce/missions.md
+- notes-challenge.md
+- character.md
+- missions.md
 <!-- related-docs:end -->
