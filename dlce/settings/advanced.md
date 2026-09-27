@@ -158,7 +158,7 @@
 <!-- tabs:end -->
 
 <!-- related-docs:start -->
-- /dlce/custom-post-processing/home.md
+- /dlce/custom-post-processing
 - /dlce/commands.md
 - /dlce/account.md
 - /dlce/versions
