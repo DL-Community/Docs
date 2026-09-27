@@ -171,6 +171,6 @@
 > 见 [高级设置](/dlce/settings/advanced.md)。
 
 <!-- related-docs:start -->
-- /dlce/custom-post-processing/home.md
+- /dlce/custom-post-processing
 - /dlce/commands.md
 <!-- related-docs:end -->
