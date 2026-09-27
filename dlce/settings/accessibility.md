@@ -53,6 +53,6 @@
 - 清空游戏本地生成的数据（分享图、配置文件等）以及本地游戏存档（不会清除 iCloud 的云端进度或 GAS 的云端进度）。
 
 <!-- related-docs:start -->
-- /dlce/custom-post-processing/v2.md
+- /dlce/custom-post-processing
 - /dlce/commands.md
 <!-- related-docs:end -->
