@@ -171,6 +171,12 @@
 > 见 [高级设置](/dlce/settings/advanced.md)。
 
 <!-- related-docs:start -->
+<!-- desc: "提供玩家自定义后期处理效果的配置方法。" -->
 - /dlce/custom-post-processing
+<!-- desc: "高级游戏选项，启动游戏前配置。" -->
 - /dlce/commands.md
+<!-- desc: "鼠标和触控等。" -->
+- accessibility.md
+<!-- desc:"网络连接和音频 DSP 缓冲区等。" -->
+- advanced.md
 <!-- related-docs:end -->

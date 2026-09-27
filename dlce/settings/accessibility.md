@@ -53,6 +53,8 @@
 - 清空游戏本地生成的数据（分享图、配置文件等）以及本地游戏存档（不会清除 iCloud 的云端进度或 GAS 的云端进度）。
 
 <!-- related-docs:start -->
+<!-- desc: "提供玩家自定义后期处理效果的配置方法。" -->
 - /dlce/custom-post-processing
+<!-- desc: "高级游戏选项，启动游戏前配置。" -->
 - /dlce/commands.md
 <!-- related-docs:end -->

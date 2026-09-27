@@ -158,8 +158,12 @@
 <!-- tabs:end -->
 
 <!-- related-docs:start -->
-- /dlce/custom-post-processing
+<!-- desc: "高级游戏选项，启动游戏前配置。" -->
 - /dlce/commands.md
+<!-- desc:"画质、音画同步和游戏语言等。" -->
+- general.md
+<!-- desc: "鼠标和触控等。" -->
+- accessibility.md
+<!-- desc: "游戏账号信息。" -->
 - /dlce/account.md
-- /dlce/versions
 <!-- related-docs:end -->
