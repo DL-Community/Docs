@@ -1,1 +1,2 @@
-- [Home](/en/about/home)
+<!-- skip-overview: true -->
+- [Home](/en/about/home.md)

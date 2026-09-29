@@ -1,8 +1,8 @@
-- [Home](/en/about)
+- [Home](/en/about/home.md)
 - [Docs](/en/dlce)
 - [Social](/en/social)
 - [Legal](/en/legal)
 - More
   - [Main Site](https://dlce.somnartis.net)
-  - [Wiki Legacy](https://dlce.somnartis.net/Docs-Legacy/#/en/)
+  - [Contact Us](/en/about/contact.md)
   - [Sponsor](https://github.com/sponsors/Aaron8052)

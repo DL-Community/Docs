@@ -1,1 +1,2 @@
-- [ホーム](/ja/about/home)
+- [ホーム](/ja/about/home.md)
+- [Contact](/ja/about/contact.md)
