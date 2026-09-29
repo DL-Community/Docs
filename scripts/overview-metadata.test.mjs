@@ -31,6 +31,7 @@ assert.deepEqual(metadata.items, [
         description: '这是版本历史项目的描述：包含冒号',
         pageTitle: '',
         pageDescription: '',
+        skipOverview: false,
         indentation: 0,
         path: ['版本历史']
     },
@@ -41,6 +42,7 @@ assert.deepEqual(metadata.items, [
         description: '',
         pageTitle: '自定义后期处理',
         pageDescription: '选择一个版本继续阅读。',
+        skipOverview: false,
         indentation: 0,
         path: ['自定义后期处理效果']
     },
@@ -51,6 +53,7 @@ assert.deepEqual(metadata.items, [
         description: 'V2 项目描述',
         pageTitle: '',
         pageDescription: '',
+        skipOverview: false,
         indentation: 2,
         path: ['自定义后期处理效果', 'V2']
     }
@@ -247,3 +250,51 @@ for (const id of ['', '../versions', 'a/b', '__overview', 'x?y']) {
 }
 assert.equal(routeContext.customCategoryPath({ id: 'my-versions_2' }, '/en/dlce/'), '/en/dlce/my-versions_2');
 console.log('Custom overview routes: Markdown priority, 404 fallback, localization and validation passed.');
+
+const skipScopes = parse(`
+<!-- skip-overview: true -->
+- 父目录
+  - 子目录 :id=child
+    <!-- skip-overview: true -->
+    - 孙目录
+      - [文档](/dlce/first)
+    - [第二篇](/dlce/second)
+- [叶节点](/dlce/leaf)
+  <!-- skip-overview: true -->
+- 相邻目录
+  - [其他文档](/dlce/other)
+`);
+assert.equal(skipScopes.skipOverview, true);
+assert.deepEqual(Array.from(skipScopes.items, item => item.skipOverview),
+    [false, true, false, false, false, false, false, false]);
+assert.equal(parse('<!-- skip-overview: false -->').skipOverview, false);
+assert.equal(parse('<!-- skip-overview: typo -->').skipOverview, false);
+assert.equal(parse('- 分组\n普通文本\n<!-- skip-overview: true -->\n  - [文档](/dlce/a)').items[0].skipOverview, false);
+assert.equal(context.DLCE_OVERVIEW_METADATA.sidebarMarkdown(
+    '<!-- skip-overview: true -->\n- 分组\n<!-- skip-overview: true -->\n  - [文档](/dlce/a)'
+), '- 分组\n  - [文档](/dlce/a)');
+
+const redirects = [];
+const redirectContext = vm.createContext({
+    window: { location: { replace: href => redirects.push(href) } },
+    currentPath: () => '/dlce/',
+    navigationLinkIsExternal: link => !link.getAttribute('href').startsWith('#/'),
+});
+vm.runInContext(navigation.slice(navigation.indexOf('    function normalizeRoute('),
+    navigation.indexOf('    function currentPageLink(')), redirectContext);
+vm.runInContext(navigation.slice(navigation.indexOf('    function redirectSkippedOverview('),
+    navigation.indexOf('    function renderCategoryPage(')), redirectContext);
+const link = href => ({ getAttribute: () => href });
+const redirect = redirectContext.redirectSkippedOverview;
+assert.equal(redirect(skipScopes, [link('#/dlce/first'), link('#/dlce/second')]), true);
+assert.equal(redirect(skipScopes.items[0], [link('#/dlce/child')]), false, 'Parent does not inherit child flag');
+assert.equal(redirect(skipScopes.items[1], [link('#/dlce/__overview/grandchild')]), true);
+assert.equal(redirect(skipScopes.items[2], [link('#/dlce/first')]), false, 'Child does not inherit parent flag');
+for (const links of [[], [link('#/dlce/')], [link('https://example.com')], [link('')]]) {
+    assert.equal(redirect(skipScopes, links), false);
+}
+assert.deepEqual(redirects, ['#/dlce/first', '#/dlce/__overview/grandchild']);
+assert.match(navigation, /redirectSkippedOverview\(item, childLinks\)/);
+assert.match(navigation, /redirectSkippedOverview\(metadata, links\)/);
+assert.ok(maintenanceGuide.includes('<!-- skip-overview: true -->'));
+console.log('Skip overview: root, nested scope isolation, first-entry routing and fallback tests passed.');
