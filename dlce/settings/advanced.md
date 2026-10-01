@@ -33,7 +33,7 @@
 > 只有在支持ProMotion的Mac内置屏幕或高刷新率的外置显示器上才能启用120FPS。
 
 > [!IMPORTANT]
-> 该内容自版本[3.8.0](/dlce/versions.md#3.8.0)后失效。
+> 该内容自版本[3.8.0](/dlce/versions.md/v3.md#3.8.0)后失效。
 
 ### 显示帧率
 - 在游戏右下角显示当前帧率。
@@ -90,7 +90,7 @@
 > 只有在支持 ProMotion 的设备上才能启用120FPS。
 
 > [!IMPORTANT]
-> 该内容自版本[3.8.0](/dlce/versions.md#3.8.0)后失效。
+> 该内容自版本[3.8.0](/dlce/versions.md/v3.md#3.8.0)后失效。
 
 ### 显示帧率
 - 在游戏右下角显示当前帧率。
@@ -158,6 +158,8 @@
 <!-- tabs:end -->
 
 <!-- related-docs:start -->
+<!-- desc: "游戏版本目录。" -->
+- /dlce/version.md/v3.md
 <!-- desc: "高级游戏选项，启动游戏前配置。" -->
 - /dlce/commands.md
 <!-- desc:"画质、音画同步和游戏语言等。" -->
