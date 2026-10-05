@@ -1,8 +1,8 @@
-- [首頁](/zh-TW/about)
+- [首頁](/zh-TW/about/home.md)
 - [遊戲文件](/zh-TW/dlce)
 - [官方社群](/zh-TW/social)
 - [法律資訊](/zh-TW/legal)
 - 更多
-  - [主站](https://dl-community.github.io)
-  - [舊版 Wiki](https://dl-community.github.io/Docs-Legacy)
+  - [主站](https://dlce.somnartis.net)
+  - [聯繫我們](/zh-TW/about/contact.md)
   - [贊助](https://github.com/sponsors/Aaron8052)

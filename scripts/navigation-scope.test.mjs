@@ -8,18 +8,18 @@ vm.runInContext(source, context, { filename: 'navigation-scope.js' });
 
 const belongs = context.DLCE_NAVIGATION_SCOPE.hrefBelongsToDocsRoute;
 const tabKey = context.DLCE_NAVIGATION_SCOPE.normalizedTabTargetKey;
-const current = 'https://dl-community.github.io/Docs/index.html#/about/home';
+const current = 'https://dlce.somnartis.net/Docs/index.html#/about/home';
 
 assert.equal(belongs('#/dlce/', current, '/Docs/', 'hash'), true);
-assert.equal(belongs('https://dl-community.github.io/Docs/#/social/', current, '/Docs/', 'hash'), true);
-assert.equal(belongs('https://dl-community.github.io/Docs/index.html#/social/', current, '/Docs/', 'hash'), true);
+assert.equal(belongs('https://dlce.somnartis.net/Docs/#/social/', current, '/Docs/', 'hash'), true);
+assert.equal(belongs('https://dlce.somnartis.net/Docs/index.html#/social/', current, '/Docs/', 'hash'), true);
 
 assert.equal(belongs('#section', current, '/Docs/', 'hash'), false);
 assert.equal(belongs('/Docs', current, '/Docs/', 'hash'), false);
 assert.equal(belongs('/Docs/', current, '/Docs/', 'hash'), false);
 assert.equal(belongs('/Docs/assets/logo.png', current, '/Docs/', 'hash'), false);
 assert.equal(belongs('/', current, '/Docs/', 'hash'), false);
-assert.equal(belongs('https://dl-community.github.io', current, '/Docs/', 'hash'), false);
+assert.equal(belongs('https://dlce.somnartis.net', current, '/Docs/', 'hash'), false);
 assert.equal(belongs('/Docs-other/page#/guide', current, '/Docs/', 'hash'), false);
 assert.equal(belongs('https://example.com/Docs/#/guide', current, '/Docs/', 'hash'), false);
 assert.equal(belongs('mailto:docs@example.com', current, '/Docs/', 'hash'), false);

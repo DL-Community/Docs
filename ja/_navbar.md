@@ -1,5 +1,5 @@
-- [ホーム](/ja/about)
+- [ホーム](/ja/about/home.md)
 - その他
-  - [メインサイト](https://dl-community.github.io)
-  - [旧版 Wiki](https://dl-community.github.io/Docs-Legacy/#/en/)
+  - [メインサイト](https://dlce.somnartis.net)
+  - [Contact Us](/ja/about/contact.md)
   - [スポンサー](https://github.com/sponsors/Aaron8052)

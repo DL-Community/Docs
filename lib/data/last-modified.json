@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T23:46:59.000Z",
+  "generatedAt": "2026-09-27T07:07:24.000Z",
   "files": {
     "_404.md": {
-      "updatedAt": "2024-08-11T15:00:07.000Z",
-      "commit": "b50e9fc1cb619edcc5bda37d1fe0d4cbfe308455"
+      "updatedAt": "2026-08-16T23:48:53.000Z",
+      "commit": "35572d3b07aa56e1484752f9cd38079f6ce528d3"
     },
     "_navbar.md": {
-      "updatedAt": "2026-08-15T02:27:09.000Z",
-      "commit": "2da5e5d306fd2de576635704e83467ea220d98bb"
+      "updatedAt": "2026-09-20T05:54:49.000Z",
+      "commit": "1b42cc5254d0942a3c657b3ba140119fce48f01b"
     },
     "_sidebar.md": {
       "updatedAt": "2026-08-13T19:13:25.000Z",
@@ -19,84 +19,96 @@
       "commit": "65a13d7155705b183c4468f22b3291f75afb0e9a"
     },
     "about/home.md": {
-      "updatedAt": "2026-08-15T21:52:47.000Z",
-      "commit": "4f5a92b49777239348c0e51c75e986c0297cdddf"
+      "updatedAt": "2026-09-06T15:30:28.000Z",
+      "commit": "f45d28067ee993a60e0bf252d9275c96e439436e"
     },
     "DESIGN.md": {
       "updatedAt": "2026-08-13T23:06:39.000Z",
       "commit": "e2c844c8512fbc56ce0b9e21b476359e53355bd4"
     },
     "dlce/_sidebar.md": {
-      "updatedAt": "2026-08-15T21:52:47.000Z",
-      "commit": "4f5a92b49777239348c0e51c75e986c0297cdddf"
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "dlce/account.md": {
-      "updatedAt": "2026-08-15T21:52:47.000Z",
-      "commit": "4f5a92b49777239348c0e51c75e986c0297cdddf"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/character.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:04:44.000Z",
+      "commit": "318186fea8387fc870a1d0ff4bef8727ca4e9a8b"
     },
     "dlce/coins.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/commands.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/custom-post-processing/home.md": {
-      "updatedAt": "2025-09-07T15:53:01.000Z",
-      "commit": "aecc4948f5b52d926cb2d039ebef2c7c4d0522b1"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/custom-post-processing/v1.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:07:24.000Z",
+      "commit": "b5a3ccba6203c0160195894d572c4bd7d790e81b"
     },
     "dlce/custom-post-processing/v2.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/custom-post-processing/V2Template.md": {
       "updatedAt": "2025-09-07T15:50:51.000Z",
       "commit": "26e4d198338bf9ada3e7582f7b3cc890779c55ab"
     },
     "dlce/level_information.md": {
-      "updatedAt": "2026-08-14T03:47:09.000Z",
-      "commit": "3161698bebebe90026201de80873fac9119cf465"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/localization.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "dlce/missions.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/notes-challenge.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/settings/accessibility.md": {
-      "updatedAt": "2026-08-14T08:58:28.000Z",
-      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/settings/advanced.md": {
-      "updatedAt": "2026-08-15T21:52:47.000Z",
-      "commit": "4f5a92b49777239348c0e51c75e986c0297cdddf"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "dlce/settings/general.md": {
-      "updatedAt": "2026-08-15T05:43:44.000Z",
-      "commit": "2673067e50b74abe893efae6b2c6fc2a1b5773ad"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
-    "dlce/versions.md": {
-      "updatedAt": "2026-08-15T17:43:13.000Z",
-      "commit": "e1be23ab9151b99cf381616f9b28bb6a6d66f5ea"
+    "dlce/versions/v1.md": {
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
+    },
+    "dlce/versions/v2.md": {
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
+    },
+    "dlce/versions/v3.md": {
+      "updatedAt": "2026-09-27T06:29:02.000Z",
+      "commit": "9ae50207ced778f3c9dec4befc3455efe3a6bb31"
     },
     "en/_404.md": {
-      "updatedAt": "2024-08-11T15:00:07.000Z",
-      "commit": "b50e9fc1cb619edcc5bda37d1fe0d4cbfe308455"
+      "updatedAt": "2026-08-16T23:48:53.000Z",
+      "commit": "35572d3b07aa56e1484752f9cd38079f6ce528d3"
     },
     "en/_navbar.md": {
-      "updatedAt": "2026-08-15T02:27:09.000Z",
-      "commit": "2da5e5d306fd2de576635704e83467ea220d98bb"
+      "updatedAt": "2026-09-20T05:54:49.000Z",
+      "commit": "1b42cc5254d0942a3c657b3ba140119fce48f01b"
     },
     "en/_sidebar.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
@@ -107,48 +119,52 @@
       "commit": "65a13d7155705b183c4468f22b3291f75afb0e9a"
     },
     "en/about/home.md": {
-      "updatedAt": "2026-08-15T21:52:47.000Z",
-      "commit": "4f5a92b49777239348c0e51c75e986c0297cdddf"
+      "updatedAt": "2026-09-13T00:35:21.000Z",
+      "commit": "29f3c9d6057a777661c98477dd561cad2df03ea6"
     },
     "en/dlce/_sidebar.md": {
-      "updatedAt": "2026-08-15T21:22:48.000Z",
-      "commit": "d2de387bd04bd4358c12350c391aaa974355a442"
+      "updatedAt": "2026-09-27T05:59:29.000Z",
+      "commit": "98a67bcce215877603c746875b872efcc2d7a5a6"
     },
     "en/dlce/character.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:04:44.000Z",
+      "commit": "318186fea8387fc870a1d0ff4bef8727ca4e9a8b"
     },
     "en/dlce/coins.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/dlce/commands.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/dlce/level_information.md": {
-      "updatedAt": "2026-08-14T03:47:09.000Z",
-      "commit": "3161698bebebe90026201de80873fac9119cf465"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/dlce/localization.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "en/dlce/missions.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/dlce/notes-challenge.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/dlce/settings/accessibility.md": {
-      "updatedAt": "2026-08-14T08:58:28.000Z",
-      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/dlce/settings/advanced.md": {
-      "updatedAt": "2026-08-14T08:58:28.000Z",
-      "commit": "886d5bf7d3bf5fa16b15a9d2da37f6698b54a8ac"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/dlce/settings/general.md": {
-      "updatedAt": "2026-08-14T20:08:59.000Z",
-      "commit": "28619e1aad5f8d494dc5886d86d38800057d2c23"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "en/legal/_sidebar.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
@@ -163,8 +179,8 @@
       "commit": "e5d192ef8d7eb0b1fd10b38862112c250a07388a"
     },
     "en/legal/open-source.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-16T01:00:52.000Z",
+      "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
     },
     "en/legal/privacy.md": {
       "updatedAt": "2026-08-14T03:29:30.000Z",
@@ -173,6 +189,34 @@
     "en/social/_sidebar.md": {
       "updatedAt": "2026-08-15T21:52:47.000Z",
       "commit": "4f5a92b49777239348c0e51c75e986c0297cdddf"
+    },
+    "ja/_404.md": {
+      "updatedAt": "2026-08-21T07:10:32.000Z",
+      "commit": "9d2d999032d61b991518ff215d3c36954de9d784"
+    },
+    "ja/_navbar.md": {
+      "updatedAt": "2026-09-20T05:54:49.000Z",
+      "commit": "1b42cc5254d0942a3c657b3ba140119fce48f01b"
+    },
+    "ja/_sidebar.md": {
+      "updatedAt": "2026-08-21T07:10:32.000Z",
+      "commit": "9d2d999032d61b991518ff215d3c36954de9d784"
+    },
+    "ja/about/_sidebar.md": {
+      "updatedAt": "2026-08-21T07:10:32.000Z",
+      "commit": "9d2d999032d61b991518ff215d3c36954de9d784"
+    },
+    "ja/about/home.md": {
+      "updatedAt": "2026-09-13T00:40:01.000Z",
+      "commit": "f32263cd7b9527e4d06fbe0fc9128068aec1a09d"
+    },
+    "LANGUAGES.md": {
+      "updatedAt": "2026-08-21T06:33:06.000Z",
+      "commit": "4b46c46e181548a080a276ac0de085f14f4ba31e"
+    },
+    "LEGACY-BROWSER.md": {
+      "updatedAt": "2026-08-21T06:33:06.000Z",
+      "commit": "4b46c46e181548a080a276ac0de085f14f4ba31e"
     },
     "legal/_sidebar.md": {
       "updatedAt": "2026-08-13T19:13:25.000Z",
@@ -183,20 +227,20 @@
       "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
     },
     "legal/open-source.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-16T01:00:52.000Z",
+      "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
     },
     "legal/privacy.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
     },
     "PRODUCT.md": {
       "updatedAt": "2026-08-13T10:07:20.000Z",
       "commit": "65a13d7155705b183c4468f22b3291f75afb0e9a"
     },
     "README.md": {
-      "updatedAt": "2026-08-15T21:17:55.000Z",
-      "commit": "3752c5bdb50d4f412c05c9c85e432b6c4e07d386"
+      "updatedAt": "2026-09-26T17:04:41.000Z",
+      "commit": "dee2b97d9a7d816fea0baeb33a92f39fd1f0dbae"
     },
     "share/open-source.md": {
       "updatedAt": "2025-09-10T00:22:53.000Z",
@@ -211,20 +255,120 @@
       "commit": "0ebdaf0622f00a351b09b95dff91c6f6e00aaa2c"
     },
     "social/qq.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-16T01:00:52.000Z",
+      "commit": "66e4c5c99f900f6ac598a44242a159b251f507e0"
     },
     "social/rules.md": {
-      "updatedAt": "2026-08-14T03:29:30.000Z",
-      "commit": "dc3f8099a02cfff32e998d12bc94d02e7d9c5b04"
+      "updatedAt": "2026-08-16T01:06:01.000Z",
+      "commit": "a64ad9aff256d899c487f66588112e411fffc359"
     },
     "SPECIAL-COMMENTS.md": {
-      "updatedAt": "2026-08-15T21:17:55.000Z",
-      "commit": "3752c5bdb50d4f412c05c9c85e432b6c4e07d386"
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
     },
     "styles.md": {
-      "updatedAt": "2026-08-15T23:46:59.000Z",
-      "commit": "f1ad07fbd8da1dda384fcb881bca32b8b8310aa6"
+      "updatedAt": "2026-08-16T00:16:16.000Z",
+      "commit": "3342f97aac765b3b2413e714614619960ff6fce8"
+    },
+    "zh-TW/_404.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/_navbar.md": {
+      "updatedAt": "2026-09-20T05:54:49.000Z",
+      "commit": "1b42cc5254d0942a3c657b3ba140119fce48f01b"
+    },
+    "zh-TW/_sidebar.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/about/_sidebar.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/about/home.md": {
+      "updatedAt": "2026-09-13T00:36:24.000Z",
+      "commit": "e900ecbcf4e7a9f37b2c34e4e02a9d01117e1e34"
+    },
+    "zh-TW/dlce/_sidebar.md": {
+      "updatedAt": "2026-09-27T05:59:29.000Z",
+      "commit": "98a67bcce215877603c746875b872efcc2d7a5a6"
+    },
+    "zh-TW/dlce/account.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/character.md": {
+      "updatedAt": "2026-09-27T07:04:44.000Z",
+      "commit": "318186fea8387fc870a1d0ff4bef8727ca4e9a8b"
+    },
+    "zh-TW/dlce/coins.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/commands.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/level_information.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/localization.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/dlce/missions.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/notes-challenge.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/settings/accessibility.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/settings/advanced.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/dlce/settings/general.md": {
+      "updatedAt": "2026-09-27T07:01:00.000Z",
+      "commit": "d2d55fd3bbff47641f3ac5ee6ae1a0bd5cf00af0"
+    },
+    "zh-TW/legal/_sidebar.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/legal/eula.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/legal/open-source.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/legal/privacy.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/social/_sidebar.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/social/home.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/social/qq.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
+    },
+    "zh-TW/social/rules.md": {
+      "updatedAt": "2026-08-17T00:50:17.000Z",
+      "commit": "84e3ad1dece54b89e6d156710a14576aa0f9ea38"
     }
   }
 }

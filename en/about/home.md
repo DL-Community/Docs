@@ -139,7 +139,7 @@ You are welcomed to join the work by clicking "Edit Wiki" at the bottom of the p
 > [!WARNING] 
 > The minimum configuration cannot guarantee a complete game experience.
 
-- **Operating System**: iOS 12
+- **Operating System**: iOS 14
 - **RAM**: 2 GB RAM
 - **Storage**: 2 GB available space
 - Setting the quality to "High" or lower to ensure FPS.

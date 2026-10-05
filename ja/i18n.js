@@ -38,6 +38,7 @@
         search_shortcut_control_k: 'Control+K キーで検索',
         pagination_previous: '前へ',
         pagination_next: '次へ',
+        related_docs: '関連ドキュメント',
         last_modified: '最終更新：{date}',
         last_modified_commit_label: '最終更新：{date}；GitHub でこのコミットを表示'
     };

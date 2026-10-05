@@ -2,7 +2,7 @@
 - [Localization](/en/dlce/localization)
 <!-- desc: "Check the in-game currency-related stuff" -->
 - [Currencies](/en/dlce/coins)
-<!-- desc: "Game missions section" -->
+<!-- desc: "Game mission list" -->
 - [Missions](/en/dlce/missions)
 <!-- desc: "Game mode introduction" -->
 - [Notes Challenge](/en/dlce/notes-challenge)
@@ -10,7 +10,8 @@
 - [Characters](/en/dlce/character)
 <!-- desc: "Level and music creator Information" -->
 - [Level Information](/en/dlce/level_information)
-- Settings
+
+- Settings :id=settings
   <!-- desc: "Quality, synchronization and language…" -->
   - [General Settings](/en/dlce/settings/general.md)
   <!-- desc: "Mouse and touch screen…" -->
@@ -19,3 +20,5 @@
   - [Advanced Settings](/en/dlce/settings/advanced.md)
 <!-- desc: "Apply the options before launching the game" -->
 - [Launch Options](/en/dlce/commands)
+<!-- desc: "Game account system" -->
+- [Account System](/en/dlce/account)

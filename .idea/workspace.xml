@@ -10,7 +10,52 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="" />
+    <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPECIAL-COMMENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/SPECIAL-COMMENTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/account.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/account.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/coins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/missions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/missions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/notes-challenge.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/settings/accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/settings/accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/settings/advanced.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/settings/advanced.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/settings/general.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/settings/general.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/coins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/missions.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/missions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/notes-challenge.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/settings/accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/settings/accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/settings/advanced.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/settings/advanced.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/settings/general.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/settings/general.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/en/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ja/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/ja/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/last-modified.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/last-modified.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/markdown-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/markdown-components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/legacy-browser.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/legacy-browser.test.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/traditional-chinese-localization.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/traditional-chinese-localization.test.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/account.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/account.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/coins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/missions.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/missions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/notes-challenge.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/settings/accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/settings/accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/settings/advanced.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/settings/advanced.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/dlce/settings/general.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/dlce/settings/general.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-TW/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh-TW/i18n.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,10 +99,13 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:DL-Community/Docs.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/DL-Community/Docs.git&quot;,
     &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/molantsing/Documents/GitHub/DLCE-Docs/lib/data/last-modified.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -80,15 +128,21 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "WebServerToolWindowFactoryState": "false",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "feat/docsify-v5",
+    "git-widget-placeholder": "main",
     "git.auto.fetch.suggestion.counter": "1",
     "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/jiang/Documents/GitHub/Docs",
     "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/molantsing/Library/Application Support/JetBrains/Rider2026.2/node/versions/24.21.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -538,10 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="header" />
-    <MESSAGE value="basePath" />
-    <MESSAGE value="basePath" />
-    <MESSAGE value="nav" />
     <MESSAGE value="redesigned website" />
     <MESSAGE value="redesign website" />
     <MESSAGE value="fix formating" />
@@ -563,7 +613,11 @@
     <MESSAGE value="导航栏增加旧版 wiki 入口" />
     <MESSAGE value="-" />
     <MESSAGE value="新增 github actions 部署时缓存版本更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增 github actions 部署时缓存版本更新" />
+    <MESSAGE value="新增指定子目录节点地址的功能&#10;&#10;- 参数 pathname" />
+    <MESSAGE value="更新总览页自定义路径的实现方案" />
+    <MESSAGE value="移动端表格强制左对齐" />
+    <MESSAGE value="optimize table formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimize table formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -582,5 +636,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

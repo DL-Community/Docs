@@ -10,7 +10,7 @@
 ### 获取
 - 使用[星星](#star)兑换
 - 使用[音符](#note)兑换
-- 完成每日任务
+- 完成[日常任务](/dlce/missions.md)
 - 用尽最后一个方块时，300秒过后会自动回复15个方块。
 
 ## 星星 ✨ :id=star
@@ -21,7 +21,7 @@
 - 关卡内复活
 
 ### 获取
-- 完成每日任务
+- 完成[日常任务](/dlce/missions.md)
 - 通关关卡
 - 使用[音符](#note)兑换
 
@@ -33,10 +33,8 @@
 ### 获取
 - [音符挑战](/dlce/notes-challenge.md)通关
 
-<blockquote>
-
-**相关文档**
-- [音符挑战](/dlce/notes-challenge.md)
-- [角色外观](/dlce/character.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- notes-challenge.md
+- character.md
+- missions.md
+<!-- related-docs:end -->

@@ -30,10 +30,7 @@
 - Added a refresh countdown display to the Note Shop.
 - Players can now spend corresponding notes to skip a challenge level once.
 
-<blockquote>
-
-**Related Topics**
-- [Currency](/en/dlce/coins.md)
-- [Characters](/en/dlce/character.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- coins.md
+- character.md
+<!-- related-docs:end -->

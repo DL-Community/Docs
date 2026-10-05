@@ -43,15 +43,15 @@ The former is the macOS desktop version, while the latter is the iOS version run
 ## Quality
 - Adjusts the **scene/visual complexity and quality** in the game.
 
-| Quality                                      | Very Low | Low | Medium  | High      | Ultra     | Extreme (PC Only) |
-|----------------------------------------------|----------|-----|---------|-----------|-----------|-------------------|
-| **Shadows**                                  | No       | No  | No      | No        | Supported | Supported         |
-| **Reflections**                              | No       | No  | Partial | Supported | Supported | High Quality      |
-| **Particles**                                | Minimal  | Low | Medium  | High      | High      | Maximum           |
-| **Soft Particles**                           | No       | No  | No      | No        | No        | Supported         |
-| **Built-In Post-Processing (if applicable)** | No       | No  | No      | Supported | Supported | Supported         |
-| **HDR Rendering**                            | No       | No  | No      | No        | No        | Supported         |
-| **Deferred Rendering**                       | No       | No  | No      | Partial   | Partial | Supported         |
+|                   Quality                    | Very Low | Low | Medium  |   High    |   Ultra   | Extreme (PC Only) |
+|:--------------------------------------------:|:--------:|:---:|:-------:|:---------:|:---------:|:-----------------:|
+|                 **Shadows**                  |    No    | No  |   No    |    No     | Supported |     Supported     |
+|               **Reflections**                |    No    | No  | Partial | Supported | Supported |   High Quality    |
+|                **Particles**                 | Minimal  | Low | Medium  |   High    |   High    |      Maximum      |
+|              **Soft Particles**              |    No    | No  |   No    |    No     |    No     |     Supported     |
+| **Built-In Post-Processing (if applicable)** |    No    | No  |   No    | Supported | Supported |     Supported     |
+|              **HDR Rendering**               |    No    | No  |   No    |    No     |    No     |     Supported     |
+|            **Deferred Rendering**            |    No    | No  |   No    |  Partial  |  Partial  |     Supported     |
 
 ## Resolution
 <!-- tabs:start -->
@@ -78,18 +78,18 @@ The former is the macOS desktop version, while the latter is the iOS version run
 <!-- tabs:start -->
 ### **Windows**
 
-| Mode                 | Description                                                                                                                                                                                |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Mode         | Description                                                                                                                                                                                |
+|:--------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exclusive Fullscreen | The game **exclusively occupies GPU resources**. The desktop is suspended, providing optimal performance, but switching between the game and the desktop is slower.                        |
-| Borderless Window    | **Hides window borders and stretches the game to full screen proportionally**. Fast window switching speed, with GPU resources shared with the desktop.                                    |
-| Windowed             | Windowed mode. **Window borders are not hidden, and the game is not stretched proportionally to full screen**. Fastest window switching speed, with GPU resources shared with the desktop. |
+|  Borderless Window   | **Hides window borders and stretches the game to full screen proportionally**. Fast window switching speed, with GPU resources shared with the desktop.                                    |
+|       Windowed       | Windowed mode. **Window borders are not hidden, and the game is not stretched proportionally to full screen**. Fastest window switching speed, with GPU resources shared with the desktop. |
 
 ### **macOS**
 
-| Mode              | Description                                                                                                                                                                                |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       Mode        | Description                                                                                                                                                                                |
+|:-----------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Borderless Window | The game enters macOS full-screen mode.                                                                                                                                                    |
-| Windowed          | Windowed mode. **Window borders are not hidden, and the game is not stretched proportionally to full screen**. Fastest window switching speed, with GPU resources shared with the desktop. |
+|     Windowed      | Windowed mode. **Window borders are not hidden, and the game is not stretched proportionally to full screen**. Fastest window switching speed, with GPU resources shared with the desktop. |
 
 <!-- tabs:end -->
 
@@ -104,12 +104,12 @@ The former is the macOS desktop version, while the latter is the iOS version run
 > **Available for**<br>Windows, macOS,  iOS on Mac.
 - Choose the Anti-Aliasing (AA) mode
 
-| Mode                                    | Description                                                                                                                                                                                                                         |
-|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Off                                     | No Anti-aliasing                                                                                                                                                                                                                    |
-| Multisample AA（MSAA）                    | Hardware-level anti-aliasing method. Best results but low efficiency. Unavailable in some levels using deferred rendering (e.g., The Samurai (HD), The Apocalypse, The Adventure, The Memories, The Firework Paradise, etc.)        |
-| Fast Approximate AA（FXAA）               | An anti-aliasing method based on post-processing of the screen, calculating the average value based on adjacent pixels. The effect is slightly inferior, resulting in a blurry image.                                               |
-| Subpixel Morphological AA（SMAA）         | An anti-aliasing based on screen post-processing that identifies and eliminates aliasing by analyzing edge and color information in an image. It offers a relatively balanced performance in terms of efficiency and effectiveness. |
+|                   Mode                    | Description                                                                                                                                                                                                                         |
+|:-----------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    Off                    | No Anti-aliasing                                                                                                                                                                                                                    |
+|          Multisample AA（MSAA）           | Hardware-level anti-aliasing method. Best results but low efficiency. Unavailable in some levels using deferred rendering (e.g., The Samurai (HD), The Apocalypse, The Adventure, The Memories, The Firework Paradise, etc.)        |
+|        Fast Approximate AA（FXAA）        | An anti-aliasing method based on post-processing of the screen, calculating the average value based on adjacent pixels. The effect is slightly inferior, resulting in a blurry image.                                               |
+|     Subpixel Morphological AA（SMAA）     | An anti-aliasing based on screen post-processing that identifies and eliminates aliasing by analyzing edge and color information in an image. It offers a relatively balanced performance in terms of efficiency and effectiveness. |
 | AMD FidelityFX™ Super Resolution（FSR 3） | [AMD FidelityFX™ Super Resolution (FSR)](https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html). Currently only available for Windows and macOS.                                                   |
 
 <!--/details-->
@@ -147,9 +147,6 @@ The former is the macOS desktop version, while the latter is the iOS version run
 > [!NOTE]
 > See [Advanced Settings](/en/dlce/settings/advanced.md).
 
-<blockquote>
-
-**Related Topics**
-- [Launch Options](/en/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/commands.md
+<!-- related-docs:end -->

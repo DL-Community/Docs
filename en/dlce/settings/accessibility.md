@@ -13,11 +13,11 @@
 ## Hide Cursor
 - Choose when to automatically hide the mouse cursor.
 
-| Mode            | Details                                                           |
-|-----------------|-------------------------------------------------------------------|
-| Never           | 	Never automatically hide the mouse cursor                        |
+|      Mode       | Details                                                           |
+|:---------------:|-------------------------------------------------------------------|
+|      Never      | 	Never automatically hide the mouse cursor                        |
 | When stationary | Automatically hides the mouse cursor when the mouse is stationary |
-| While Playing   | Hide the mouse cursor during gameplay                             |
+|  While Playing  | Hide the mouse cursor during gameplay                             |
 
 ## Status Bar
 > [!IMPORTANT]
@@ -46,14 +46,11 @@
 
 ## Delete Data
 ### Clear Game Progress
-- Permanently delete game save data, including iCloud saves.
+- Permanently delete game save data, including iCloud saves or DLRS GAS saves.
 
 ### Clear Cache
-- Clear locally generated game data (shared images, ad cache, configuration files, etc.) and local game saves (will not clear iCloud saves).
+- Clear locally generated game data (shared images, configuration files, etc.) and local game saves (will not clear iCloud saves or DLRS GAS saves).
 
-<blockquote>
-
-**Related Topics**
-- [Launch Options](/en/dlce/commands.md)
-
-</blockquote>
+<!-- related-docs:start -->
+- /en/dlce/commands.md
+<!-- related-docs:end -->

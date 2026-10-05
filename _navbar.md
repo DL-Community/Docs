@@ -1,8 +1,8 @@
-- [首页](/about)
+- [首页](/about/home.md)
 - [游戏文档](/dlce)
 - [官方社区](/social)
 - [法律信息](/legal)
 - 更多
-  - [主站](https://dl-community.github.io)
-  - [旧版 Wiki](https://dl-community.github.io/Docs-Legacy)
+  - [主站](https://dlce.somnartis.net)
+  - [联系我们](/about/contact.md)
   - [赞助](https://afdian.com/a/fengyanDL)
