@@ -48,7 +48,7 @@ Settings not listed below are not supported on Mac.
 
 <!-- tab:Network -->
 ### Login Method
-- Choose a method to login the game, either using DLRS GAS or Game Center.
+- Choose a method to login the game, either using [DLRS GAS Account System](/en/dlce/account.md#DLRSGASAccountSystem) or [Game Center](/en/dlce/account.md#GameCenter).
 
 > [!WARNING]
 > Game progress does not share between login methods.
@@ -57,7 +57,7 @@ Settings not listed below are not supported on Mac.
 - Select the region for the level-downloading server.
 - You can choose from the following servers:
   - Default
-  - Unity Online Services（alternative）
+  - Unity Online Services（Aternate）
   - GitHub
   - Unity Gaming Services
     
@@ -112,7 +112,7 @@ Settings not listed below are not supported on Mac.
 
 <!-- tab:Network -->
 ### Login Method
-- Choose a method to login the game, either using DLRS GAS or Game Center.
+- Choose a method to login the game, either using [DLRS GAS Account System](/en/dlce/account.md#DLRSGASAccountSystem) or [Game Center](/en/dlce/account.md#GameCenter).
 
 > [!WARNING]
 > Game progress does not share between login methods.
@@ -121,7 +121,7 @@ Settings not listed below are not supported on Mac.
 - Select the region for the level-downloading server.
 - You can choose from the following servers:
   - Default
-  - Unity Online Services（alternative）
+  - Unity Online Services（Alternate）
   - GitHub
   - Unity Gaming Services
 
@@ -158,7 +158,7 @@ Settings not listed below are not supported on Mac.
 - Select the region for the level-downloading server.
 - You can choose from the following servers:
   - Default
-  - Unity Online Services（alternative）
+  - Unity Online Services（Alternate）
   - GitHub
   - Unity Gaming Services
 
@@ -172,5 +172,12 @@ Settings not listed below are not supported on Mac.
 
 
 <!-- related-docs:start -->
+<!-- desc: "Advanced game options, configure before begin the game." -->
 - /en/dlce/commands.md
+<!-- desc:"Quality、Synchronization and Game language." -->
+- /en/general.md
+<!-- desc: "Mouse, Touch and more." -->
+- /en/accessibility.md
+<!-- desc: "Game account information." -->
+- /en/dlce/account.md
 <!-- related-docs:end -->
