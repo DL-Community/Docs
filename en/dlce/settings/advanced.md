@@ -57,7 +57,7 @@ Settings not listed below are not supported on Mac.
 - Select the region for the level-downloading server.
 - You can choose from the following servers:
   - Default
-  - Unity Online Services（Aternate）
+  - Unity Online Services（Alternate）
   - GitHub
   - Unity Gaming Services
     
