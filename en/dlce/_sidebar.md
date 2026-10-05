@@ -20,3 +20,5 @@
   - [Advanced Settings](/en/dlce/settings/advanced.md)
 <!-- desc: "Apply the options before launching the game" -->
 - [Launch Options](/en/dlce/commands)
+<!-- desc: "Game account system" -->
+- [Account System](/en/dlce/account)
