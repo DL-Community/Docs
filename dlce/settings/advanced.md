@@ -159,7 +159,7 @@
 
 <!-- related-docs:start -->
 <!-- desc: "游戏版本目录。" -->
-- /dlce/version.md/v3.md
+- /dlce/v3.md
 <!-- desc: "高级游戏选项，启动游戏前配置。" -->
 - /dlce/commands.md
 <!-- desc:"画质、音画同步和游戏语言等。" -->

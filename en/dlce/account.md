@@ -18,7 +18,8 @@ The game offers two account systems, for DLRS GAS Account system and Game Center
 - Cloud Save is not compatible with other login methods, only be used for synchronization between games that use Game Center login on iOS devices;
 - Automatically log in when the game begins, jump right into the game without any manual intervention from the player.
 
+
 <!-- related-docs:start -->
 <!-- desc: "Choose the game login methods." -->
-- settings/advanced.md#Login Method
+- /en/dlce/settings/advanced.md#Login Method
 <!-- related-docs:end -->

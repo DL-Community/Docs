@@ -26,6 +26,7 @@
 ## 补充
 - “日常任务”位于主菜单功能首位，也可以从[星星](/dlce/coins.md#star)界面和[体力方块](/dlce/coins.md#cube)购买界面跳转。
 - 每项任务完成后任务项变灰静默。
+- 任务进度会随关卡累积，超额后并不会多余显示。
 
 <!-- related-docs:start -->
 - coins.md
