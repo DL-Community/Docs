@@ -21,5 +21,5 @@ The game offers two account systems, for DLRS GAS Account system and Game Center
 
 <!-- related-docs:start -->
 <!-- desc: "Choose the game login methods." -->
-- /en/dlce/settings/advanced.md#Login Method
+- /en/dlce/settings/advanced.md#Login-Method
 <!-- related-docs:end -->
