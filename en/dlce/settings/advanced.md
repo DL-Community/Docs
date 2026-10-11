@@ -175,9 +175,9 @@ Settings not listed below are not supported on Mac.
 <!-- desc: "Advanced game options, configure before begin the game." -->
 - /en/dlce/commands.md
 <!-- desc:"Quality、Synchronization and Game language." -->
-- /en/general.md
+- general.md
 <!-- desc: "Mouse, Touch and more." -->
-- /en/accessibility.md
+- accessibility.md
 <!-- desc: "Game account information." -->
 - /en/dlce/account.md
 <!-- related-docs:end -->
