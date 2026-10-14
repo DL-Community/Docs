@@ -25,7 +25,8 @@
 - Complete [Missions](/en/dlce/missions.md)
 - Complete levels
 - Redeem using [notes](#note)
-
+- ~Watch advertisements(Not available since 3.8.2 version)~
+  
 ## Note 🎶 :id=note
 ### Usages
 - Redeem rare [skins](/en/dlce/character.md#skins) and [decorations](/en/dlce/character.md#dec)
@@ -33,7 +34,7 @@
 
 ### Obtain
 - Completing levels in [Notes Challenge](/en/dlce/notes-challenge.md)
-- ~Watch advertisements(Not available since 3.8.2 version)~
+
 
 <!-- related-docs:start -->
 - notes-challenge.md
