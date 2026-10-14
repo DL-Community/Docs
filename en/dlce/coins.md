@@ -10,6 +10,7 @@
 ### Obtain
 - Redeem using [stars](#star)
 - Redeem using [notes](#note)
+-  ~Watch advertisements(Not available since 3.8.2 version)~
 - Complete [Missions](/en/dlce/missions.md)
 - 15 cubes will automatically refill after 300 seconds when you use last Energy Cube.
 
@@ -32,6 +33,7 @@
 
 ### Obtain
 - Completing levels in [Notes Challenge](/en/dlce/notes-challenge.md)
+- ~Watch advertisements(Not available since 3.8.2 version)~
 
 <!-- related-docs:start -->
 - notes-challenge.md
