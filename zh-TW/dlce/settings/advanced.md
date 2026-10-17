@@ -157,5 +157,7 @@
 <!-- desc: "目前僅提供簡體中文版本。" -->
 - /dlce/custom-post-processing
 - /zh-TW/dlce/commands.md
+- general.md
+- accessibility.md
 - /zh-TW/dlce/account.md
 <!-- related-docs:end -->
