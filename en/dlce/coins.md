@@ -35,6 +35,7 @@
 ### Obtain
 - Completing levels in [Notes Challenge](/en/dlce/notes-challenge.md)
 
+
 <!-- related-docs:start -->
 - notes-challenge.md
 - character.md
