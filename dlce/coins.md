@@ -10,7 +10,7 @@
 ### 获取
 - 使用[星星](#star)兑换
 - 使用[音符](#note)兑换
-- ~观看广告~(该获取方式自[3.8.2版本](/dlce/versions/v3.md#382)后失效)
+- ~观看广告~(该获取方式自版本[3.8.2](/dlce/versions/v3.md#382)后失效)
 - 完成[日常任务](/dlce/missions.md)
 - 用尽最后一个方块时，300秒过后会自动回复15个方块。
 
@@ -25,7 +25,7 @@
 - 完成[日常任务](/dlce/missions.md)
 - 通关关卡
 - 使用[音符](#note)兑换
-- ~观看广告~(该获取方式自[3.8.2版本](/dlce/versions/v3.md#382)后失效)
+- ~观看广告~(该获取方式自版本[3.8.2](/dlce/versions/v3.md#382)后失效)
 
 ## 音符 🎶 :id=note
 ### 用途
@@ -39,4 +39,5 @@
 - notes-challenge.md
 - character.md
 - missions.md
+- /dlce/versions/v3.md
 <!-- related-docs:end -->
