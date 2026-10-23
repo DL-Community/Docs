@@ -29,7 +29,7 @@ The former is the macOS desktop version, while the latter is the iOS version run
 - When enabled, the game will automatically detect and correct audio output latency. It is recommended to enable this when using Bluetooth headphones or car audio systems.
 
 ### **Touch Input Latency**
-> **Applies to**<br>iOS.
+> **Applies to**<br>iOS, Android.
 - When enabled, the game will automatically detect and correct touch response latency. This option can be disabled to reduce CPU usage by the game.
 
 <!-- tabs:end -->
@@ -68,6 +68,9 @@ The former is the macOS desktop version, while the latter is the iOS version run
 ### **iOS**
 - Click to switch between resolution modes: Very Low / Low / Medium / High / Ultra.
 
+## **Android**
+- Click to switch between resolution modes: Very Low / Low / Medium / High / Ultra.
+
 <!-- tabs:end -->
 
 > [!TIP]
@@ -101,16 +104,17 @@ The former is the macOS desktop version, while the latter is the iOS version run
 <!--/summary-->
 
 > [!IMPORTANT]
-> **Available for**<br>Windows, macOS,  iOS on Mac.
+> **Available for**<br>Windows, macOS, iOS on Mac, iOS, Android.
 - Choose the Anti-Aliasing (AA) mode
 
 |                   Mode                    | Description                                                                                                                                                                                                                         |
 |:-----------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                    Off                    | No Anti-aliasing                                                                                                                                                                                                                    |
-|          Multisample AA（MSAA）           | Hardware-level anti-aliasing method. Best results but low efficiency. Unavailable in some levels using deferred rendering (e.g., The Samurai (HD), The Apocalypse, The Adventure, The Memories, The Firework Paradise, etc.)        |
-|        Fast Approximate AA（FXAA）        | An anti-aliasing method based on post-processing of the screen, calculating the average value based on adjacent pixels. The effect is slightly inferior, resulting in a blurry image.                                               |
-|     Subpixel Morphological AA（SMAA）     | An anti-aliasing based on screen post-processing that identifies and eliminates aliasing by analyzing edge and color information in an image. It offers a relatively balanced performance in terms of efficiency and effectiveness. |
-| AMD FidelityFX™ Super Resolution（FSR 3） | [AMD FidelityFX™ Super Resolution (FSR)](https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html). Currently only available for Windows and macOS.                                                   |
+|          Multisample AA (MSAA)            | Hardware-level anti-aliasing method. Best results but low efficiency. Unavailable in some levels using deferred rendering (e.g., The Samurai (HD), The Apocalypse, The Adventure, The Memories, The Firework Paradise, etc.)        |
+|        Fast Approximate AA (FXAA)         | An anti-aliasing method based on post-processing of the screen, calculating the average value based on adjacent pixels. The effect is slightly inferior, resulting in a blurry image.                                               |
+| Temporal Anti-Aliasing (TAA) (Deprecated) | A screen-space post-processing anti-aliasing technique that performs Multisampling over time, leveraging inter-frame differences to compute anti-aliasing. Its visual quality is superior to that of FXAA.                         |
+|     Subpixel Morphological AA (SMAA)      | An anti-aliasing based on screen post-processing that identifies and eliminates aliasing by analyzing edge and color information in an image. It offers a relatively balanced performance in terms of efficiency and effectiveness. |
+| AMD FidelityFX™ Super Resolution (FSR 3)  | [AMD FidelityFX™ Super Resolution (FSR)](https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html). Currently only available for Windows and macOS.                                                   |
 
 <!--/details-->
 
@@ -149,4 +153,6 @@ The former is the macOS desktop version, while the latter is the iOS version run
 
 <!-- related-docs:start -->
 - /en/dlce/commands.md
+- accessibility.md
+- advanced.md
 <!-- related-docs:end -->
