@@ -53,7 +53,7 @@
 > 並非所有關卡都包含內建後處理效果
 
 > [!IMPORTANT]
-> 對於玩家[自訂後處理效果](/zh-TW/dlce/custom-post-processing/v2.md)，不論哪種畫質模式，都會始終應用到關卡中。
+> 對於玩家[自訂後處理效果](/dlce/custom-post-processing/v2.md)，不論哪種畫質模式，都會始終應用到關卡中。
 
 |        畫質        | 非常低 | 低 |  中  |  高  | 極高 | 極限（僅電腦端） |
 |:------------------:|:------:|:--:|:----:|:----:|:----:|:----------------:|
@@ -173,5 +173,8 @@
 <!-- related-docs:start -->
 <!-- desc: "目前僅提供簡體中文版本。" -->
 - /dlce/custom-post-processing
+- accessibility.md
+- advanced.md
 - /zh-TW/dlce/commands.md
+- /zh-TW/dlce/localization.md
 <!-- related-docs:end -->
