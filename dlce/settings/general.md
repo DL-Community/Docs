@@ -179,4 +179,6 @@
 - accessibility.md
 <!-- desc:"网络连接和音频 DSP 缓冲区等。" -->
 - advanced.md
+<!-- desc:"多语言提供。" -->
+- /dlce/localization.md
 <!-- related-docs:end -->

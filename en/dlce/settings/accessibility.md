@@ -3,12 +3,12 @@
 
 ## Touch Feedback
 > [!IMPORTANT]
-> **Available for**<br>iOS
+> **Available for**<br>iOS, Android.
 - When enabled, a special effect will appear at the tap location when the player taps the screen.
 
 ## Gyroscope Effect
 > [!IMPORTANT]
-> **Available for**<br>iOS.
+> **Available for**<br>iOS, Android.
 - Enable/disable the gyroscope parallax effect in the main screen level preview.
 ## Hide Cursor
 - Choose when to automatically hide the mouse cursor.
