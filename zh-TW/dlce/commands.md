@@ -96,4 +96,6 @@ Timeout=10
 
 <!-- related-docs:start -->
 - settings/advanced.md
+- accessibility.md
+- general.md
 <!-- related-docs:end -->
