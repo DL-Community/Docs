@@ -155,4 +155,5 @@ The former is the macOS desktop version, while the latter is the iOS version run
 - /en/dlce/commands.md
 - accessibility.md
 - advanced.md
+- /en/dlce/localization.md
 <!-- related-docs:end -->
