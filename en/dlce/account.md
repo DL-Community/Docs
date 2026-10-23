@@ -1,7 +1,7 @@
 # Account System
 <!-- last-modified -->
 
-The game offers two account systems, for DLRS GAS Account system and Game Center（Only iOS）, iOS players can switch between different account systems through [Advanced Settings](/en/dlce/advanced.md#Login-Method), Game progress does not share between different account systems.
+The game offers two account systems, for DLRS GAS Account system and Game Center（Only iOS）, iOS players can switch between different account systems through [Advanced Settings](/en/dlce/settings/advanced.md#Login-Method), Game progress does not share between different account systems.
 
 ## DLRS GAS Account System :id=dlrs-gas
 - Provided by [The official website of DLRS Tongrong](https://chinadlrs.com);
