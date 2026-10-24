@@ -159,5 +159,7 @@
 - accessibility.md
 - general.md
 - /zh-TW/dlce/commands.md
+- general.md
+- accessibility.md
 - /zh-TW/dlce/account.md
 <!-- related-docs:end -->
